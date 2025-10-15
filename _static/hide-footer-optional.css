@@ -1,0 +1,4 @@
+/* Hide Prev/Next footer ONLY on the Optional Tasks page */
+body[data-page="experiments/fp1/raman/01_Experiment_Guide/optional_tasks"] .bd-article-nav {
+  display: none !important;
+}
