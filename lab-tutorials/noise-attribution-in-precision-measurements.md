@@ -33,7 +33,7 @@ Suppose you run $$N$$ identical trials with $$k$$ successes. The estimator
 is:
 
 $$ 
-`\hat `{=tex}p = rac{k}{N}. 
+\hat {=tex}p = rac{k}{N}. 
 $$
 
 The Wald interval is:
