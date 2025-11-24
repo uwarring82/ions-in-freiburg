@@ -1,20 +1,30 @@
 # Table of contents
 
-* [README](README.md)
-* [Part 0 · Lab Alliance Compact](handbook/part-0-lab-alliance-compact/index.md)
-  * [Ethics, Academic Integrity & Safety Rules](index/part0-ethics-exam-rules.md)
-  * [Tutor’s Guide to Professional Boundaries](handbook/part-8-contributing/tutor-boundaries.md)
-* [Part 1 · Quick Start Guide & Navigation](handbook/part-1-quickstart/index.md)
-* [Part 2 · Organization & Framework](handbook/part-2-organization/index.md)
-* [Part 3 · Scientific Integrity & Lab Notes](handbook/part-3-integrity-labnotes/index.md)
-* [Part 4 · Statistics & Data Analysis](handbook/part-4-statistics-analysis/index.md)
-* [Part 5 · Reports & Presentations](handbook/part-5-reports-presentations/index.md)
-* [Part 6 · FAQ & Best Practices](handbook/part-6-faq-bestpractices/index.md)
-* [Part 7 · Lab Courses](handbook/part-7-labcourses/README.md)
-  * [FP-I](part-7-labcourses/fp-i/README.md)
-    * [Overview](handbook/part-7-labcourses/fp-i/README.md)
-    * [Raman Spectroscopy](handbook/part-7-labcourses/fp-i/raman-spectroscopy.md)
-  * [FP-II](part-7-labcourses/fp-ii/README.md)
-    * [Overview](handbook/part-7-labcourses/fp-ii/README.md)
-  * [FP-Edu](part-7-labcourses/fp-edu/README.md)
-    * [Overview](handbook/part-7-labcourses/fp-edu/README.md)
+* [Welcome to Ions-in-Freiburg](README.md)
+
+## Getting Started
+
+* [About us](getting-started/about-us.md)
+* [Structure your research](getting-started/structure-your-research.md)
+
+## Lab Tutorials
+
+* [Gaussian Beams and the Knife-Edge Method](lab-tutorials/gaussian-beams-and-the-knife-edge-method.md)
+* [Benchmarks of a RF-Drive Resonator](lab-tutorials/benchmarks-of-a-rf-drive-resonator.md)
+* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](lab-tutorials/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [Cleaning Components After Manufacturing](lab-tutorials/cleaning-components-after-manufacturing.md)
+* [Checklist for Changing Components in an evacuated UHV Chamber](lab-tutorials/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
+* [Noise Attribution in Precision Measurements](lab-tutorials/noise-attribution-in-precision-measurements.md)
+
+## Publish your research
+
+* [Draft a Manuscript](publish-your-research/draft-a-manuscript.md)
+* [Peer Review Quickstart](publish-your-research/peer-review-quickstart.md)
+
+## Essays
+
+* [Introduction](essays/introduction.md)
+* [The Physics of Eyesight](essays/the-physics-of-eyesight.md)
+* [Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
+* [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
+* [Evolution of Terminology](essays/evolution-of-terminology.md)
