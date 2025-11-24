@@ -7,11 +7,7 @@ icon: scale-unbalanced-flip
 
 Understanding and controlling noise is central to all precision measurements, from trapped-ion qubits to frequency standards and classical sensors. The practical question is always:
 
-<br>
-
 > _Which part of the variation in my data is fundamental statistical noise, and which part is systematic or technical?_
-
-<br>
 
 This chapter provides a structured framework for answering that question using frequentist tools:
 
@@ -19,89 +15,43 @@ This chapter provides a structured framework for answering that question using f
 * time-domain stability analysis via Allan deviation, and
 * frequency-domain analysis via power spectral density (PSD),
 
-<br>
-
 tied together by a step-by-step noise attribution workflow and a real-world case study.
 
 ***
 
 ### 1. Statistical Fundamentals for Noise Analysis
 
-<br>
-
 Noise attribution starts with the simplest question:
 
-<br>
-
 > _Does your data behave like the stochastic process you think it does?_
-
-<br>
 
 Two common situations:
 
 * Binomial proportions (success/failure outcomes),
 * Poisson counts (rare events per interval).
 
-<br>
-
 #### 1.1 Binomial Proportions and Wilson Score Interval
 
-<br>
+Suppose you run $$N$$ identical trials and observe $$k$$ “successes” (e.g. ion detected bright vs dark). The natural estimator of the success probability is\
+$$\hat p = \frac{k}{N}.$$&#x20;
 
-Suppose you run $N$ identical trials and observe $k$ “successes” (e.g. ion detected bright vs dark). The natural estimator of the success probability is
+The traditional Wald interval (normal approximation) is\
+$$\hat p \pm z \sqrt{\frac{\hat p(1-\hat p)}{N}},$$\
+where $$z$$ is the critical value for the desired confidence (e.g. $$z \approx 1.96$$ for 95%).
 
-\
-\$$\
-\hat p = \frac{k}{N}.\
-\$$
+However, this interval is known to have poor coverage for small $$N$$ or extreme probabilities (e.g. $$\hat p$$ near 0 or 1): it can be too narrow and even yield limits outside $$[0,1]$$, cp. Ref. \[1]. This is unacceptable in high-stakes precision analysis.
 
-<br>
+A more robust choice is the Wilson score interval \[1]. For confidence level $$1-\alpha$$ with critical value $$z_{1-\alpha/2}$$, the Wilson interval is
 
-The traditional Wald interval (normal approximation) is
-
-<br>
-
-\$$
-
-\hat p \pm z \sqrt{\frac{\hat p(1-\hat p)}{N\}},
-
-\$$
-
-<br>
-
-where $z$ is the critical value for the desired confidence (e.g. $z \approx 1.96$ for 95%).
-
-<br>
-
-However, this interval is known to have poor coverage for small $N$ or extreme probabilities (e.g. $\hat p$ near 0 or 1): it can be too narrow and even yield limits outside $\[0,1]$ \[1]. This is unacceptable in high-stakes precision analysis.
-
-<br>
-
-A more robust choice is the Wilson score interval \[1]. For confidence level $1-\alpha$ with critical value $z\_{1-\alpha/2}$, the Wilson interval is
-
-<br>
-
-\$$
-
-\text{CI}\_{\text{Wilson\}} =
-
-\frac{\hat p + \frac{z^2}{2N} \pm z\sqrt{\frac{\hat p(1-\hat p)}{N} + \frac{z^2}{4N^2\}}}{1 + \frac{z^2}{N\}}.
-
-\$$
-
-<br>
+$$\text{CI}_{\text{Wilson}} = \frac{\hat p + \frac{z^2}{2N} \pm z\sqrt{\frac{\hat p(1-\hat p)}{N} + \frac{z^2}{4N^2}}}{1 + \frac{z^2}{N}}.$$
 
 Key properties:
 
-* It never produces limits outside $\[0,1]$.
-* It maintains much more accurate coverage even when $N$ is small or $p$ is close to 0 or 1 \[1].
-* It smoothly reduces to the normal approximation for large $N$.
+* It never produces limits outside $$[0,1]$$.
+* It maintains much more accurate coverage even when $$N$$ is small or $$p$$ is close to 0 or 1 \[1].
+* It smoothly reduces to the normal approximation for large $$N$$.
 
-<br>
-
-For example, with $N=10$ and $\hat p = 0$, the Wald interval would give $\[0,0]$, but the Wilson interval yields a non-zero upper bound (≈0.26 at 95% confidence), which honestly reflects our uncertainty \[1].
-
-<br>
+For example, with $$N=10$$ and $$\hat p = 0$$, the Wald interval would give $$[0,0]$$, but the Wilson interval yields a non-zero upper bound (≈0.26 at 95% confidence), which honestly reflects our uncertainty \[1].
 
 For binary experimental outcomes (e.g. qubit state readout, survival probability), this is the interval students should use by default.
 
@@ -109,152 +59,79 @@ For binary experimental outcomes (e.g. qubit state readout, survival probability
 
 #### 1.2 Poisson Counts and Over-Dispersion
 
-<br>
-
 For count data (e.g. number of detected photons in a fixed time, number of quantum jumps), the Poisson distribution is often the baseline model:
 
-* Parameter: $\lambda$ (mean rate)
-* Mean: $\mathbb{E}\[X] = \lambda$
-* Variance: $\mathrm{Var}(X) = \lambda$
+* Parameter: $$\lambda$$ (mean rate)
+* Mean: $$\mathbb{E}[X] = \lambda$$
+* Variance: $$\mathrm{Var}(X) = \lambda$$
 
-<br>
+If you have $$N$$ independent measurements $$x_1,\dots,x_N$$ (counts per interval), the sample mean and variance are
 
-If you have $N$ independent measurements $x\_1,\dots,x\_N$ (counts per interval), the sample mean and variance are
+$$\bar{x} = \frac{1}{N} \sum_{i=1}^N x_i, \qquad s^2 = \frac{1}{N-1} \sum_{i=1}^N (x_i - \bar{x})^2.$$
 
-<br>
-
-\$$
-
-\bar{x} = \frac{1}{N} \sum\_{i=1}^N x\_i,
-
-\qquad
-
-s^2 = \frac{1}{N-1} \sum\_{i=1}^N (x\_i - \bar{x})^2.
-
-\$$
-
-<br>
-
-For a truly Poisson process, you expect $s^2 \approx \bar{x}$. A deviation from this equality is called over-dispersion ($s^2 > \bar{x}$) or under-dispersion ($s^2 < \bar{x}$).
-
-<br>
+For a truly Poisson process, you expect $$s^2 \approx \bar{x}$$. A deviation from this equality is called over-dispersion ($$s^2 > \bar{x}$$) or under-dispersion ($$s^2 < \bar{x}$$).
 
 A quantitative test: under the null hypothesis of a Poisson model with mean $\lambda = \bar{x}$, the statistic
 
-<br>
+$$(N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1}$$
 
-\$$
+approximately follows a chi-square distribution with $$N-1$$ degrees of freedom \[4]. If this statistic is greater than the critical value $$\chi^2_{N-1,;0.95}$$ (for a 5% significance level), the variance is significantly larger than expected, which signals extra noise beyond Poisson (e.g. a fluctuating rate, unresolved mixture of sources, or additional technical noise).
 
-(N-1)\frac{s^2}{\bar{x\}} \sim \chi^2\_{N-1}
-
-\$$
-
-<br>
-
-approximately follows a chi-square distribution with $N-1$ degrees of freedom \[4]. If this statistic is greater than the critical value $\chi^2\_{N-1,;0.95}$ (for a 5% significance level), the variance is significantly larger than expected, which signals extra noise beyond Poisson (e.g. a fluctuating rate, unresolved mixture of sources, or additional technical noise).
-
-<br>
-
-Rule of thumb: For the $\chi^2$ approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5 \[5]. If many bins or categories have expected counts below this threshold, you should either combine categories or use an exact (non-asymptotic) method.
+Rule of thumb: For the $$\chi^2$$ approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5 \[5]. If many bins or categories have expected counts below this threshold, you should either combine categories or use an exact (non-asymptotic) method.
 
 ***
 
 ### 2. Time-Domain Stability: Allan Deviation
 
-<br>
-
 Many precision systems (clocks, oscillators, qubit phases) are characterized by time-dependent noise: not just how big fluctuations are, but how they evolve over different averaging times. The standard tool here is the Allan variance (and its square root, Allan deviation) \[3].
-
-<br>
 
 #### 2.1 Definition and Interpretation
 
-<br>
+Consider a time series $$y(t)$$ representing, for example, the fractional frequency deviation of a clock or the normalized deviation of some measured quantity. Suppose we sample it at regular intervals and define time-averaged values $$\bar{y}_i(\tau)$$ over non-overlapping blocks of duration $$\tau$$:
 
-Consider a time series $y(t)$ representing, for example, the fractional frequency deviation of a clock or the normalized deviation of some measured quantity. Suppose we sample it at regular intervals and define time-averaged values $\bar{y}\_i(\tau)$ over non-overlapping blocks of duration $\tau$:
+* Split the full data set of duration $$T$$ into $$M$$ contiguous blocks of length $$\tau$$.
+* In each block, compute the average $$\bar{y}_i(\tau)$$.
 
-* Split the full data set of duration $T$ into $M$ contiguous blocks of length $\tau$.
-* In each block, compute the average $\bar{y}\_i(\tau)$.
+The Allan variance for averaging time $$\tau$$ is \[3,7]\
+$$\sigma_y^2(\tau) = \frac{1}{2(M-1)} \sum_{i=1}^{M-1} \big(\bar{y}_{i+1}(\tau) - \bar{y}_i(\tau)\big)^2.$$
 
-<br>
+The Allan deviation is $$\sigma_y(\tau) = \sqrt{\sigma_y^2(\tau)}$$.
 
-The Allan variance for averaging time $\tau$ is \[3,7]
+Qualitative meaning: $$\sigma_y(\tau)$$ measures how much the system’s average value changes from one interval of length $$\tau$$ to the next. Plotting $$\sigma_y(\tau)$$ vs. $$\tau$$ on log–log axes reveals different noise processes as distinct slopes \[3,7]:
 
-<br>
+* White (uncorrelated) noise: $$\sigma_y(\tau) \propto \tau^{-1/2}$$ (averaging suppresses noise like $$1/\sqrt{\tau}$$).
+* Flicker noise (1/f): $$\sigma_y(\tau)$$ approximately flat (slope ≈ 0).
+* Random walk / drift: $$\sigma_y(\tau) \propto \tau^{+1/2}$$ or steeper (noise grows with averaging time).
 
-\$$
-
-\sigma\_y^2(\tau) = \frac{1}{2(M-1)} \sum\_{i=1}^{M-1} \big(\bar{y}\_{i+1}(\tau) - \bar{y}\_i(\tau)\big)^2.
-
-\$$
-
-<br>
-
-The Allan deviation is $\sigma\_y(\tau) = \sqrt{\sigma\_y^2(\tau)}$.
-
-<br>
-
-Qualitative meaning: $\sigma\_y(\tau)$ measures how much the system’s average value changes from one interval of length $\tau$ to the next. Plotting $\sigma\_y(\tau)$ vs. $\tau$ on log–log axes reveals different noise processes as distinct slopes \[3,7]:
-
-*   White (uncorrelated) noise: $\sigma\_y(\tau) \propto \tau^{-1/2}$
-
-    (averaging suppresses noise like $1/\sqrt{\tau}$).
-* Flicker noise (1/f): $\sigma\_y(\tau)$ approximately flat (slope ≈ 0).
-*   Random walk / drift: $\sigma\_y(\tau) \propto \tau^{+1/2}$ or steeper
-
-    (noise grows with averaging time).
-
-<br>
-
-A typical pattern: at short $\tau$, white measurement noise dominates; as $\tau$ increases, flicker noise or drift takes over, and stability no longer improves.
-
-<br>
+A typical pattern: at short $$\tau$$, white measurement noise dominates; as $$\tau$$ increases, flicker noise or drift takes over, and stability no longer improves.
 
 #### 2.2 Overlapping Allan Deviation
 
-<br>
-
-Non-overlapping Allan variance only uses one pair of neighboring averages per $2\tau$ span. To better exploit data, one introduces the overlapping Allan variance, which uses all possible adjacent $\tau$-spaced averages \[6,7]. This yields many more terms in the sum and significantly reduces estimator variance at each $\tau$.
-
-<br>
+Non-overlapping Allan variance only uses one pair of neighboring averages per $$2\tau$$ span. To better exploit data, one introduces the overlapping Allan variance, which uses all possible adjacent $$\tau$$-spaced averages \[6,7]. This yields many more terms in the sum and significantly reduces estimator variance at each $$\tau$$.
 
 Qualitatively:
 
 * Non-overlapping ADEV: fewer, more independent samples; higher scatter.
 * Overlapping ADEV: many more samples; lower scatter; slightly more complex correlation structure.
 
-<br>
-
 For most experimental applications, overlapping Allan deviation is preferred because it provides smoother, more reliable stability estimates with limited data \[6,7].
-
-<br>
 
 #### 2.3 Confidence Intervals
 
-<br>
+Like any estimator, $$\sigma_y(\tau)$$ has uncertainty. The effective number of degrees of freedom depends on how many independent averages contribute at each $$\tau$$. Reference \[7] provides formulas and tables for confidence intervals of Allan deviation. When plotting $$\sigma_y(\tau)$$, especially for publication, you should:
 
-Like any estimator, $\sigma\_y(\tau)$ has uncertainty. The effective number of degrees of freedom depends on how many independent averages contribute at each $\tau$. Reference \[7] provides formulas and tables for confidence intervals of Allan deviation. When plotting $\sigma\_y(\tau)$, especially for publication, you should:
-
-* include error bars or bands for each $\tau$, and
-* be cautious when interpreting features at $\tau$ where the number of independent samples is small.
+* include error bars or bands for each $$\tau$$, and
+* be cautious when interpreting features at $$\tau$$ where the number of independent samples is small.
 
 ***
 
 ### 3. Frequency-Domain Analysis: Power Spectral Density
 
-<br>
-
-Time-domain stability gives a good overview of noise vs. averaging time, but it does not directly reveal which frequencies are problematic. For that, we use the power spectral density (PSD) $S\_x(f)$.
-
-<br>
+Time-domain stability gives a good overview of noise vs. averaging time, but it does not directly reveal which frequencies are problematic. For that, we use the power spectral density (PSD) $$S_x(f)$$.
 
 #### 3.1 Practical Estimation: Welch’s Method
 
-<br>
-
-Given a time series $x(t)$ (e.g. a voltage, position, or frequency deviation) sampled at rate $f\_s$, the theoretical PSD is
-
-<br>
+Given a time series $x(t)$ (e.g. a voltage, position, or frequency deviation) sampled at rate $f\_s$, the theoretical PSD is<br>
 
 \$$
 
