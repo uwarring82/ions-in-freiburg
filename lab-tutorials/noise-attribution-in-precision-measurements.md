@@ -3,696 +3,213 @@ description: Statistical Fundamentals for Noise Analysis
 icon: scale-unbalanced-flip
 ---
 
-# Noise Attribution in Precision Measurements
+Understanding and controlling noise is central to all precision
+measurements, from trapped-ion qubits to frequency standards and
+classical sensors. The practical question is always:
 
-Understanding and controlling noise is central to all precision measurements, from trapped-ion qubits to frequency standards and classical sensors. The practical question is always:
+**Which part of the variation in my data is fundamental statistical
+noise, and which part is systematic or technical?**
 
-<br>
+This chapter provides a structured framework using: - basic distribution
+and variance checks, - time-domain stability analysis via Allan
+deviation, - frequency-domain analysis via power spectral density (PSD),
 
-> _Which part of the variation in my data is fundamental statistical noise, and which part is systematic or technical?_
+tied together by a step-by-step noise attribution workflow and a
+real-world case study.
 
-<br>
+------------------------------------------------------------------------
 
-This chapter provides a structured framework for answering that question using frequentist tools:
-
-* basic distribution and variance checks,
-* time-domain stability analysis via Allan deviation, and
-* frequency-domain analysis via power spectral density (PSD),
-
-<br>
-
-tied together by a step-by-step noise attribution workflow and a real-world case study.
-
-***
-
-### 1. Statistical Fundamentals for Noise Analysis
-
-<br>
+## 1. Statistical Fundamentals for Noise Analysis
 
 Noise attribution starts with the simplest question:
 
-<br>
+**Does your data behave like the stochastic process you think it does?**
 
-> _Does your data behave like the stochastic process you think it does?_
+Two common situations: - Binomial proportions, - Poisson counts.
 
-<br>
+### 1.1 Binomial Proportions and Wilson Score Interval
 
-Two common situations:
+Suppose you run $$N$$ identical trials with $$k$$ successes. The estimator
+is:
 
-* Binomial proportions (success/failure outcomes),
-* Poisson counts (rare events per interval).
+$$ `\hat `{=tex}p = rac{k}{N}. $$
 
-<br>
+The Wald interval is:
 
-#### 1.1 Binomial Proportions and Wilson Score Interval
+$$ `\hat `{=tex}p `\pm `{=tex}z
+`\sqrt{rac{\hat p(1-\hat p)}{N}}`{=tex}. $$
 
-<br>
+This is unreliable for small (N) or extreme (p) $$1$$.
 
-Suppose you run $N$ identical trials and observe $k$ “successes” (e.g. ion detected bright vs dark). The natural estimator of the success probability is
+**Wilson interval** $$1$$:
 
-\
-\$$\
-\hat p = \frac{k}{N}.\
-\$$
+$$ ext{CI}\_ ext{Wilson} = rac{`\hat `{=tex}p + rac{z\^2}{2N}
+`\pm `{=tex}z`\sqrt{ rac{\hat p(1-\hat p)}{N} + rac{z^2}{4N^2}}`{=tex}}{1 +
+rac{z\^2}{N}}. $$
 
-<br>
+Properties: - Never gives bounds outside ($$0,1$$), - Accurate coverage
+for small (N), - Reduces to normal approximation for large (N).
 
-The traditional Wald interval (normal approximation) is
+### 1.2 Poisson Counts and Over-Dispersion
 
-<br>
+Poisson baseline: - Mean = (`\lambda`{=tex}), - Variance =
+(`\lambda`{=tex}).
 
-\$$
+Test dispersion using:
 
-\hat p \pm z \sqrt{\frac{\hat p(1-\hat p)}{N\}},
+$$ (N-1)rac{s\^2}{ar{x}} `\sim `{=tex}`\chi`{=tex}\^2\_{N-1} $$
 
-\$$
+if expected counts ≥ 5 $$4,5$$.
 
-<br>
+------------------------------------------------------------------------
 
-where $z$ is the critical value for the desired confidence (e.g. $z \approx 1.96$ for 95%).
+## 2. Time-Domain Stability: Allan Deviation
 
-<br>
+Allan variance measures how fluctuations evolve with averaging time (
+au) $$3$$.
 
-However, this interval is known to have poor coverage for small $N$ or extreme probabilities (e.g. $\hat p$ near 0 or 1): it can be too narrow and even yield limits outside $\[0,1]$ \[1]. This is unacceptable in high-stakes precision analysis.
+### 2.1 Definition
 
-<br>
+$$ `\sigma`{=tex}*y\^2( au) = rac{1}{2(M-1)}`\sum`{=tex}*{i=1}\^{M-1}
+`\left`{=tex}(ar y\_{i+1}( au)-ar y_i( au)ight)\^2. $$
 
-A more robust choice is the Wilson score interval \[1]. For confidence level $1-\alpha$ with critical value $z\_{1-\alpha/2}$, the Wilson interval is
+Characteristic slopes: - White noise: (`\propto    `{=tex}au\^{-1/2}), -
+Flicker: flat, - Random walk: (`\propto    `{=tex}au\^{+1/2}).
 
-<br>
+### 2.2 Overlapping Allan Deviation
 
-\$$
+Uses all possible adjacent averages → lower variance than
+non-overlapping $$6,7$$.
 
-\text{CI}\_{\text{Wilson\}} =
+### 2.3 Confidence Intervals
 
-\frac{\hat p + \frac{z^2}{2N} \pm z\sqrt{\frac{\hat p(1-\hat p)}{N} + \frac{z^2}{4N^2\}}}{1 + \frac{z^2}{N\}}.
+Uncertainty depends on number of independent samples. See $$7$$.
 
-\$$
+------------------------------------------------------------------------
 
-<br>
+## 3. Frequency-Domain Analysis: Power Spectral Density
 
-Key properties:
+PSD reveals frequency-dependent noise.
 
-* It never produces limits outside $\[0,1]$.
-* It maintains much more accurate coverage even when $N$ is small or $p$ is close to 0 or 1 \[1].
-* It smoothly reduces to the normal approximation for large $N$.
+### 3.1 Welch's Method
 
-<br>
+Steps $$8$$: 1. Segment data (typically 50% overlap), 2. Window each
+segment, 3. FFT, 4. Average periodograms.
 
-For example, with $N=10$ and $\hat p = 0$, the Wald interval would give $\[0,0]$, but the Wilson interval yields a non-zero upper bound (≈0.26 at 95% confidence), which honestly reflects our uncertainty \[1].
+### 3.2 Reading the PSD
 
-<br>
+Slopes: - White: flat, - (1/f): slope --1, - (1/f\^2): slope --2.
 
-For binary experimental outcomes (e.g. qubit state readout, survival probability), this is the interval students should use by default.
+Narrow peaks → coherent sources (50/60 Hz, mechanical, servo
+instabilities).
 
-***
+### 3.3 Relation to ADEV
 
-#### 1.2 Poisson Counts and Over-Dispersion
+Allan deviation is a weighted integral over the PSD $$7$$.
 
-<br>
+------------------------------------------------------------------------
 
-For count data (e.g. number of detected photons in a fixed time, number of quantum jumps), the Poisson distribution is often the baseline model:
+## 4. Step-by-Step Noise Attribution Workflow
 
-* Parameter: $\lambda$ (mean rate)
-* Mean: $\mathbb{E}\[X] = \lambda$
-* Variance: $\mathrm{Var}(X) = \lambda$
+### Step 1: Define Noise Hypotheses
 
-<br>
+List plausible noise sources.
 
-If you have $N$ independent measurements $x\_1,\dots,x\_N$ (counts per interval), the sample mean and variance are
+### Step 2: Collect Data with an Analysis Plan
 
-<br>
+Avoid p-hacking; log conditions.
 
-\$$
+### Step 3: Data Integrity Checks
 
-\bar{x} = \frac{1}{N} \sum\_{i=1}^N x\_i,
+Inspect raw time series, histograms.
 
-\qquad
+### Step 4: Distribution Analysis
 
-s^2 = \frac{1}{N-1} \sum\_{i=1}^N (x\_i - \bar{x})^2.
+Use binomial, Poisson, or Gaussian tests as appropriate.
 
-\$$
+### Step 5: Allan Deviation
 
-<br>
+Identify slopes and regimes.
 
-For a truly Poisson process, you expect $s^2 \approx \bar{x}$. A deviation from this equality is called over-dispersion ($s^2 > \bar{x}$) or under-dispersion ($s^2 < \bar{x}$).
+### Step 6: PSD
 
-<br>
+Identify broadband slopes and discrete peaks.
 
-A quantitative test: under the null hypothesis of a Poisson model with mean $\lambda = \bar{x}$, the statistic
+### Step 7: Build Noise Budget
 
-<br>
+Assign variance contributions.
 
-\$$
+### Step 8: Iterate
 
-(N-1)\frac{s^2}{\bar{x\}} \sim \chi^2\_{N-1}
+Refine hypotheses and experiments.
 
-\$$
+### Step 9: Document
 
-<br>
+Archive raw data and scripts.
 
-approximately follows a chi-square distribution with $N-1$ degrees of freedom \[4]. If this statistic is greater than the critical value $\chi^2\_{N-1,;0.95}$ (for a 5% significance level), the variance is significantly larger than expected, which signals extra noise beyond Poisson (e.g. a fluctuating rate, unresolved mixture of sources, or additional technical noise).
+------------------------------------------------------------------------
 
-<br>
+## 5. Case Study: Electric-Field Noise in Surface-Electrode Ion Traps
 
-Rule of thumb: For the $\chi^2$ approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5 \[5]. If many bins or categories have expected counts below this threshold, you should either combine categories or use an exact (non-asymptotic) method.
+### 5.1 Background
 
-***
+Heating rate (`\dot{ar n}`{=tex}) linked to electric-field noise.
 
-### 2. Time-Domain Stability: Allan Deviation
+Candidate mechanisms: - Johnson noise, - Technical noise, - Surface
+patch potentials, - Microscopic surface processes.
 
-<br>
+### 5.2 Measurements
 
-Many precision systems (clocks, oscillators, qubit phases) are characterized by time-dependent noise: not just how big fluctuations are, but how they evolve over different averaging times. The standard tool here is the Allan variance (and its square root, Allan deviation) \[3].
+Heating rate vs trap distance (d) at room and cryogenic temperatures
+$$2,9,10$$.
 
-<br>
+### 5.3 Statistical Checks
 
-#### 2.1 Definition and Interpretation
+Stable, stationary distributions.
 
-<br>
+### 5.4 Scaling
 
-Consider a time series $y(t)$ representing, for example, the fractional frequency deviation of a clock or the normalized deviation of some measured quantity. Suppose we sample it at regular intervals and define time-averaged values $\bar{y}\_i(\tau)$ over non-overlapping blocks of duration $\tau$:
+Observed:
 
-* Split the full data set of duration $T$ into $M$ contiguous blocks of length $\tau$.
-* In each block, compute the average $\bar{y}\_i(\tau)$.
+$$ S_E `\propto `{=tex}d\^{-4}, $$
 
-<br>
+inconsistent with Johnson noise; cryogenic cooling reduces amplitude
+drastically.
 
-The Allan variance for averaging time $\tau$ is \[3,7]
+### 5.5 Frequency Dependence
 
-<br>
+White + (1/f\^lpha) ((lpha pprox 1)) noise $$2,10$$, consistent with
+surface fluctuation models.
 
-\$$
+### 5.6 Attribution
 
-\sigma\_y^2(\tau) = \frac{1}{2(M-1)} \sum\_{i=1}^{M-1} \big(\bar{y}\_{i+1}(\tau) - \bar{y}\_i(\tau)\big)^2.
+Surface noise is dominant; models include fluctuating dipoles, two-level
+systems, adsorbate dynamics.
 
-\$$
+------------------------------------------------------------------------
 
-<br>
+## 6. Reproducibility and Integrity
 
-The Allan deviation is $\sigma\_y(\tau) = \sqrt{\sigma\_y^2(\tau)}$.
+Principles: - Predefine analysis plans, - Avoid p-hacking, - Document
+exclusions, - Report statistical + systematic uncertainties, - Archive
+data + code.
 
-<br>
+------------------------------------------------------------------------
 
-Qualitative meaning: $\sigma\_y(\tau)$ measures how much the system’s average value changes from one interval of length $\tau$ to the next. Plotting $\sigma\_y(\tau)$ vs. $\tau$ on log–log axes reveals different noise processes as distinct slopes \[3,7]:
+## References
 
-*   White (uncorrelated) noise: $\sigma\_y(\tau) \propto \tau^{-1/2}$
-
-    (averaging suppresses noise like $1/\sqrt{\tau}$).
-* Flicker noise (1/f): $\sigma\_y(\tau)$ approximately flat (slope ≈ 0).
-*   Random walk / drift: $\sigma\_y(\tau) \propto \tau^{+1/2}$ or steeper
-
-    (noise grows with averaging time).
-
-<br>
-
-A typical pattern: at short $\tau$, white measurement noise dominates; as $\tau$ increases, flicker noise or drift takes over, and stability no longer improves.
-
-<br>
-
-#### 2.2 Overlapping Allan Deviation
-
-<br>
-
-Non-overlapping Allan variance only uses one pair of neighboring averages per $2\tau$ span. To better exploit data, one introduces the overlapping Allan variance, which uses all possible adjacent $\tau$-spaced averages \[6,7]. This yields many more terms in the sum and significantly reduces estimator variance at each $\tau$.
-
-<br>
-
-Qualitatively:
-
-* Non-overlapping ADEV: fewer, more independent samples; higher scatter.
-* Overlapping ADEV: many more samples; lower scatter; slightly more complex correlation structure.
-
-<br>
-
-For most experimental applications, overlapping Allan deviation is preferred because it provides smoother, more reliable stability estimates with limited data \[6,7].
-
-<br>
-
-#### 2.3 Confidence Intervals
-
-<br>
-
-Like any estimator, $\sigma\_y(\tau)$ has uncertainty. The effective number of degrees of freedom depends on how many independent averages contribute at each $\tau$. Reference \[7] provides formulas and tables for confidence intervals of Allan deviation. When plotting $\sigma\_y(\tau)$, especially for publication, you should:
-
-* include error bars or bands for each $\tau$, and
-* be cautious when interpreting features at $\tau$ where the number of independent samples is small.
-
-***
-
-### 3. Frequency-Domain Analysis: Power Spectral Density
-
-<br>
-
-Time-domain stability gives a good overview of noise vs. averaging time, but it does not directly reveal which frequencies are problematic. For that, we use the power spectral density (PSD) $S\_x(f)$.
-
-<br>
-
-#### 3.1 Practical Estimation: Welch’s Method
-
-<br>
-
-Given a time series $x(t)$ (e.g. a voltage, position, or frequency deviation) sampled at rate $f\_s$, the theoretical PSD is
-
-<br>
-
-\$$
-
-S\_x(f) = \lim\_{T \to \infty} \frac{1}{T} \left| \int\_0^T x(t) e^{-2\pi i f t} dt \right|^2.
-
-\$$
-
-<br>
-
-In practice, we have a finite time series and compute discrete Fourier transforms. A single FFT-based periodogram is often very noisy as an estimator. Welch’s method \[8] improves the estimate by averaging over multiple segments:
-
-1. Divide the time series into overlapping segments (e.g. 50% overlap).
-2. Apply a window (e.g. Hanning) to each segment to reduce edge discontinuities.
-3. Compute the FFT and periodogram of each windowed segment.
-4. Average these periodograms to obtain the final PSD estimate \[8].
-
-<br>
-
-This approach greatly reduces the variance of the PSD estimate, at the cost of lower frequency resolution (due to shorter segments). Typical choices:
-
-* Segment length: $2^{10}$–$2^{14}$ samples, depending on data length.
-* Overlap: 50% (standard compromise between resolution and variance).
-* Window: Hanning or similar, to manage spectral leakage \[8].
-
-<br>
-
-The result is a smooth PSD estimate, suitable for identifying broadband slopes and narrow peaks.
-
-<br>
-
-#### 3.2 Reading the PSD
-
-<br>
-
-On a log–log plot of PSD vs frequency, different noise types appear as characteristic slopes:
-
-* White noise: flat spectrum.
-* $1/f$ noise: PSD $\propto f^{-1}$ (slope −1).
-* $1/f^2$ noise: PSD $\propto f^{-2}$ (random walk, slope −2).
-
-<br>
-
-Superimposed narrow peaks indicate coherent or quasi-periodic noise sources, such as:
-
-* Mains power (e.g. 50/60 Hz and harmonics),
-* Mechanical resonances (e.g. vacuum pump or fan frequencies),
-* Servo oscillations or control-loop artifacts.
-
-<br>
-
-By associating peaks with known hardware or environmental frequencies, we can quickly identify specific offenders.
-
-<br>
-
-#### 3.3 Link Between PSD and Allan Deviation
-
-<br>
-
-The PSD and Allan deviation are mathematically related: Allan deviation can be expressed as a weighted integral over $S\_y(f)$ \[7]. Practically:
-
-* Integrating PSD over a given frequency band gives the contribution to time-domain variance from that band.
-* Features in the ADEV plot (e.g. a “bump” at a certain $\tau$) can be mapped to features in the PSD (e.g. a $1/f$ regime or a resonance).
-
-<br>
-
-This consistency check is valuable: it ensures that time-domain and frequency-domain analyses tell a coherent story about the same noise processes.
-
-***
-
-### 4. Step-by-Step Noise Attribution Workflow
-
-<br>
-
-To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.
-
-_Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
-
-<br>
-
-#### 4.1 Step 1: Define Objectives and Noise Hypotheses
-
-<br>
-
-Clarify what “noise” means for your system:
-
-* Is it the instability of a frequency?
-* The scatter of a measurement around a calibration curve?
-* The heating rate of an ion’s motional mode?
-
-<br>
-
-List plausible noise sources: thermal noise, $1/f$ electronics noise, mechanical vibrations, electromagnetic pick-up, drift in environmental parameters, quantum projection noise, etc. This top-down hypothesis list will guide your tests.
-
-<br>
-
-#### 4.2 Step 2: Collect Data with an Analysis Plan
-
-<br>
-
-Before taking data, sketch a plan:
-
-* What signals and auxiliary channels will you record?
-* Over what timescale and at what sampling rate?
-* Which statistical tools will you apply?
-
-<br>
-
-Pre-defining the analysis reduces the temptation to “fish” for effects (p-hacking). During data taking, log:
-
-* environmental conditions (temperature, humidity, lab activity),
-* instrument settings,
-* timestamps and any interventions.
-
-<br>
-
-#### 4.3 Step 3: Data Integrity Checks
-
-<br>
-
-Start with simple plots:
-
-* Raw data vs time,
-* Histograms,
-* Scatter plots vs environmental parameters.
-
-<br>
-
-Look for:
-
-* Obvious outliers (instrument glitches, saturations),
-* Jumps or steps (configuration changes),
-* Missing data segments.
-
-<br>
-
-If you exclude data, record why (e.g. “laser unlocked between 13:05–13:07, excluded this interval”). Integrity checks prevent you from analyzing artefacts as if they were physical noise.
-
-<br>
-
-#### 4.4 Step 4: Statistical Distribution Analysis
-
-<br>
-
-Now test whether your data behave as expected under their _assumed_ distribution.
-
-*   Poisson: Are mean and variance comparable? Use the dispersion test with
-
-    \$$
-
-    (N-1)\frac{s^2}{\bar{x\}} \sim \chi^2\_{N-1}
-
-    \$$
-
-    and check if the result is within a reasonable range of the chi-square distribution \[4]. A significantly larger value indicates over-dispersion (extra noise beyond simple Poisson). Check that expected counts are ≥5 to justify the approximate test \[5].
-* Gaussian: Does a histogram look bell-shaped? Produce a Q–Q plot (quantile–quantile against a normal distribution) and/or run a normality test. Significant departures may suggest multiple mechanisms or non-linearities.
-* Binomial: For repeated success/failure runs, estimate $\hat p$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $p$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $p(t)$ or systematic biases (e.g. detector threshold drift).
-
-<br>
-
-If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
-
-<br>
-
-#### 4.5 Step 5: Time-Domain Analysis (Allan Deviation)
-
-<br>
-
-For time series, compute $\sigma\_y(\tau)$ over a range of averaging times:
-
-* Identify noise regimes by slope: white noise, flicker, random walk, drift \[3,7].
-* Locate crossover points where one mechanism yields to another.
-* Use overlapping Allan deviation to reduce estimator noise \[6,7].
-* Consider drift-insensitive variants (Hadamard variance) if linear drift contaminates the ADEV at long $\tau$.
-
-<br>
-
-Compare the observed stability with theoretical predictions or device specs. If the short-term regime is worse than shot-noise limits, you likely have technical noise; if long-term stability tanks at a certain $\tau$, suspect drift in environmental or technical parameters.
-
-<br>
-
-#### 4.6 Step 6: Frequency-Domain Analysis (PSD)
-
-<br>
-
-Compute the PSD using Welch’s method \[8]:
-
-* Look for narrow spectral lines (e.g. 50/60 Hz mains, mechanical resonances).
-* Characterize the broadband slope (white, $1/f$, $1/f^2$).
-* Compare measurements under different conditions (e.g. pumps on/off, equipment moved) to see which features change.
-
-<br>
-
-Link PSD features to physical noise sources:
-
-* Peaks at line frequencies → electromagnetic pick-up.
-* Peaks at rotation frequencies → mechanical vibrations.
-* Broad $1/f$ region → flicker noise in electronics or surfaces.
-
-<br>
-
-#### 4.7 Step 7: Cross-Analysis and Noise Budget
-
-<br>
-
-Combine insights:
-
-* Do the Allan deviation regimes correspond to integrated contributions from parts of the PSD spectrum \[7]?
-* Can you assign each segment of $\sigma\_y(\tau)$ to an identifiable mechanism?
-* Build a noise budget: a table listing each noise source, its estimated variance/power, and its contribution to the total.
-
-<br>
-
-If the sum of identified contributions explains the observed noise within uncertainties, your model is consistent. If there is a substantial unexplained residual, you have a missing noise source – formulate new hypotheses.
-
-<br>
-
-#### 4.8 Step 8: Iterate and Refine
-
-<br>
-
-Noise attribution is rarely one-shot. Use residuals to guide the next iteration:
-
-* Form a more detailed or alternative hypothesis (e.g. add a $1/f$ component or an environment-coupled term).
-* Design targeted experiments: change materials, temperatures, shielding, or geometry to perturb suspected sources.
-* Repeat the workflow with updated data and models.
-
-<br>
-
-Each iteration should ideally shrink the unexplained residual and refine your physical understanding.
-
-<br>
-
-#### 4.9 Step 9: Document and Archive
-
-<br>
-
-Finally, record:
-
-* Which noise sources were identified and how.
-* Quantitative contributions (with uncertainties).
-* Mitigation steps taken and their effect.
-* Any anomalous or unexplained features.
-
-<br>
-
-Archive raw data and analysis scripts whenever possible. Future students (and your future self) will benefit immensely from this transparency.
-
-***
-
-### 5. Case Study: Electric-Field Noise and Heating in Surface-Electrode Ion Traps
-
-<br>
-
-To see the workflow in action, consider a canonical problem in trapped-ion physics: anomalous motional heating in surface-electrode traps.
-
-<br>
-
-#### 5.1 Background and Hypotheses
-
-<br>
-
-When an ion is trapped at distance $d$ above an electrode surface, it experiences fluctuating electric fields. These fields drive motional heating: the mean phonon number $\bar{n}$ increases over time, limiting gate fidelity and coherence.
-
-<br>
-
-Standard thermal (Johnson) noise in the electrodes predicts an electric-field noise spectral density roughly scaling as
-
-* $S\_E \propto d^{-2}$, and
-* linear in temperature $T$.
-
-<br>
-
-However, numerous experiments have observed much stronger distance dependence and higher amplitude than Johnson noise would suggest. A set of candidate mechanisms includes:
-
-* Johnson noise in the electrodes (baseline),
-* technical noise from electronics (RF drive, DACs),
-* fluctuating patch potentials on the surface (e.g. from adsorbates, defects),
-* other microscopic surface processes.
-
-<br>
-
-#### 5.2 Measurements
-
-<br>
-
-We consider a simplified version of the measurements in \[2,9,10]:
-
-* Single ions are trapped at various distances $d$ above a surface-electrode trap.
-* At each $d$, the heating rate $\dot{\bar{n\}}$ is measured by preparing the ion near the motional ground state and measuring its energy after a delay.
-* Measurements are performed at both room temperature (≈300 K) and cryogenic temperatures (e.g. 4 K).
-* For each condition, multiple runs are taken to estimate mean and variance of $\dot{\bar{n\}}$.
-
-<br>
-
-#### 5.3 Statistical and Stability Checks
-
-<br>
-
-At fixed $d$ and temperature:
-
-* The distribution of measured heating rates per run is approximately log-normal; taking logarithms yields near-Gaussian distributions.
-* Variance between runs is moderate; no strong evidence for Poisson-like event statistics within a fixed $d$.
-* Over time, heating rates are stable; Allan deviation does not show large drifts over the timescale of the measurement. The process appears stationary (within resolution).
-
-<br>
-
-Thus, basic statistical assumptions (stationarity, well-defined mean) are satisfied; no hard evidence for time-varying rates during a run.
-
-<br>
-
-#### 5.4 Distance and Temperature Scaling
-
-<br>
-
-The decisive evidence emerges from distance scaling:
-
-*   The measured electric-field noise (inferred from heating rate) scales approximately as
-
-    \$$
-
-    S\_E \propto d^{-4},
-
-    \$$
-
-    across the accessible range of distances \[2,10].
-* This $d^{-4}$ scaling holds both at 300 K and at 4 K \[2].
-
-<br>
-
-This scaling is much steeper than the $d^{-2}$ scaling predicted for uniform Johnson noise from the electrode bulk. It suggests that the dominant noise originates in localized surface patches or microscopic structures whose fields decay more rapidly with distance.
-
-<br>
-
-Cooling the trap to 4 K has two main effects \[2,9]:
-
-* The overall noise amplitude drops by orders of magnitude (often ≳100× reduction in heating rate).
-* The functional form (e.g. $d^{-4}$) remains roughly the same.
-
-<br>
-
-This behaviour is inconsistent with pure Johnson noise (which would be proportional to $T$ and have a different spatial scaling), and strongly indicates an additional surface-related mechanism \[2,9,10].
-
-<br>
-
-#### 5.5 Frequency Dependence
-
-<br>
-
-Measurements of the noise PSD show:
-
-* At intermediate frequencies, the spectrum is roughly flat (white noise),
-* At lower frequencies, it shows a $1/f^\alpha$ tail with $\alpha \approx 1$ \[2,10],
-* No dominant narrow peaks from technical noise (after careful filtering and shielding).
-
-<br>
-
-A $1/f$-like spectrum is consistent with many models of surface fluctuation noise, e.g. fluctuating dipoles, two-level systems, or adsorbate dynamics \[10]. By contrast, Johnson noise would be white over the relevant band.
-
-<br>
-
-#### 5.6 Attribution and Open Questions
-
-<br>
-
-Combining:
-
-* Distance scaling $S\_E \propto d^{-4}$,
-* Temperature behaviour (dramatic reduction at cryogenic temperatures),
-* Frequency dependence (white plus $1/f$ tail), and
-* Cross-checks to rule out technical noise,
-
-<br>
-
-we can confidently attribute most of the observed noise to surface electric-field noise associated with microscopic processes at or near the electrode surface \[2,9,10].
-
-<br>
-
-Within this class, several microscopic models are still under investigation \[10]:
-
-* Fluctuating adsorbate dipoles,
-* Two-level systems in oxides or contamination layers,
-* Motion or rearrangement of surface charges.
-
-<br>
-
-Experiments that modify the surface (e.g. argon-ion cleaning, changing materials, varying temperature) further support these interpretations. For example, Sedlacek _et al._ \[2] observed that after argon-ion milling, the temperature dependence of the noise changed from a power law to a thermally activated (Arrhenius-like) form, consistent with activation of specific surface processes.
-
-<br>
-
-Remaining open questions include \[2,9,10]:
-
-* What is the dominant microscopic noise mechanism for a given material and treatment?
-* How do different electrode materials or coatings compare in long-term stability?
-* Can we design and maintain surfaces with sufficiently low electric-field noise that no longer limit trapped-ion performance?
-
-<br>
-
-This case study illustrates the full workflow:
-
-1. Basic variance and distribution checks (statistical sanity).
-2. Time-domain stability analysis (no large drifts).
-3. Frequency-domain PSD analysis (1/f plus white noise, no obvious technical peaks).
-4. Systematic scaling experiments (distance, temperature, surface treatment).
-5. Cross-checking against theoretical models and prior literature \[2,9,10].
-
-<br>
-
-The result is a compelling attribution of a complex noise source, guiding both mitigation strategies (e.g. cryogenic operation, surface cleaning) and future research directions.
-
-***
-
-### 6. Reproducibility and Integrity
-
-<br>
-
-Finally, a few meta-principles:
-
-* Predefine analysis plans wherever possible: specify which tests and metrics you will use before examining the data.
-* Avoid p-hacking: don’t iteratively tweak thresholds or exclude points until you get “nice” Allan deviation or PSD curves. If you explore many variants, be explicit that these are exploratory.
-* Document data exclusions: every time you discard a data point or segment, record the physical reason (e.g. “laser unlocked here”).
-* Report both statistical and systematic uncertainties: if systematics dominate, say so.
-* Archive data and code: aim for the standard that another researcher can reproduce your plots and noise budget from your raw data and scripts.
-
-<br>
-
-These practices ensure that your noise attribution is not only technically sound but also scientifically trustworthy.
-
-***
-
-### References
-
-1. L. D. Brown, T. T. Cai, and A. DasGupta (2001). Interval estimation for a binomial proportion. _Statistical Science_ 16, 101–133.
-2. J. A. Sedlacek _et al._ (2018). Evidence for multiple mechanisms underlying surface electric-field noise in ion traps. _Physical Review A_ 98, 063430.
-3. D. W. Allan (1966). Statistics of atomic frequency standards. _Proceedings of the IEEE_ 54, 221–230.
-4. NIST/SEMATECH (2012). e-Handbook of Statistical Methods. Section 1.3.5.15 (Chi-square test for variance).
-5. Statistics LibreTexts (2019). Chi-Square Goodness-of-Fit Test. (Discussion of expected counts ≥5 rule of thumb.)
-6. D. W. Howe, D. W. Allan, and J. A. Barnes (1981). Properties of oscillator signals and measurement methods. _Proc. 35th Annual Frequency Control Symposium_, 1–47.
-7. W. J. Riley (2008). Handbook of Frequency Stability Analysis. NIST Special Publication 1065.
-8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
-9. J. Labaziewicz _et al._ (2008). Suppression of heating rates in cryogenic surface-electrode ion traps. _Physical Review Letters_ 100, 013001.
-10. M. Brownnutt, M. Kumph, P. Rabl, and R. Blatt (2015). Ion-trap measurements of electric-field noise near surfaces. _Reviews of Modern Physics_ 87, 1419–1482.
+1.  L. D. Brown, T. T. Cai, A. DasGupta (2001). *Interval estimation for
+    a binomial proportion*. Statistical Science 16, 101--133.\
+2.  J. A. Sedlacek et al. (2018). *Evidence for multiple mechanisms
+    underlying surface electric-field noise in ion traps*. PRA 98,
+    063430.\
+3.  D. W. Allan (1966). *Statistics of atomic frequency standards*.
+    Proc. IEEE 54, 221--230.\
+4.  NIST/SEMATECH e-Handbook (2012), Section 1.3.5.15.\
+5.  Statistics LibreTexts (2019). *Chi-Square Goodness-of-Fit Test*.\
+6.  D. W. Howe et al. (1981). *Properties of oscillator signals and
+    measurement methods*.\
+7.  W. J. Riley (2008). *Handbook of Frequency Stability Analysis*. NIST
+    SP 1065.\
+8.  P. D. Welch (1967). *The use of FFT for the estimation of power
+    spectra*. IEEE Trans. Audio Electroacoustics 15, 70--73.
