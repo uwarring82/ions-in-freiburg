@@ -32,12 +32,16 @@ Two common situations: - Binomial proportions, - Poisson counts.
 Suppose you run $$N$$ identical trials with $$k$$ successes. The estimator
 is:
 
-$$ `\hat `{=tex}p = rac{k}{N}. $$
+$$ 
+`\hat `{=tex}p = rac{k}{N}. 
+$$
 
 The Wald interval is:
 
-$$ `\hat `{=tex}p `\pm `{=tex}z
-`\sqrt{rac{\hat p(1-\hat p)}{N}}`{=tex}. $$
+$$ 
+`\hat `{=tex}p `\pm `{=tex}z
+`\sqrt{rac{\hat p(1-\hat p)}{N}}`{=tex}. 
+$$
 
 This is unreliable for small (N) or extreme (p) $$1$$.
 
