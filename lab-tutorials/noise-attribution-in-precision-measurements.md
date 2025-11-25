@@ -330,65 +330,6 @@ To move from “I see noise” to “I know its sources and magnitudes,” it he
 
 <figure><img src="../.gitbook/assets/noise_attribution_flowchart (1).png" alt=""><figcaption></figcaption></figure>
 
-```mermaid
-flowchart TD
-
-A[RAW DATA ACQUISITION<br>(with pre-defined analysis plan and logging)]
-
-B[DATA INTEGRITY CHECKS<br><br>
-  • Visual inspection (time series, histograms)<br>
-  • Outlier identification & documented exclusions<br>
-  • Gap and artifact detection]
-
-C[STATISTICAL DISTRIBUTION ANALYSIS<br><br>
-  • Poisson: dispersion test (χ²)<br>
-  • Binomial: Wilson intervals, homogeneity<br>
-  • Gaussian: Q–Q plots, normality tests<br><br>
-  If assumptions fail → revise model or investigate]
-
-D1[TIME-DOMAIN ANALYSIS (Allan Deviation)<br><br>
-    • Identify noise regimes by slope<br>
-    • Locate crossovers<br>
-    • Compare to theory]
-
-D2[FREQUENCY-DOMAIN ANALYSIS (PSD)<br><br>
-    • Identify spectral peaks (technical noise)<br>
-    • Characterize broadband slope<br>
-    • Compare conditions (on/off)]
-
-E[CROSS-ANALYSIS<br><br>
-  • Do ADEV regimes match integrated PSD?<br>
-  • Assign each feature a physical source<br>
-  • Build quantitative noise budget]
-
-F1[BUDGET CLOSES<br>within uncertainty]
-
-F2[UNEXPLAINED RESIDUAL<br>remains]
-
-G1[DOCUMENT & ARCHIVE<br><br>
-    • Methods<br>
-    • Results<br>
-    • Raw data<br>
-    • Scripts]
-
-G2[ITERATE<br><br>
-    • New hypotheses<br>
-    • Targeted experiments<br>
-    • Updated model]
-
-
-A --> B --> C --> D1
-C --> D2
-D1 --> E
-D2 --> E
-
-E --> F1
-E --> F2
-
-F1 --> G1
-F2 --> G2 --> C
-```
-
 _Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
 
 #### 4.1 Step 1: Define Objectives and Noise Hypotheses
