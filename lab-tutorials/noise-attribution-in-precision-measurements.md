@@ -328,7 +328,9 @@ This consistency check is valuable: it ensures that time-domain and frequency-do
 
 To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.
 
-```
+<figure><img src="../.gitbook/assets/noise_attribution_flowchart (1).png" alt=""><figcaption></figcaption></figure>
+
+```mermaid
 flowchart TD
 
 A[RAW DATA ACQUISITION<br>(with pre-defined analysis plan and logging)]
