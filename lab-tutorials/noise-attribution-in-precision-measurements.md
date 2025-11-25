@@ -756,6 +756,15 @@ p_value = 1 - chi2.cdf(chi2_stat, df=N-1)
 print("chi2 =", chi2_stat, "p =", p_value)
 
 
+# Overlapping Allan deviation (using allantools)
+import allantools
+import numpy as np
+
+y = np.array([...])  # fractional frequency data
+rate = 1.0  # sampling rate in Hz
+taus, adevs, errors, ns = allantools.oadev(y, rate=rate, data_type="freq")
+
+
 # Welch PSD estimate
 import numpy as np
 from scipy.signal import welch
