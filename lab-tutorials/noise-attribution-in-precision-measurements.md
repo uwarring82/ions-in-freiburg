@@ -743,7 +743,7 @@ A confidence interval for binomial proportions that maintains accurate coverage 
 
 ***
 
-#### Appendix B: Minimal Python implementation snippets
+### Appendix B: Minimal Python implementation snippets
 
 Below are compact code examples for typical analyses. They are not a full library, but a starting point.
 
