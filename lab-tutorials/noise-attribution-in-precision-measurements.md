@@ -6,13 +6,12 @@ icon: scale-unbalanced-flip
 # Noise Attribution in Precision Measurements
 
 {% hint style="info" %}
-\
-author: U. Warring\
-affiliation: Institute of Physics, University of Freiburg\
-version: 1.0\
-last\_updated: 2025-11-25\
-review\_status: Internal laboratory documentation; not externally peer-reviewed\
-license: CC BY-SA 4.0
+_author: U. Warring_\
+_affiliation: Institute of Physics, University of Freiburg_\
+_version: 1.0_\
+_last\_updated: 2025-11-25_\
+_review\_status: Internal laboratory documentation; not externally peer-reviewed_\
+_license: CC BY-SA 4.0_
 {% endhint %}
 
 Understanding and controlling noise is central to all precision measurements, from trapped-ion qubits to frequency standards and classical sensors. The practical question is always:
@@ -687,3 +686,4 @@ A confidence interval for binomial proportions that maintains accurate coverage 
 8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
 9. J. Labaziewicz _et al._ (2008). Suppression of heating rates in cryogenic surface-electrode ion traps. _Physical Review Letters_ 100, 013001.
 10. M. Brownnutt, M. Kumph, P. Rabl, and R. Blatt (2015). Ion-trap measurements of electric-field noise near surfaces. _Reviews of Modern Physics_ 87, 1419–1482.
+
