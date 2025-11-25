@@ -5,6 +5,16 @@ icon: scale-unbalanced-flip
 
 # Noise Attribution in Precision Measurements
 
+{% hint style="info" %}
+\
+author: U. Warring\
+affiliation: Institute of Physics, University of Freiburg\
+version: 1.0\
+last\_updated: 2025-11-25\
+review\_status: Internal laboratory documentation; not externally peer-reviewed\
+license: CC BY-SA 4.0
+{% endhint %}
+
 Understanding and controlling noise is central to all precision measurements, from trapped-ion qubits to frequency standards and classical sensors. The practical question is always:
 
 > _Which part of the variation in my data is fundamental statistical noise, and which part is systematic or technical?_
@@ -16,6 +26,63 @@ This chapter provides a structured framework for answering that question using f
 * frequency-domain analysis via power spectral density (PSD),
 
 tied together by a step-by-step noise attribution workflow and a real-world case study.
+
+#### Scope and Limitations
+
+This tutorial provides a **frequentist statistical framework** for noise attribution in precision measurements, with emphasis on trapped-ion quantum systems.
+
+**What this tutorial covers:**
+
+* Distribution and variance verification (binomial, Poisson, Gaussian)
+* Time-domain stability analysis via Allan deviation
+* Frequency-domain analysis via power spectral density
+* A structured workflow for systematic noise attribution
+* A case study from surface-electrode ion trap research
+
+**What this tutorial does not cover:**
+
+* Bayesian inference methods for noise characterization
+* Machine learning or automated anomaly detection approaches
+* Domain-specific noise models outside trapped-ion physics (e.g., gravitational wave detectors, atomic fountain clocks) — though the general framework may transfer
+* Non-stationary noise processes requiring wavelet or time-frequency analysis
+* Detailed derivations of Allan variance transfer functions
+
+**When to seek additional guidance:**
+
+* If your noise exhibits strong non-Gaussian features (heavy tails, multimodality)
+* If systematic effects dominate and require dedicated experimental campaigns
+* If you observe unexplained residuals after completing the workflow
+* For publication-level analysis, consult with experienced colleagues or statisticians
+
+Students and researchers should treat this document as a **structured starting point**, not a comprehensive reference. The workflow provides guidance, not certification.
+
+#### Prerequisites
+
+This material assumes familiarity with:
+
+**Mathematics and Statistics**
+
+* Probability distributions (binomial, Poisson, Gaussian)
+* Confidence intervals and hypothesis testing
+* Basic Fourier analysis (discrete Fourier transform, power spectra)
+* Logarithmic plotting and slope interpretation
+
+**Experimental Physics**
+
+* Data acquisition and time series measurements
+* Familiarity with laboratory noise sources (thermal, electronic, mechanical)
+* Basic understanding of feedback control systems
+
+**Domain Knowledge (for the case study)**
+
+* Trapped-ion physics fundamentals (helpful but not required)
+* Concept of motional heating and electric-field noise
+
+If you lack background in any of these areas, consider reviewing:
+
+* _Data Reduction and Error Analysis_ by Bevington & Robinson (statistics)
+* _The Art of Electronics_ by Horowitz & Hill, Chapter 8 (noise in electronics)
+* Riley (2008), Ref. \[7], Chapters 1–3 (frequency stability fundamentals)
 
 ***
 
@@ -78,9 +145,21 @@ A quantitative test: under the null hypothesis of a Poisson model with mean $\la
 
 <p align="center"><span class="math"> (N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1} </span></p>
 
-approximately follows a chi-square distribution with $$N-1$$ degrees of freedom \[4]. If this statistic is greater than the critical value $$\chi^2_{N-1,;0.95}$$ (for a 5% significance level), the variance is significantly larger than expected, which signals extra noise beyond Poisson (e.g. a fluctuating rate, unresolved mixture of sources, or additional technical noise).
+approximately follows a chi-square distribution with $n-1$ degrees of freedom \[4].
 
-Rule of thumb: For the $$\chi^2$$ approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5 \[5]. If many bins or categories have expected counts below this threshold, you should either combine categories or use an exact (non-asymptotic) method.
+**Interpretation procedure:**
+
+1. Compute the test statistic $\chi^2 = \sum\_i (x\_i - \bar{x})^2 / \bar{x}$
+2. Compare to the critical value $\chi^2\_{0.95}(n-1)$ from chi-square tables (or use software)
+3. If $\chi^2 > \chi^2\_{0.95}(n-1)$, reject the null hypothesis of Poisson statistics at the 5% significance level
+
+**Example:** For $n = 20$ measurements, $\chi^2\_{0.95}(19) \approx 30.1$. If your computed statistic exceeds 30.1, the variance is significantly larger than the Poisson expectation.
+
+A significant result signals **over-dispersion**: extra noise beyond simple Poisson counting statistics. Common causes include fluctuating rates, unresolved mixture of sources, detector gain variations, or additional technical noise.
+
+**Caution:** A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $n$, power to detect over-dispersion is limited.
+
+**Rule of thumb:** For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
 
 ***
 
@@ -185,7 +264,63 @@ This consistency check is valuable: it ensures that time-domain and frequency-do
 
 To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.\
 \
-INSERT FIGURE
+┌─────────────────────────────────────────────────────────────────┐\
+│ RAW DATA ACQUISITION │\
+│ (with pre-defined analysis plan and logging) │\
+└─────────────────────────┬───────────────────────────────────────┘\
+▼\
+┌─────────────────────────────────────────────────────────────────┐\
+│ DATA INTEGRITY CHECKS │\
+│ • Visual inspection (time series, histograms) │\
+│ • Outlier identification and documented exclusions │\
+│ • Gap and artifact detection │\
+└─────────────────────────┬───────────────────────────────────────┘\
+▼\
+┌─────────────────────────────────────────────────────────────────┐\
+│ STATISTICAL DISTRIBUTION ANALYSIS │\
+│ • Poisson: dispersion test (χ² statistic) │\
+│ • Binomial: Wilson intervals, homogeneity │\
+│ • Gaussian: Q–Q plots, normality tests │\
+│ │\
+│ ──► If assumptions fail: revise model or investigate │\
+└─────────────────────────┬───────────────────────────────────────┘\
+▼\
+┌─────────────────────────┬───────────────────────────────────────┐\
+│ TIME-DOMAIN ANALYSIS │ FREQUENCY-DOMAIN ANALYSIS │\
+│ (Allan Deviation) │ (Power Spectral Density) │\
+│ │ │\
+│ • Identify noise │ • Identify spectral peaks │\
+│ regimes by slope │ (technical noise sources) │\
+│ • Locate crossovers │ • Characterize broadband slope │\
+│ • Compare to theory │ • Compare conditions (on/off) │\
+└─────────────────────────┴───────────────────────────────────────┘\
+│\
+▼\
+┌─────────────────────────────────────────────────────────────────┐\
+│ CROSS-ANALYSIS │\
+│ • Do ADEV regimes match integrated PSD contributions? │\
+│ • Can each noise feature be assigned a physical source? │\
+│ • Build quantitative noise budget │\
+└─────────────────────────┬───────────────────────────────────────┘\
+│\
+┌─────────────┴─────────────┐\
+▼ ▼\
+┌───────────────┐ ┌───────────────────┐\
+│ Budget closes │ │ Unexplained │\
+│ within │ │ residual remains │\
+│ uncertainty │ │ │\
+└───────┬───────┘ └─────────┬─────────┘\
+│ │\
+▼ ▼\
+┌───────────────┐ ┌───────────────────┐\
+│ DOCUMENT & │ │ ITERATE: │\
+│ ARCHIVE │ │ • New hypotheses │\
+│ │ │ • Targeted expts │\
+│ • Methods │ │ • Updated model │\
+│ • Results │◄──────────│ │\
+│ • Raw data │ └───────────────────┘\
+│ • Scripts │\
+└───────────────┘
 
 _Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
 
@@ -421,7 +556,7 @@ These practices ensure that your noise attribution is not only technically sound
 2. J. A. Sedlacek _et al._ (2018). Evidence for multiple mechanisms underlying surface electric-field noise in ion traps. _Physical Review A_ 98, 063430.
 3. D. W. Allan (1966). Statistics of atomic frequency standards. _Proceedings of the IEEE_ 54, 221–230.
 4. NIST/SEMATECH (2012). e-Handbook of Statistical Methods. Section 1.3.5.15 (Chi-square test for variance).
-5. Statistics LibreTexts (2019). Chi-Square Goodness-of-Fit Test. (Discussion of expected counts ≥5 rule of thumb.)
+5. Statistics LibreTexts (2019). Chi-Square Goodness-of-Fit Test. (Discussion of expected counts ≥5 rule of thumb.), a) W. G. Cochran (1952). The χ² test of goodness of fit. Annals of Mathematical Statistics 23, 315–345.
 6. D. W. Howe, D. W. Allan, and J. A. Barnes (1981). Properties of oscillator signals and measurement methods. _Proc. 35th Annual Frequency Control Symposium_, 1–47.
 7. W. J. Riley (2008). Handbook of Frequency Stability Analysis. NIST Special Publication 1065.
 8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
