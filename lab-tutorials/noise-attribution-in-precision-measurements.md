@@ -714,6 +714,9 @@ The square of Allan deviation. Often denoted σ²\_y(τ).
 **Flicker noise (1/f noise)**\
 Noise whose power spectral density is inversely proportional to frequency. Common in electronic components and many physical systems. In ADEV plots, appears as a flat region (slope ≈ 0).
 
+**Garwood interval**\
+An exact confidence interval for Poisson parameters based on the chi-square distribution. Maintains accurate coverage for low counts (including zero), analogous to the Wilson interval for binomial data.
+
 **Johnson noise (thermal noise)**\
 Voltage fluctuations in resistors due to thermal agitation of charge carriers. Spectral density is white (flat) and proportional to temperature and resistance.
 
@@ -753,6 +756,11 @@ k = 0
 alpha = 0.05  # 95% confidence
 ci_low, ci_high = smp.proportion_confint(count=k, nobs=N, alpha=alpha, method="wilson")
 print(ci_low, ci_high)
+
+# Poisson Garwood interval
+from statsmodels.stats.proportion import poisson_twosided_confint
+k = 3  # observed count
+ci_low, ci_high = poisson_twosided_confint(k, alpha=0.05, method='exact')
 
 
 # Poisson dispersion test
