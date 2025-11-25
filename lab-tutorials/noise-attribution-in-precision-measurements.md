@@ -814,7 +814,7 @@ plt.show()
 2. J. A. Sedlacek _et al._ (2018). Evidence for multiple mechanisms underlying surface electric-field noise in ion traps. _Physical Review A_ 98, 063430.
 3. D. W. Allan (1966). Statistics of atomic frequency standards. _Proceedings of the IEEE_ 54, 221–230.
 4. NIST/SEMATECH (2012). e-Handbook of Statistical Methods. Section 1.3.5.15 (Chi-square test for variance).
-5. Statistics LibreTexts (2019). Chi-Square Goodness-of-Fit Test. (Discussion of expected counts ≥5 rule of thumb.), a) W. G. Cochran (1952). The χ² test of goodness of fit. Annals of Mathematical Statistics 23, 315–345.
+5. Statistics LibreTexts (2019). Chi-Square Goodness-of-Fit Test. (Discussion of expected counts ≥5 rule of thumb.); 5a. W. G. Cochran (1952). The χ² test of goodness of fit. Annals of Mathematical Statistics 23, 315–345.
 6. D. W. Howe, D. W. Allan, and J. A. Barnes (1981). Properties of oscillator signals and measurement methods. _Proc. 35th Annual Frequency Control Symposium_, 1–47.
 7. W. J. Riley (2008). Handbook of Frequency Stability Analysis. NIST Special Publication 1065.
 8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
