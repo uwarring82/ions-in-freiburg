@@ -326,65 +326,66 @@ This consistency check is valuable: it ensures that time-domain and frequency-do
 
 ### 4. Step-by-Step Noise Attribution Workflow
 
-To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.\
-\
-┌─────────────────────────────────────────────────────────────────┐\
-│ RAW DATA ACQUISITION │\
-│ (with pre-defined analysis plan and logging) │\
-└─────────────────────────┬───────────────────────────────────────┘\
-▼\
-┌─────────────────────────────────────────────────────────────────┐\
-│ DATA INTEGRITY CHECKS │\
-│ • Visual inspection (time series, histograms) │\
-│ • Outlier identification and documented exclusions │\
-│ • Gap and artifact detection │\
-└─────────────────────────┬───────────────────────────────────────┘\
-▼\
-┌─────────────────────────────────────────────────────────────────┐\
-│ STATISTICAL DISTRIBUTION ANALYSIS │\
-│ • Poisson: dispersion test (χ² statistic) │\
-│ • Binomial: Wilson intervals, homogeneity │\
-│ • Gaussian: Q–Q plots, normality tests │\
-│ │\
-│ ──► If assumptions fail: revise model or investigate │\
-└─────────────────────────┬───────────────────────────────────────┘\
-▼\
-┌─────────────────────────┬───────────────────────────────────────┐\
-│ TIME-DOMAIN ANALYSIS │ FREQUENCY-DOMAIN ANALYSIS │\
-│ (Allan Deviation) │ (Power Spectral Density) │\
-│ │ │\
-│ • Identify noise │ • Identify spectral peaks │\
-│ regimes by slope │ (technical noise sources) │\
-│ • Locate crossovers │ • Characterize broadband slope │\
-│ • Compare to theory │ • Compare conditions (on/off) │\
-└─────────────────────────┴───────────────────────────────────────┘\
-│\
-▼\
-┌─────────────────────────────────────────────────────────────────┐\
-│ CROSS-ANALYSIS │\
-│ • Do ADEV regimes match integrated PSD contributions? │\
-│ • Can each noise feature be assigned a physical source? │\
-│ • Build quantitative noise budget │\
-└─────────────────────────┬───────────────────────────────────────┘\
-│\
-┌─────────────┴─────────────┐\
-▼ ▼\
-┌───────────────┐ ┌───────────────────┐\
-│ Budget closes │ │ Unexplained │\
-│ within │ │ residual remains │\
-│ uncertainty │ │ │\
-└───────┬───────┘ └─────────┬─────────┘\
-│ │\
-▼ ▼\
-┌───────────────┐ ┌───────────────────┐\
-│ DOCUMENT & │ │ ITERATE: │\
-│ ARCHIVE │ │ • New hypotheses │\
-│ │ │ • Targeted expts │\
-│ • Methods │ │ • Updated model │\
-│ • Results │◄──────────│ │\
-│ • Raw data │ └───────────────────┘\
-│ • Scripts │\
-└───────────────┘
+To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.
+
+```
+flowchart TD
+
+A[RAW DATA ACQUISITION<br>(with pre-defined analysis plan and logging)]
+
+B[DATA INTEGRITY CHECKS<br><br>
+  • Visual inspection (time series, histograms)<br>
+  • Outlier identification & documented exclusions<br>
+  • Gap and artifact detection]
+
+C[STATISTICAL DISTRIBUTION ANALYSIS<br><br>
+  • Poisson: dispersion test (χ²)<br>
+  • Binomial: Wilson intervals, homogeneity<br>
+  • Gaussian: Q–Q plots, normality tests<br><br>
+  If assumptions fail → revise model or investigate]
+
+D1[TIME-DOMAIN ANALYSIS (Allan Deviation)<br><br>
+    • Identify noise regimes by slope<br>
+    • Locate crossovers<br>
+    • Compare to theory]
+
+D2[FREQUENCY-DOMAIN ANALYSIS (PSD)<br><br>
+    • Identify spectral peaks (technical noise)<br>
+    • Characterize broadband slope<br>
+    • Compare conditions (on/off)]
+
+E[CROSS-ANALYSIS<br><br>
+  • Do ADEV regimes match integrated PSD?<br>
+  • Assign each feature a physical source<br>
+  • Build quantitative noise budget]
+
+F1[BUDGET CLOSES<br>within uncertainty]
+
+F2[UNEXPLAINED RESIDUAL<br>remains]
+
+G1[DOCUMENT & ARCHIVE<br><br>
+    • Methods<br>
+    • Results<br>
+    • Raw data<br>
+    • Scripts]
+
+G2[ITERATE<br><br>
+    • New hypotheses<br>
+    • Targeted experiments<br>
+    • Updated model]
+
+
+A --> B --> C --> D1
+C --> D2
+D1 --> E
+D2 --> E
+
+E --> F1
+E --> F2
+
+F1 --> G1
+F2 --> G2 --> C
+```
 
 _Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
 
