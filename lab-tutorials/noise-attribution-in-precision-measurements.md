@@ -380,11 +380,11 @@ Now test whether your data behave as expected under their _assumed_ distribution
 
     For formal testing, common choices include:
 
-    * **Shapiro-Wilk test:** Preferred for smaller samples ($n < 50$); high power against a broad range of alternatives.
+    * **Shapiro-Wilk test:** Preferred for smaller samples ($$n < 50$$); high power against a broad range of alternatives.
     * **Anderson-Darling test:** Good sensitivity to tail deviations; appropriate for moderate sample sizes.
     * **D'Agostino-Pearson test:** Tests skewness and kurtosis jointly; useful for larger samples.
 
-    **Caution:** With large $n$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation).
+    **Caution:** With large $$n$$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation).
 * **Binomial:** For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
 
 If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
@@ -488,7 +488,7 @@ However, numerous experiments have observed much stronger distance dependence an
 We consider a **pedagogically simplified** version of the measurements in \[2,9,10]. The following aspects are omitted or idealized for clarity:
 
 * **Micromotion effects:** Real measurements require careful minimization and characterization of excess micromotion, which contributes to heating through mechanisms distinct from surface noise.
-* **Trap geometry corrections:** The simple $d^{-4}$ scaling assumes a semi-infinite planar electrode; real trap geometries require numerical modeling.
+* **Trap geometry corrections:** The simple $$d^{-4}$$ scaling assumes a semi-infinite planar electrode; real trap geometries require numerical modeling.
 * **Secular frequency dependence:** Heating rate measurements at different trap frequencies probe different parts of the noise spectrum; this dependence is averaged over here.
 * **Surface treatment protocols:** The referenced experiments involve specific cleaning, annealing, and in-situ treatment procedures not detailed here.
 * **Statistical analysis of heating rate extraction:** Converting Rabi flop or sideband ratio data to phonon numbers involves additional statistical machinery.
