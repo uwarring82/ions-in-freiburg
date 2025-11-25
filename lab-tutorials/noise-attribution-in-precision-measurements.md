@@ -92,10 +92,13 @@ Noise attribution starts with the simplest question:
 
 > _Does your data behave like the stochastic process you think it does?_
 
-Two common situations:
+Three common situations, in order of increasing generality:
 
-* Binomial proportions (success/failure outcomes),
-* Poisson counts (rare events per interval).
+* **Binomial proportions** (success/failure outcomes),
+* **Poisson counts** (rare events per interval),
+* **Gaussian (normal) distributions** (continuous measurements, or large-count limits of the above).
+
+Understanding when each applies — and when they converge — is essential for choosing appropriate statistical tools.
 
 #### 1.1 Binomial Proportions and Wilson Score Interval
 
@@ -141,27 +144,88 @@ If you have $$N$$ independent measurements $$x_1,\dots,x_N$$ (counts per interva
 
 For a truly Poisson process, you expect $$s^2 \approx \bar{x}$$. A deviation from this equality is called over-dispersion ($$s^2 > \bar{x}$$) or under-dispersion ($$s^2 < \bar{x}$$).
 
-A quantitative test: under the null hypothesis of a Poisson model with mean $\lambda = \bar{x}$, the statistic
+A quantitative test: under the null hypothesis of a Poisson model with mean $$\lambda = \bar{x}$$, the statistic
 
 <p align="center"><span class="math"> (N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1} </span></p>
 
-approximately follows a chi-square distribution with $n-1$ degrees of freedom \[4].
+approximately follows a chi-square distribution with $$n-1$$ degrees of freedom \[4].
 
 **Interpretation procedure:**
 
-1. Compute the test statistic $\chi^2 = \sum\_i (x\_i - \bar{x})^2 / \bar{x}$
-2. Compare to the critical value $\chi^2\_{0.95}(n-1)$ from chi-square tables (or use software)
-3. If $\chi^2 > \chi^2\_{0.95}(n-1)$, reject the null hypothesis of Poisson statistics at the 5% significance level
+1. Compute the test statistic $$\chi^2 = \sum_i (x_i - \bar{x})^2 / \bar{x}$$
+2. Compare to the critical value $$\chi^2_{0.95}(n-1)$$ from chi-square tables (or use software)
+3. If $$\chi^2 > \chi^2_{0.95}(n-1)$$, reject the null hypothesis of Poisson statistics at the 5% significance level
 
-**Example:** For $n = 20$ measurements, $\chi^2\_{0.95}(19) \approx 30.1$. If your computed statistic exceeds 30.1, the variance is significantly larger than the Poisson expectation.
+**Example:** For $$n = 20$$ measurements, $$\chi^2_{0.95}(19) \approx 30.1$$. If your computed statistic exceeds 30.1, the variance is significantly larger than the Poisson expectation.
 
 A significant result signals **over-dispersion**: extra noise beyond simple Poisson counting statistics. Common causes include fluctuating rates, unresolved mixture of sources, detector gain variations, or additional technical noise.
 
-**Caution:** A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $n$, power to detect over-dispersion is limited.
+**Caution:** A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $$n$$, power to detect over-dispersion is limited.
 
 **Rule of thumb:** For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
 
 ***
+
+#### 1.3 Gaussian Distributions and Their Limits of Applicability
+
+Many precision measurements produce continuous-valued data: voltages, frequencies, positions, phase differences. The Gaussian (normal) distribution is often the default model:
+
+$$
+p(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+$$
+
+with mean $$\mu$$ and variance $$\sigma^2$$.
+
+**When Gaussian Models Apply**
+
+**Direct physical justification:**\
+Thermal noise (Johnson-Nyquist), quantum shot noise in the large-photon limit, and many detection systems produce approximately Gaussian fluctuations by construction.
+
+**Central Limit Theorem (CLT):**\
+Sums or averages of many independent random variables converge to Gaussian distributions, regardless of the underlying distribution. This is why:
+
+* Binomial distributions approach Gaussian for large $$n$$ (typically $$np > 10$$ and $$n(1-p) > 10$$)
+* Poisson distributions approach Gaussian for large $$\lambda$$ (typically $$\lambda > 20$$)
+* Averaged time series data often appears Gaussian even when individual samples are not
+
+**Practical criterion:** If your data arise from averaging or summing many independent contributions, Gaussian assumptions are often reasonable.
+
+**Diagnostic Tools**
+
+Before assuming Gaussianity, verify:
+
+1. **Histogram inspection:** Does the distribution appear symmetric and bell-shaped? Look for skewness, heavy tails, or multimodality.
+2. **Q–Q plot (quantile-quantile):** Plot observed quantiles against theoretical Gaussian quantiles. Deviations from a straight line indicate:
+   * S-shaped curve → heavy tails (more outliers than Gaussian predicts)
+   * Curved ends → skewness
+   * Steps or clusters → discrete subpopulations or rounding
+3. **Formal tests:**
+   * Shapiro-Wilk (best power for $$n < 50$$)
+   * Anderson-Darling (sensitive to tails)
+   * Jarque-Bera (tests skewness and kurtosis)
+
+**Common Pitfalls**
+
+**Applying Gaussian statistics to small counts:**\
+For Poisson data with $$\lambda < 20$$ or binomial data with small $$np$$, Gaussian approximations can yield confidence intervals that miss the true value more often than advertised, or even extend below zero. Use exact methods or appropriate approximations (Wilson, Garwood) instead.
+
+**Ignoring heavy tails:**\
+Some noise processes (e.g., certain types of electronic interference, surface noise with Lévy-flight character) produce distributions with heavier tails than Gaussian. Standard confidence intervals and significance tests assume Gaussian tails; heavy-tailed data will have more "outliers" than expected, and trimmed or robust estimators may be needed.
+
+**Over-reliance on normality tests:**\
+With large $$n$$, normality tests reject even trivial deviations. With small $$n$$, they lack power to detect meaningful non-Gaussianity. Use tests as one input alongside visual diagnostics and physical reasoning.
+
+**Relationship to Sections 1.1 and 1.2**
+
+The three distributions form a hierarchy:
+
+| Situation                     | Appropriate model | Gaussian approximation valid when...            |
+| ----------------------------- | ----------------- | ----------------------------------------------- |
+| Binary outcomes (bright/dark) | Binomial          | $$np > 10$$ and $$n(1-p) > 10$$                 |
+| Count data (photons, events)  | Poisson           | $$\lambda > 20$$                                |
+| Continuous measurements       | Gaussian          | CLT conditions met, or by physical construction |
+
+When in doubt, start with the more specific model (binomial or Poisson) and verify whether Gaussian approximations are justified for your sample sizes and parameters. The specific models provide exact results; the Gaussian is an approximation whose accuracy depends on being in the appropriate limit.
 
 ### 2. Time-Domain Stability: Allan Deviation
 
