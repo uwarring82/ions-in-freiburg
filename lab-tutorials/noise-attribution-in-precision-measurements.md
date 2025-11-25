@@ -377,7 +377,7 @@ This consistency check is valuable: it ensures that time-domain and frequency-do
 
 To move from “I see noise” to “I know its sources and magnitudes,” it helps to follow a structured workflow. Figure 1 sketches this as a flowchart.
 
-<figure><img src="../.gitbook/assets/noise_attribution_flowchart (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/noise_attribution_flowchart (1).png" alt="Flowchart showing nine-step noise attribution workflow from raw data through statistical checks, ADEV and PSD analysis, cross-validation, iteration, and final documentation"><figcaption></figcaption></figure>
 
 _Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
 
