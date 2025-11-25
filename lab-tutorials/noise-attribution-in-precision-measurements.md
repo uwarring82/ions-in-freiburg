@@ -7,11 +7,11 @@ icon: scale-unbalanced-flip
 
 {% hint style="info" %}
 _author: U. Warring_\
-_affiliation: Institute of Physics, University of Freiburg_\
-_version: 1.0_\
-_last\_updated: 2025-11-25_\
-_review\_status: Internal laboratory documentation; not externally peer-reviewed_\
-_license: CC BY-SA 4.0_
+&#xNAN;_&#x61;ffiliation: Institute of Physics, University of Freiburg_\
+&#xNAN;_&#x76;ersion: 1.0_\
+&#xNAN;_&#x6C;ast\_updated: 2025-11-25_\
+&#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
+&#xNAN;_&#x6C;icense: CC BY-SA 4.0_
 {% endhint %}
 
 ### Introduction
@@ -114,11 +114,11 @@ Understanding when each applies — and when they converge — is essential for 
 
 Suppose you run $$N$$ identical trials and observe $$k$$ “successes” (e.g. ion detected bright vs dark). The natural estimator of the success probability is
 
-<p align="center"><span class="math"> \hat p = \frac{k}{N}.</span> </p>
+<p align="center"><span class="math">\hat p = \frac{k}{N}.</span></p>
 
 The traditional Wald interval (normal approximation) is
 
-<p align="center"><span class="math"> \hat p \pm z \sqrt{\frac{\hat p(1-\hat p)}{N}}, </span></p>
+<p align="center"><span class="math">\hat p \pm z \sqrt{\frac{\hat p(1-\hat p)}{N}},</span></p>
 
 where $$z$$ is the critical value for the desired confidence (e.g. $$z \approx 1.96$$ for 95%).
 
@@ -126,7 +126,7 @@ However, this interval is known to have poor coverage for small $$N$$ or extreme
 
 A more robust choice is the Wilson score interval \[1]. For confidence level $$1-\alpha$$ with critical value $$z_{1-\alpha/2}$$, the Wilson interval is
 
-<p align="center"><span class="math"> \text{CI}_{\text{Wilson}} = \frac{\hat p + \frac{z^2}{2N} \pm z\sqrt{\frac{\hat p(1-\hat p)}{N} + \frac{z^2}{4N^2}}}{1 + \frac{z^2}{N}}. </span></p>
+<p align="center"><span class="math">\text{CI}_{\text{Wilson}} = \frac{\hat p + \frac{z^2}{2N} \pm z\sqrt{\frac{\hat p(1-\hat p)}{N} + \frac{z^2}{4N^2}}}{1 + \frac{z^2}{N}}.</span></p>
 
 Key properties:
 
@@ -163,13 +163,13 @@ For count data (e.g. number of detected photons in a fixed time, number of quant
 
 If you have $$N$$ independent measurements $$x_1,\dots,x_N$$ (counts per interval), the sample mean and variance are
 
-<p align="center"><span class="math"> \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i, \qquad s^2 = \frac{1}{N-1} \sum_{i=1}^N (x_i - \bar{x})^2. </span></p>
+<p align="center"><span class="math">\bar{x} = \frac{1}{N} \sum_{i=1}^N x_i, \qquad s^2 = \frac{1}{N-1} \sum_{i=1}^N (x_i - \bar{x})^2.</span></p>
 
 For a truly Poisson process, you expect $$s^2 \approx \bar{x}$$. A deviation from this equality is called over-dispersion ($$s^2 > \bar{x}$$) or under-dispersion ($$s^2 < \bar{x}$$).
 
 A quantitative test: under the null hypothesis of a Poisson model with mean $$\lambda = \bar{x}$$, the statistic
 
-<p align="center"><span class="math"> (N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1} </span></p>
+<p align="center"><span class="math">(N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1}</span></p>
 
 approximately follows a chi-square distribution with $$n-1$$ degrees of freedom \[4].
 
@@ -179,25 +179,37 @@ approximately follows a chi-square distribution with $$n-1$$ degrees of freedom 
 2. Compare to the critical value $$\chi^2_{0.95}(n-1)$$ from chi-square tables (or use software)
 3. If $$\chi^2 > \chi^2_{0.95}(n-1)$$, reject the null hypothesis of Poisson statistics at the 5% significance level
 
-**Example:** For $$n = 20$$ measurements, $$\chi^2_{0.95}(19) \approx 30.1$$. If your computed statistic exceeds 30.1, the variance is significantly larger than the Poisson expectation.
+_Example:_ For $$n = 20$$ measurements, $$\chi^2_{0.95}(19) \approx 30.1$$. If your computed statistic exceeds 30.1, the variance is significantly larger than the Poisson expectation.
 
 A significant result signals **over-dispersion**: extra noise beyond simple Poisson counting statistics. Common causes include fluctuating rates, unresolved mixture of sources, detector gain variations, or additional technical noise.
 
-**Caution:** A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $$n$$, power to detect over-dispersion is limited.
+_Caution:_ A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $$n$$, power to detect over-dispersion is limited.
 
-**Rule of thumb:** For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
+_Rule of thumb:_ For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
 
 **Worked example (Poisson dispersion test)**
 
 Assume you record $$N = 20$$ photon-count measurements (counts per fixed time bin) with
 
-$$\bar{x} = 12.3, \qquad s^2 = 22.5.$$
+<p align="center"><span class="math">\bar{x} = 12.3, \qquad s^2 = 22.5.</span></p>
 
 Under the Poisson hypothesis, you expect (s^2 \approx \bar{x}). Compute
 
-$$\chi^2 = (N-1)\frac{s^2}{\bar{x}} \approx 19 \times \frac{22.5}{12.3} \approx 34.8.$$
+<p align="center"><span class="math">\chi^2 = (N-1)\frac{s^2}{\bar{x}} \approx 19 \times \frac{22.5}{12.3} \approx 34.8.</span></p>
 
 For $$N-1 = 19$$ degrees of freedom and 95% confidence, ($$\chi^2_{0.95}(19) \approx 30.1$$. Since $$34.8 > 30.1$$, you would **reject** the pure Poisson model at the 5% level and conclude that the data are over-dispersed (extra technical or systematic noise).
+
+**Exact confidence intervals for low counts**
+
+When expected counts are small $$< 10$$ or when higher accuracy is required, exact confidence intervals should be used instead of the chi-square approximation. For Poisson data, the **Garwood method** provides exact confidence intervals based on the relationship between Poisson and chi-square distributions.
+
+For an observed count $$k$$, the exact $$100(1−α)$$% confidence interval for the true rate λ is
+
+<p align="center"><span class="math">\left[ \frac{1}{2}\chi^2_{\alpha/2}(2k), \quad \frac{1}{2}\chi^2_{1-\alpha/2}(2k+2) \right]</span></p>
+
+where χ²\_p(ν) is the p-th quantile of the chi-square distribution with ν degrees of freedom.
+
+This is the Poisson analog of the Wilson interval for binomial data: it maintains accurate coverage even for $$k = 0$$ and never produces negative lower bounds.
 
 ***
 
@@ -289,7 +301,7 @@ Consider a time series $$y(t)$$ representing, for example, the fractional freque
 
 The Allan variance for averaging time $$\tau$$ is \[3,7]
 
-<p align="center"><span class="math"> \sigma_y^2(\tau) = \frac{1}{2(M-1)} \sum_{i=1}^{M-1} \big(\bar{y}_{i+1}(\tau) - \bar{y}_i(\tau)\big)^2.</span></p>
+<p align="center"><span class="math">\sigma_y^2(\tau) = \frac{1}{2(M-1)} \sum_{i=1}^{M-1} \big(\bar{y}_{i+1}(\tau) - \bar{y}_i(\tau)\big)^2.</span></p>
 
 The Allan deviation is $$\sigma_y(\tau) = \sqrt{\sigma_y^2(\tau)}$$.
 
@@ -329,7 +341,7 @@ Time-domain stability gives a good overview of noise vs. averaging time, but it 
 
 Given a time series $$x(t)$$ (e.g. a voltage, position, or frequency deviation) sampled at rate $$f_s$$, the theoretical PSD is
 
-<p align="center"><span class="math"> S_x(f) = \lim_{T \to \infty} \frac{1}{T} \left| \int_0^T x(t) e^{-2\pi i f t} dt \right|^2. </span></p>
+<p align="center"><span class="math">S_x(f) = \lim_{T \to \infty} \frac{1}{T} \left| \int_0^T x(t) e^{-2\pi i f t} dt \right|^2.</span></p>
 
 In practice, we have a finite time series and compute discrete Fourier transforms. A single FFT-based periodogram is often very noisy as an estimator. Welch’s method \[8] improves the estimate by averaging over multiple segments:
 
@@ -434,7 +446,7 @@ Now test whether your data behave as expected under their _assumed_ distribution
     * **Anderson-Darling test:** Good sensitivity to tail deviations; appropriate for moderate sample sizes.
     * **D'Agostino-Pearson test:** Tests skewness and kurtosis jointly; useful for larger samples.
 
-    **Caution:** With large $$n$$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation).
+    _Caution:_ With large $$n$$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation). If QQ-plot deviations are within ±0.5σ across most of the range, Gaussian approximations are typically adequate for confidence intervals.
 * **Binomial:** For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
 
 If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
@@ -800,4 +812,3 @@ plt.show()
 8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
 9. J. Labaziewicz _et al._ (2008). Suppression of heating rates in cryogenic surface-electrode ion traps. _Physical Review Letters_ 100, 013001.
 10. M. Brownnutt, M. Kumph, P. Rabl, and R. Blatt (2015). Ion-trap measurements of electric-field noise near surfaces. _Reviews of Modern Physics_ 87, 1419–1482.
-
