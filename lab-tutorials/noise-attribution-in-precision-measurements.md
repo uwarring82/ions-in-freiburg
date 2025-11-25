@@ -14,6 +14,8 @@ _review\_status: Internal laboratory documentation; not externally peer-reviewed
 _license: CC BY-SA 4.0_
 {% endhint %}
 
+### Introduction
+
 Understanding and controlling noise is central to all precision measurements, from trapped-ion qubits to frequency standards and classical sensors. The practical question is always:
 
 > _Which part of the variation in my data is fundamental statistical noise, and which part is systematic or technical?_
@@ -83,6 +85,15 @@ If you lack background in any of these areas, consider reviewing:
 * _The Art of Electronics_ by Horowitz & Hill, Chapter 8 (noise in electronics)
 * Riley (2008), Ref. \[7], Chapters 1–3 (frequency stability fundamentals)
 
+**Recommended group standard practices**
+
+Within our lab, the following conventions are recommended as defaults:
+
+* Use the **Wilson score interval** for binomial proportions (never the simple Wald interval).
+* For Poisson-like count data, **check dispersion** (mean vs variance) and report if over-dispersion is found.
+* For time series, always combine **Allan deviation** and **PSD** when characterizing noise.
+* For thesis and internal reports, include a short **noise budget table** summarizing identified noise sources and their quantitative contributions.
+
 ***
 
 ### 1. Statistical Fundamentals for Noise Analysis
@@ -127,6 +138,19 @@ For example, with $$N=10$$ and $$\hat p = 0$$, the Wald interval would give $$[0
 
 For binary experimental outcomes (e.g. qubit state readout, survival probability), this is the interval students should use by default.
 
+**Worked example (Wilson interval)**
+
+Suppose you perform ($$N = 10$$) bright/dark state detections and observe ($$k = 0$$) bright outcomes.
+
+* $$\hat p = k/N = 0$$.
+* For 95% confidence, ($$z \approx 1.96$$).
+
+Plugging into the Wilson formula gives approximately
+
+$$\text{CI}_{\text{Wilson}} \approx [0, 0.26].$$
+
+The Wald interval would have given \[0,0], which clearly underestimates our uncertainty. This is a typical regime in trapped-ion experiments where the Wilson interval is strongly preferred.
+
 ***
 
 #### 1.2 Poisson Counts and Over-Dispersion
@@ -162,6 +186,18 @@ A significant result signals **over-dispersion**: extra noise beyond simple Pois
 **Caution:** A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $$n$$, power to detect over-dispersion is limited.
 
 **Rule of thumb:** For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
+
+**Worked example (Poisson dispersion test)**
+
+Assume you record $$N = 20$$ photon-count measurements (counts per fixed time bin) with
+
+$$\bar{x} = 12.3, \qquad s^2 = 22.5.$$
+
+Under the Poisson hypothesis, you expect (s^2 \approx \bar{x}). Compute
+
+$$\chi^2 = (N-1)\frac{s^2}{\bar{x}} \approx 19 \times \frac{22.5}{12.3} \approx 34.8.$$
+
+For $$N-1 = 19$$ degrees of freedom and 95% confidence, ($$\chi^2_{0.95}(19) \approx 30.1$$. Since $$34.8 > 30.1$$, you would **reject** the pure Poisson model at the 5% level and conclude that the data are over-dispersed (extra technical or systematic noise).
 
 ***
 
@@ -214,6 +250,18 @@ Some noise processes (e.g., certain types of electronic interference, surface no
 **Over-reliance on normality tests:**\
 With large $$n$$, normality tests reject even trivial deviations. With small $$n$$, they lack power to detect meaningful non-Gaussianity. Use tests as one input alongside visual diagnostics and physical reasoning.
 
+**Worked example (Gaussian diagnostics)**
+
+Consider 1000 measurements of a stabilized voltage:
+
+* The histogram looks symmetric, but the Q–Q plot against a Gaussian shows clear S-shaped deviations in the tails.
+* A Shapiro–Wilk test returns $$p \approx 10^{-4}$$.
+
+Conclusion: the data are **not exactly Gaussian**—there are heavier tails than expected. For many analyses (mean estimates, rough confidence intervals), the Gaussian model may still be acceptable, but you should:
+
+* use robust estimators (e.g. median and MAD) when outliers matter, and
+* avoid relying on Gaussian tail probabilities for rare-event claims.
+
 **Relationship to Sections 1.1 and 1.2**
 
 The three distributions form a hierarchy:
@@ -225,6 +273,8 @@ The three distributions form a hierarchy:
 | Continuous measurements       | Gaussian          | CLT conditions met, or by physical construction |
 
 When in doubt, start with the more specific model (binomial or Poisson) and verify whether Gaussian approximations are justified for your sample sizes and parameters. The specific models provide exact results; the Gaussian is an approximation whose accuracy depends on being in the appropriate limit.
+
+***
 
 ### 2. Time-Domain Stability: Allan Deviation
 
@@ -589,6 +639,8 @@ Finally, a few meta-principles:
 
 These practices ensure that your noise attribution is not only technically sound but also scientifically trustworthy.
 
+***
+
 ### 7. Common Pitfalls in Noise Attribution
 
 Experience suggests several recurring errors in noise analysis. Being aware of these can save significant time and prevent incorrect conclusions.
@@ -637,6 +689,8 @@ Every excluded data point or segment should have a recorded justification writte
 **Non-reproducible analysis**\
 If you cannot regenerate your plots from archived raw data and scripts, your analysis is not reproducible. This is the minimum standard for trustworthy science.
 
+***
+
 ### Appendix A: Glossary of Terms
 
 **Allan deviation (ADEV)**\
@@ -671,6 +725,57 @@ Noise with constant power spectral density across all frequencies. In ADEV plots
 
 **Wilson score interval**\
 A confidence interval for binomial proportions that maintains accurate coverage even for small sample sizes or extreme probabilities, unlike the simpler Wald interval.
+
+***
+
+#### Appendix B: Minimal Python implementation snippets
+
+Below are compact code examples for typical analyses. They are not a full library, but a starting point.
+
+```python
+# Binomial Wilson interval
+import statsmodels.stats.proportion as smp
+
+N = 10
+k = 0
+alpha = 0.05  # 95% confidence
+ci_low, ci_high = smp.proportion_confint(count=k, nobs=N, alpha=alpha, method="wilson")
+print(ci_low, ci_high)
+
+
+# Poisson dispersion test
+import numpy as np
+from scipy.stats import chi2
+
+x = np.array([...])  # counts
+N = len(x)
+xbar = x.mean()
+s2 = x.var(ddof=1)
+chi2_stat = (N - 1) * s2 / xbar
+p_value = 1 - chi2.cdf(chi2_stat, df=N-1)
+print("chi2 =", chi2_stat, "p =", p_value)
+
+
+# Welch PSD estimate
+import numpy as np
+from scipy.signal import welch
+
+fs = 1.0  # sampling rate in Hz
+x = np.array([...])  # time series
+f, Sx = welch(x, fs=fs, nperseg=1024, noverlap=512, window="hann")
+
+
+# Q–Q plot against Gaussian
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+
+x = np.array([...])
+stats.probplot(x, dist="norm", plot=plt)
+plt.xlabel("Theoretical quantiles")
+plt.ylabel("Sample quantiles")
+plt.show()
+```
 
 ***
 
