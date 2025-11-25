@@ -368,9 +368,17 @@ If you exclude data, record why (e.g. “laser unlocked between 13:05–13:07, e
 
 Now test whether your data behave as expected under their _assumed_ distribution.
 
-* Poisson: Are mean and variance comparable? Use the dispersion test with $$(N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1}$$ and check if the result is within a reasonable range of the chi-square distribution \[4]. A significantly larger value indicates over-dispersion (extra noise beyond simple Poisson). Check that expected counts are ≥5 to justify the approximate test \[5].
-* Gaussian: Does a histogram look bell-shaped? Produce a Q–Q plot (quantile–quantile against a normal distribution) and/or run a normality test. Significant departures may suggest multiple mechanisms or non-linearities.
-* Binomial: For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
+* **Poisson:** Are mean and variance comparable? Use the dispersion test with $$(N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1}$$ and check if the result is within a reasonable range of the chi-square distribution \[4]. A significantly larger value indicates over-dispersion (extra noise beyond simple Poisson). Check that expected counts are ≥5 to justify the approximate test \[5].
+*   **Gaussian:** Does a histogram look approximately bell-shaped? Produce a Q–Q plot (quantile–quantile against a normal distribution) to visually assess departures from normality.
+
+    For formal testing, common choices include:
+
+    * **Shapiro-Wilk test:** Preferred for smaller samples ($n < 50$); high power against a broad range of alternatives.
+    * **Anderson-Darling test:** Good sensitivity to tail deviations; appropriate for moderate sample sizes.
+    * **D'Agostino-Pearson test:** Tests skewness and kurtosis jointly; useful for larger samples.
+
+    **Caution:** With large $n$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation).
+* **Binomial:** For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
 
 If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
 
@@ -408,6 +416,22 @@ Combine insights:
 * Build a noise budget: a table listing each noise source, its estimated variance/power, and its contribution to the total.
 
 If the sum of identified contributions explains the observed noise within uncertainties, your model is consistent. If there is a substantial unexplained residual, you have a missing noise source – formulate new hypotheses.
+
+#### Validation Strategies
+
+Beyond internal consistency (PSD–ADEV agreement), consider these validation approaches:
+
+**Bootstrap resampling**\
+Resample your time series (using block bootstrap to preserve correlations) and recompute ADEV or PSD. The spread of bootstrap estimates provides uncertainty bounds that account for data structure, not just sample size.
+
+**Split-half validation**\
+Divide your data into two halves (e.g., first half vs. second half, or interleaved). Perform the full noise attribution independently on each half. Consistent results strengthen confidence; discrepancies reveal non-stationarity or overfitting to noise.
+
+**Sensitivity analysis**\
+Vary analysis parameters (PSD segment length, ADEV τ spacing, outlier thresholds) and observe how conclusions change. Robust conclusions should not depend critically on arbitrary choices.
+
+**Prediction testing**\
+If your noise model is correct, it should predict behavior in new conditions. For example, if you attribute noise to a 50 Hz pickup, inserting a notch filter should reduce that contribution predictably.
 
 #### 4.8 Step 8: Iterate and Refine
 
@@ -454,7 +478,17 @@ However, numerous experiments have observed much stronger distance dependence an
 
 #### 5.2 Measurements
 
-We consider a simplified version of the measurements in \[2,9,10]:
+We consider a **pedagogically simplified** version of the measurements in \[2,9,10]. The following aspects are omitted or idealized for clarity:
+
+* **Micromotion effects:** Real measurements require careful minimization and characterization of excess micromotion, which contributes to heating through mechanisms distinct from surface noise.
+* **Trap geometry corrections:** The simple $d^{-4}$ scaling assumes a semi-infinite planar electrode; real trap geometries require numerical modeling.
+* **Secular frequency dependence:** Heating rate measurements at different trap frequencies probe different parts of the noise spectrum; this dependence is averaged over here.
+* **Surface treatment protocols:** The referenced experiments involve specific cleaning, annealing, and in-situ treatment procedures not detailed here.
+* **Statistical analysis of heating rate extraction:** Converting Rabi flop or sideband ratio data to phonon numbers involves additional statistical machinery.
+
+For complete experimental methodology, consult the original references \[2,9,10] and the reviews therein.
+
+**Simplified measurement protocol:**
 
 * Single ions are trapped at various distances $$d$$ above a surface-electrode trap.
 * At each $$d$$, the heating rate $$\dot{\bar{n}}$$ is measured by preparing the ion near the motional ground state and measuring its energy after a delay.
@@ -547,6 +581,89 @@ Finally, a few meta-principles:
 * Archive data and code: aim for the standard that another researcher can reproduce your plots and noise budget from your raw data and scripts.
 
 These practices ensure that your noise attribution is not only technically sound but also scientifically trustworthy.
+
+### 7. Common Pitfalls in Noise Attribution
+
+Experience suggests several recurring errors in noise analysis. Being aware of these can save significant time and prevent incorrect conclusions.
+
+#### 7.1 Statistical Pitfalls
+
+**Over-interpreting long-τ Allan deviation**\
+At large averaging times, the number of independent samples becomes small (sometimes < 5), and ADEV estimates become unreliable. A "bump" or "upturn" at long τ may be a statistical fluctuation rather than a real drift mechanism. Always check confidence intervals and be skeptical of features where degrees of freedom are low.
+
+**Confusing statistical significance with physical significance**\
+A statistically significant deviation from a Poisson or Gaussian model does not necessarily indicate a problem. With sufficient data, you will _always_ find deviations. Ask: Is this deviation large enough to matter for my measurement goals?
+
+**Applying Gaussian statistics to count data**\
+For small counts (< 20–30), Gaussian approximations to Poisson or binomial distributions can be poor. Use exact methods or appropriate approximations (Wilson interval for binomial, Garwood interval for Poisson).
+
+**Neglecting correlations in time series**\
+Standard error estimates assume independent samples. If your data have temporal correlations (which noise analysis often reveals!), naive uncertainty estimates will be too small. Consider block bootstrap or HAC (heteroskedasticity and autocorrelation consistent) estimators.
+
+#### 7.2 Measurement Pitfalls
+
+**Forgetting to log environmental conditions**\
+Temperature, humidity, vibration levels, and lab activity often correlate with noise. If you don't record them, you cannot test these hypotheses later. Log continuously if possible.
+
+**Changing multiple variables simultaneously**\
+When investigating noise sources, change one thing at a time. If you modify the trap drive frequency _and_ the detection threshold _and_ the ion species, you cannot attribute any observed change.
+
+**Insufficient baseline measurements**\
+Before investigating a suspected noise source, establish a reliable baseline. Otherwise, you cannot quantify improvement.
+
+#### 7.3 Analysis Pitfalls
+
+**Choosing analysis parameters post hoc**\
+Selecting PSD segment length, ADEV τ range, or histogram bin width _after_ seeing the data — especially to make features appear or disappear — is a form of p-hacking. Pre-specify reasonable choices or report results for multiple parameter values.
+
+**Ignoring the PSD–ADEV consistency check**\
+If your ADEV shows white noise but your PSD shows strong 1/f behavior (or vice versa), something is wrong. These representations must be consistent; discrepancies indicate analysis errors or non-stationary data.
+
+**Attributing residuals without physical evidence**\
+It is tempting to label unexplained noise as "technical noise" or "surface noise." Such attributions require supporting evidence (e.g., scaling with a controllable parameter, correlation with an auxiliary measurement). Unexplained residuals should be honestly labeled as such.
+
+#### 7.4 Documentation Pitfalls
+
+**Undocumented data exclusions**\
+Every excluded data point or segment should have a recorded justification written _before_ seeing its effect on the final result. "Excluded because it made the fit worse" is not acceptable.
+
+**Non-reproducible analysis**\
+If you cannot regenerate your plots from archived raw data and scripts, your analysis is not reproducible. This is the minimum standard for trustworthy science.
+
+### Appendix A: Glossary of Terms
+
+**Allan deviation (ADEV)**\
+A measure of frequency stability as a function of averaging time τ. Characterizes how much a signal's average value changes between consecutive intervals of duration τ. Units match the quantity being measured.
+
+**Allan variance (AVAR)**\
+The square of Allan deviation. Often denoted σ²\_y(τ).
+
+**Flicker noise (1/f noise)**\
+Noise whose power spectral density is inversely proportional to frequency. Common in electronic components and many physical systems. In ADEV plots, appears as a flat region (slope ≈ 0).
+
+**Johnson noise (thermal noise)**\
+Voltage fluctuations in resistors due to thermal agitation of charge carriers. Spectral density is white (flat) and proportional to temperature and resistance.
+
+**Over-dispersion**\
+When the variance of count data exceeds the mean, indicating extra variability beyond what a Poisson model predicts.
+
+**Power spectral density (PSD)**\
+The distribution of signal power across frequencies. For a random process, S(f) gives the power per unit frequency bandwidth.
+
+**Q–Q plot (quantile-quantile plot)**\
+A graphical method comparing the quantiles of observed data against theoretical quantiles (e.g., from a Gaussian distribution). Deviations from a straight line indicate departures from the reference distribution.
+
+**Shot noise (quantum projection noise)**\
+Fundamental noise arising from the discrete nature of particles or quanta. For counting experiments, follows Poisson statistics with variance equal to mean.
+
+**Welch's method**\
+A technique for estimating power spectral density by averaging periodograms from overlapping, windowed data segments. Reduces variance at the cost of frequency resolution.
+
+**White noise**\
+Noise with constant power spectral density across all frequencies. In ADEV plots, appears as slope −1/2 (i.e., σ\_y(τ) ∝ τ^{−1/2}).
+
+**Wilson score interval**\
+A confidence interval for binomial proportions that maintains accurate coverage even for small sample sizes or extreme probabilities, unlike the simpler Wald interval.
 
 ***
 
