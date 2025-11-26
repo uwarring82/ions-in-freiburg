@@ -151,6 +151,50 @@ $$\text{CI}_{\text{Wilson}} \approx [0, 0.26].$$
 
 The Wald interval would have given \[0,0], which clearly underestimates our uncertainty. This is a typical regime in trapped-ion experiments where the Wilson interval is strongly preferred.
 
+**1.1.1 Physical Context: Quantum Projection Noise**
+
+> **For trapped-ion experimentalists:** The binomial statistics described above directly apply to qubit state measurements. This fundamental measurement uncertainty is termed **quantum projection noise** (QPN) in the quantum information literature.
+
+**Physical origin:**\
+When measuring a qubit in state |ψ⟩ = α|0⟩ + β|1⟩, quantum mechanics dictates that each measurement projects onto either |0⟩ (probability p = |α|²) or |1⟩ (probability 1−p = |β|²). After N independent measurements, the observed fraction k/N fluctuates around p with binomial variance p(1−p)/N—exactly the statistics of §1.1.
+
+**Standard quantum limit (SQL):**\
+For estimating a parameter (e.g., rotation angle θ) from N qubit measurements, the fundamental uncertainty is
+
+<p align="center"><span class="math">\Delta\theta_{\text{SQL}} = \frac{1}{\sqrt{N}}</span></p>
+
+This 1/√N scaling defines the standard quantum limit for uncorrelated measurements. States with quantum correlations (spin-squeezed states, entangled states) can surpass this limit \[11,12].
+
+**Practical diagnostic for ion trap measurements:**\
+When measuring qubit states via fluorescence detection (bright/dark):
+
+1. Each detection is a Bernoulli trial → binomial statistics with variance Np(1−p)
+2. Use Wilson intervals (§1.1) for confidence bounds on detection fidelity
+3. **Over-dispersion check:** If observed variance significantly exceeds Np(1−p), investigate:
+   * Laser intensity fluctuations (causing time-varying shelving probability)
+   * Detection efficiency variations (optical alignment drift, PMT gain instability)
+   * Qubit dephasing between preparation and measurement
+   * Background light fluctuations (stray laser reflections, room lights)
+
+**Terminology note:** Different communities use slightly different terms for the same phenomenon:
+
+| Community                  | Standard term             | Statistical model |
+| -------------------------- | ------------------------- | ----------------- |
+| Quantum information        | Quantum projection noise  | Binomial          |
+| Atomic physics / metrology | Projection noise          | Binomial          |
+| AMO experiments            | Quantum measurement noise | Binomial          |
+
+All refer to the fundamental binomial statistics arising from wavefunction collapse during measurement.
+
+**Connection to Allan deviation:**\
+For repeated qubit state preparations and measurements over time, projection noise contributes white noise to the Allan deviation (slope −1/2) at short averaging times. Any flicker or drift beyond this baseline indicates technical instability in preparation or detection.
+
+**Key references:**
+
+* \[11] Wineland et al. (1992) Spin squeezing and reduced quantum noise in spectroscopy
+* \[12] Wineland et al. (1994) Squeezed atomic states and projection noise
+* \[13] Itano et al. (1993) Quantum projection noise—population fluctuations in two-level systems
+
 ***
 
 #### 1.2 Poisson Counts and Over-Dispersion
@@ -211,6 +255,62 @@ where χ²\_p(ν) is the p-th quantile of the chi-square distribution with ν de
 
 This is the Poisson analog of the Wilson interval for binomial data: it maintains accurate coverage even for $$k = 0$$ and never produces negative lower bounds.
 
+**1.2.1 Physical Context: Shot Noise**
+
+> **For photodetection and fluorescence measurements:** Poisson counting statistics represent the fundamental quantum limit for photon detection. This is termed **shot noise** in quantum optics and photodetection—the irreducible fluctuation arising from the discrete, particle nature of light.
+
+**Physical origin:**\
+Photons arrive at a detector as discrete quantum events. For coherent light (e.g., laser illumination), the photon number in a fixed time interval follows Poisson statistics with mean ⟨n⟩ and variance ⟨n⟩. This 1:1 mean-to-variance ratio defines the shot noise limit.
+
+**Shot noise across measurement contexts:**
+
+The term "shot noise" appears with related but distinct meanings:
+
+1. **Photon counting (discrete):** Poisson fluctuations in the number of detected photons. Direct application of §1.2 statistics.
+2. **Homodyne/heterodyne detection (continuous-variable):** Gaussian fluctuations in field quadrature measurements, arising from vacuum field fluctuations. In the large-photon-number limit, Poisson → Gaussian (§1.3).
+3. **Electronic photodetection:** Current fluctuations in photodiodes and photomultipliers from discrete charge carrier arrival. For current I over bandwidth Δf: $$\langle i^2 \rangle = 2eI\Delta f$$ where e is the electron charge \[14]. This is white noise, deriving from underlying Poisson statistics of charge carriers.
+
+**Historical note:** "Shot noise" originates from Schottky's 1918 analysis of vacuum tube current fluctuations—literally the "shot" of individual electrons \[14].
+
+**Practical diagnostic for fluorescence detection:**
+
+When counting scattered photons from trapped ions:
+
+1. **Baseline expectation:** For collection efficiency η and scattering rate γ over time τ:
+   * Mean counts: ⟨n⟩ = γτη
+   * Shot noise variance: Var(n) = ⟨n⟩
+2. **Choose statistical framework:**
+   * ⟨n⟩ < 10: Use exact Poisson methods (Garwood intervals)
+   * 10 < ⟨n⟩ < 30: Poisson with continuity correction
+   * ⟨n⟩ > 30: Gaussian approximation (§1.3) typically adequate
+3. **Over-dispersion check:** If observed variance ≫ ⟨n⟩, investigate:
+   * Laser intensity noise (AM noise, pointing instability)
+   * Ion position fluctuations (micromotion, secular motion heating)
+   * Detector gain variations (PMT fatigue, temperature sensitivity)
+   * Background count rate fluctuations (stray light, dark counts)
+
+**Shot noise limit for signal detection:**\
+For photon-counting measurements, the signal-to-noise ratio scales as:
+
+<p align="center"><span class="math">\text{SNR} = \frac{\langle n \rangle}{\sqrt{\langle n \rangle}} = \sqrt{\langle n \rangle}</span></p>
+
+This √⟨n⟩ scaling sets the fundamental limit for coherent-state measurements. Improving SNR requires collecting more photons (longer integration, better collection efficiency) or using non-classical light (squeezed states).
+
+**Connection to time-domain analysis:**\
+Shot noise contributes white noise to both Allan deviation and PSD:
+
+* ADEV: σ\_y(τ) ∝ τ^(−1/2) at short τ
+* PSD: Flat spectrum (frequency-independent)
+
+Technical noise sources (laser RIN, detection electronics) typically add 1/f or colored noise components that deviate from this baseline.
+
+**Key references:**
+
+* \[14] Schottky (1918) Über spontane Stromschwankungen (original shot noise paper)
+* \[15] Walls & Milburn (2008) Quantum Optics, Chapter 5 (photon statistics)
+* \[16] Gerry & Knight (2005) Introductory Quantum Optics, Chapter 4
+* \[17] Haroche & Raimond (2006) Exploring the Quantum, Chapter 7 (photon counting in cavity QED)
+
 ***
 
 #### 1.3 Gaussian Distributions and Their Limits of Applicability
@@ -236,6 +336,16 @@ Sums or averages of many independent random variables converge to Gaussian distr
 * Averaged time series data often appears Gaussian even when individual samples are not
 
 **Practical criterion:** If your data arise from averaging or summing many independent contributions, Gaussian assumptions are often reasonable.
+
+**Comment on Quantum measurement noise in the large-N limit:**\
+Both quantum projection noise (§1.1.1, binomial) and photon shot noise (§1.2.1, Poisson) converge to Gaussian distributions for large N or ⟨n⟩ by the Central Limit Theorem. This explains why many quantum measurement systems naturally operate in the Gaussian regime:
+
+* Fluorescence detection with ⟨n⟩ > 50 photons per measurement
+* Atomic clock interrogation with many atoms (√N projection noise → Gaussian)
+* Homodyne detection of optical fields (intrinsically continuous-variable/Gaussian)
+* Averaged time series of ion trap measurements
+
+The transition from discrete (binomial/Poisson) to continuous (Gaussian) statistics typically occurs around N ≈ 20–30, consistent with the CLT convergence rate. For experimental design: if you average over many quantum measurements, you can use Gaussian tools (§1.3); if analyzing individual shot records, use the appropriate discrete model (§1.1 or §1.2).
 
 **Diagnostic Tools**
 
@@ -285,6 +395,31 @@ The three distributions form a hierarchy:
 | Continuous measurements       | Gaussian          | CLT conditions met, or by physical construction |
 
 When in doubt, start with the more specific model (binomial or Poisson) and verify whether Gaussian approximations are justified for your sample sizes and parameters. The specific models provide exact results; the Gaussian is an approximation whose accuracy depends on being in the appropriate limit.
+
+**1.3.1 Unified View: Quantum Noise Terminology Across Measurement Systems**
+
+The following table maps measurement systems to their fundamental noise limits and appropriate statistical frameworks:
+
+| Physical system            | Observable           | Fundamental limit        | Noise term                | Statistics         | This document |
+| -------------------------- | -------------------- | ------------------------ | ------------------------- | ------------------ | ------------- |
+| Qubit measurement          | 0/1 outcome          | Wavefunction collapse    | Quantum projection noise  | Binomial           | §1.1, §1.1.1  |
+| Photon counting (low ⟨n⟩)  | Number of photons    | Discrete photon arrivals | Photon shot noise         | Poisson            | §1.2, §1.2.1  |
+| Photon counting (high ⟨n⟩) | Number of photons    | Discrete photon arrivals | Photon shot noise         | Gaussian           | §1.3          |
+| Homodyne detection         | Quadrature amplitude | Vacuum fluctuations      | Shot noise / vacuum noise | Gaussian           | §1.3          |
+| Photodiode current         | Photocurrent         | Discrete charge carriers | Electronic shot noise     | Gaussian (high I)  | §1.3          |
+| Averaged qubit data        | Mean fidelity        | Projection noise         | Standard quantum limit    | Gaussian (large N) | §1.3          |
+
+**Key insight:** Different terminology reflects different experimental communities and measurement contexts, but the underlying statistical frameworks are universal. When reading quantum optics papers that mention "shot noise" or quantum information papers discussing "projection noise," you can map these directly to the binomial/Poisson/Gaussian framework of §1.1–1.3.
+
+**Practical workflow:**
+
+1. **Identify your measurement type** (single qubit? photon counts? averaged signal?)
+2. **Map to statistical model** using table above
+3. **Apply appropriate tools** from corresponding section
+4. **Check for over-dispersion** relative to the fundamental quantum/discrete limit
+5. **If over-dispersed → technical noise investigation** using §4 workflow
+
+This unified perspective ensures you use correct statistical methods while understanding the physical origin of your noise floor.
 
 ***
 
@@ -711,6 +846,9 @@ A measure of frequency stability as a function of averaging time τ. Characteriz
 **Allan variance (AVAR)**\
 The square of Allan deviation. Often denoted σ²\_y(τ).
 
+**Coherent state**\
+The quantum state of light produced by an ideal laser. Has Poissonian photon number statistics with variance equal to mean. The minimal-uncertainty Gaussian state for optical field quadratures.
+
 **Flicker noise (1/f noise)**\
 Noise whose power spectral density is inversely proportional to frequency. Common in electronic components and many physical systems. In ADEV plots, appears as a flat region (slope ≈ 0).
 
@@ -726,11 +864,17 @@ When the variance of count data exceeds the mean, indicating extra variability b
 **Power spectral density (PSD)**\
 The distribution of signal power across frequencies. For a random process, S(f) gives the power per unit frequency bandwidth.
 
+**Quantum projection noise (QPN)**\
+The fundamental measurement uncertainty in qubit systems arising from wavefunction collapse during measurement. Follows binomial statistics for repeated measurements. Also called quantum measurement noise or simply projection noise.
+
 **Q–Q plot (quantile-quantile plot)**\
 A graphical method comparing the quantiles of observed data against theoretical quantiles (e.g., from a Gaussian distribution). Deviations from a straight line indicate departures from the reference distribution.
 
-**Shot noise (quantum projection noise)**\
-Fundamental noise arising from the discrete nature of particles or quanta. For counting experiments, follows Poisson statistics with variance equal to mean.
+**Shot noise**\
+Term with multiple related meanings depending on context: (1) Poisson fluctuations in photon counting (photon shot noise); (2) vacuum field fluctuations in continuous-variable quantum optics; (3) current fluctuations from discrete charge carriers in electronics (electronic shot noise). All manifest as white noise at relevant frequencies and represent fundamental quantum or discrete-particle limits.
+
+**Standard quantum limit (SQL)**\
+The measurement precision limit for estimating a parameter (frequency, phase, angle) using uncorrelated particles or measurements. Scales as 1/√N where N is the number of particles or measurements. Can be surpassed using quantum correlations (squeezed states, entanglement).
 
 **Welch's method**\
 A technique for estimating power spectral density by averaging periodograms from overlapping, windowed data segments. Reduces variance at the cost of frequency resolution.
