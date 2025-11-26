@@ -541,7 +541,7 @@ To move from “I see noise” to “I know its sources and magnitudes,” it he
 
 _Figure 1: Noise attribution workflow._ Starting from raw data, we first check simple statistical assumptions (distribution and variance), then use time- and frequency-domain tools, and finally iterate with physical hypotheses until the noise budget closes.
 
-#### 4.1 Step 1: Define Objectives and Noise Hypotheses
+#### Step 1: Define Objectives and Noise Hypotheses
 
 Clarify what “noise” means for your system:
 
@@ -551,7 +551,7 @@ Clarify what “noise” means for your system:
 
 List plausible noise sources: thermal noise, $$1/f$$ electronics noise, mechanical vibrations, electromagnetic pick-up, drift in environmental parameters, quantum projection noise, etc. This top-down hypothesis list will guide your tests.
 
-#### 4.2 Step 2: Collect Data with an Analysis Plan
+#### Step 2: Collect Data with an Analysis Plan
 
 Before taking data, sketch a plan:
 
@@ -565,7 +565,7 @@ Pre-defining the analysis reduces the temptation to “fish” for effects (p-ha
 * instrument settings,
 * timestamps and any interventions.
 
-#### 4.3 Step 3: Data Integrity Checks
+#### Step 3: Data Integrity Checks
 
 Start with simple plots:
 
@@ -581,7 +581,7 @@ Look for:
 
 If you exclude data, record why (e.g. “laser unlocked between 13:05–13:07, excluded this interval”). Integrity checks prevent you from analyzing artefacts as if they were physical noise.
 
-#### 4.4 Step 4: Statistical Distribution Analysis
+#### Step 4: Statistical Distribution Analysis
 
 Now test whether your data behave as expected under their _assumed_ distribution.
 
@@ -600,7 +600,7 @@ Now test whether your data behave as expected under their _assumed_ distribution
 
 If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
 
-#### 4.5 Step 5: Time-Domain Analysis (Allan Deviation)
+#### Step 5: Time-Domain Analysis (Allan Deviation)
 
 For time series, compute $$\sigma_y(\tau)$$ over a range of averaging times:
 
@@ -611,7 +611,7 @@ For time series, compute $$\sigma_y(\tau)$$ over a range of averaging times:
 
 Compare the observed stability with theoretical predictions or device specs. If the short-term regime is worse than shot-noise limits, you likely have technical noise; if long-term stability tanks at a certain $$\tau$$, suspect drift in environmental or technical parameters.
 
-#### 4.6 Step 6: Frequency-Domain Analysis (PSD)
+#### Step 6: Frequency-Domain Analysis (PSD)
 
 Compute the PSD using Welch’s method \[8]:
 
@@ -625,7 +625,7 @@ Link PSD features to physical noise sources:
 * Peaks at rotation frequencies → mechanical vibrations.
 * Broad $$1/f$$ region → flicker noise in electronics or surfaces.
 
-#### 4.7 Step 7: Cross-Analysis and Noise Budget
+#### Step 7: Cross-Analysis and Noise Budget
 
 Combine insights:
 
@@ -651,7 +651,7 @@ Vary analysis parameters (PSD segment length, ADEV τ spacing, outlier threshold
 **Prediction testing**\
 If your noise model is correct, it should predict behavior in new conditions. For example, if you attribute noise to a 50 Hz pickup, inserting a notch filter should reduce that contribution predictably.
 
-#### 4.8 Step 8: Iterate and Refine
+#### Step 8: Iterate and Refine
 
 Noise attribution is rarely one-shot. Use residuals to guide the next iteration:
 
@@ -661,7 +661,7 @@ Noise attribution is rarely one-shot. Use residuals to guide the next iteration:
 
 Each iteration should ideally shrink the unexplained residual and refine your physical understanding.
 
-#### 4.9 Step 9: Document and Archive
+#### Step 9: Document and Archive
 
 Finally, record:
 
