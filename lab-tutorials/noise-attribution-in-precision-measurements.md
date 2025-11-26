@@ -192,8 +192,8 @@ For repeated qubit state preparations and measurements over time, projection noi
 **Key references:**
 
 * \[11] Wineland et al. (1992) Spin squeezing and reduced quantum noise in spectroscopy
-* \[12] Wineland et al. (1994) Squeezed atomic states and projection noise
-* \[13] Itano et al. (1993) Quantum projection noise—population fluctuations in two-level systems
+* \[12] Wineland et al. (1994) Squeezed atomic states and projection noise in spectroscopy
+* \[13] Itano et al. (1993) Quantum projection noise: Population fluctuations in two-level systems
 
 ***
 
@@ -964,3 +964,10 @@ plt.show()
 8. P. D. Welch (1967). The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms. _IEEE Transactions on Audio and Electroacoustics_ 15, 70–73.
 9. J. Labaziewicz _et al._ (2008). Suppression of heating rates in cryogenic surface-electrode ion traps. _Physical Review Letters_ 100, 013001.
 10. M. Brownnutt, M. Kumph, P. Rabl, and R. Blatt (2015). Ion-trap measurements of electric-field noise near surfaces. _Reviews of Modern Physics_ 87, 1419–1482.
+11. D. J. Wineland, J. J. Bollinger, W. M. Itano, F. L. Moore, and D. J. Heinzen (1992). Spin squeezing and reduced quantum noise in spectroscopy. _Physical Review A_ 46, R6797–R6800.
+12. D. J. Wineland, J. J. Bollinger, W. M. Itano, and D. J. Heinzen (1994). Squeezed atomic states and projection noise in spectroscopy. _Physical Review A_ 50, 67–88.
+13. W. M. Itano, J. C. Bergquist, J. J. Bollinger, J. M. Gilligan, D. J. Heinzen, F. L. Moore, M. G. Raizen, and D. J. Wineland (1993). Quantum projection noise: Population fluctuations in two-level systems. _Physical Review A_ 47, 3554–3570.
+14. W. Schottky (1918). Über spontane Stromschwankungen in verschiedenen Elektrizitätsleitern. _Annalen der Physik_ 362, 541–567. \[For English discussion see: J. B. Johnson (1928). Thermal agitation of electricity in conductors. _Physical Review_ 32, 97–109.]
+15. D. F. Walls and G. J. Milburn (2008). _Quantum Optics_, 2nd edition. Springer-Verlag, Berlin.
+16. C. Gerry and P. Knight (2005). _Introductory Quantum Optics_. Cambridge University Press.
+17. S. Haroche and J.-M. Raimond (2006). _Exploring the Quantum: Atoms, Cavities, and Photons_. Oxford University Press.
