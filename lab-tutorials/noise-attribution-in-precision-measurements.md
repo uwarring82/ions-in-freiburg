@@ -9,7 +9,7 @@ icon: scale-unbalanced-flip
 _author: U. Warring_\
 &#xNAN;_&#x61;ffiliation: Institute of Physics, University of Freiburg_\
 &#xNAN;_&#x76;ersion: 1.0_\
-&#xNAN;_&#x6C;ast\_updated: 2025-11-25_\
+&#xNAN;_&#x6C;ast\_updated: 2025-11-26_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
 &#xNAN;_&#x6C;icense: CC BY-SA 4.0_
 {% endhint %}
@@ -140,16 +140,16 @@ For binary experimental outcomes (e.g. qubit state readout, survival probability
 
 **Worked example (Wilson interval)**
 
-Suppose you perform ($$N = 10$$) bright/dark state detections and observe ($$k = 0$$) bright outcomes.
+Suppose you perform $$N = 10$$ bright/dark state detections and observe $$k = 0$$ bright outcomes.
 
 * $$\hat p = k/N = 0$$.
-* For 95% confidence, ($$z \approx 1.96$$).
+* For 95% confidence, $$z \approx 1.96$$.
 
 Plugging into the Wilson formula gives approximately
 
-$$\text{CI}_{\text{Wilson}} \approx [0, 0.26].$$
+<p align="center"><span class="math">\text{CI}_{\text{Wilson}} \approx [0, 0.26].</span></p>
 
-The Wald interval would have given \[0,0], which clearly underestimates our uncertainty. This is a typical regime in trapped-ion experiments where the Wilson interval is strongly preferred.
+The Wald interval would have given $$[0,0]$$, which clearly underestimates our uncertainty. This is a typical regime in trapped-ion experiments where the Wilson interval is strongly preferred.
 
 **1.1.1 Physical Context: Quantum Projection Noise**
 
@@ -215,11 +215,11 @@ A quantitative test: under the null hypothesis of a Poisson model with mean $$\l
 
 <p align="center"><span class="math">(N-1)\frac{s^2}{\bar{x}} \sim \chi^2_{N-1}</span></p>
 
-approximately follows a chi-square distribution with $$n-1$$ degrees of freedom \[4].
+approximately follows a chi-square distribution with $$n-1$$ degrees of freedom \[4]. Here we use the unbiased sample variance $$s^2$$. For large $$N$$, the quantity $$(N-1)s^2/\bar{x}$$ is numerically equivalent to the Pearson chi-square statistic $$\sum_i (x_i - \bar{x})^2 / \bar{x}$$, so both formulations can be used consistently to test for over-dispersion.
 
 **Interpretation procedure:**
 
-1. Compute the test statistic $$\chi^2 = \sum_i (x_i - \bar{x})^2 / \bar{x}$$
+1. Compute the test statistic $$\chi^2 = (N-1)\frac{s^2}{\bar{x}}.$$
 2. Compare to the critical value $$\chi^2_{0.95}(n-1)$$ from chi-square tables (or use software)
 3. If $$\chi^2 > \chi^2_{0.95}(n-1)$$, reject the null hypothesis of Poisson statistics at the 5% significance level
 
@@ -229,7 +229,7 @@ A significant result signals **over-dispersion**: extra noise beyond simple Pois
 
 _Caution:_ A non-significant result does not prove the data are Poisson — it only means you lack evidence to reject the Poisson model. With small $$n$$, power to detect over-dispersion is limited.
 
-_Rule of thumb:_ For the chi-square approximation to be reliable, expected counts should not be too small. A common criterion is that each expected count should be at least 5; Cochran (1952) provides the foundational analysis of this requirement \[5, 5a]. If many bins have expected counts below this threshold, either combine categories or use exact methods (e.g., exact Poisson confidence intervals via the Garwood method).
+_Rule of thumb:_ For the chi-square approximation to be reliable, expected counts should not be too small. A commonly used refinement of Cochran's criteria is \[5, 5a]: (i) at least 80% of expected counts should be ≥ 5, and (ii) no expected count should be < 1. If these conditions are violated, either combine categories or use exact methods (e.g. Garwood intervals for Poisson data).
 
 **Worked example (Poisson dispersion test)**
 
@@ -237,7 +237,7 @@ Assume you record $$N = 20$$ photon-count measurements (counts per fixed time bi
 
 <p align="center"><span class="math">\bar{x} = 12.3, \qquad s^2 = 22.5.</span></p>
 
-Under the Poisson hypothesis, you expect (s^2 \approx \bar{x}). Compute
+Under the Poisson hypothesis, you expect ($$s^2 \approx \bar{x}$$). Compute
 
 <p align="center"><span class="math">\chi^2 = (N-1)\frac{s^2}{\bar{x}} \approx 19 \times \frac{22.5}{12.3} \approx 34.8.</span></p>
 
@@ -270,6 +270,8 @@ The term "shot noise" appears with related but distinct meanings:
 2. **Homodyne/heterodyne detection (continuous-variable):** Gaussian fluctuations in field quadrature measurements, arising from vacuum field fluctuations. In the large-photon-number limit, Poisson → Gaussian (§1.3).
 3. **Electronic photodetection:** Current fluctuations in photodiodes and photomultipliers from discrete charge carrier arrival. For current I over bandwidth Δf: $$\langle i^2 \rangle = 2eI\Delta f$$ where e is the electron charge \[14]. This is white noise, deriving from underlying Poisson statistics of charge carriers.
 
+In this document, whenever we write $$\text{SNR} = \sqrt{\langle n \rangle}$$, we are referring explicitly to photon **counting** experiments over a fixed acquisition time $$\tau$$, where $$\langle n \rangle$$ is the mean number of detected photons in that interval. For continuous photodiode current measurements, the shot-noise-limited current variance is $$\langle i^2 \rangle = 2 e I \Delta f,$$ where $$I$$ is the mean photocurrent and $$\Delta f$$ the detection bandwidth.
+
 **Historical note:** "Shot noise" originates from Schottky's 1918 analysis of vacuum tube current fluctuations—literally the "shot" of individual electrons \[14].
 
 **Practical diagnostic for fluorescence detection:**
@@ -289,7 +291,7 @@ When counting scattered photons from trapped ions:
    * Detector gain variations (PMT fatigue, temperature sensitivity)
    * Background count rate fluctuations (stray light, dark counts)
 
-**Shot noise limit for signal detection:**\
+**Shot noise limit for photon-counting signal detection:**\
 For photon-counting measurements, the signal-to-noise ratio scales as:
 
 <p align="center"><span class="math">\text{SNR} = \frac{\langle n \rangle}{\sqrt{\langle n \rangle}} = \sqrt{\langle n \rangle}</span></p>
@@ -335,6 +337,9 @@ Sums or averages of many independent random variables converge to Gaussian distr
 * Poisson distributions approach Gaussian for large $$\lambda$$ (typically $$\lambda > 20$$)
 * Averaged time series data often appears Gaussian even when individual samples are not
 
+_Note:_ These thresholds are intentionally conservative. Many textbooks quote slightly looser rules of thumb (e.g. $$np > 5$$ and $$n(1-p) > 5$$ for binomial, $$\lambda > 10$$ for Poisson). In precision work it is\
+safer to stay on the conservative side or to fall back to exact methods when in doubt.
+
 **Practical criterion:** If your data arise from averaging or summing many independent contributions, Gaussian assumptions are often reasonable.
 
 **Comment on Quantum measurement noise in the large-N limit:**\
@@ -360,6 +365,8 @@ Before assuming Gaussianity, verify:
    * Shapiro-Wilk (best power for $$n < 50$$)
    * Anderson-Darling (sensitive to tails)
    * Jarque-Bera (tests skewness and kurtosis)
+
+_Note:_ These tests assume continuously distributed data. Strong digitization or many repeated identical values (e.g. coarse frequency counters, heavily quantized ADCs) can cause normality tests to reject even when the underlying fluctuations are effectively Gaussian at a finer resolution.
 
 **Common Pitfalls**
 
@@ -408,6 +415,8 @@ The following table maps measurement systems to their fundamental noise limits a
 | Homodyne detection         | Quadrature amplitude | Vacuum fluctuations      | Shot noise / vacuum noise | Gaussian           | §1.3          |
 | Photodiode current         | Photocurrent         | Discrete charge carriers | Electronic shot noise     | Gaussian (high I)  | §1.3          |
 | Averaged qubit data        | Mean fidelity        | Projection noise         | Standard quantum limit    | Gaussian (large N) | §1.3          |
+
+In continuous-variable quantum optics (e.g. homodyne detection), vacuum fluctuations appear as Gaussian noise in the measured quadrature with a well-defined variance. This is the continuous-variable manifestation of shot noise: the underlying discreteness of photons leads, in the high-photon-number limit, to effectively Gaussian quadrature noise.
 
 **Key insight:** Different terminology reflects different experimental communities and measurement contexts, but the underlying statistical frameworks are universal. When reading quantum optics papers that mention "shot noise" or quantum information papers discussing "projection noise," you can map these directly to the binomial/Poisson/Gaussian framework of §1.1–1.3.
 
@@ -465,6 +474,10 @@ Like any estimator, $$\sigma_y(\tau)$$ has uncertainty. The effective number of 
 
 * include error bars or bands for each $$\tau$$, and
 * be cautious when interpreting features at $$\tau$$ where the number of independent samples is small.
+
+Allan deviation and its confidence intervals strictly refer to (weakly) stationary processes. If your data\
+exhibit significant deterministic drift (e.g. linear frequency drift), the classical Allan deviation becomes\
+biased at long ($$\tau$$). In such cases, drift-insensitive variants such as the Hadamard variance are preferred for characterizing long-term stability.
 
 ***
 
@@ -582,7 +595,8 @@ Now test whether your data behave as expected under their _assumed_ distribution
     * **D'Agostino-Pearson test:** Tests skewness and kurtosis jointly; useful for larger samples.
 
     _Caution:_ With large $$n$$, even small, practically negligible deviations from normality will register as statistically significant. In such cases, rely more heavily on Q–Q plots and assess whether deviations are large enough to affect your downstream analysis (e.g., confidence interval coverage, ADEV interpretation). If QQ-plot deviations are within ±0.5σ across most of the range, Gaussian approximations are typically adequate for confidence intervals.
-* **Binomial:** For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$ (homogeneity test). Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
+* **Binomial:** For repeated success/failure runs, estimate $$\hat p$$ and construct Wilson intervals \[1]. Check if repeated blocks of trials are mutually consistent with a single $$p$$, e.g. via a chi-square test\
+  for homogeneity of binomial proportions. Strong discrepancies between blocks indicate time-varying $$p(t)$$ or systematic biases (e.g. detector threshold drift).
 
 If the data strongly deviate from the expected distribution, revisit either your model (maybe it isn’t purely Poisson or binomial) or your assumptions (hidden drifts, unaccounted correlations, etc.).
 
@@ -902,9 +916,11 @@ ci_low, ci_high = smp.proportion_confint(count=k, nobs=N, alpha=alpha, method="w
 print(ci_low, ci_high)
 
 # Poisson Garwood interval
-from statsmodels.stats.proportion import poisson_twosided_confint
+from statsmodels.stats.proportion import poisson_confint
+
 k = 3  # observed count
-ci_low, ci_high = poisson_twosided_confint(k, alpha=0.05, method='exact')
+ci_low, ci_high = poisson_confint(k, alpha=0.05, method="exact")
+print(ci_low, ci_high)
 
 
 # Poisson dispersion test
@@ -926,8 +942,10 @@ import numpy as np
 
 y = np.array([...])  # fractional frequency data
 rate = 1.0  # sampling rate in Hz
-taus, adevs, errors, ns = allantools.oadev(y, rate=rate, data_type="freq")
-
+taus, adevs, adev_errs, ns = allantools.oadev(y, rate=rate, data_type="freq")
+# taus: averaging times
+# adevs: Allan deviations
+# adev_errs: 1-sigma confidence estimates
 
 # Welch PSD estimate
 import numpy as np
