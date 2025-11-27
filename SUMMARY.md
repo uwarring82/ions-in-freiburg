@@ -7,10 +7,6 @@
 * [About us](getting-started/about-us.md)
 * [Structure your research](getting-started/structure-your-research.md)
 
-## Conceptual References
-
-* [Frames, RWA, Dressed States, and Symmetries](conceptual-references/frames-rwa-dressed-states-and-symmetries.md)
-
 ## Lab Tutorials
 
 * [Gaussian Beams and the Knife-Edge Method](lab-tutorials/gaussian-beams-and-the-knife-edge-method.md)
@@ -19,6 +15,10 @@
 * [Cleaning Components After Manufacturing](lab-tutorials/cleaning-components-after-manufacturing.md)
 * [Checklist for Changing Components in an evacuated UHV Chamber](lab-tutorials/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
 * [Noise Attribution in Precision Measurements](lab-tutorials/noise-attribution-in-precision-measurements.md)
+
+## Conceptual References
+
+* [Frames, RWA, Dressed States, and Symmetries](conceptual-references/frames-rwa-dressed-states-and-symmetries.md)
 
 ## Publish your research
 

@@ -150,10 +150,10 @@ $$
 
 Suppose you collected normalized transmitted power data as the knife-edge moves across the beam. After fitting the data to the model, you obtain:
 
-* Beam center $$x_0 = 5.0 , \text{mm}$$
-* Beam radius $$w = 0.8 , \text{mm}$$
+* Beam center $$x_0 = 5.0\, \text{mm}$$
+* Beam radius $$w = 0.8\,\text{mm}$$
 
-This means that at the measurement plane, the beam has a radius of $$0.8 , \text{mm}$$ at which the intensity falls to $$1/e^2$$ of its maximum value.
+This means that at the measurement plane, the beam has a radius of $$0.8 \,\text{mm}$$ at which the intensity falls to $$1/e^2$$ of its maximum value.
 
 ***
 
