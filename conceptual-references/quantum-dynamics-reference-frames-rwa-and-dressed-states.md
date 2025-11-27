@@ -1,12 +1,12 @@
 ---
 description: >-
-  Operational definitions and validity criteria for frames, RWA, and dressed
-  states. Required reading before manuscript preparation involving driven
-  two-level systems or RWA justifications.
+  Rigorous operational definitions distinguishing interaction/rotating frames
+  (exact transformations), the rotating-wave approximation (controlled
+  truncation), and dressed states (diagonalization).
 icon: books
 ---
 
-# Quantum Dynamics Terminology Reference: Frames, Approximations, and Dressed States
+# Quantum Dynamics Reference: Frames, RWA, and Dressed States
 
 {% hint style="info" %}
 author: U._Warring_\

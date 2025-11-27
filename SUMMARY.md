@@ -18,7 +18,7 @@
 
 ## Conceptual References
 
-* [Quantum Dynamics Terminology Reference: Frames, Approximations, and Dressed States](conceptual-references/quantum-dynamics-terminology-reference-frames-approximations-and-dressed-states.md)
+* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](conceptual-references/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 
 ## Publish your research
 
