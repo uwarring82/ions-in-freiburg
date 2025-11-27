@@ -1,9 +1,12 @@
 ---
-description: A concise overview of relevant terminology and their appropriate use
+description: >-
+  Operational definitions and validity criteria for frames, RWA, and dressed
+  states. Required reading before manuscript preparation involving driven
+  two-level systems or RWA justifications.
 icon: books
 ---
 
-# Frames, RWA, Dressed States, and Symmetries
+# Quantum Dynamics Terminology Reference: Frames, Approximations, and Dressed States
 
 {% hint style="info" %}
 author: U._Warring_\
