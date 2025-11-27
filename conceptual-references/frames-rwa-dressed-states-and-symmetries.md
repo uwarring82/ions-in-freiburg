@@ -492,36 +492,36 @@ where $$\eta$$ accounts for different dipole matrix elements in the dressed basi
 
 ### 4. Floquet-Theoretic Framework `[ADVANCED]`
 
-For periodic drives $H(t+T)=H(t)$ with period $T = 2\pi/\omega$, Floquet's theorem \[SHI65] guarantees solutions of the form:
+For periodic drives $$H(t+T)=H(t)$$ with period $$T = 2\pi/\omega$$, Floquet's theorem \[SHI65] guarantees solutions of the form:
 
-\$$|\psi(t)\rangle = e^{-i\varepsilon t/\hbar}|\phi(t)\rangle,\qquad |\phi(t+T)\rangle = |\phi(t)\rangle\$$
+$$|\psi(t)\rangle = e^{-i\varepsilon t/\hbar}|\phi(t)\rangle,\qquad |\phi(t+T)\rangle = |\phi(t)\rangle$$
 
-where $\varepsilon$ are **quasienergies** (defined modulo $\hbar\omega$) and $|\phi(t)\rangle$ are **Floquet modes** (time-periodic states).
+where $$\varepsilon$$ are **quasienergies** (defined modulo $$\hbar\omega$$) and $$|\phi(t)\rangle$$ are **Floquet modes** (time-periodic states).
 
 #### 4.1 Connection to rotating frame and RWA
 
-**Rotating frame** $\equiv$ shifting to a basis where the Floquet Hamiltonian becomes simpler (removing the dominant $\omega$ oscillation).
+**Rotating frame** $$\equiv$$ shifting to a basis where the Floquet Hamiltonian becomes simpler (removing the dominant $$\omega$$ oscillation).
 
-**RWA** $\equiv$ keeping only the **zeroth Fourier block** in the Floquet expansion—equivalent to the lowest-order Magnus or Van Vleck expansion \[GOL14, BUK15].
+**RWA** $$\equiv$$ keeping only the **zeroth Fourier block** in the Floquet expansion—equivalent to the lowest-order Magnus or Van Vleck expansion \[GOL14, BUK15].
 
-**Dressed energies** $\equiv$ quasienergies in the RWA limit:
+**Dressed energies** $$\equiv$$ quasienergies in the RWA limit:
 
-\$$E\_\pm \equiv \varepsilon\_\pm \quad (\text{modulo } \hbar\omega)\$$
+$$E_\pm \equiv \varepsilon_\pm \quad (\text{modulo } \hbar\omega)$$
 
 **Beyond-RWA corrections** (Bloch-Siegert shift, multiphoton resonances) appear systematically as higher Fourier blocks in the Floquet spectrum. See Appendix A for perturbative expansions.
 
-\{% hint style="info" %\} **Connection to §2**: In this sense, the RWA procedure described in §2 can be understood as keeping only the lowest (zeroth) Fourier block of the full Floquet Hamiltonian—a controlled truncation that becomes exact in the limit $\Omega/\omega\_0 \to 0$. Higher Fourier blocks encode the beyond-RWA corrections (Bloch-Siegert shifts, multiphoton processes) discussed in Appendix A. \{% endhint %\}
+**Connection to §2**: In this sense, the RWA procedure described in §2 can be understood as keeping only the lowest (zeroth) Fourier block of the full Floquet Hamiltonian—a controlled truncation that becomes exact in the limit $\Omega/\omega\_0 \to 0$. Higher Fourier blocks encode the beyond-RWA corrections (Bloch-Siegert shifts, multiphoton processes) discussed in Appendix A.
 
 #### 4.2 Experimental signatures of Floquet structure
 
-* **Multiphoton resonances**: Absorption/emission at $\Delta = m\omega$ ($m \in \mathbb{Z}$), revealing higher Floquet blocks \[CHI17]
-* **Sideband spectroscopy**: Probe transmission shows peaks at $\varepsilon\_\pm + m\hbar\omega$, mapping the full Floquet ladder \[UND16]
-* **Photon-assisted tunneling**: In coupled systems, drive-induced transitions at energy mismatch $\Delta E = m\hbar\omega$ \[PLU04]
-* **Stroboscopic Ramsey interferometry**: Accumulated phase $\phi = (\varepsilon\_+ - \varepsilon\_-)T/\hbar$ measures quasienergy splitting \[KAS91]
+* **Multiphoton resonances**: Absorption/emission at $$\Delta = m\omega$$ ($$m \in \mathbb{Z}$$), revealing higher Floquet blocks \[CHI17]
+* **Sideband spectroscopy**: Probe transmission shows peaks at $$\varepsilon_\pm + m\hbar\omega$$, mapping the full Floquet ladder \[UND16]
+* **Photon-assisted tunneling**: In coupled systems, drive-induced transitions at energy mismatch $$\Delta E = m\hbar\omega$$ \[PLU04]
+* **Stroboscopic Ramsey interferometry**: Accumulated phase $$\phi = (\varepsilon_+ - \varepsilon_-)T/\hbar$$ measures quasienergy splitting \[KAS91]
 
-\{% hint style="info" %\} **Operational diagnostic**: Reconstruct full Floquet spectrum via multiphoton spectroscopy; verify quasienergy shifts match Magnus expansion to stated order; confirm higher-order corrections signal RWA breakdown. \{% endhint %\}
+**Operational diagnostic**: Reconstruct full Floquet spectrum via multiphoton spectroscopy; verify quasienergy shifts match Magnus expansion to stated order; confirm higher-order corrections signal RWA breakdown.
 
-\{% hint style="warning" %\} **Computational scaling**: Full Floquet analysis requires diagonalizing a $(2m\_{\rm max}+1) \times d$ dimensional matrix, where $m\_{\rm max}$ is the Fourier truncation order and $d$ is the bare Hilbert space dimension. For a two-level system with $m\_{\rm max} = 5$, this yields an $11 \times 11$ matrix (cost $\sim d^3$). For coupled multi-qubit systems, the cost scales as $(2m\_{\rm max}+1)^3 \times (2^n)^3$ where $n$ is the number of qubits—making RWA attractive for $n \geq 3$ unless beyond-RWA effects are critical. \{% endhint %\}
+**Computational scaling**: Full Floquet analysis requires diagonalizing a $$(2m_{\rm max}+1) \times d$$ dimensional matrix, where $$m_{\rm max}$$ is the Fourier truncation order and $$d$$ is the bare Hilbert space dimension. For a two-level system with $$m_{\rm max} = 5$$, this yields an $$11 \times 11$$ matrix (cost $$\sim d^3$$). For coupled multi-qubit systems, the cost scales as $$(2m_{\rm max}+1)^3 \times (2^n)^3$$ where $$n$$ is the number of qubits—making RWA attractive for $$n \geq 3$$ unless beyond-RWA effects are critical.&#x20;
 
 **Reference**: For comprehensive Floquet engineering review, see \[BUK15].
 
@@ -535,47 +535,47 @@ The frame/RWA/dressed-state structure extends naturally to harmonic oscillators 
 
 **Hamiltonian**:
 
-\$$H = \hbar\omega\_c a^\dagger a + \varepsilon (a e^{-i\omega t} + a^\dagger e^{+i\omega t})\$$
+$$H = \hbar\omega_c a^\dagger a + \varepsilon (a e^{-i\omega t} + a^\dagger e^{+i\omega t})$$
 
-**Frame transformation**: $a \to a e^{-i\omega t}$ removes fast optical oscillations.
+**Frame transformation**: $$a \to a e^{-i\omega t}$$ removes fast optical oscillations.
 
-**RWA**: In the rotating frame, drop counter-rotating terms $\sim a^\dagger e^{+i(\omega\_c - \omega)t}$ and $a e^{-i(\omega\_c - \omega)t}$ that oscillate at the sum frequency when far from resonance. For **linear driving** (as above), there are no explicit $a^2$ or $a^{\dagger 2}$ terms to drop.
+**RWA**: In the rotating frame, drop counter-rotating terms $$\sim a^\dagger e^{+i(\omega_c - \omega)t}$$ and $$a e^{-i(\omega_c - \omega)t}$$ that oscillate at the sum frequency when far from resonance. For **linear driving** (as above), there are no explicit $$a^2$$ or $$a^{\dagger 2}$$ terms to drop.
 
-\{% hint style="info" %\} **Note for parametric driving**: In systems with _parametric driving_ or _quadratic couplings_ (e.g., squeezing Hamiltonians of the form $H\_{\rm param} \sim \varepsilon(a^2 e^{-2i\omega t} + a^{\dagger 2} e^{+2i\omega t})$), one additionally drops rapidly oscillating two-photon terms under RWA. The linear-drive case above does not contain such terms. \{% endhint %\}
+**Note for parametric driving**: In systems with _parametric driving_ or _quadratic couplings_ (e.g., squeezing Hamiltonians of the form $$H_{\rm param} \sim \varepsilon(a^2 e^{-2i\omega t} + a^{\dagger 2} e^{+2i\omega t})$$), one additionally drops rapidly oscillating two-photon terms under RWA. The linear-drive case above does not contain such terms.
 
-**Dressed states**: Diagonalize displaced oscillator → **coherent states** $|\alpha\rangle$ with displacement $\alpha = \varepsilon/\Delta\_c$ (where $\Delta\_c = \omega\_c - \omega$). These are the CV analogue of two-level dressed states $|\pm\rangle$ \[WAL08].
+**Dressed states**: Diagonalize displaced oscillator → **coherent states** $$|\alpha\rangle$$ with displacement $$\alpha = \varepsilon/\Delta_c$$ (where $$\Delta_c = \omega_c - \omega$$). These are the CV analogue of two-level dressed states $$|\pm\rangle$$ \[WAL08].
 
 #### 5.2 Jaynes–Cummings model (quantized field)
 
 **Hamiltonian**:
 
-\$$H\_{\rm JC} = \hbar\omega\_c a^\dagger a + \frac{\hbar\omega\_0}{2}\sigma\_z + \hbar g(a^\dagger\sigma\_- + a\sigma\_+)\$$
+$$H_{\rm JC} = \hbar\omega_c a^\dagger a + \frac{\hbar\omega_0}{2}\sigma_z + \hbar g(a^\dagger\sigma_- + a\sigma_+)$$
 
-**RWA**: Already in RWA form (counter-rotating terms $a\sigma\_+$, $a^\dagger\sigma\_-$ absent).
+**RWA**: Already in RWA form (counter-rotating terms $$a\sigma_+$$, $$a^\dagger\sigma_-$$ absent).
 
 **Dressed states**: Fock-state doublets (the "Jaynes–Cummings ladder")
 
-\$$|n,\pm\rangle = \cos\theta\_n |e,n\rangle \pm \sin\theta\_n |g,n+1\rangle\$$
+$$|n,\pm\rangle = \cos\theta_n |e,n\rangle \pm \sin\theta_n |g,n+1\rangle$$
 
-with $n$-dependent splitting:
+with $$n$$-dependent splitting:
 
-\$$\hbar\Omega\_n = \hbar g\sqrt{n+1}\$$
+$$\hbar\Omega_n = \hbar g\sqrt{n+1}$$
 
 **Key distinction from classical case**:
 
-* Vacuum Rabi splitting observable even at $n=0$ (zero photons)
-* Modified spontaneous emission (Purcell effect) persists at $g \neq 0$ even without external drive
+* Vacuum Rabi splitting observable even at $$n=0$$ (zero photons)
+* Modified spontaneous emission (Purcell effect) persists at $$g \neq 0$$ even without external drive
 * Atom-cavity entanglement structure \[HAR06, RAI01]
 
 #### 5.3 Summary table: Three dressing mechanisms
 
-| Mechanism                   | System                       | Splitting                             | Field Quantization | Observable Signature                    |
-| --------------------------- | ---------------------------- | ------------------------------------- | ------------------ | --------------------------------------- |
-| **Coherent-state dressing** | Driven cavity (classical)    | $\Delta E \sim \varepsilon/\Delta\_c$ | Not required       | AC Stark shift; displacement $\alpha$   |
-| **Fock-state dressing**     | Jaynes–Cummings              | $\hbar g\sqrt{n+1}$                   | Essential          | Vacuum Rabi splitting; Purcell effect   |
-| **Floquet dressing**        | Driven two-level (classical) | $\hbar\sqrt{\Delta^2 + \Omega^2}$     | Not required       | Autler–Townes splitting; Mollow triplet |
+| Mechanism                   | System                       | Splitting                              | Field Quantization | Observable Signature                    |
+| --------------------------- | ---------------------------- | -------------------------------------- | ------------------ | --------------------------------------- |
+| **Coherent-state dressing** | Driven cavity (classical)    | $$\Delta E \sim \varepsilon/\Delta_c$$ | Not required       | AC Stark shift; displacement $$\alpha$$ |
+| **Fock-state dressing**     | Jaynes–Cummings              | $$\hbar g\sqrt{n+1}$$                  | Essential          | Vacuum Rabi splitting; Purcell effect   |
+| **Floquet dressing**        | Driven two-level (classical) | $$\hbar\sqrt{\Delta^2 + \Omega^2}$$    | Not required       | Autler–Townes splitting; Mollow triplet |
 
-\{% hint style="info" %\} **Pedagogical note**: Graduate students should distinguish these three regimes—they involve different physics despite superficial formal analogies. \{% endhint %\}
+**Pedagogical note**: Graduate students should distinguish these three regimes—they involve different physics despite superficial formal analogies.
 
 ***
 
@@ -583,27 +583,27 @@ with $n$-dependent splitting:
 
 ### 6. Unified Summary Table `[REFERENCE]`
 
-| Step                  | Type            | Math Action                           | Symmetry Change             | Noether Quantity               | Error                       | Comp. Cost                             | Operational Diagnostic                   |
-| --------------------- | --------------- | ------------------------------------- | --------------------------- | ------------------------------ | --------------------------- | -------------------------------------- | ---------------------------------------- |
-| **Interaction frame** | Exact transform | Unitary $U\_0(t)$                     | None (reparametrization)    | Same as lab                    | None                        | $\mathcal{O}(d^2)$ per step            | Populations transform; trace invariant   |
-| **Rotating frame**    | Exact transform | Unitary $U\_{\rm rot}(t)$ at $\omega$ | None (reveals slow)         | None added                     | None                        | $\mathcal{O}(d^2)$ per step            | Fast $\omega$ oscillations removed       |
-| **RWA**               | Approximation   | Neglect $\sim e^{\pm 2i\omega t}$     | Restores time-trans. + U(1) | Quasienergy                    | $\sim (\Omega/\omega\_0)^2$ | $\mathcal{O}(d^2)$ (analytic)          | Counter-rot. $\lesssim 1%$; B-S shift OK |
-| **Dressed basis**     | Diagonalization | Eigen-decomp. of $H\_{\rm RWA}$       | Makes symm. explicit        | Eigenvalues $E\_\pm$           | None (exact in RWA)         | $\mathcal{O}(d^3)$ one-time            | No pop. oscillations in basis            |
-| **Floquet (full)**    | Numerical diag. | Diag. $(2m\_{\rm max}+1)d$ matrix     | Reveals all harmonics       | Quasienergies $\varepsilon\_m$ | Numerical only              | $\mathcal{O}((2m\_{\rm max}+1)^3 d^3)$ | Multiphoton res.; B-S shift exact        |
+| Step                  | Type            | Math Action                              | Symmetry Change             | Noether Quantity                | Error                        | Comp. Cost                             | Operational Diagnostic                   |
+| --------------------- | --------------- | ---------------------------------------- | --------------------------- | ------------------------------- | ---------------------------- | -------------------------------------- | ---------------------------------------- |
+| **Interaction frame** | Exact transform | Unitary $$U_0(t)$$                       | None (reparametrization)    | Same as lab                     | None                         | $\mathcal{O}(d^2)$ per step            | Populations transform; trace invariant   |
+| **Rotating frame**    | Exact transform | Unitary $$U_{\rm rot}(t)$$ at $$\omega$$ | None (reveals slow)         | None added                      | None                         | $\mathcal{O}(d^2)$ per step            | Fast $\omega$ oscillations removed       |
+| **RWA**               | Approximation   | Neglect $$\sim e^{\pm 2i\omega t}$$      | Restores time-trans. + U(1) | Quasienergy                     | $$\sim (\Omega/\omega_0)^2$$ | $\mathcal{O}(d^2)$ (analytic)          | Counter-rot. $\lesssim 1%$; B-S shift OK |
+| **Dressed basis**     | Diagonalization | Eigen-decomp. of $$H_{\rm RWA}$$         | Makes symm. explicit        | Eigenvalues $$E_\pm$$           | None (exact in RWA)          | $\mathcal{O}(d^3)$ one-time            | No pop. oscillations in basis            |
+| **Floquet (full)**    | Numerical diag. | Diag. $$(2m_{\rm max}+1)d$$ matrix       | Reveals all harmonics       | Quasienergies $$\varepsilon_m$$ | Numerical only               | $\mathcal{O}((2m\_{\rm max}+1)^3 d^3)$ | Multiphoton res.; B-S shift exact        |
 
 **Notation**:
 
-* $d$ = bare Hilbert space dimension (2 for qubit, unbounded for cavity)
-* $m\_{\rm max}$ = Fourier truncation order in Floquet (typically 5–10)
+* $$d$$ = bare Hilbert space dimension (2 for qubit, unbounded for cavity)
+* $$m_{\rm max}$$ = Fourier truncation order in Floquet (typically 5–10)
 * "per step" = cost per time-evolution step in numerical integration
 * "one-time" = cost is amortized over entire calculation
 
-\{% hint style="success" %\} **Key insights**:
+**Key insights**:
 
 1. Only RWA changes physics by discarding terms; others are exact operations (frames) or representational choices (basis)
 2. RWA is computationally cheapest (analytic solutions often available)
 3. Floquet is most expensive but captures all beyond-RWA physics systematically
-4. For multi-qubit systems ($n \geq 3$), Floquet cost $(2m\_{\rm max}+1)^3 \times 2^{3n}$ can become prohibitive, making RWA attractive even with \~1% systematic error \{% endhint %\}
+4. For multi-qubit systems ($$n \geq 3$$), Floquet cost $$(2m_{\rm max}+1)^3 \times 2^{3n}$$ can become prohibitive, making RWA attractive even with \~1% systematic error
 
 **Practical guidance**:
 
@@ -619,19 +619,19 @@ with $n$-dependent splitting:
 
 **Minimal (for routine RWA usage)**:
 
-> "We employ the rotating-wave approximation \[SCU97], valid in the regime $\Omega/\omega\_0 \ll 1$."
+> "We employ the rotating-wave approximation \[SCU97], valid in the regime $$\Omega/\omega_0 \ll 1$$."
 
 **Explicit (when clarity is critical)**:
 
-> "We transform to a rotating frame at the drive frequency $\omega$ (an exact unitary transformation), then apply the rotating-wave approximation by neglecting counter-rotating terms oscillating at $\pm(\omega\_0 + \omega)$. This yields a time-independent effective Hamiltonian with dressed states as eigenbases \[SCU97, COH92]. The approximation introduces errors $\sim (\Omega/\omega\_0)^2$ \[BUK15], verified to be $\lesssim 1%$ in our parameter regime ($\Omega/\omega\_0 = 0.03$)."
+> "We transform to a rotating frame at the drive frequency $$\omega$$ (an exact unitary transformation), then apply the rotating-wave approximation by neglecting counter-rotating terms oscillating at $$\pm(\omega_0 + \omega)$$. This yields a time-independent effective Hamiltonian with dressed states as eigenbases \[SCU97, COH92]. The approximation introduces errors $$\sim (\Omega/\omega_0)^2$$ \[BUK15], verified to be $\lesssim 1%$ in our parameter regime ($$\Omega/\omega_0 = 0.03$$)."
 
 **For beyond-RWA work**:
 
-> "We retain counter-rotating terms and employ Floquet theory \[SHI65, BUK15] to compute quasienergies, capturing Bloch-Siegert shifts $\sim \hbar\Omega^2/(4\omega\_0)$ \[GOL14]."
+> "We retain counter-rotating terms and employ Floquet theory \[SHI65, BUK15] to compute quasienergies, capturing Bloch-Siegert shifts $$\sim \hbar\Omega^2/(4\omega_0)$$ \[GOL14]."
 
 **For quantum gate fidelity**:
 
-> "We account for Bloch-Siegert phase shifts $\phi\_{\rm BS} = (\Omega^2/4\omega\_0)t$ in our gate calibration \[see §2.3.1]. For our parameters ($\Omega/\omega\_0 = 0.04$, $t\_{\rm gate} = 10\~\mu$s), this contributes $\phi\_{\rm BS} \approx 0.003$ rad, below our phase error budget of 0.01 rad."
+> "We account for Bloch-Siegert phase shifts $$\phi_{\rm BS} = (\Omega^2/4\omega_0)t$$ in our gate calibration \[see §2.3.1]. For our parameters ($$\Omega/\omega_0 = 0.04$$, $$t_{\rm gate} = 10~\mu$$s), this contributes $$\phi_{\rm BS} \approx 0.003$$ rad, below our phase error budget of 0.01 rad."
 
 #### 7.2 Common reviewer objections and responses
 
@@ -645,19 +645,19 @@ with $n$-dependent splitting:
 
 **Response**:
 
-> "We have added explicit validity criteria (new §2.3): in our regime $\Omega/\omega\_0 = 0.03$, the relative error is $\sim 0.09%$. We confirm this by comparing RWA predictions to full numerical Floquet calculations (new Fig. X), showing $<0.1%$ deviation in quasienergies."
+> "We have added explicit validity criteria (new §2.3): in our regime $$\Omega/\omega_0 = 0.03$$, the relative error is $$\sim 0.09%$$. We confirm this by comparing RWA predictions to full numerical Floquet calculations (new Fig. X), showing $$<0.1%$$ deviation in quasienergies."
 
 **Objection 3**: _"You invoke dressed states but don't clarify whether the field is quantized."_
 
 **Response**:
 
-> "We have clarified in §3.3 that our treatment uses a classical driving field (Floquet dressed states). We note that quantized-field effects (vacuum Rabi splitting, Purcell enhancement) are negligible in our bad-cavity regime $\kappa/g = 10^3 \gg 1$ \[HAR06]."
+> "We have clarified in §3.3 that our treatment uses a classical driving field (Floquet dressed states). We note that quantized-field effects (vacuum Rabi splitting, Purcell enhancement) are negligible in our bad-cavity regime $$\kappa/g = 10^3 \gg 1$$ \[HAR06]."
 
 **Objection 4**: _"Phase errors from Bloch-Siegert shifts are not addressed."_
 
 **Response**:
 
-> "We thank the reviewer for highlighting this. We have added §2.3.1 analyzing the failure mode hierarchy. For our parameters, the Bloch-Siegert phase shift is $\phi\_{\rm BS} = (\Omega^2/4\omega\_0)t\_{\rm gate} = 0.003$ rad, which is below our target phase fidelity of 0.01 rad. We have verified this numerically (new Fig. Y) showing agreement between analytic correction and full TDSE to within our measurement precision."
+> "We thank the reviewer for highlighting this. We have added §2.3.1 analyzing the failure mode hierarchy. For our parameters, the Bloch-Siegert phase shift is $$\phi_{\rm BS} = (\Omega^2/4\omega_0)t_{\rm gate} = 0.003$$ rad, which is below our target phase fidelity of 0.01 rad. We have verified this numerically (new Fig. Y) showing agreement between analytic correction and full TDSE to within our measurement precision."
 
 #### 7.3 Cross-referencing this document
 
@@ -735,46 +735,32 @@ All in-text citations match the reference list exactly. Year format: 2-digit (65
 
 #### A.1 Magnus Expansion
 
-The time-evolution operator for periodic $H(t)$ can be written as:
+The time-evolution operator for periodic $$H(t)$$ can be written as:
 
-\$$U(t) = \exp\left\[-\frac{i}{\hbar}\int\_0^t H\_{\rm eff}(t'),dt'\right]\$$
+$$U(t) = \exp\left[-\frac{i}{\hbar}\int_0^t H_{\rm eff}(t'),dt'\right]$$
 
-where $H\_{\rm eff}$ admits a Magnus expansion \[GOL14]:
+where $$H_{\rm eff}$$ admits a Magnus expansion \[GOL14]:
 
-\$$H\_{\rm eff} = H^{(0)} + H^{(1)} + H^{(2)} + \cdots\$$
+$$H_{\rm eff} = H^{(0)} + H^{(1)} + H^{(2)} + \cdots$$
 
-* $H^{(0)}$ = RWA Hamiltonian (time-averaged zeroth order)
-* $H^{(1)} = 0$ (for symmetric drives)
-* $H^{(2)} \sim \frac{\hbar\Omega^2}{4\omega\_0}\sigma\_z$ (Bloch-Siegert shift)
+* $$H^{(0)}$$ = RWA Hamiltonian (time-averaged zeroth order)
+* $$H^{(1)} = 0$$ (for symmetric drives)
+* $$H^{(2)} \sim \frac{\hbar\Omega^2}{4\omega_0}\sigma_z$$ (Bloch-Siegert shift)
 
-**Convergence**: Magnus expansion converges when $|H(t)| \cdot T / \hbar \lesssim \pi$ \[BUK15].
+**Convergence**: Magnus expansion converges when $$|H(t)| \cdot T / \hbar \lesssim \pi$$ \[BUK15].
 
 #### A.2 Van Vleck Perturbation Theory
 
-In the Floquet picture, quasi-degenerate perturbation theory \[HAE68] systematically removes off-resonant couplings order-by-order, producing effective Hamiltonians in the resonant subspace with explicit $(\Omega/\omega\_0)^{2n}$ corrections.
+In the Floquet picture, quasi-degenerate perturbation theory \[HAE68] systematically removes off-resonant couplings order-by-order, producing effective Hamiltonians in the resonant subspace with explicit $$(\Omega/\omega_0)^{2n}$$ corrections.
 
 #### A.3 Numerical Floquet Diagonalization
 
-For arbitrary $\Omega/\omega\_0$, direct diagonalization of the Floquet Hamiltonian (truncated at finite Fourier order $m\_{\rm max}$) provides exact quasienergies.
+For arbitrary $$\Omega/\omega_0$$, direct diagonalization of the Floquet Hamiltonian (truncated at finite Fourier order $$m_{\rm max}$$) provides exact quasienergies.
 
-**Convergence diagnostic**: Monitor quasienergy shifts as $m\_{\rm max}$ increases. Typically $m\_{\rm max} = \pm 5$ suffices for $\Omega/\omega\_0 \lesssim 0.5$ \[BUK15].
+**Convergence diagnostic**: Monitor quasienergy shifts as $$m_{\rm max}$$ increases. Typically $$m_{\rm max} = \pm 5$$ suffices for $$\Omega/\omega_0 \lesssim 0.5$$ \[BUK15].
 
-**Computational cost**: Scales as $(2m\_{\rm max} + 1)^3 d^3$ where $d$ is the bare Hilbert space dimension.
+**Computational cost**: Scales as $$(2m_{\rm max} + 1)^3 d^3$$ where $$d$$ is the bare Hilbert space dimension.
 
 ***
-
-**Document Version**: v0.4 (Architect-Enhanced)\
-**Status**: Guardian + Architect certified for deployment\
-**Last Updated**: 2025-11-27
-
-**Changelog v0.3.1 → v0.4**:
-
-* Added visual flow diagram (Figure 0.1)
-* Added dressed-state energy landscape (Figure 3.1)
-* Added Mollow triplet spectrum (Figure 3.2)
-* Added §2.3.1: Phase error failure mode hierarchy
-* Enhanced §6 summary table with computational costs
-* Added phase-error reviewer response template (§7.2)
-* Added references \[BAL16, GOT09, WIM94]
 
 **Recommended Use**: Reference standard for graduate instruction, manuscript preparation, and peer review in AMO physics, cavity QED, trapped ions, superconducting qubits, and quantum control
