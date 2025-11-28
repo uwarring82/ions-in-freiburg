@@ -58,13 +58,13 @@ D. Chemical & Thermal Response
 
 ### 2. Adhesive Comparison Table
 
-| **Adhesive**   | **Thermal Cond. (k)**  | **Service Temp**     | **Strength / Properties**                                            | **Best Use**                                        |
-| -------------- | ---------------------- | -------------------- | -------------------------------------------------------------------- | --------------------------------------------------- |
-| MG 8329TCS     | $$\approx 1.4$$ W/m·K  | $$-40 \dots 150$$ °C | <p>Lap shear ~7.7 MPa (Al)</p><p><br></p><p>Moderate rigidity</p>    | Low-waste, occasional external thermistor bonding.  |
-| WEICON HT 250  | $$\approx 1.4$$ W/m·K  | $$-50 \dots 200$$ °C | <p>Shore D > 90 (Very High)</p><p><br></p><p>Structural standard</p> | Structural, batch bonding on external copper parts. |
-| OMEGABOND 200  | $$\approx 0.8$$ W/m·K  | Up to 260 °C         | <p>High Shear (~18.6 MPa)</p><p><br></p><p>Requires Heat Cure</p>    | High-T external mounting (reserve option).          |
-| Stycast 2850FT | $$\approx 1.25$$ W/m·K | $$130 \dots 155$$ °C | <p>CTE matched to Copper</p><p><br></p><p>Low Outgassing</p>         | Internal SHG/Laser Cavity bonding near optics.      |
-| EPO-TEK H74    | $$\approx 1.3$$ W/m·K  | > 200 °C             | <p>High Shear</p><p><br></p><p>Optical Grade</p>                     | Alternative for vacuum/cavity work.                 |
+| **Adhesive**                                                    | **Thermal Cond. (k)**  | **Service Temp**     | **Strength / Properties**                                            | **Best Use**                                        |
+| --------------------------------------------------------------- | ---------------------- | -------------------- | -------------------------------------------------------------------- | --------------------------------------------------- |
+| MG 8329TCS                                                      | $$\approx 1.4$$ W/m·K  | $$-40 \dots 150$$ °C | <p>Lap shear ~7.7 MPa (Al)</p><p><br></p><p>Moderate rigidity</p>    | Low-waste, occasional external thermistor bonding.  |
+| WEICON HT 250                                                   | $$\approx 1.4$$ W/m·K  | $$-50 \dots 200$$ °C | <p>Shore D > 90 (Very High)</p><p><br></p><p>Structural standard</p> | Structural, batch bonding on external copper parts. |
+| OMEGABOND 200                                                   | $$\approx 0.8$$ W/m·K  | Up to 260 °C         | <p>High Shear (~18.6 MPa)</p><p><br></p><p>Requires Heat Cure</p>    | High-T external mounting (reserve option).          |
+| Stycast 2850FT                                                  | $$\approx 1.25$$ W/m·K | $$130 \dots 155$$ °C | <p>CTE matched to Copper</p><p><br></p><p>Low Outgassing</p>         | Internal SHG/Laser Cavity bonding near optics.      |
+| [EPO-TEK H74](https://www.epotek.com/docs/en/Datasheet/H74.pdf) | $$\approx 1.3$$ W/m·K  | > 200 °C             | <p>High Shear</p><p><br></p><p>Optical Grade</p>                     | Alternative for vacuum/cavity work.                 |
 
 ***
 
