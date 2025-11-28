@@ -141,9 +141,7 @@ _Every user must complete this before their first live cavity installation._
 
 ***
 
-### APPENDIX A: TR-01 Certification Checklist
-
-_Copy/Print for Lab Safety Binder_
+### APPENDIX A: Checklist
 
 Trainee: \_\_\_\_\_\_\_\_\_\_ | Supervisor: \_\_\_\_\_\_\_\_\_\_ | Date: \_\_\_\_\_
 
@@ -166,9 +164,9 @@ PHASE C: Application & Process
 
 SIGN-OFF
 
-*   \[ ] Result: Dummy bond is mechanically sound, clean, and safe?
+* \[ ] Result: Dummy bond is mechanically sound, clean, and safe?
 
-    $$\to$$ PERMISSION GRANTED FOR LIVE CAVITY WORK
+$$\to$$ PERMISSION GRANTED FOR LIVE CAVITY WORK
 
 ***
 
