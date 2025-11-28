@@ -12,7 +12,7 @@ _version: 0.4_\
 last\_updated: _2025-11-28_\
 license: _CC BY-SA 4.0_
 
-**Disclaimer** – I am not a specialist in education research, and the sources I draw on represent an early, incomplete review of the relevant scholarship. What follows is therefore a draft, intended to open a conversation rather than present a definitive analysis.
+**Disclaimer** – I write as a physicist engaging with education from the perspective of system design, not as a trained expert in the field. My literature search is preliminary and not yet representative. This essay should be understood as a draft contribution—an invitation for discussion and refinement, not a final statement.
 {% endhint %}
 
 ## The Myth of the Heroic Teacher
