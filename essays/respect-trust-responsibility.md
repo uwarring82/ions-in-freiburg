@@ -35,7 +35,7 @@ Physics offers a blunt diagnostic: a system that requires continuous external en
 
 Burnout is not a personal failure; it is a measurement of systemic entropy. Research across tens of thousands of academics identifies the same drivers: excessive workload, weak institutional support, administrative friction, emotional labour. Teaching remains undervalued because research is easier to count. Heroism is admirable. A system that requires it is not—and cannot be sustained by asking individuals to compensate for structural failures indefinitely.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<div align="right"><figure><img src="../.gitbook/assets/RTR_1.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## The External Load Problem
 
@@ -53,7 +53,7 @@ Rachel Gable's work on the hidden curriculum shows that first-generation student
 
 The Transparency in Learning and Teaching framework, developed by Mary-Ann Winkelmes and colleagues, acts as a calibration protocol. By making purpose, task, and criteria for success explicit, it reduces noise. Lower noise expresses respect. Respect conditions trust. Trust enables responsibility. Clean signals improve measurement.
 
-\[FIGURE 2: Learning as Signal Detection]
+<div align="left"><figure><img src="../.gitbook/assets/RTR_2.png" alt="" width="267"><figcaption></figcaption></figure></div>
 
 ## Artificial Intelligence as a Stress Test for Trust
 
