@@ -125,7 +125,7 @@ Crucial: Always anchor the cable jacket separately from the sensor head using a 
 _Every user must complete this before their first live cavity installation._
 
 1. Dry Run A (Mixing): Practice weighing Stycast components (0.01g precision) and mixing without introducing bubbles.
-2. Dry Run B (Geometry): Bond a dummy slug. Verify $$ $<0.1$ $$ mm thickness and minimal fillet.
+2. Dry Run B (Geometry): Bond a dummy slug. Verify $$<0.1$$ mm thickness and minimal fillet.
 3. Dry Run C (Bake-Out): Simulate oven loading and thermal safety (gloves/cooldown).
 4. Dry Run D (Inspection): Use a loupe to check cured dummy for micro-cracks or haze.
 
