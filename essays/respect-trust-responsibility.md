@@ -6,9 +6,13 @@ description: Why Good Teaching Is a System, Not a Heroic Act
 
 {% hint style="info" %}
 author: _U. Warring_\
-affiliation: _Institute of Physics, University of Freiburg_\
+affiliation: _Institute of Physics, University of Freiburg_
+
+_version: 0.4_\
 last\_updated: _2025-11-28_\
 license: _CC BY-SA 4.0_
+
+**Disclaimer** – I am not a specialist in education research, and the sources I draw on represent an early, incomplete review of the relevant scholarship. What follows is therefore a draft, intended to open a conversation rather than present a definitive analysis.
 {% endhint %}
 
 ## The Myth of the Heroic Teacher
