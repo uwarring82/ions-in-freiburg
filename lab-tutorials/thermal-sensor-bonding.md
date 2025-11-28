@@ -1,5 +1,6 @@
 ---
 description: Lab Guide & Certification Protocol
+icon: lightbulb-exclamation-on
 ---
 
 # Thermal Sensor Bonding
