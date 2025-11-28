@@ -35,7 +35,7 @@ Physics offers a blunt diagnostic: a system that requires continuous external en
 
 Burnout is not a personal failure; it is a measurement of systemic entropy. Research across tens of thousands of academics identifies the same drivers: excessive workload, weak institutional support, administrative friction, emotional labour. Teaching remains undervalued because research is easier to count. Heroism is admirable. A system that requires it is not—and cannot be sustained by asking individuals to compensate for structural failures indefinitely.
 
-\[FIGURE 1: Thermodynamic Stability in Educational Systems]
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## The External Load Problem
 
@@ -94,6 +94,10 @@ A system that gets respect, trust, and responsibility right does not depend on h
 <p align="center"><em>Respect. Trust. Responsibility.</em></p>
 
 <p align="center"><em>Not as virtues—but as architecture.</em></p>
+
+***
+
+_Special thanks to all my past, current, and future environments_
 
 ## References
 
