@@ -15,6 +15,7 @@
 * [Cleaning Components After Manufacturing](lab-tutorials/cleaning-components-after-manufacturing.md)
 * [Checklist for Changing Components in an evacuated UHV Chamber](lab-tutorials/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
 * [Noise Attribution in Precision Measurements](lab-tutorials/noise-attribution-in-precision-measurements.md)
+* [Thermal Sensor Bonding](lab-tutorials/thermal-sensor-bonding.md)
 
 ## Conceptual References
 
