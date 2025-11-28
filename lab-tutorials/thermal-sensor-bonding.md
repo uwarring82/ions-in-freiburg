@@ -75,7 +75,7 @@ A. Internal to Laser/SHG Cavity (Critical Zone)
 * Use: Stycast 2850FT (Cat 9 or 11) _or_ EPO-TEK H74.
 * Why: Low outgassing (ASTM E595), CTE match protects optics from stress.
 
-B. External Copper Parts (Structural)
+B. External Parts (Structural)
 
 * Use: WEICON Easy-Mix HT 250.
 * Why: Strongest mechanical anchor, reliable to 200 °C, good shelf life.
@@ -137,7 +137,7 @@ _Every user must complete this before their first live cavity installation._
 2. WEICON HT 250 (Structural standard).
 3. Stycast 2850FT (Cavity standard).
 
-* Aux: Precision Scale (0.01g), Scrap Copper (for training), Heat-Resistant Gloves.
+* Aux: Precision Scale (0.01g), scrap materials (for training), Heat-Resistant Gloves.
 
 ***
 
