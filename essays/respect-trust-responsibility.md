@@ -5,7 +5,10 @@ description: Why Good Teaching Is a System, Not a Heroic Act
 # Respect, Trust, Responsibility
 
 {% hint style="info" %}
-## by U.Warring, Physicist, University of Freiburg
+author: _U. Warring_\
+affiliation: _Institute of Physics, University of Freiburg_\
+last\_updated: _2025-11-28_\
+license: _CC BY-SA 4.0_
 {% endhint %}
 
 ## The Myth of the Heroic Teacher
