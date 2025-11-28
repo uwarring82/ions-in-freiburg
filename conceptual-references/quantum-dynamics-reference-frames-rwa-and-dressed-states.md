@@ -11,8 +11,8 @@ icon: books
 {% hint style="info" %}
 author: U._Warring_\
 &#xNAN;_&#x61;ffiliation: Institute of Physics, University of Freiburg_\
-&#xNAN;_&#x76;ersion: 0.4_\
-&#xNAN;_&#x6C;ast\_updated: 2025-11-27_\
+&#xNAN;_&#x76;ersion: 0.42_\
+&#xNAN;_&#x6C;ast\_updated: 2025-11-28_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
 &#xNAN;_&#x6C;icense: CC BY-SA 4.0_
 {% endhint %}
@@ -145,7 +145,7 @@ defines the **rotating frame** at the drive frequency $$\omega$$. This removes t
 
 Switching frames is an exact unitary transformation; it does not create or destroy continuous symmetries. Any conserved quantity remains conserved, but expressed in the new representation:
 
-$$Q_{\rm rot} = U^\dagger Q_{\rm lab}, U$$
+<p align="center"><span class="math">Q_{\rm rot} = U^\dagger Q_{\rm lab}, U</span></p>
 
 **Operational diagnostic**: Populations $$|\langle e|\psi\rangle|^2$$ transform under frame changes, but total probability (trace) is invariant. Physically measurable expectation values in the lab frame are unchanged.
 
@@ -213,7 +213,7 @@ RWA breakdown manifests in a **predictable sequence** as $$\Omega/\omega_0$$ inc
 
 **Physical mechanism**: The Bloch-Siegert shift introduces an additional dynamic phase:
 
-\$$\Delta E\_{\rm BS} = \frac{\hbar\Omega^2}{4\omega\_0} \quad \Rightarrow \quad \phi\_{\rm BS} = \frac{\Omega^2}{4\omega\_0} \cdot t\$$
+<p align="center"><span class="math">\Delta E_{\rm BS} = \frac{\hbar\Omega^2}{4\omega_0} \quad \Rightarrow \quad \phi_{\rm BS} = \frac{\Omega^2}{4\omega_0} \cdot t</span></p>
 
 This phase accumulates linearly with time and is **not captured by the RWA Hamiltonian**.
 
@@ -586,13 +586,13 @@ $$\hbar\Omega_n = \hbar g\sqrt{n+1}$$
 
 ### 6. Unified Summary Table `[REFERENCE]`
 
-| Step                  | Type            | Math Action                              | Symmetry Change             | Noether Quantity                | Error                        | Comp. Cost                             | Operational Diagnostic                   |
-| --------------------- | --------------- | ---------------------------------------- | --------------------------- | ------------------------------- | ---------------------------- | -------------------------------------- | ---------------------------------------- |
-| **Interaction frame** | Exact transform | Unitary $$U_0(t)$$                       | None (reparametrization)    | Same as lab                     | None                         | $\mathcal{O}(d^2)$ per step            | Populations transform; trace invariant   |
-| **Rotating frame**    | Exact transform | Unitary $$U_{\rm rot}(t)$$ at $$\omega$$ | None (reveals slow)         | None added                      | None                         | $\mathcal{O}(d^2)$ per step            | Fast $\omega$ oscillations removed       |
-| **RWA**               | Approximation   | Neglect $$\sim e^{\pm 2i\omega t}$$      | Restores time-trans. + U(1) | Quasienergy                     | $$\sim (\Omega/\omega_0)^2$$ | $\mathcal{O}(d^2)$ (analytic)          | Counter-rot. $\lesssim 1%$; B-S shift OK |
-| **Dressed basis**     | Diagonalization | Eigen-decomp. of $$H_{\rm RWA}$$         | Makes symm. explicit        | Eigenvalues $$E_\pm$$           | None (exact in RWA)          | $\mathcal{O}(d^3)$ one-time            | No pop. oscillations in basis            |
-| **Floquet (full)**    | Numerical diag. | Diag. $$(2m_{\rm max}+1)d$$ matrix       | Reveals all harmonics       | Quasienergies $$\varepsilon_m$$ | Numerical only               | $\mathcal{O}((2m\_{\rm max}+1)^3 d^3)$ | Multiphoton res.; B-S shift exact        |
+| Step                  | Type            | Math Action                              | Symmetry Change             | Noether Quantity                | Error                        | Comp. Cost                              | Operational Diagnostic                     |
+| --------------------- | --------------- | ---------------------------------------- | --------------------------- | ------------------------------- | ---------------------------- | --------------------------------------- | ------------------------------------------ |
+| **Interaction frame** | Exact transform | Unitary $$U_0(t)$$                       | None (reparametrization)    | Same as lab                     | None                         | $$\mathcal{O}(d^2)$$ per step           | Populations transform; trace invariant     |
+| **Rotating frame**    | Exact transform | Unitary $$U_{\rm rot}(t)$$ at $$\omega$$ | None (reveals slow)         | None added                      | None                         | $$\mathcal{O}(d^2)$$ per step           | Fast $$\omega$$ oscillations removed       |
+| **RWA**               | Approximation   | Neglect $$\sim e^{\pm 2i\omega t}$$      | Restores time-trans. + U(1) | Quasienergy                     | $$\sim (\Omega/\omega_0)^2$$ | $$\mathcal{O}(d^2)$$ (analytic)         | Counter-rot. $$\lesssim 1%$$; B-S shift OK |
+| **Dressed basis**     | Diagonalization | Eigen-decomp. of $$H_{\rm RWA}$$         | Makes symm. explicit        | Eigenvalues $$E_\pm$$           | None (exact in RWA)          | $$\mathcal{O}(d^3)$$ one-time           | No pop. oscillations in basis              |
+| **Floquet (full)**    | Numerical diag. | Diag. $$(2m_{\rm max}+1)d$$ matrix       | Reveals all harmonics       | Quasienergies $$\varepsilon_m$$ | Numerical only               | $$\mathcal{O}((2m_{\rm max}+1)^3 d^3)$$ | Multiphoton res.; B-S shift exact          |
 
 **Notation**:
 
@@ -626,7 +626,7 @@ $$\hbar\Omega_n = \hbar g\sqrt{n+1}$$
 
 **Explicit (when clarity is critical)**:
 
-> "We transform to a rotating frame at the drive frequency $$\omega$$ (an exact unitary transformation), then apply the rotating-wave approximation by neglecting counter-rotating terms oscillating at $$\pm(\omega_0 + \omega)$$. This yields a time-independent effective Hamiltonian with dressed states as eigenbases \[SCU97, COH92]. The approximation introduces errors $$\sim (\Omega/\omega_0)^2$$ \[BUK15], verified to be $\lesssim 1%$ in our parameter regime ($$\Omega/\omega_0 = 0.03$$)."
+> "We transform to a rotating frame at the drive frequency $$\omega$$ (an exact unitary transformation), then apply the rotating-wave approximation by neglecting counter-rotating terms oscillating at $$\pm(\omega_0 + \omega)$$. This yields a time-independent effective Hamiltonian with dressed states as eigenbases \[SCU97, COH92]. The approximation introduces errors $$\sim (\Omega/\omega_0)^2$$ \[BUK15], verified to be $$\lesssim 1%$$ in our parameter regime ($$\Omega/\omega_0 = 0.03$$)."
 
 **For beyond-RWA work**:
 
