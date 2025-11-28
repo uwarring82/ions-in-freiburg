@@ -16,7 +16,7 @@ author: U._Warring_\
 
 ### 1. Overview
 
-For attaching for example mm-scale thermistors to copper or other substrates under 0–200 °C conditions, three adhesive classes cover all recurring scenarios:
+For attaching for example mm-scale thermistors to copper or other substrates under 0–200 °C conditions, three adhesive classes cover many recurring scenarios (under ambient conditions):
 
 1. Industrial thermal epoxies — for external components, housings, and non-optical mounts.
 2. Optics-grade, low-outgassing epoxies — for _internal_ laser/SHG environments.
