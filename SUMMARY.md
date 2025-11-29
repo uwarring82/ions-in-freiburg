@@ -12,6 +12,7 @@
 * [Gaussian Beams and the Knife-Edge Method](lab-tutorials/gaussian-beams-and-the-knife-edge-method.md)
 * [Benchmarks of a RF-Drive Resonator](lab-tutorials/benchmarks-of-a-rf-drive-resonator.md)
 * [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](lab-tutorials/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [Bonding of Optical Components in High-Power Laser Beam Paths](lab-tutorials/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
 * [Thermal Sensor Bonding](lab-tutorials/thermal-sensor-bonding.md)
 * [Cleaning Components After Manufacturing](lab-tutorials/cleaning-components-after-manufacturing.md)
 * [Checklist for Changing Components in an evacuated UHV Chamber](lab-tutorials/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
