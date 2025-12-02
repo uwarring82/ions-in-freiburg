@@ -74,30 +74,24 @@ Fume hood required for Stycast/EPO-TEK (amine hardeners)
 
 ### 2. Adhesive Comparison Table
 
-| Adhesive                   | Thermal Cond. (k) | Service Temp      | Strength / Properties                                | Best Use                                          | Ref                                                                   |
-| -------------------------- | ----------------- | ----------------- | ---------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------- |
-| **MG Chemicals 8329TCS**   | 0.67 W/m·K        | –55 to 130 °C     | Lap shear \~7.7 MPa (Al)\<br>Moderate rigidity       | Low-waste, occasional external thermistor bonding | [¹](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref1) |
-| **WEICON Easy-Mix HT 250** | 0.74 W/m·K        | –60 to 200 °C     | Shore D > 90 (Very High)\<br>Structural standard     | Structural, batch bonding on external parts       | [²](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref2) |
-| **OMEGABOND 200**          | 1.52 W/m·K        | Up to 260 °C      | High Shear (\~18.6 MPa)\<br>Requires Heat Cure       | High-T external mounting (reserve option)         | [³](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref3) |
-| **Stycast 2850FT**         | 1.04 W/m·K        | –65 to 130/155 °C | CTE matched to Copper\<br>Low Outgassing (ASTM E595) | Internal SHG/Laser Cavity bonding near optics     | [⁴](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4) |
-| **EPO-TEK H74**            | 1.89 W/m·K        | > 200 °C          | High Shear\<br>Optical Grade                         | Alternative for vacuum/cavity work                | [⁵](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref5) |
+<table><thead><tr><th>Adhesive</th><th width="167.0859375">Thermal Cond. (k)</th><th width="99.36328125">Service Temp</th><th>Strength / Properties</th><th width="195.78125">Best Use</th><th>Ref</th></tr></thead><tbody><tr><td><strong>MG Chemicals 8329TCS</strong></td><td>0.67 W/m·K</td><td>–55 to 130 °C</td><td>Lap shear ~7.7 MPa (Al)&#x3C;br>Moderate rigidity</td><td>Low-waste, occasional external thermistor bonding</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref1">¹</a></td></tr><tr><td><strong>WEICON Easy-Mix HT 250</strong></td><td>0.74 W/m·K</td><td>–60 to 200 °C</td><td>Shore D > 90 (Very High)&#x3C;br>Structural standard</td><td>Structural, batch bonding on external parts</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref2">²</a></td></tr><tr><td><strong>OMEGABOND 200</strong></td><td>1.52 W/m·K</td><td>Up to 260 °C</td><td>High Shear (~18.6 MPa)&#x3C;br>Requires Heat Cure</td><td>High-T external mounting (reserve option)</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref3">³</a></td></tr><tr><td><strong>Stycast 2850FT</strong></td><td>1.04 W/m·K</td><td>–65 to 130/155 °C</td><td>CTE matched to Copper&#x3C;br>Low Outgassing (ASTM E595)</td><td>Internal SHG/Laser Cavity bonding near optics</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4">⁴</a></td></tr><tr><td><strong>EPO-TEK H74</strong></td><td>1.89 W/m·K</td><td>> 200 °C</td><td>High Shear&#x3C;br>Optical Grade</td><td>Alternative for vacuum/cavity work</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref5">⁵</a></td></tr></tbody></table>
 
 #### Reference Documentation
 
-\<a name="ref1">\</a>**\[1] MG Chemicals 8329TCS Technical Data Sheet**\
+**\[1] MG Chemicals 8329TCS Technical Data Sheet**\
 https://www.mgchemicals.com/products/adhesives/thermal-conductive-epoxies/8329tcs-thermally-conductive-epoxy
 
-\<a name="ref2">\</a>**\[2] WEICON Easy-Mix HT 250 Technical Data Sheet**\
+**\[2] WEICON Easy-Mix HT 250 Technical Data Sheet**\
 https://www.weicon.de/en/products/adhesives-and-sealants/structural-adhesives/easy-mix-ht-250
 
-\<a name="ref3">\</a>**\[3] OMEGABOND 200 Technical Specifications**\
+**\[3] OMEGABOND 200 Technical Specifications**\
 https://www.omega.com/en-us/industrial-heaters-and-heating-elements/p/OB-200
 
-\<a name="ref4">\</a>**\[4] Stycast 2850FT Technical Data Sheet (Henkel/Loctite)**\
+**\[4] Stycast 2850FT Technical Data Sheet (Henkel/Loctite)**\
 https://dm.henkel-dam.com/is/content/henkel/stycast-2850ft-blue-with-catalyst-9-en-tds\
 &#xNAN;_&#x4E;ote:_ Properties depend on catalyst choice (Cat 9 vs Cat 11) — see Appendix B
 
-\<a name="ref5">\</a>**\[5] EPO-TEK H74 Technical Data Sheet (Epoxy Technology)**\
+**\[5] EPO-TEK H74 Technical Data Sheet (Epoxy Technology)**\
 https://www.epotek.com/site/administrator/components/com\_products/assets/files/Style\_Uploads/H74.pdf
 
 #### Standards Referenced
