@@ -74,11 +74,11 @@ Fume hood required for Stycast/EPO-TEK (amine hardeners)
 
 ### 2. Adhesive Comparison Table
 
-<table><thead><tr><th>Adhesive</th><th width="167.0859375">Thermal Cond. (k)</th><th width="99.36328125">Service Temp</th><th>Strength / Properties</th><th width="195.78125">Best Use</th></tr></thead><tbody><tr><td><strong>MG Chemicals 8329TCS</strong></td><td>0.67 W/m·K</td><td>–55 to 130 °C</td><td>Lap shear ~7.7 MPa (Al)&#x3C;br>Moderate rigidity</td><td>Low-waste, occasional external thermistor bonding</td></tr><tr><td><strong>WEICON Easy-Mix HT 250</strong></td><td>0.74 W/m·K</td><td>–60 to 200 °C</td><td>Shore D > 90 (Very High)&#x3C;br>Structural standard</td><td>Structural, batch bonding on external parts</td></tr><tr><td><strong>OMEGABOND 200</strong></td><td>1.52 W/m·K</td><td>Up to 260 °C</td><td>High Shear (~18.6 MPa)&#x3C;br>Requires Heat Cure</td><td>High-T external mounting (reserve option)</td></tr><tr><td><strong>Stycast 2850FT</strong></td><td>1.04 W/m·K</td><td>–65 to 130/155 °C</td><td>CTE matched to Copper&#x3C;br>Low Outgassing (ASTM E595)</td><td>Internal SHG/Laser Cavity bonding near optics</td></tr><tr><td><strong>EPO-TEK H74</strong></td><td>1.89 W/m·K</td><td>> 200 °C</td><td>High Shear&#x3C;br>Optical Grade</td><td>Alternative for vacuum/cavity work</td></tr></tbody></table>
+<table><thead><tr><th>Adhesive</th><th width="167.0859375">Thermal Cond. (k)</th><th width="99.36328125">Service Temp</th><th>Strength / Properties</th><th width="195.78125">Best Use</th></tr></thead><tbody><tr><td><a href="https://mgchemicals.com/products/adhesives/thermally-conductive-adhesives/high-thermal-conductivity-adhesive/"><strong>MG Chemicals 8329TCS</strong></a></td><td>0.67 W/m·K</td><td>–55 to 130 °C</td><td>Lap shear ~7.7 MPa (Al)&#x3C;br>Moderate rigidity</td><td>Low-waste, occasional external thermistor bonding</td></tr><tr><td><a href="https://www.weicon.de/easy-mix-ht-250-epoxid-klebstoff-hochtemperaturbestaendig-bis-2500c/10056568"><strong>WEICON Easy-Mix HT 250</strong></a></td><td>0.74 W/m·K</td><td>–60 to 200 °C</td><td>Shore D > 90 (Very High)&#x3C;br>Structural standard</td><td>Structural, batch bonding on external parts</td></tr><tr><td><a href="https://www.omega.de/pptst/OB-100_OB-200_OT-200.html"><strong>OMEGABOND 200</strong></a></td><td>1.52 W/m·K</td><td>Up to 260 °C</td><td>High Shear (~18.6 MPa)&#x3C;br>Requires Heat Cure</td><td>High-T external mounting (reserve option)</td></tr><tr><td><a href="https://www.henkel-adhesives.com/ch/de/produkt/potting-compounds/loctite_stycast_2850ftblk.html"><strong>Stycast 2850FT</strong></a></td><td>1.04 W/m·K</td><td>–65 to 130/155 °C</td><td>CTE matched to Copper&#x3C;br>Low Outgassing (ASTM E595)</td><td>Internal SHG/Laser Cavity bonding near optics</td></tr><tr><td><a href="https://www.epotek.com/docs/en/Datasheet/H74.pdf"><strong>EPO-TEK H74</strong></a></td><td>1.89 W/m·K</td><td>> 200 °C</td><td>High Shear&#x3C;br>Optical Grade</td><td>Alternative for vacuum/cavity work</td></tr></tbody></table>
 
 #### Standards Referenced
 
-* **ASTM E595:** Standard Test Method for Total Mass Loss and Collected Volatile Condensable Materials from Outgassing in a Vacuum Environment
+* **ASTM E595:** Standard Test Method for Total Mass Loss and Collected Volatile Condensable Materials from Outgassing in a Vacuum Environment – [https://store.astm.org/e0595-15r21.html](https://store.astm.org/e0595-15r21.html)
 
 ***
 
@@ -138,9 +138,6 @@ Fume hood required for Stycast/EPO-TEK (amine hardeners)
 | **Glass**                 | Good                   | Low CTE mismatch with Stycast                            |
 | **Plastics** (FR-4, G-10) | Good                   | **Safety:** Mask required for fiberglass dust            |
 | **Difficult** (PTFE, PP)  | Poor                   | Require primers (avoid if possible)                      |
-
-**\[6] Surface Preparation Guidelines**\
-Parker, T. C., et al. "Surface preparation for structural adhesive bonding of aluminum alloys." _International Journal of Adhesion and Adhesives_ 15.4 (1995): 233-238.
 
 ***
 
@@ -232,13 +229,9 @@ Use a loupe (10–20× magnification) to check cured dummy for micro-cracks or h
 
 All users must review the following before handling:
 
-1. **Stycast 2850FT (Base + Catalyst 9/11):**\
-   Available from Henkel/Loctite (request from supplier or institutional EHS)
-2. **EPO-TEK H74:**\
-   https://www.epotek.com (SDS section)
-3. **WEICON Easy-Mix HT 250:**\
-   https://www.weicon.de/en/downloads/safety-data-sheets
-4. **MG Chemicals 8329TCS:**\
-   https://www.mgchemicals.com/downloads/sds
+1. **Stycast 2850FT (Base + Catalyst 9/11):** [**https://api.henkeldx.com/v2/mysds/SafetyDataSheetSet?Appid=%27YPSSW\_SDSUA\_EXT%27\&Matnr=%271188119%27\&Laiso=%27EN%27\&Rvlid=%27US%27\&Dmskey=%27%27\&X-Api-Key=Auy4a2t5e00VU2Ju93GSKHeybHFVjYLX**](https://api.henkeldx.com/v2/mysds/SafetyDataSheetSet?Appid=%27YPSSW_SDSUA_EXT%27\&Matnr=%271188119%27\&Laiso=%27EN%27\&Rvlid=%27US%27\&Dmskey=%27%27\&X-Api-Key=Auy4a2t5e00VU2Ju93GSKHeybHFVjYLX)
+2. **EPO-TEK H74:** [**https://www.epotek.com/docs/en/SDS/H74%20SDS.pdf**](https://www.epotek.com/docs/en/SDS/H74%20SDS.pdf)
+3. **WEICON Easy-Mix HT 250:** [**https://media.weicon.de/fmds/433287/dld:inline**](https://media.weicon.de/fmds/433287/dld:inline) **and** [**https://media.weicon.de/fmds/433288/dld:inline**](https://media.weicon.de/fmds/433288/dld:inline)
+4. **MG Chemicals 8329TCS:** [**https://www.mgchemicals.com/downloads/msds/01%20English%20Can-USA%20SDS/sds-8329tcs-part-a.pdf**](https://www.mgchemicals.com/downloads/msds/01%20English%20Can-USA%20SDS/sds-8329tcs-part-a.pdf)
 
 ***
