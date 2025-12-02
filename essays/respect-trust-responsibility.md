@@ -8,8 +8,8 @@ description: Why Good Teaching Is a System, Not a Heroic Act
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_
 
-_version: 0.4_\
-last\_updated: _2025-11-28_\
+_version: 0.5_\
+last\_updated: _2025-12-02_\
 license: _CC BY-SA 4.0_
 
 **Disclaimer** – I write as a physicist engaging with education from the perspective of system design, not as a trained expert in the field. My literature search is preliminary and not yet representative. This essay should be understood as a draft contribution—an invitation for discussion and refinement, not a final statement.
