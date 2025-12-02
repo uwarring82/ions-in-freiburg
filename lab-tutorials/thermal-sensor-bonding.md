@@ -8,8 +8,8 @@ icon: lightbulb-exclamation-on
 {% hint style="info" %}
 author: U._Warring_\
 &#xNAN;_&#x61;ffiliation: Institute of Physics, University of Freiburg_\
-&#xNAN;_&#x76;ersion: 0.8_\
-&#xNAN;_&#x6C;ast\_updated: 2025-11-28_\
+&#xNAN;_&#x76;ersion: 0.85_\
+&#xNAN;_&#x6C;ast\_updated: 2025-12-02_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
 &#xNAN;_&#x6C;icense: CC BY-SA 4.0_
 {% endhint %}
