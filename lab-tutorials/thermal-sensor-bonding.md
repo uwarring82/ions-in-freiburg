@@ -270,9 +270,3 @@ All users must review the following before handling:
   &#xNAN;_&#x53;olvent selection, ultrasonic cleaning, and particulate control for sensor preparation_
 
 ***
-
-**Document Version:** 2.0 (Enhanced with References)\
-**Last Updated:** December 2025\
-**Maintained by:** Experimental Quantum & Atomic Physics Group, University of Freiburg
-
-***
