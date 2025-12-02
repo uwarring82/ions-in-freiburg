@@ -23,7 +23,7 @@ For attaching mm-scale thermistors to copper or other substrates under 0–200 �
 3. **High-temperature sensor-grade epoxies** — for occasional >150 °C or structural bonding
 
 > ⚠️ **Laser Safety Reminder:** All adhesive work inside laser cavities must only begin once the laser is powered down, locked out, and beam paths secured. Wavelength-specific eyewear is mandatory whenever the enclosure is open.\
-> See: [Bonding of Optical Components in High-Power Laser Beam Paths](https://claude.ai/chat/bonding-of-optical-components-in-high-power-laser-beam-paths) for cavity-specific protocols.
+> See: [Bonding of Optical Components in High-Power Laser Beam Paths ](bonding-of-optical-components-in-high-power-laser-beam-paths.md)for cavity-specific protocols.
 
 ***
 
@@ -74,30 +74,11 @@ Fume hood required for Stycast/EPO-TEK (amine hardeners)
 
 ### 2. Adhesive Comparison Table
 
-<table><thead><tr><th>Adhesive</th><th width="167.0859375">Thermal Cond. (k)</th><th width="99.36328125">Service Temp</th><th>Strength / Properties</th><th width="195.78125">Best Use</th><th>Ref</th></tr></thead><tbody><tr><td><strong>MG Chemicals 8329TCS</strong></td><td>0.67 W/m·K</td><td>–55 to 130 °C</td><td>Lap shear ~7.7 MPa (Al)&#x3C;br>Moderate rigidity</td><td>Low-waste, occasional external thermistor bonding</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref1">¹</a></td></tr><tr><td><strong>WEICON Easy-Mix HT 250</strong></td><td>0.74 W/m·K</td><td>–60 to 200 °C</td><td>Shore D > 90 (Very High)&#x3C;br>Structural standard</td><td>Structural, batch bonding on external parts</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref2">²</a></td></tr><tr><td><strong>OMEGABOND 200</strong></td><td>1.52 W/m·K</td><td>Up to 260 °C</td><td>High Shear (~18.6 MPa)&#x3C;br>Requires Heat Cure</td><td>High-T external mounting (reserve option)</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref3">³</a></td></tr><tr><td><strong>Stycast 2850FT</strong></td><td>1.04 W/m·K</td><td>–65 to 130/155 °C</td><td>CTE matched to Copper&#x3C;br>Low Outgassing (ASTM E595)</td><td>Internal SHG/Laser Cavity bonding near optics</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4">⁴</a></td></tr><tr><td><strong>EPO-TEK H74</strong></td><td>1.89 W/m·K</td><td>> 200 °C</td><td>High Shear&#x3C;br>Optical Grade</td><td>Alternative for vacuum/cavity work</td><td><a href="https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref5">⁵</a></td></tr></tbody></table>
-
-#### Reference Documentation
-
-**\[1] MG Chemicals 8329TCS Technical Data Sheet**\
-https://www.mgchemicals.com/products/adhesives/thermal-conductive-epoxies/8329tcs-thermally-conductive-epoxy
-
-**\[2] WEICON Easy-Mix HT 250 Technical Data Sheet**\
-https://www.weicon.de/en/products/adhesives-and-sealants/structural-adhesives/easy-mix-ht-250
-
-**\[3] OMEGABOND 200 Technical Specifications**\
-https://www.omega.com/en-us/industrial-heaters-and-heating-elements/p/OB-200
-
-**\[4] Stycast 2850FT Technical Data Sheet (Henkel/Loctite)**\
-https://dm.henkel-dam.com/is/content/henkel/stycast-2850ft-blue-with-catalyst-9-en-tds\
-&#xNAN;_&#x4E;ote:_ Properties depend on catalyst choice (Cat 9 vs Cat 11) — see Appendix B
-
-**\[5] EPO-TEK H74 Technical Data Sheet (Epoxy Technology)**\
-https://www.epotek.com/site/administrator/components/com\_products/assets/files/Style\_Uploads/H74.pdf
+<table><thead><tr><th>Adhesive</th><th width="167.0859375">Thermal Cond. (k)</th><th width="99.36328125">Service Temp</th><th>Strength / Properties</th><th width="195.78125">Best Use</th></tr></thead><tbody><tr><td><strong>MG Chemicals 8329TCS</strong></td><td>0.67 W/m·K</td><td>–55 to 130 °C</td><td>Lap shear ~7.7 MPa (Al)&#x3C;br>Moderate rigidity</td><td>Low-waste, occasional external thermistor bonding</td></tr><tr><td><strong>WEICON Easy-Mix HT 250</strong></td><td>0.74 W/m·K</td><td>–60 to 200 °C</td><td>Shore D > 90 (Very High)&#x3C;br>Structural standard</td><td>Structural, batch bonding on external parts</td></tr><tr><td><strong>OMEGABOND 200</strong></td><td>1.52 W/m·K</td><td>Up to 260 °C</td><td>High Shear (~18.6 MPa)&#x3C;br>Requires Heat Cure</td><td>High-T external mounting (reserve option)</td></tr><tr><td><strong>Stycast 2850FT</strong></td><td>1.04 W/m·K</td><td>–65 to 130/155 °C</td><td>CTE matched to Copper&#x3C;br>Low Outgassing (ASTM E595)</td><td>Internal SHG/Laser Cavity bonding near optics</td></tr><tr><td><strong>EPO-TEK H74</strong></td><td>1.89 W/m·K</td><td>> 200 °C</td><td>High Shear&#x3C;br>Optical Grade</td><td>Alternative for vacuum/cavity work</td></tr></tbody></table>
 
 #### Standards Referenced
 
-* **ASTM E595:** Standard Test Method for Total Mass Loss and Collected Volatile Condensable Materials from Outgassing in a Vacuum Environment\
-  https://www.astm.org/e0595-15r21.html
+* **ASTM E595:** Standard Test Method for Total Mass Loss and Collected Volatile Condensable Materials from Outgassing in a Vacuum Environment
 
 ***
 
@@ -107,7 +88,7 @@ https://www.epotek.com/site/administrator/components/com\_products/assets/files/
 
 **Use:** Stycast 2850FT (Cat 9 or 11) **or** EPO-TEK H74\
 **Why:** Low outgassing (ASTM E595 compliant), CTE match protects optics from stress\
-**See also:** [Bonding of Optical Components in High-Power Laser Beam Paths](https://claude.ai/chat/bonding-of-optical-components-in-high-power-laser-beam-paths) for surface preparation protocols specific to cavity environments
+**See also:** [Bonding of Optical Components in High-Power Laser Beam Paths](bonding-of-optical-components-in-high-power-laser-beam-paths.md) for surface preparation protocols specific to cavity environments
 
 #### B. External Parts (Structural)
 
@@ -133,7 +114,7 @@ https://www.epotek.com/site/administrator/components/com\_products/assets/files/
 1. **Abrade:** Light Scotch-Brite or fine sandpaper (320–600 grit)\
    ⚠️ Wear mask for Ceramic/FR-4 substrates (silica dust hazard)
 2. **Clean:** IPA or Acetone in Fume Hood\
-   **See:** [Cleaning Components After Manufacturing](https://claude.ai/chat/cleaning-components-after-manufacturing) for detailed solvent protocols
+   **See:** [Cleaning Components After Manufacturing](cleaning-components-after-manufacturing.md) for detailed solvent protocols
 3. **Dry:** Ensure full evaporation before applying glue (≥5 min air dry)
 
 #### 4.3 Bake-Out (Optics-Grade Only)
@@ -150,15 +131,15 @@ https://www.epotek.com/site/administrator/components/com\_products/assets/files/
 
 #### 4.5 Substrate Compatibility
 
-| Substrate Type            | Adhesion Quality       | Special Notes                                            | Ref                                                                   |
-| ------------------------- | ---------------------- | -------------------------------------------------------- | --------------------------------------------------------------------- |
-| **Metals** (Cu, Al, SS)   | Excellent              | Bond Aluminium within 1h of abrasion (oxide reformation) | [⁶](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref6) |
-| **Ceramics** (Al₂O₃, AlN) | Good (Stycast matched) | **Safety:** Dust mask mandatory during abrasion          | [⁴](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4) |
-| **Glass**                 | Good                   | Low CTE mismatch with Stycast                            | [⁴](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4) |
-| **Plastics** (FR-4, G-10) | Good                   | **Safety:** Mask required for fiberglass dust            | -                                                                     |
-| **Difficult** (PTFE, PP)  | Poor                   | Require primers (avoid if possible)                      | -                                                                     |
+| Substrate Type            | Adhesion Quality       | Special Notes                                            |
+| ------------------------- | ---------------------- | -------------------------------------------------------- |
+| **Metals** (Cu, Al, SS)   | Excellent              | Bond Aluminium within 1h of abrasion (oxide reformation) |
+| **Ceramics** (Al₂O₃, AlN) | Good (Stycast matched) | **Safety:** Dust mask mandatory during abrasion          |
+| **Glass**                 | Good                   | Low CTE mismatch with Stycast                            |
+| **Plastics** (FR-4, G-10) | Good                   | **Safety:** Mask required for fiberglass dust            |
+| **Difficult** (PTFE, PP)  | Poor                   | Require primers (avoid if possible)                      |
 
-\<a name="ref6">\</a>**\[6] Surface Preparation Guidelines**\
+**\[6] Surface Preparation Guidelines**\
 Parker, T. C., et al. "Surface preparation for structural adhesive bonding of aluminum alloys." _International Journal of Adhesion and Adhesives_ 15.4 (1995): 233-238.
 
 ***
@@ -183,15 +164,15 @@ Use a loupe (10–20× magnification) to check cured dummy for micro-cracks or h
 
 ### 6. Recommended Lab Stock
 
-| Item                      | Purpose                           | Supplier Link                                                            |
-| ------------------------- | --------------------------------- | ------------------------------------------------------------------------ |
-| MG 8329TCS                | Drawer essential (occasional use) | [Link](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref1) |
-| WEICON HT 250             | Structural standard               | [Link](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref2) |
-| Stycast 2850FT + Cat 9/11 | Cavity standard                   | [Link](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4) |
-| Precision Scale (0.01g)   | Catalyst weighing                 | Generic lab supplier                                                     |
-| Heat-Resistant Gloves     | Bake-out handling                 | Generic lab supplier                                                     |
-| Scotch-Brite Pads (7447)  | Surface prep                      | 3M                                                                       |
-| Loupe (10–20×)            | Bond inspection                   | Edmund Optics                                                            |
+| Item                      | Purpose                           | Supplier Link |
+| ------------------------- | --------------------------------- | ------------- |
+| MG 8329TCS                | Drawer essential (occasional use) |               |
+| WEICON HT 250             | Structural standard               |               |
+| Stycast 2850FT + Cat 9/11 | Cavity standard                   |               |
+| Precision Scale (0.01g)   | Catalyst weighing                 |               |
+| Heat-Resistant Gloves     | Bake-out handling                 |               |
+| Scotch-Brite Pads (7447)  | Surface prep                      |               |
+| Loupe (10–20×)            | Bond inspection                   |               |
 
 ***
 
@@ -243,7 +224,7 @@ Use a loupe (10–20× magnification) to check cured dummy for micro-cracks or h
 
 > ⚠️ **WARNING:** Stir bulk resin before weighing. Filler settles!
 
-**Source:** [Stycast 2850FT TDS](https://claude.ai/chat/49682465-322d-43ea-857a-5d533d7097ad#ref4)
+**Source:** Stycast 2850FT TDS
 
 ***
 
@@ -259,14 +240,5 @@ All users must review the following before handling:
    https://www.weicon.de/en/downloads/safety-data-sheets
 4. **MG Chemicals 8329TCS:**\
    https://www.mgchemicals.com/downloads/sds
-
-***
-
-### Related Tutorials
-
-* [**Bonding of Optical Components in High-Power Laser Beam Paths**](https://claude.ai/chat/bonding-of-optical-components-in-high-power-laser-beam-paths)\
-  &#xNAN;_&#x45;ssential reading for cavity work — covers low-scatter bonding, surface contamination control, and beam-path safety protocols_
-* [**Cleaning Components After Manufacturing**](https://claude.ai/chat/cleaning-components-after-manufacturing)\
-  &#xNAN;_&#x53;olvent selection, ultrasonic cleaning, and particulate control for sensor preparation_
 
 ***
