@@ -16,6 +16,7 @@
 * [Checklist for Changing Components in an evacuated UHV Chamber](lab-basics/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
 * [Bonding of Optical Components in High-Power Laser Beam Paths](lab-basics/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
 * [Thermal Sensor Bonding](lab-basics/thermal-sensor-bonding.md)
+* [Materials Selection and Contamination Control for Frequency Doubling Cavities](lab-basics/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
 
 ## Conceptual References
 
