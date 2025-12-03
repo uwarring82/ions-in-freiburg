@@ -1,5 +1,6 @@
 ---
 description: How to enable long-lasting performance.
+icon: lightbulb-exclamation-on
 ---
 
 # Materials Selection and Contamination Control for Frequency Doubling Cavities
@@ -8,7 +9,7 @@ description: How to enable long-lasting performance.
 
 **Target audience:** BSc, MSc, and PhD students building SHG/THG/FHG laser systems\
 **Application:** External ring cavities for frequency doubling (particularly NIR to VIS and VIS to UV)\
-**Critical context:** Nonlinear crystals (LBO, BBO) operate at elevated temperatures (50-94°C) with entrance/exit surfaces **exposed to ambient air**, creating direct contamination pathways
+**Critical context:** Nonlinear crystals (LBO, BBO) operate at elevated temperatures (50-100°C) with entrance/exit surfaces **exposed to ambient air**, creating direct contamination pathways
 
 **Learning objective:** Understand how materials choices and surface preparation affect long-term optical performance, and implement contamination control protocols that enable months-to-years of stable operation.
 
@@ -32,7 +33,7 @@ When generating UV light (particularly <300 nm), even trace organic contaminatio
     ↓ (outgassing: molecules enter air)
 [Thermal convection from hot crystal]
     ↓ (transport to crystal surface)
-[50-94°C surface temperature]
+[50-100°C surface temperature]
     ↓ (condensation: "sweet spot" for deposition)
 [280 nm UV photons + O₂]
     ↓ (photochemistry: polymerization)
