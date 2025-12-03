@@ -19,7 +19,7 @@
 
 ## Conceptual References
 
-* [Sensing your environment](conceptual-references/sensing-your-environment.md)
+* [Sensor Characterization Methodology](conceptual-references/sensor-characterization-methodology.md)
 * [Noise Attribution in Precision Measurements](conceptual-references/noise-attribution-in-precision-measurements.md)
 * [Quantum Dynamics Reference: Frames, RWA, and Dressed States](conceptual-references/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 

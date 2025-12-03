@@ -1,8 +1,9 @@
 ---
+description: Overview and Comprehensive Reference
 icon: scale-unbalanced-flip
 ---
 
-# Sensing your environment
+# Sensor Characterization Methodology
 
 {% hint style="info" %}
 _author: U. Warring_\
@@ -505,15 +506,21 @@ Per \[IEEE1293\_18], accelerometer Allan deviation analysis identifies:
 
 \[DING18] Ding, W. et al. (2018). "Piecewise linear fitting for improved sensor linearization." _Sensors_, 18(10).
 
+\[DOEBELIN04] Doebelin, E.O. (2004). _Measurement Systems: Application and Design_. McGraw-Hill.
+
 \[DRIFT\_STUDY] "Drift of MEMS accelerometers stored at room temperature." _ResearchGate_ publication.
 
 \[EMBEDDED\_CALIB] Embedded.com. "MEMS accelerometer calibration optimizes accuracy." Technical Article.
+
+\[FRADEN16] Fraden, J. (2016). _Handbook of Modern Sensors: Physics, Designs, and Applications_. Springer.
 
 \[GABRIELSON93] Gabrielson, T.B. (1993). "Mechanical-thermal noise in micromachined acoustic and vibration sensors." _IEEE Transactions on Electron Devices_, 40(5): 903-909.
 
 \[HERZOG90] Herzog, R.E. and Tompkins, D.R. (1990). "Ring-core fluxgate magnetometers for use as observatory variometers." _Physics of the Earth and Planetary Interiors_.
 
 \[HILLER21] Hiller, T. et al. (2021). "Analysis and Compensation of Cross-Axis Sensitivity in Low-Cost MEMS Inertial Sensors." _IEEE Sensors Conference_.
+
+\[HOROWITZ15] Horowitz, P. and Hill, W. (2015). _The Art of Electronics_, 3rd Edition. Cambridge University Press.
 
 \[IEC60751\_22] IEC 60751:2022. "Industrial platinum resistance thermometers and platinum temperature sensors." Edition 3.0.
 
@@ -529,13 +536,19 @@ Per \[IEEE1293\_18], accelerometer Allan deviation analysis identifies:
 
 \[JCGM100\_08] JCGM 100:2008. "Evaluation of measurement data—Guide to the expression of uncertainty in measurement (GUM)." Joint Committee for Guides in Metrology.
 
+\[JCGM200\_12] JCGM 200:2012. "International vocabulary of metrology—Basic and general concepts and associated terms (VIM)." Joint Committee for Guides in Metrology.
+
 \[KAAJAKARI] Kaajakari, V. "MEMS Tutorial: Mechanical noise in microelectromechanical systems." Technical Reference.
 
 \[KESHAVARZI19] Keshavarzi, M. and Yavand Hasani, J. (2019). "Design and optimization of fully differential capacitive MEMS accelerometer." _Microsystem Technologies_.
 
+\[KESTER05] Kester, W. (2005). _The Data Conversion Handbook_. Analog Devices / Newnes.
+
 \[MILES\_MAGIC] Miles, D.M. et al. "NASA MAGIC Project: Magnetometer Materials Investigation." NASA Science Mission Directorate.
 
 \[NIELSEN95] Nielsen, O.V. et al. (1995). "Development, construction and analysis of the Ørsted fluxgate magnetometer." _Measurement Science and Technology_, 6: 1099-1115.
+
+\[NI\_SENSOR] National Instruments. "Sensor Fundamentals: Definitions and Specifications." Technical Reference.
 
 \[NIST\_ACCEL] NIST. "Acceleration Calibration Services." Calibration Program Documentation.
 
@@ -546,6 +559,8 @@ Per \[IEEE1293\_18], accelerometer Allan deviation analysis identifies:
 \[NPL\_MAT65] NPL Report MAT 65. "Measurement of DC Magnetic Fields." UK National Physical Laboratory.
 
 \[NYQUIST28] Nyquist, H. (1928). "Thermal Agitation of Electric Charge in Conductors." _Physical Review_, 32: 110-113.
+
+\[PALLASARENY01] Pallàs-Areny, R. and Webster, J.G. (2001). _Sensors and Signal Conditioning_. Wiley-Interscience.
 
 \[PASIC\_THESIS] Pasic, A. "Polynomial Interpolation Methods for Sensor Calibration." DCU Thesis.
 
