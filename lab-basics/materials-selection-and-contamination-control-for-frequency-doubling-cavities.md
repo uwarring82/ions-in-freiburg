@@ -1431,23 +1431,6 @@ SAVINGS: €20,130 + 39.5 days
 * **Texwipe** (www.texwipe.com): Cleanroom wipes, swabs
 * **VWR/Sigma-Aldrich**: Semiconductor-grade solvents
 
-#### Example Bill of Materials (One Cavity)
-
-| Item                                               | Part Number | Vendor           | Qty   | Unit Price | Total      |
-| -------------------------------------------------- | ----------- | ---------------- | ----- | ---------- | ---------- |
-| Translation stage (natural anodized)               | Custom      | Thorlabs         | 2     | €325       | €650       |
-| Piezo stack (UHV-grade, 5×5×10 mm)                 | NAC2124-UHV | Noliac           | 2     | €450       | €900       |
-| EPO-TEK 353ND (10:1 syringe, 10 mL)                | 353ND-10ML  | Epoxy Technology | 1     | €80        | €80        |
-| EPO-TEK H74 (3 oz kit)                             | H74-3OZ     | Epoxy Technology | 1     | €120       | €120       |
-| PTFE wire (26 AWG, 10 m)                           | FIT-221     | Alpha Wire       | 10    | €8/m       | €80        |
-| Cleaning solvents (acetone, IPA, MeOH)             | Various     | VWR              | 1 set | €100       | €100       |
-| PEEK rod (Ø25 mm × 100 mm)                         | Various     | McMaster-Carr    | 1     | €40        | €40        |
-| Al foil + Kapton tape                              | Various     | Lab supply       | 1 set | €20        | €20        |
-| Misc hardware (screws, washers, springs - cleaned) | SS 304      | McMaster-Carr    | 1 set | €50        | €50        |
-| **TOTAL MATERIALS**                                |             |                  |       |            | **€2,040** |
-
-**Not included:** Crystals (€1,000-3,000), mirrors (€500-2,000), labor, facilities
-
 ***
 
 ### Appendix B: Institutional Knowledge Documentation Template
