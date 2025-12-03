@@ -7,25 +7,26 @@
 * [About us](getting-started/about-us.md)
 * [Structure your research](getting-started/structure-your-research.md)
 
-## Lab Tutorials
+## Lab Basics
 
-* [Gaussian Beams and the Knife-Edge Method](lab-tutorials/gaussian-beams-and-the-knife-edge-method.md)
-* [Benchmarks of a RF-Drive Resonator](lab-tutorials/benchmarks-of-a-rf-drive-resonator.md)
-* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](lab-tutorials/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
-* [Bonding of Optical Components in High-Power Laser Beam Paths](lab-tutorials/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
-* [Thermal Sensor Bonding](lab-tutorials/thermal-sensor-bonding.md)
-* [Cleaning Components After Manufacturing](lab-tutorials/cleaning-components-after-manufacturing.md)
-* [Checklist for Changing Components in an evacuated UHV Chamber](lab-tutorials/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
-* [Noise Attribution in Precision Measurements](lab-tutorials/noise-attribution-in-precision-measurements.md)
+* [Gaussian Beams and the Knife-Edge Method](lab-basics/gaussian-beams-and-the-knife-edge-method.md)
+* [Benchmarks of a RF-Drive Resonator](lab-basics/benchmarks-of-a-rf-drive-resonator.md)
+* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](lab-basics/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [Cleaning Components After Manufacturing](lab-basics/cleaning-components-after-manufacturing.md)
+* [Checklist for Changing Components in an evacuated UHV Chamber](lab-basics/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
+* [Bonding of Optical Components in High-Power Laser Beam Paths](lab-basics/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
+* [Thermal Sensor Bonding](lab-basics/thermal-sensor-bonding.md)
 
 ## Conceptual References
 
+* [Sensing your environment](conceptual-references/sensing-your-environment.md)
+* [Noise Attribution in Precision Measurements](conceptual-references/noise-attribution-in-precision-measurements.md)
 * [Quantum Dynamics Reference: Frames, RWA, and Dressed States](conceptual-references/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 
-## Publish your research
+## Publishing research
 
-* [Draft a Manuscript](publish-your-research/draft-a-manuscript.md)
-* [Peer Review Quickstart](publish-your-research/peer-review-quickstart.md)
+* [Draft a Manuscript](publishing-research/draft-a-manuscript.md)
+* [Peer Review Quickstart](publishing-research/peer-review-quickstart.md)
 
 ## Essays
 
