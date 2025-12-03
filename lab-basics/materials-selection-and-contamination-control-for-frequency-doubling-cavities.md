@@ -1331,8 +1331,7 @@ SAVINGS: €20,130 + 39.5 days
 \[5] Siegman, _Lasers_, Chapter 27: "Nonlinear optical frequency conversion"\
 \- Cavity-enhanced SHG, impedance matching
 
-\[6] Friedenauer et al., "High power all solid state laser system near 280 nm," _Appl. Phys. B_ 84, 371 (2006)\
-\- **The paper uploaded by user** - Real-world example of LBO + BBO system
+\[6] Friedenauer et al., "High power all solid state laser system near 280 nm," _Appl. Phys. B_ 84, 371 (2006) - Real-world example of LBO + BBO system
 
 **For PhD students (Research level):**
 
