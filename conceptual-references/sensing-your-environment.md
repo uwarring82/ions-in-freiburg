@@ -4,6 +4,15 @@ icon: scale-unbalanced-flip
 
 # Sensing your environment
 
+{% hint style="info" %}
+_author: U. Warring_\
+&#xNAN;_&#x61;ffiliation: Institute of Physics, University of Freiburg_\
+&#xNAN;_&#x76;ersion: 0.1_\
+&#xNAN;_&#x6C;ast\_updated: 2025-12-03_\
+&#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
+&#xNAN;_&#x6C;icense: CC BY-SA 4.0_
+{% endhint %}
+
 **Abstract:** This reference document presents systematic methodologies for characterizing temperature sensors, magnetic field sensors, and gravitational accelerometers. Covering physical transduction principles, noise analysis, environmental cross-sensitivities, temporal stability, and calibration procedures, it provides practitioners with authoritative guidance based on international standards and peer-reviewed literature. The document emphasizes quantitative specifications and traceable calibration methods essential for precision measurement applications.
 
 ***
@@ -14,7 +23,7 @@ icon: scale-unbalanced-flip
 
 A sensor is fundamentally an **information converter**—a device that transforms a physical quantity (the measurand) into a form that can be processed, recorded, or acted upon. In classical terms, a sensor performs **transduction**: converting energy from one domain (mechanical, thermal, optical, magnetic, chemical) into the electrical domain, where signals can be amplified, digitized, and analyzed \[FRADEN16].
 
-Consider measuring room temperature. The physical measurand is **temperature** (a thermodynamic state variable), but our instruments cannot directly "read" temperature—they can only measure electrical quantities like voltage, current, or resistance. A thermistor provides the necessary conversion: its resistance changes predictably with temperature, establishing the correspondence R(T). By measuring resistance electrically, we infer temperature. The thermistor is thus a **transducer element** embedded within a larger measurement system \[DOEBELIN04].
+Consider measuring room temperature. The physical measurand is **temperature** (a thermodynamic state variable), but our instruments cannot directly "read" temperature—they can only measure electrical quantities like voltage, current, or resistance. A thermistor provides the necessary conversion: its resistance changes predictably with temperature, establishing the correspondence $$R(T)$$. By measuring resistance electrically, we infer temperature. The thermistor is thus a **transducer element** embedded within a larger measurement system \[DOEBELIN04].
 
 This transduction principle applies universally. A photodiode converts photon flux to current. A strain gauge converts mechanical deformation to resistance change. A Hall sensor converts magnetic flux density to voltage. In each case, the sensor establishes a functional relationship between input (measurand) and output (electrical signal):
 
@@ -42,7 +51,7 @@ Before characterizing specific sensors, we must establish precise definitions fo
 
 **Sensitivity** quantifies how strongly the output responds to changes in input. Formally, sensitivity S is the derivative of the transfer function:
 
-S = dY/dX
+<p align="center"><span class="math">S = dY/dX</span></p>
 
 For linear sensors, this reduces to the slope of the input-output curve. A Pt100 RTD exhibits sensitivity of approximately **0.385 Ω/°C** at 0°C. A typical MEMS accelerometer might provide **660 mV/g** output sensitivity \[FRADEN16].
 
@@ -56,7 +65,7 @@ Importantly, sensitivity may vary with operating point (nonlinear sensors), temp
 
 **Span** is the algebraic difference between upper and lower range limits: Span = URL - LRL. For the RTD above, span = 1050°C.
 
-**Dynamic range** is the ratio of the largest to smallest measurable signals, often expressed in decibels: DR = 20 log₁₀(X\_max/X\_min). A 16-bit ADC provides theoretical dynamic range of approximately **96 dB**. Practical sensor dynamic range is limited by noise floor and saturation effects \[KESTER05].
+**Dynamic range** is the ratio of the largest to smallest measurable signals, often expressed in decibels: $$DR = 20 log₁₀(X_{max}/X_{min})$$. A 16-bit ADC provides theoretical dynamic range of approximately **96 dB**. Practical sensor dynamic range is limited by noise floor and saturation effects \[KESTER05].
 
 **Resolution, precision, and accuracy: distinguishing concepts**
 
@@ -199,8 +208,13 @@ The Equivalent Noise Bandwidth (ENBW) characterizes spectral spreading: rectangu
 
 **Noise type identification** relies on the PSD frequency dependence. White noise exhibits flat spectra (S(f) = constant), while colored noise follows power laws S(f) ∝ f^α. The table below summarizes relationships between spectral density exponent and Allan deviation slope:
 
-```
-```
+| Noise Type     | PSD Exponent α | Allan Deviation Slope |
+| -------------- | -------------- | --------------------- |
+| White PM       | +2             | -1                    |
+| Flicker PM     | +1             | -1                    |
+| White FM       | 0              | -1/2                  |
+| Flicker FM     | -1             | 0 (minimum)           |
+| Random Walk FM | -2             | +1/2                  |
 
 #### Allan deviation analysis for stability characterization
 
@@ -432,8 +446,12 @@ X = X₀ × \[1 + TDSF×(T-T\_ref)] + TDB×(T-T\_ref)
 
 **Bias instability**, identified as the minimum point on the Allan deviation plot, represents the fundamental limit on accelerometer stability. Typical values span:
 
-```
-```
+| Grade      | Bias Instability | Noise Density   |
+| ---------- | ---------------- | --------------- |
+| Consumer   | 1-10 mg          | 100-1000 μg/√Hz |
+| Industrial | 100-1000 μg      | 10-100 μg/√Hz   |
+| Tactical   | 10-100 μg        | 1-10 μg/√Hz     |
+| Navigation | <10 μg           | <1 μg/√Hz       |
 
 Per \[IEEE1293\_18], accelerometer Allan deviation analysis identifies:
 
