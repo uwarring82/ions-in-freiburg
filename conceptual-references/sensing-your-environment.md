@@ -28,7 +28,7 @@ Consider measuring room temperature. The physical measurand is **temperature** (
 
 This transduction principle applies universally. A photodiode converts photon flux to current. A strain gauge converts mechanical deformation to resistance change. A Hall sensor converts magnetic flux density to voltage. In each case, the sensor establishes a functional relationship between input (measurand) and output (electrical signal):
 
-**Output = f(Input, Parameters, Disturbances)**
+<p align="center"><strong>Output = f(Input, Parameters, Disturbances)</strong></p>
 
 Understanding this relationship—its form, its stability, its limitations—constitutes the essence of sensor characterization.
 
@@ -39,7 +39,7 @@ Sensors do not operate in isolation. The complete **measurement chain** transfor
 1. **Physical coupling:** The measurand must interact with the sensor's transduction element. For temperature, this requires thermal equilibrium. For magnetic field, proper orientation. For acceleration, mechanical coupling through mounting.
 2. **Transduction:** The sensing element converts the measurand to a raw electrical signal (voltage, current, resistance, capacitance, charge). This signal is typically small (microvolts to millivolts) and may contain offsets.
 3. **Signal conditioning:** Amplification, filtering, excitation, and linearization prepare the signal for digitization. A Wheatstone bridge might convert resistance change to differential voltage. An instrumentation amplifier might provide 100× gain with high common-mode rejection. A low-pass filter might remove high-frequency noise.
-4. **Analog-to-digital conversion:** The ADC discretizes the analog signal into digital codes. An N-bit ADC provides 2^N quantization levels, establishing the **quantization step** Q = V\_ref/2^N \[KESTER05].
+4. **Analog-to-digital conversion:** The ADC discretizes the analog signal into digital codes. An N-bit ADC provides $$2^N$$ quantization levels, establishing the **quantization step** $$Q = V_{ref}/2^N$$ \[KESTER05].
 5. **Digital processing:** Microcontrollers or computers apply calibration equations, perform averaging or filtering, compensate for known systematic errors, and present results in physical units.
 
 Each stage introduces **uncertainty** and potential **error sources**. The signal chain must be designed holistically: increasing ADC resolution provides no benefit if amplifier noise dominates, and sophisticated digital filtering cannot compensate for fundamental sensor limitations.
