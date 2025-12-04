@@ -88,9 +88,9 @@ Role: continuous (analog) and discrete (digital) degrees of freedom.
 
 Short-range interactions.
 
-Metrics: signal-to-noise ratio, coherence time.
+Metric: correlation length.
 
-Role: continuous (analog) and discrete (digital) degrees of freedom.
+State: experience.
 
 #### Layer 2 — Structure (Topology / Concept)
 
