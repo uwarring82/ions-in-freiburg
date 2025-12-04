@@ -159,7 +159,7 @@ This view aligns with metastable system theory without making biological claims.
 
 ***
 
-### 6. Epistemic and Ethical Boundaries (Required by Council-3)
+### 6. Epistemic and Ethical Boundaries
 
 To avoid conceptual overreach, the framework maintains explicit boundaries:
 
