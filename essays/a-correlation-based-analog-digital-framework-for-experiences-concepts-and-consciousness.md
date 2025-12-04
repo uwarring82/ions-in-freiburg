@@ -10,7 +10,7 @@ description: >-
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
 \
-_version: 0.01_\
+_version: 0.0.1_\
 last\_updated: _2025-12-04_\
 license: _CC BY-SA 4.0_
 
@@ -21,9 +21,7 @@ In this framework, correlations between analog and digital components constitute
 
 ***
 
-### Version History
+#### Version History
 
-| Version | Date       | Author     | Changes / Notes                                                                                                                                                                                                   |
-| ------- | ---------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0.0.1   | 2025-12-04 | U. Warring | Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer. |
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr></tbody></table>
 
