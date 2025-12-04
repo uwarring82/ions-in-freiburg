@@ -37,3 +37,4 @@
 * [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
 * [Respect, Trust, Responsibility](essays/respect-trust-responsibility.md)
+* [A Correlation-Based Analog-Digital Framework for Experiences, Concepts, and Consciousness](essays/a-correlation-based-analog-digital-framework-for-experiences-concepts-and-consciousness.md)
