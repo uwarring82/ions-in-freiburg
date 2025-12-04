@@ -173,6 +173,18 @@ These boundaries enable safe exploration without metaphysical commitments.
 
 ***
 
+### 7. Outlook
+
+The next step is to anchor this scaffolding with inspirational review articles, strong current fingerprints from empirical research, and to formalize:
+
+* the Damping & Resilience Specification,
+* measurable critical parameters,
+* and a use-case mapping (e.g., AI architectures, conceptual learning, sleep cycles).
+
+<p align="center"><em>This scaffold is deliberately open for discussion.</em></p>
+
+<p align="center"><em>Its purpose is to enable inquiry, not foreclose it.</em></p>
+
 #### Version History
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr></tbody></table>
