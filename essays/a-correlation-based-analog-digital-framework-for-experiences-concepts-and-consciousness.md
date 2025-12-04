@@ -10,7 +10,7 @@ description: >-
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
 \
-_version: 0.0.6_\
+_version: 0.0.7_\
 last\_updated: _2025-12-04_\
 license: _CC BY-SA 4.0_
 
@@ -173,6 +173,44 @@ These boundaries enable safe exploration without metaphysical commitments.
 
 ***
 
+#### 6. 1 Neuroscience Perspective
+
+Although this framework is not a neuroscientific theory, several strands of neuroscience offer helpful contextual support. These findings neither determine nor constrain the framework. Instead, they show that biological cognition naturally exhibits three distinguishable correlation regimes—short-range, scale-free, and global metastable—closely mirroring the structure defined here.
+
+**Short-Range, Fast Correlations (Experiences)**
+
+Studies of neuronal avalanches in cortical microcircuits show that spontaneous activity propagates in short, transient cascades with power-law size distributions (Beggs & Plenz 2003). These events exhibit limited correlation length and high bandwidth, matching the framework’s definition of short-lived, experience-like correlation traces.
+
+**Mid-Range, Scale-Free Correlations (Concepts)**
+
+Large-scale analyses of semantic networks—such as WordNet, word association norms, and multilingual concept graphs—demonstrate robust scale-free, small-world organisation (Steyvers & Tenenbaum 2005; De Deyne et al. 2016). Concepts appear as stable patterns within scale-invariant networks, aligning with the framework’s view of “concepts” as persistent, mid-range correlation structures without committing to neural isomorphism.
+
+**Global Metastable Correlations (Conscious States)**
+
+Work on conscious access within the global neuronal workspace framework (Dehaene et al. 2003; Mashour et al. 2020) highlights system-wide metastable states as key correlates of conscious processing. These fast-onset, transiently stable configurations resemble the framework’s description of consciousness as a temporarily aligned global correlation state, again without implying a mechanistic explanation of subjective experience.
+
+**Regulation of Correlation Regimes**
+
+Neural systems appear to maintain functional correlation structures through homeostatic regulatory mechanisms rather than pure self-organization. Reviews of criticality in the brain (Cocchi et al. 2017) and in vivo evidence (Ma et al. 2019) show that cortical circuits remain near—but not exactly at—criticality through adaptive processes such as inhibitory plasticity and synaptic scaling. This supports the framework’s assumption that any substrate capable of cognition must preserve stable correlation regimes, regardless of its physical implementation.
+
+**References (Neuroscience Context)**
+
+Beggs, J.M., & Plenz, D. (2003). Neuronal avalanches in neocortical circuits. Journal of Neuroscience, 23(35), 11167–11177.
+
+Cocchi, L., Gollo, L.L., Zalesky, A., & Breakspear, M. (2017). Criticality in the brain: A synthesis of neurobiology, models and cognition. Progress in Neurobiology, 158, 132–152.
+
+De Deyne, S., Navarro, D.J., Perfors, A., & Storms, G. (2016). Structure at every scale: A semantic network account of similarities between unrelated concepts. Journal of Experimental Psychology: General, 145, 1228–1254.
+
+Dehaene, S., Sergent, C., & Changeux, J.P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. PNAS, 100(14), 8520–8525.
+
+Ma, Z., Turrigiano, G.G., Wessel, R., & Hengen, K.B. (2019). Cortical circuit dynamics are homeostatically tuned to criticality in vivo. Neuron, 104(4), 655–664.
+
+Mashour, G.A., Roelfsema, P., Changeux, J.P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. Neuron, 105(5), 776–798.
+
+Steyvers, M., & Tenenbaum, J.B. (2005). The large-scale structure of semantic networks: Statistical analyses and a model of semantic growth. Cognitive Science, 29(1), 41–78.
+
+***
+
 ### 7. Outlook
 
 The next step is to anchor this scaffolding with inspirational review articles, strong current fingerprints from empirical research, and to formalize:
@@ -187,5 +225,5 @@ The next step is to anchor this scaffolding with inspirational review articles, 
 
 #### Version History
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a concise neuroscience context section summarizing empirical findings on short-range, scale-free, and global metastable correlations; positioned these results strictly as contextual parallels rather than mechanistic claims; added a unified reference list to support the comparison.</td><td valign="top">0.0.7</td><td valign="top">2025-12-04</td></tr></tbody></table>
 
