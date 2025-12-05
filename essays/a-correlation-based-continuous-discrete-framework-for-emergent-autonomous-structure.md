@@ -315,7 +315,7 @@ In canonical spin systems (e.g., Ising model), the three regimes correspond to w
 
 The correlation length ξ in spin systems is defined through the decay of correlations:
 
-\$$\langle \sigma\_i \sigma\_j \rangle \sim e^{-|i-j|/\xi}\$$
+<p align="center"><span class="math">\langle \sigma_i \sigma_j \rangle \sim e^{-|i-j|/\xi}</span></p>
 
 At criticality, ξ diverges and the decay becomes power-law rather than exponential—the signature of the _Habitus_ regime.
 
