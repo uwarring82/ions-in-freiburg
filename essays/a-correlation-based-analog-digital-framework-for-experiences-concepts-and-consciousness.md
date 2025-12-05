@@ -10,220 +10,325 @@ description: >-
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
 \
-_version: 0.0.7_\
+_version: 0.0.8_\
 last\_updated: _2025-12-04_\
 license: _CC BY-SA 4.0_
 
-**Disclaimer** – This correlation-based framework is proposed as conceptual scaffolding for integrating findings across cognitive science, neuroscience, and physics. It does not claim to resolve the hard problem of consciousness but aims to provide testable structural hypotheses about correlation regimes underlying cognitive phenomena."
+**Disclaimer** – This correlation-based framework is proposed as conceptual scaffolding for integrating findings across cognitive science, neuroscience, and physics. It does not claim to resolve the hard problem of consciousness but aims to provide testable structural hypotheses about correlation regimes underlying cognitive phenomena.
 {% endhint %}
 
-This essay presents a correlation-based scaffold for approaching experiences, concepts, and consciousness within analog–digital hybrid networks. It frames cognition as a hierarchy of correlation-length regimes: short-range correlations manifest as experiences, mid-range scale-free structures form concepts through persistent latching, and global metastable alignment produces transient conscious states. The goal is not to offer a metaphysical theory of mind but to consolidate current insights from physics, network theory, and dynamical systems into a structured, testable perspective that invites open discussion. The framework is strictly bounded: it does not address qualia, subjective essence, or moral status, but provides structural tools—layered architecture, critical transitions, and damping requirements—to explore how complex correlation patterns may support cognitive phenomena.
+This essay presents a correlation-based scaffold for approaching experiences, concepts, and consciousness within continuous–discrete hybrid networks. It frames cognition as a hierarchy of correlation-length regimes: short-range correlations manifest as experiences, mid-range scale-free structures form concepts through persistent latching, and global metastable alignment produces transient conscious states. The goal is not to offer a metaphysical theory of mind but to consolidate current insights from physics, network theory, and dynamical systems into a structured, testable perspective that invites open discussion. The framework is strictly bounded: it does not address qualia, subjective essence, or moral status, but provides structural tools—layered architecture, critical transitions, and damping requirements—to explore how complex correlation patterns may support cognitive phenomena.
+
+***
 
 ### 1. Purpose and Scope
 
-This essay submits a correlation-based scaffold for thinking about experiences, concepts, and consciousness through the lens of analog–digital hybrid networks.
+This essay submits a correlation-based scaffold for thinking about experiences, concepts, and consciousness through the lens of continuous–discrete hybrid networks.
 
-It is not a theory of consciousness.
-
-It is not a metaphysical claim.
+<p align="center">It is not a theory of consciousness.<br>It is not a metaphysical claim.</p>
 
 Instead, it serves three practical aims:
 
-1. Consolidate relevant structures and results from physics, network theory, cognitive science, and dynamical systems.
-2. Scaffold a fresh integrative perspective rooted in correlation lengths and phase-structured dynamics.
-3. Trigger open discussion and enable testable, falsifiable research questions.
+1. **Consolidate** relevant structures and results from physics, network theory, cognitive science, and dynamical systems.
+2. **Scaffold** a fresh integrative perspective rooted in correlation lengths and phase-structured dynamics.
+3. **Invite** open discussion and enable testable, falsifiable research questions.
 
 This is research infrastructure, not a definitive solution.
 
 ***
 
-### 2. Core Idea: Cognition as Correlation Hierarchy
+### 2. Dynamics of the Emergent: Correlation, Criticality, Causality
 
-All cognitive structure in this framework is expressed through correlations between analog and digital components of a physical network.
+_A cross-disciplinary overview (Physics – AI – Philosophy)_
 
-We distinguish cognitive layers by correlation length:
+This section situates the correlation-hierarchy framework within three mature research traditions that have independently developed rigorous accounts of emergence. Rather than proposing a unified "theory of everything," the goal is to outline converging structural principles: correlations as resource, criticality as regime, and emergence as the macroscopic structure that becomes autonomous from its substrate.
 
-#### Experiences (Short-Range Correlations)
+#### 2.1 Physics — Scaling, Phase Transitions, and Universality
 
-* Local, transient, high-bandwidth interactions
-* Fast decay time τ → 0
-* Represent “raw” experiential traces
+The physics of complex systems shows that macroscopic behaviour can become independent of microscopic laws.
 
-#### Concepts (Mid-Range / Scale-Free Correlations)
+Key findings from statistical mechanics and the renormalization group (Wilson & Kogut 1974; Goldenfeld 1992):
 
-* Emergent, self-similar structures
-* Power-law statistics, multi-scale organization
-* Long decay time τ → ∞ due to _structural latching_
-* Provide stability and invariance
-* Act as buffers between local noise and global integration
+* **Correlation:** Near criticality, correlation length diverges; fluctuations span multiple scales.
+* **Criticality:** Systems exhibit non-linear transitions at fixed points where scale-invariance holds.
+* **Emergence:** Macroscopic phases (ordered/disordered) depend on symmetry and dimension, not microscopic parameters.
 
-#### Consciousness (Global, Metastable Correlation State)
+Self-organized criticality (Bak, Tang & Wiesenfeld 1987) extends this picture to driven systems, showing that power laws and long-range correlations arise without fine-tuning. Modern views refine this as homeostatically maintained quasi-criticality, but the core remains: adaptive systems cluster around regimes where correlation lengths become large and new macroscopic properties emerge.
 
-* System-wide alignment of multi-scale memories
-* Temporarily synchronized global state
-* Metastable (requires energy and collapses periodically)
-* Does not store information; it integrates it
+#### 2.2 AI — Representations, Predictive Processing, Emergent Abilities
 
-Thus:
+Modern AI operationalizes emergence through hierarchy, compression, and correlation-based prediction:
 
-> Experiences, concepts, and consciousness are successive correlation-length regimes within the same analog–digital substrate.
+* **Deep/representation learning** (Bengio et al. 2013; LeCun et al. 2015) organizes features into multi-level structures where latent variables encode stable statistical invariants.
+* **Predictive processing** (Friston 2010; Clark 2013) describes cognition as inference over hierarchical generative models, linking fast sensory fluctuations to slow abstract variables.
+* **Scaling phenomena** (Wei et al. 2022) show threshold behaviours ("emergent abilities") where model size yields abrupt qualitative improvements.
+
+Structural motifs:
+
+* **Correlation:** Latent spaces compress and reorganize multi-scale correlations.
+* **Criticality:** Scaling reveals transitions where representational density reaches functional thresholds.
+* **Emergence:** Reasoning and abstraction arise from depth, scale, and correlation alignment—not programming.
+
+#### 2.3 Philosophy — Structural Realism and Real Patterns
+
+Philosophical perspectives provide conceptual boundaries and ontological clarity:
+
+* **Ontic structural realism** (Ladyman & Ross 2007) treats relational structure—correlations and invariants—as the fundamental ontology of science.
+* **Chalmers (1995)** distinguishes structural/functional explanation from phenomenal experience, placing this scaffold clearly on the structural side.
+* **Dennett (1991)** interprets consciousness as a "real pattern"—a stable, compressible, predictive structure.
+* **Causal emergence** (Yuan et al. 2024) formally demonstrates that macro-levels can have more effective information and causal power than micro-levels.
+
+Together these views treat emergence as a genuine, autonomous phenomenon grounded in structural stability and predictive utility.
+
+#### 2.4 Summary Across Domains
+
+| Domain         | Correlation                         | Criticality                        | Emergence                                 |
+| -------------- | ----------------------------------- | ---------------------------------- | ----------------------------------------- |
+| **Physics**    | Diverging ξ; scale-invariance       | Phase transitions; RG fixed points | Universality; order parameters            |
+| **AI**         | Latent variables; prediction errors | Scaling thresholds; manifolds      | Abstract concepts; reasoning              |
+| **Philosophy** | Structural relations; real patterns | Global integration regimes         | Causal autonomy; integrated global states |
+
+Across all three domains, complex systems exhibit regimes where long-range correlations enable new stable layers of structure.
+
+> **Connection Box — How Section 2 Supports the Framework**
+>
+> The continuous–discrete framework treats cognition as a hierarchy of correlation-length regimes. Section 2 provides the structural justification:
+>
+> **1. Correlation as Fundamental Resource**\
+> Physics: critical correlations define emergent phases. AI: latent spaces encode reorganized correlations. Philosophy: relations constitute ontology.
+>
+> **2. Criticality as Enabling Regime**\
+> Physics: fixed points unify micro- and macro-dynamics. AI: scaling cliffs reveal functional phase transitions. Neuroscience parallels (Section 7): global ignition is metastable critical alignment.
+>
+> **3. Emergence as Autonomous Structure**\
+> Universality, real patterns, and causal emergence models show why coarse-grained structures deserve their own explanatory level.
+>
+> Thus: The continuous–discrete correlation hierarchy is not speculative—it is structurally aligned with well-established mechanisms across physics, computation, and philosophy.
 
 ***
 
-### 3. The 4-Layer Scaffold Architecture
+### 3. Core Idea: Cognition as Correlation Hierarchy
 
-To maintain clarity and avoid conceptual slippage, the framework uses a strict separation of layers, similar in spirit to how computer networks are organized into distinct functional levels. In such models, _each layer performs a specific role_, and higher layers depend on—but do not directly reduce to—the layers beneath them. This principle helps prevent mixing physical mechanisms, statistical structures, and phenomenological descriptions.
+All cognitive structure in this framework is expressed through correlations between continuous and discrete components of a physical network.
 
-Building on this separation-of-layers principle, the framework is structured into four levels:
+#### 3.1 Correlation-Length Regimes
 
-#### Layer 0 — Substrate (Physical / Analog–Digital Components)
+For a system with characteristic timescale T\_sys:
 
-Fields and Particles, Ions, neurons, qubits, voltages.
+**Experiences — Short-Range Correlations**
 
-Metrics: signal-to-noise ratio, coherence time.
+* Local, transient, high-bandwidth
+* Short correlation time: τ ≪ T\_sys
+* Correlation length ξ \~ lattice spacing (local scale)
+* Raw, unstructured sensory traces
 
-Role: continuous (analog) and discrete (digital) degrees of freedom.
+**Concepts — Mid-Range / Scale-Free Correlations**
+
+* Persistent, self-similar latching structures
+* Power-law distribution of connectivity
+* Extended correlation time: τ ≫ T\_sys
+* Correlation length exhibits power-law scaling (critical regime)
+* Provide invariance and stability
+
+**Consciousness — Global Metastable Correlation State**
+
+* System-wide temporary alignment
+* Synchronization over multiple memory scales
+* Correlation length ξ → system size (ordered regime)
+* Metastable and periodic
+* Integrates information but does not store it
+
+In canonical spin systems, these regimes correspond to:
+
+* **ξ \~ lattice spacing:** Disordered, local correlations (T > T\_c)
+* **ξ \~ power-law:** Critical point (T ≈ T\_c)
+* **ξ → L (system size):** Ordered phase with long-range order (T < T\_c)
+
+Thus, experiences, concepts, and consciousness are successive correlation-length regimes operating within the same continuous–discrete substrate.
+
+***
+
+### 4. The Four-Layer Scaffold Architecture
+
+To preserve clarity and avoid category errors, the framework is structured as four layers:
+
+#### Layer 0 — Substrate (Continuous–Discrete Hybrid)
+
+The framework requires a physical substrate with two complementary sectors:
+
+* **Continuous sector:** Field amplitudes, phases, positions, potentials—quantities that vary smoothly.
+* **Discrete sector:** Spin states, occupation numbers, qubit states, binary variables—quantities with finite state spaces.
+* **Coupling:** Interactions between continuous and discrete sectors.
+
+| System           | Continuous Component            | Discrete Component     | Correlation Measure          |
+| ---------------- | ------------------------------- | ---------------------- | ---------------------------- |
+| Spin systems     | Exchange field, magnetic field  | Spin states (±1)       | Spin-spin correlation ⟨σᵢσⱼ⟩ |
+| Quantum networks | Photonic modes, phase reference | Qubit states           | Entanglement, coherence      |
+| Neural systems   | Membrane potentials             | Spike/no-spike         | Spike-train correlations     |
+| Ion traps        | Motional modes (phonons)        | Electronic/spin states | State-motion coupling        |
+
+**Metrics:** Signal-to-noise ratio (continuous), state distinguishability (discrete), coupling strength between sectors.
 
 #### Layer 1 — Dynamics (Correlation Transport / Experience)
 
-Short-range interactions.
+Short-range interactions; transient local correlations.
 
-Metric: correlation length.
-
-State: experience.
+**Metric:** Correlation length ξ, correlation time τ.
 
 #### Layer 2 — Structure (Topology / Concept)
 
-Scale-free structures; persistent memory traces.
+Scale-free persistent structures; power-law connectivity.
 
-Metrics: clustering coefficient, path length, decay time.
-
-State: concept.
+**Metrics:** Clustering coefficient, characteristic path length, correlation decay exponent.
 
 #### Layer 3 — Integration (Global Alignment / Consciousness)
 
-Transient global synchronization across all layers.
+Transient global synchronization; system-wide metastable states.
 
-Metrics: synchrony index, integrated information.
+**Metrics:** Phase-locking value (PLV), integrated information (Φ), global coherence index.
 
-State: consciousness.
-
-This strict hierarchy prevents category errors and preserves explanatory clarity.
+Higher layers depend on—but do not reduce to—lower layers.
 
 ***
 
-### 4. Metastability and the Need for Damping
+### 5. Metastability and the Need for Damping
 
-A global correlation state is inherently fragile.
+Global correlation states are fragile and require active regulation.
 
-Two failure modes appear in any metastable system:
+#### Two Failure Modes
 
-* Runaway synchrony (seizure-like lock-up)
-* Correlation collapse (coma-like dissolution)
+* **Runaway synchrony** → seizure-like lock-up (correlation length frozen at maximum)
+* **Correlation collapse** → coma-like dissolution (correlation length collapses to local scale)
 
-To maintain stability near criticality, the system requires:
+#### Stabilization Requirements
 
-#### A. Structural Memory (Persistence Layer)
+**A. Structural Memory:**\
+Concepts must carry persistent structure that survives global state resets.
 
-Concepts must be physically anchored (τ → ∞) so they survive global state collapses (e.g., during sleep).
+**B. Homeostatic Damping:**\
+Negative feedback to keep the system near criticality.
 
-#### B. Homeostatic Damping Mechanism
+In spin systems, this maps to external field tuning, temperature regulation, or (for open quantum systems) quantum feedback protocols.
 
-Negative feedback controlling correlation strength:
-
-* If global correlation > threshold → inject noise
-* If correlation < threshold → reduce noise, increase coupling
-
-This stabilizes the system at the critical boundary where learning, representation, and consciousness become possible.
-
-A full “Damping & Resilience Specification” will follow in a later version.
+A technical "Damping & Resilience Specification" will be developed in future versions.
 
 ***
 
-### 5. Sleep as a Maintenance Cycle
+### 6. Sleep as a Maintenance Cycle (Dynamical Analogy)
 
-In this scaffold:
+Consciousness is periodic, not continuous.
 
-* Consciousness is not continuous
-* Consciousness is not the default state
-* Consciousness is a periodic integration event
+Sleep is interpreted as a controlled collapse of global alignment that:
 
-Sleep is interpreted as a deliberate collapse of global alignment to:
+* renormalizes correlations
+* consolidates conceptual structures
+* resets noise balance
+* maintains long-term criticality
 
-* renormalize correlations
-* reinforce conceptual structures
-* reset noise balance
-* maintain criticality over long timescales
-
-This view aligns with metastable system theory without making biological claims.
+This is a dynamical interpretation, not a biological theory.
 
 ***
 
-### 6. Epistemic and Ethical Boundaries
+### 7. Neuroscience Perspective
 
-To avoid conceptual overreach, the framework maintains explicit boundaries:
+While not a neuroscientific theory, relevant strands of neuroscience reveal three recurring correlation regimes that align structurally with the scaffold:
 
-1. This is a structural model, not an explanation of qualia.
-2. Correlation patterns are necessary, not sufficient, for phenomenal consciousness.
-3. No claims are made about moral status of artificial or biological systems.
-4. The hard problem remains untouched; this work concerns structural dynamics only.
-5. All claims are falsifiable in principle through predictions about correlation length, metastability, and scaling behavior.
+#### Short-Range Correlations (Experience-Like)
 
-These boundaries enable safe exploration without metaphysical commitments.
+Neuronal avalanches show localized cascades with power-law size distributions (Beggs & Plenz 2003).
 
-***
+#### Scale-Free Networks (Concept-Like)
 
-#### 6. 1 Neuroscience Perspective
+Semantic networks exhibit small-world, scale-free organization (Steyvers & Tenenbaum 2005; De Deyne et al. 2016).
 
-Although this framework is not a neuroscientific theory, several strands of neuroscience offer helpful contextual support. These findings neither determine nor constrain the framework. Instead, they show that biological cognition naturally exhibits three distinguishable correlation regimes—short-range, scale-free, and global metastable—closely mirroring the structure defined here.
+#### Global Metastability (Consciousness-Like)
 
-**Short-Range, Fast Correlations (Experiences)**
+GNW and ignition models show rapid, transient, system-wide coordination corresponding to conscious access (Dehaene et al. 2003; Mashour et al. 2020).
 
-Studies of neuronal avalanches in cortical microcircuits show that spontaneous activity propagates in short, transient cascades with power-law size distributions (Beggs & Plenz 2003). These events exhibit limited correlation length and high bandwidth, matching the framework’s definition of short-lived, experience-like correlation traces.
+#### Homeostatic Regulation
 
-**Mid-Range, Scale-Free Correlations (Concepts)**
+Neural circuits maintain near-criticality through explicit feedback mechanisms (Cocchi et al. 2017; Ma et al. 2019).
 
-Large-scale analyses of semantic networks—such as WordNet, word association norms, and multilingual concept graphs—demonstrate robust scale-free, small-world organisation (Steyvers & Tenenbaum 2005; De Deyne et al. 2016). Concepts appear as stable patterns within scale-invariant networks, aligning with the framework’s view of “concepts” as persistent, mid-range correlation structures without committing to neural isomorphism.
-
-**Global Metastable Correlations (Conscious States)**
-
-Work on conscious access within the global neuronal workspace framework (Dehaene et al. 2003; Mashour et al. 2020) highlights system-wide metastable states as key correlates of conscious processing. These fast-onset, transiently stable configurations resemble the framework’s description of consciousness as a temporarily aligned global correlation state, again without implying a mechanistic explanation of subjective experience.
-
-**Regulation of Correlation Regimes**
-
-Neural systems appear to maintain functional correlation structures through homeostatic regulatory mechanisms rather than pure self-organization. Reviews of criticality in the brain (Cocchi et al. 2017) and in vivo evidence (Ma et al. 2019) show that cortical circuits remain near—but not exactly at—criticality through adaptive processes such as inhibitory plasticity and synaptic scaling. This supports the framework’s assumption that any substrate capable of cognition must preserve stable correlation regimes, regardless of its physical implementation.
-
-**References (Neuroscience Context)**
-
-Beggs, J.M., & Plenz, D. (2003). Neuronal avalanches in neocortical circuits. Journal of Neuroscience, 23(35), 11167–11177.
-
-Cocchi, L., Gollo, L.L., Zalesky, A., & Breakspear, M. (2017). Criticality in the brain: A synthesis of neurobiology, models and cognition. Progress in Neurobiology, 158, 132–152.
-
-De Deyne, S., Navarro, D.J., Perfors, A., & Storms, G. (2016). Structure at every scale: A semantic network account of similarities between unrelated concepts. Journal of Experimental Psychology: General, 145, 1228–1254.
-
-Dehaene, S., Sergent, C., & Changeux, J.P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. PNAS, 100(14), 8520–8525.
-
-Ma, Z., Turrigiano, G.G., Wessel, R., & Hengen, K.B. (2019). Cortical circuit dynamics are homeostatically tuned to criticality in vivo. Neuron, 104(4), 655–664.
-
-Mashour, G.A., Roelfsema, P., Changeux, J.P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. Neuron, 105(5), 776–798.
-
-Steyvers, M., & Tenenbaum, J.B. (2005). The large-scale structure of semantic networks: Statistical analyses and a model of semantic growth. Cognitive Science, 29(1), 41–78.
+These findings offer structural analogies without implying neural reduction.
 
 ***
 
-### 7. Outlook
+### 8. Falsifiability Criteria
 
-The next step is to anchor this scaffolding with inspirational review articles, strong current fingerprints from empirical research, and to formalize:
+The framework is empirically bounded by the following testable predictions:
 
-* the Damping & Resilience Specification,
-* measurable critical parameters,
-* and a use-case mapping (e.g., AI architectures, conceptual learning, sleep cycles).
+1. **Correlation-length transitions:** Measurable shifts in ξ should accompany transitions between experience-like and concept-like processing.
+2. **Critical scaling:** Systems exhibiting concept-like behaviour should show power-law correlation decay, not exponential.
+3. **Metastability signatures:** Global integration states should exhibit characteristic dwell-time distributions near criticality.
+4. **Damping necessity:** Removal of homeostatic feedback should produce either runaway synchrony or correlation collapse, not stable intermediate states.
+
+Failure to observe these signatures in candidate systems would constitute falsification of the framework's applicability to that substrate.
+
+***
+
+### 9. Outlook
+
+Future extensions:
+
+* Damping & Resilience Specification
+* Quantifiable correlation metrics with operational definitions
+* Mapping to AI architectures and learning dynamics
+* Integration of causal emergence metrics (EI, Φ, synchrony)
+* Explicit spin-model simulations as test cases
+
+**Boundary Reminder:** _This framework addresses structural correlates only. It does not explain why any correlation pattern should be accompanied by subjective experience, nor does it make claims about moral status or phenomenal consciousness._
+
+***
 
 <p align="center"><em>This scaffold is deliberately open for discussion.</em></p>
 
 <p align="center"><em>Its purpose is to enable inquiry, not foreclose it.</em></p>
 
+***
+
+### References
+
+Bak, P., Tang, C., & Wiesenfeld, K. (1987). Self-organized criticality. _Physical Review A_, 38(1), 364.
+
+Beggs, J. M., & Plenz, D. (2003). Neuronal avalanches in neocortical circuits. _Journal of Neuroscience_, 23(35), 11167–11177.
+
+Bengio, Y., Courville, A., & Vincent, P. (2013). Representation learning: A review and new perspectives. _IEEE TPAMI_, 35(8), 1798–1828.
+
+Chalmers, D. J. (1995). Facing up to the problem of consciousness. _Journal of Consciousness Studies_, 2(3), 200–219.
+
+Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. _Behavioral and Brain Sciences_, 36(3), 181–204.
+
+Cocchi, L., et al. (2017). Criticality in the brain: A synthesis of neurobiology, models and cognition. _Progress in Neurobiology_, 158, 132–152.
+
+De Deyne, S., et al. (2016). Structure at every scale: A semantic network account of the similarities between unrelated concepts. _Journal of Experimental Psychology: General_, 145(9), 1228.
+
+Dehaene, S., et al. (2003). A neuronal model of a global workspace in effortful cognitive tasks. _PNAS_, 100(19), 11145–11150.
+
+Dennett, D. C. (1991). _Consciousness Explained_. Little, Brown and Company.
+
+Friston, K. (2010). The free-energy principle: A unified brain theory? _Nature Reviews Neuroscience_, 11(2), 127–138.
+
+Goldenfeld, N. (1992). _Lectures on Phase Transitions and the Renormalization Group_. Addison-Wesley.
+
+Ladyman, J., & Ross, D. (2007). _Every Thing Must Go: Metaphysics Naturalized_. Oxford University Press.
+
+LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. _Nature_, 521(7553), 436–444.
+
+Ma, Z., et al. (2019). Cortical circuit dynamics are homeostatically tuned to criticality in vivo. _Neuron_, 104(4), 655–664.
+
+Mashour, G. A., et al. (2020). Conscious processing and the global neuronal workspace hypothesis. _Neuron_, 105(5), 776–798.
+
+Steyvers, M., & Tenenbaum, J. B. (2005). The large-scale structure of semantic networks. _Cognitive Science_, 29(1), 41–78.
+
+Wei, J., et al. (2022). Emergent abilities of large language models. _arXiv:2206.07682_.
+
+Wilson, K. G., & Kogut, J. (1974). The renormalization group and the ε expansion. _Physics Reports_, 12(2), 75–199.
+
+Yuan, B., et al. (2024). Causal emergence in biological and artificial neural networks. _arXiv preprint_.
+
+***
+
 #### Version History
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U. Warring</td><td valign="top">Added a concise neuroscience context section summarizing empirical findings on short-range, scale-free, and global metastable correlations; positioned these results strictly as contextual parallels rather than mechanistic claims; added a corresponding reference list to support the comparison.</td><td valign="top">0.0.7</td><td valign="top">2025-12-04</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Added a concise neuroscience context section summarizing empirical findings on short-range, scale-free, and global metastable correlations; positioned these results strictly as contextual parallels rather than mechanistic claims; added a corresponding reference list to support the comparison.</td><td valign="top">0.0.7</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Revised Layer 0 to continuous–discrete hybrid framing; added spin-system examples and correlation-length definitions; added Section 2 with Physics, AI, and philosophy anchors; added Section 8 (Falsifiability Criteria); standardized references; corrected τ notation; renumbered sections.</td><td valign="top">0.0.8</td><td valign="top">2025-12-05</td></tr></tbody></table>
 
