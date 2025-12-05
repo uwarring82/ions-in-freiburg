@@ -10,20 +10,20 @@ description: >-
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
 \
-_version: 0.0.9_\
+_version: 0.0.10_\
 last\_updated: _2025-12-05_\
 license: _CC BY-SA 4.0_
 
 **Disclaimer** – This correlation-based framework is proposed as conceptual scaffolding for integrating findings across cognitive science, philosophy, and physics. It does not claim to resolve the hard problem of consciousness but aims to provide testable structural hypotheses about correlation regimes underlying cognitive phenomena.
 {% endhint %}
 
-This essay presents a correlation-based scaffold for approaching cognitive phenomena within continuous–discrete hybrid networks. It frames cognition as a hierarchy of correlation-length regimes: short-range correlations manifest as transient local states (_Affectio_), mid-range scale-free structures form persistent patterns (_Habitus_), and global metastable alignment produces transient unified states (_Integratio_). The goal is not to offer a metaphysical theory of mind but to consolidate current insights from physics, network theory, and dynamical systems into a structured, testable perspective that invites open discussion. The framework is strictly bounded: it does not address qualia, subjective essence, or moral status, but provides structural tools—layered architecture, critical transitions, and damping requirements—to explore how complex correlation patterns may support cognitive phenomena.
+This essay presents a correlation-based scaffold for approaching cognitive phenomena within continuous–discrete hybrid systems. It frames cognition as a hierarchy of correlation-length regimes: short-range correlations manifest as transient local states (_Affectio_), mid-range scale-free structures form persistent patterns (_Habitus_), and global metastable alignment produces transient unified states (_Integratio_). The goal is not to offer a metaphysical theory of mind but to consolidate current insights from physics, network theory, and dynamical systems into a structured, testable perspective that invites open discussion. The framework is strictly bounded: it does not address qualia, subjective essence, or moral status, but provides structural tools—layered architecture, critical transitions, and damping requirements—to explore how complex correlation patterns may support cognitive phenomena.
 
 ***
 
 ### 1. Purpose and Scope
 
-This essay submits a correlation-based scaffold for thinking about cognitive structure through the lens of continuous–discrete hybrid networks.
+This essay submits a correlation-based scaffold for thinking about cognitive structure through the lens of continuous–discrete hybrid systems.
 
 It is not a theory of consciousness.\
 It is not a metaphysical claim.
@@ -53,6 +53,109 @@ To maintain precision and signal that this framework operates at a structural le
 Latin provides semantic distance. It signals to readers that these are technical terms defined within the framework, not everyday words freighted with prior meaning. This practice has precedent in philosophy (_qualia_, _a priori_, _in se_), medicine (_in vivo_, _in situ_), and physics (_in vacuo_, _ab initio_). The goal is not obscurity but clarity: when you read _Affectio_, you know we mean "the short-range correlation regime as defined in Section 3," not "what it feels like to see red."
 
 After first introduction, each term appears with its English gloss in parentheses to maintain accessibility.
+
+#### 1.2 What Constitutes a System
+
+The term "system" appears throughout this framework. To prevent ambiguity and misapplication, we define it formally.
+
+**Five Necessary Conditions**
+
+A **system** within this framework must satisfy:
+
+**1. Continuous–Discrete Hybrid Structure**
+
+The system must possess both:
+
+* **Continuous degrees of freedom** (fields, phases, potentials, amplitudes)
+* **Discrete degrees of freedom** (spins, occupation numbers, qubit states, binary variables)
+* **Coupling** between the two sectors
+
+A purely continuous or purely discrete system does not fall within scope.
+
+**2. Definite Spatial Extent**
+
+The system must have a characteristic size **L** such that correlation length ξ can be meaningfully compared:
+
+* ξ ≪ L → local correlations (_Affectio_)
+* ξ \~ L → global correlations (_Integratio_)
+
+Without definite extent, the regime classification loses meaning.
+
+**3. Characteristic Timescale**
+
+The system must have an intrinsic timescale **T\_sys** against which correlation times τ are measured:
+
+* τ ≪ T\_sys → transient
+* τ ≫ T\_sys → persistent
+
+T\_sys may arise from natural dynamics (oscillation period, relaxation time) or be operationally defined for the analysis.
+
+**4. Interaction Topology**
+
+The system must have a defined interaction structure—which components can correlate with which others. This topology determines:
+
+* Whether scale-free (_Habitus_) structures can form
+* The pathway from local to global correlation
+
+**5. Energetic Openness (Typical but Not Strictly Required)**
+
+Most systems of interest are **open**: they exchange energy with an environment. This exchange enables:
+
+* Homeostatic regulation (damping)
+* Metastability rather than equilibrium
+* Periodic _Integratio_ collapse (e.g., sleep-like cycles)
+
+Closed systems can exhibit the three regimes but lack the regulatory dynamics emphasized in Section 5.
+
+**System Boundaries**
+
+The boundary of a system is defined **operationally**:
+
+> A system boundary encloses the degrees of freedom whose correlations are under consideration.
+
+Correlations that cross the boundary are treated as:
+
+* **Inputs** (environmental driving)
+* **Outputs** (dissipation, measurement)
+* **Noise** (uncontrolled fluctuations)
+
+The same physical substrate may be partitioned into different "systems" depending on the question asked. The boundary is an analytical choice, not an intrinsic property of the substrate.
+
+**Hierarchical Systems**
+
+Systems may be **nested**. At each level, the framework applies with appropriate L and T\_sys:
+
+| Level        | Example                | Role in Hierarchy               |
+| ------------ | ---------------------- | ------------------------------- |
+| Subsystem    | Single cortical column | May exhibit local _Affectio_    |
+| Intermediate | Cortical area          | May exhibit regional _Habitus_  |
+| System       | Whole brain            | May exhibit global _Integratio_ |
+
+A subsystem's _Integratio_ may appear as another system's _Affectio_. This hierarchical structure is consistent with renormalization group thinking: coarse-graining reveals new effective degrees of freedom at each scale.
+
+**Minimal System**
+
+The minimal system capable of exhibiting all three regimes requires:
+
+* At least two coupled discrete units (for ξ > 0 to be meaningful)
+* A continuous coupling field
+* Tunable interaction strength (to access different regimes)
+
+Example: Two spins coupled through a continuous exchange field can exhibit uncorrelated states (_Affectio_-like), correlated but fluctuating states (_Habitus_-like), and fully aligned states (_Integratio_-like).
+
+However, the framework is most naturally applicable to **large systems** (N ≫ 1) where the three regimes are sharply distinguished and phase transitions are well-defined.
+
+**Summary Table**
+
+| Condition            | Requirement                      | Purpose                                     |
+| -------------------- | -------------------------------- | ------------------------------------------- |
+| Hybrid structure     | Continuous + discrete + coupling | Enables correlation dynamics                |
+| Spatial extent L     | Definite, finite                 | Defines ξ/L ratio for regime classification |
+| Timescale T\_sys     | Characteristic, identifiable     | Defines τ/T\_sys ratio for persistence      |
+| Interaction topology | Defined connectivity             | Determines correlation pathways             |
+| Energetic openness   | Typical (not absolute)           | Enables regulation and metastability        |
+
+Systems that do not meet these conditions fall outside the framework's scope.
 
 ***
 
@@ -128,11 +231,11 @@ Across all three domains, complex systems exhibit regimes where long-range corre
 
 ### 3. Core Idea: Cognition as Correlation Hierarchy
 
-All cognitive structure in this framework is expressed through correlations between continuous and discrete components of a physical network. The three regimes—_Affectio_, _Habitus_, and _Integratio_—are distinguished by correlation length and persistence time.
+All cognitive structure in this framework is expressed through correlations between continuous and discrete components of a system (as defined in Section 1.2). The three regimes—_Affectio_, _Habitus_, and _Integratio_—are distinguished by correlation length and persistence time.
 
 #### 3.1 The Three Correlation-Length Regimes
 
-For a system with characteristic timescale T\_sys:
+For a system with characteristic size L and timescale T\_sys:
 
 ***
 
@@ -142,7 +245,7 @@ _Latin: affectio — "impression, momentary state, being affected"_
 
 * Local, transient, high-bandwidth
 * Short correlation time: τ ≪ T\_sys
-* Correlation length ξ \~ lattice spacing (local scale)
+* Correlation length ξ ≪ L (local scale)
 * Raw, unstructured sensory traces
 * Corresponds to disordered phase in spin systems (T > T\_c)
 
@@ -171,7 +274,7 @@ _Latin: integratio — "renewal, restoration to wholeness, unification"_
 
 * System-wide temporary alignment
 * Synchronization over multiple memory scales
-* Correlation length ξ → system size L (ordered regime)
+* Correlation length ξ \~ L (system size)
 * Metastable and periodic
 * Integrates information but does not store it
 * Corresponds to ordered phase in spin systems (T < T\_c)
@@ -186,13 +289,13 @@ In canonical spin systems (e.g., Ising model), the three regimes correspond to w
 
 | Regime         | Correlation Length        | Spin System Phase | Temperature |
 | -------------- | ------------------------- | ----------------- | ----------- |
-| **Affectio**   | ξ \~ lattice spacing      | Disordered        | T > T\_c    |
+| **Affectio**   | ξ ≪ L                     | Disordered        | T > T\_c    |
 | **Habitus**    | ξ \~ power-law divergence | Critical          | T ≈ T\_c    |
-| **Integratio** | ξ → L (system size)       | Ordered           | T < T\_c    |
+| **Integratio** | ξ \~ L                    | Ordered           | T < T\_c    |
 
-The correlation length ξ in spin systems is precisely defined:
+The correlation length ξ in spin systems is defined through the decay of correlations:
 
-\$$\langle \sigma\_i \sigma\_j \rangle \sim e^{-|i-j|/\xi}\$$
+<p align="center"><span class="math">\langle \sigma_i \sigma_j \rangle \sim e^{-|i-j|/\xi}</span></p>
 
 At criticality, ξ diverges and the decay becomes power-law rather than exponential—the signature of the _Habitus_ regime.
 
@@ -202,11 +305,11 @@ Thus, _Affectio_, _Habitus_, and _Integratio_ are successive correlation-length 
 
 ### 4. The Four-Layer Scaffold Architecture
 
-To preserve clarity and avoid category errors, the framework is structured as four layers:
+To preserve clarity and avoid category errors, the framework is structured as four layers. Each layer presupposes that the system satisfies the conditions defined in Section 1.2.
 
 #### Layer 0 — Substrate (Continuous–Discrete Hybrid)
 
-The framework requires a physical substrate with two complementary sectors:
+The system's physical foundation with two complementary sectors:
 
 * **Continuous sector:** Field amplitudes, phases, positions, potentials—quantities that vary smoothly.
 * **Discrete sector:** Spin states, occupation numbers, qubit states, binary variables—quantities with finite state spaces.
@@ -225,19 +328,19 @@ The framework requires a physical substrate with two complementary sectors:
 
 Short-range interactions; transient local correlations characteristic of the _Affectio_ regime.
 
-**Metrics:** Correlation length ξ, correlation time τ.
+**Metrics:** Correlation length ξ, correlation time τ, ξ/L ratio.
 
 #### Layer 2 — Structure (Topology / Habitus)
 
 Scale-free persistent structures; power-law connectivity characteristic of the _Habitus_ regime.
 
-**Metrics:** Clustering coefficient, characteristic path length, correlation decay exponent.
+**Metrics:** Clustering coefficient, characteristic path length, correlation decay exponent, τ/T\_sys ratio.
 
 #### Layer 3 — Integration (Global Alignment / Integratio)
 
 Transient global synchronization; system-wide metastable states characteristic of the _Integratio_ regime.
 
-**Metrics:** Phase-locking value (PLV), integrated information (Φ), global coherence index.
+**Metrics:** Phase-locking value (PLV), integrated information (Φ), global coherence index, dwell-time distribution.
 
 Higher layers depend on—but do not reduce to—lower layers.
 
@@ -249,8 +352,8 @@ Global correlation states (_Integratio_) are fragile and require active regulati
 
 #### Two Failure Modes
 
-* **Runaway synchrony** → seizure-like lock-up (correlation length frozen at maximum; _Integratio_ becomes pathologically stable)
-* **Correlation collapse** → coma-like dissolution (correlation length collapses to local scale; system trapped in _Affectio_)
+* **Runaway synchrony** → seizure-like lock-up (correlation length frozen at ξ \~ L; _Integratio_ becomes pathologically stable)
+* **Correlation collapse** → coma-like dissolution (correlation length collapses to ξ ≪ L; system trapped in _Affectio_)
 
 #### Stabilization Requirements
 
@@ -260,7 +363,7 @@ Global correlation states (_Integratio_) are fragile and require active regulati
 **B. Homeostatic Damping:**\
 Negative feedback to keep the system near the _Habitus_ regime (criticality).
 
-In spin systems, this maps to external field tuning, temperature regulation, or (for open quantum systems) quantum feedback protocols.
+In spin systems, this maps to external field tuning, temperature regulation, or (for open quantum systems) quantum feedback protocols. These mechanisms require the energetic openness described in Section 1.2.
 
 A technical "Damping & Resilience Specification" will be developed in future versions.
 
@@ -309,10 +412,11 @@ These findings offer structural analogies without implying neural reduction.
 
 The framework is empirically bounded by the following testable predictions:
 
-1. **Correlation-length transitions:** Measurable shifts in ξ should accompany transitions between _Affectio_ and _Habitus_ processing modes.
+1. **Correlation-length transitions:** Measurable shifts in ξ/L should accompany transitions between _Affectio_ and _Habitus_ processing modes.
 2. **Critical scaling:** Systems exhibiting _Habitus_-like behaviour should show power-law correlation decay, not exponential.
 3. **Metastability signatures:** _Integratio_ states should exhibit characteristic dwell-time distributions near criticality.
 4. **Damping necessity:** Removal of homeostatic feedback should produce either runaway _Integratio_ (synchrony lock-up) or collapse to _Affectio_ (correlation dissolution), not stable intermediate states.
+5. **System criteria:** Candidate systems must satisfy the five conditions in Section 1.2; systems failing these conditions are outside scope.
 
 Failure to observe these signatures in candidate systems would constitute falsification of the framework's applicability to that substrate.
 
@@ -327,26 +431,29 @@ Future extensions:
 * Mapping to AI architectures and learning dynamics
 * Integration of causal emergence metrics (EI, Φ, synchrony)
 * Explicit spin-model simulations as test cases
+* Hierarchical system analysis (nested L and T\_sys)
 
-**Boundary Reminder:** _This framework addresses structural correlates only. It does not explain why any correlation pattern should be accompanied by subjective experience, nor does it make claims about moral status or phenomenal consciousness. The terms Affectio, Habitus, and Integratio denote correlation regimes, not phenomenological states._
+**Boundary Reminder:** _This framework addresses structural correlates only. It does not explain why any correlation pattern should be accompanied by subjective experience, nor does it make claims about moral status or phenomenal consciousness. The terms Affectio, Habitus, and Integratio denote correlation regimes, not phenomenological states. The term "system" denotes an analytical unit satisfying the conditions in Section 1.2, not a claim about natural boundaries._
 
 ***
 
-This scaffold is deliberately open for discussion. Its purpose is to enable inquiry, not foreclose it.
+<p align="center">This scaffold is deliberately open for discussion. Its purpose is to enable inquiry, not foreclose it.</p>
 
 ***
 
 ### Glossary
 
-| Term           | Definition                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Affectio**   | The short-range correlation regime (ξ \~ local scale, τ ≪ T\_sys). Transient, local impressions. Experience-like.  |
-| **Habitus**    | The scale-free correlation regime (ξ \~ power-law, τ ≫ T\_sys). Persistent, structured dispositions. Concept-like. |
-| **Integratio** | The global correlation regime (ξ → system size). Metastable system-wide unification. Consciousness-like.           |
-| **ξ (xi)**     | Correlation length—the characteristic spatial scale over which correlations persist.                               |
-| **τ (tau)**    | Correlation time—the characteristic temporal scale over which correlations persist.                                |
-| **T\_sys**     | Characteristic system timescale; reference for comparing correlation times.                                        |
-| **T\_c**       | Critical temperature; the phase transition point in spin systems.                                                  |
+| Term           | Definition                                                                                                                                                                                                                          |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Affectio**   | The short-range correlation regime (ξ ≪ L, τ ≪ T\_sys). Transient, local impressions. Experience-like.                                                                                                                              |
+| **Habitus**    | The scale-free correlation regime (ξ \~ power-law, τ ≫ T\_sys). Persistent, structured dispositions. Concept-like.                                                                                                                  |
+| **Integratio** | The global correlation regime (ξ \~ L). Metastable system-wide unification. Consciousness-like.                                                                                                                                     |
+| **System**     | An analytical unit satisfying five conditions: continuous–discrete hybrid structure, definite spatial extent L, characteristic timescale T\_sys, defined interaction topology, and (typically) energetic openness. See Section 1.2. |
+| **L**          | Characteristic spatial extent of the system; reference for correlation length comparison.                                                                                                                                           |
+| **ξ (xi)**     | Correlation length—the characteristic spatial scale over which correlations persist.                                                                                                                                                |
+| **τ (tau)**    | Correlation time—the characteristic temporal scale over which correlations persist.                                                                                                                                                 |
+| **T\_sys**     | Characteristic system timescale; reference for comparing correlation times.                                                                                                                                                         |
+| **T\_c**       | Critical temperature; the phase transition point in spin systems.                                                                                                                                                                   |
 
 ***
 
@@ -392,7 +499,14 @@ Yuan, B., et al. (2024). Causal emergence in biological and artificial neural ne
 
 ***
 
-#### Version History
+### Version History
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><em>Author</em></td><td valign="top"><em>Changes / Notes</em></td><td valign="top"><em>Version</em></td><td valign="top"><em>Date</em></td></tr><tr><td valign="top">U. Warring</td><td valign="top">Initial draft: established correlation-based analog–digital framework; defined experiences, concepts, and consciousness via correlation length; added dual bottom-up/top-down perspective and initial disclaimer.</td><td valign="top">0.0.1</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Added a revised synthesis; clarified scaffold purpose; introduced 4-layer architecture; added damping/persistence requirements; formalized epistemic boundaries; restructured page for clarity.</td><td valign="top">0.0.6</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Added a concise neuroscience context section summarizing empirical findings on short-range, scale-free, and global metastable correlations; positioned these results strictly as contextual parallels rather than mechanistic claims; added a corresponding reference list to support the comparison.</td><td valign="top">0.0.7</td><td valign="top">2025-12-04</td></tr><tr><td valign="top">U.W.</td><td valign="top">Revised Layer 0 to continuous–discrete hybrid framing; added spin-system examples and correlation-length definitions; added Section 2 with Physics, AI, and philosophy anchors; added Section 8 (Falsifiability Criteria); standardized references; corrected τ notation; renumbered sections.</td><td valign="top">0.0.8</td><td valign="top">2025-12-05</td></tr><tr><td valign="top">U.W.</td><td valign="top">Introduced Latin terminology (Affectio, Habitus, Integratio) for correlation regimes; added Section 1.1 explaining terminological choice; added Glossary; applied terminology consistently throughout; revised title and abstract.</td><td valign="top">0.0.9</td><td valign="top">2025-12-05</td></tr></tbody></table>
+| Version           | Date       | Summary                                                                                                                                                                                                                              |
+| ----------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0.0.10            | 2025-12-05 | Added Section 1.2 defining "system" (five necessary conditions, boundaries, hierarchy, minimal system); updated Glossary; added fifth falsifiability criterion; strengthened boundary reminder; minor consistency edits throughout.  |
+| 0.0.9             | 2025-12-05 | Introduced Latin terminology (Affectio, Habitus, Integratio) for correlation regimes; added Section 1.1 explaining terminological choice; added Glossary; applied terminology consistently throughout; revised title and abstract.   |
+| 0.0.8             | 2025-12-05 | Revised Layer 0 to continuous–discrete hybrid framing; added spin-system examples and correlation-length definitions; added Section 8 (Falsifiability Criteria); standardized references; corrected τ notation; renumbered sections. |
+| 0.0.7             | 2025-12-04 | Added Section 2 ("Dynamics of the Emergent"), integrated Physics/AI/Philosophy perspectives, inserted connection box, updated conceptual alignment.                                                                                  |
+| 0.0.6             | 2025-12-04 | Added neuroscience contextual section; clarified correlation regimes; improved boundary statements.                                                                                                                                  |
+| 0.0.5 and earlier | —          | Initial scaffold and layer architecture established.                                                                                                                                                                                 |
 
