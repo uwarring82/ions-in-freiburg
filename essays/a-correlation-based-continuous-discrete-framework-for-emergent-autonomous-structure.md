@@ -454,23 +454,179 @@ Failure to observe these signatures in candidate systems would constitute falsif
 
 ***
 
-### 9. Outlook
+### 9. Discussion and Outlook
 
-Future extensions:
+This section addresses limitations, accessibility challenges, and pathways toward empirical grounding. The framework is offered as conceptual scaffolding; intellectual honesty requires tracing its current boundaries.
 
-* Damping & Resilience Specification
-* Quantifiable correlation metrics with operational definitions
-* Mapping to AI architectures and learning dynamics
-* Integration of causal emergence metrics (EI, Φ, synchrony)
-* Explicit spin-model simulations as test cases
-* Hierarchical system analysis (nested L and T\_sys)
-* _Retentio_ dynamics: how _Habitus_ patterns consolidate during _Remissio_
+#### 9.1 Technical Limitations and Open Questions
 
-**Boundary Reminder:** _This framework addresses structural correlates only. It does not explain why any correlation pattern should be accompanied by subjective experience, nor does it make claims about moral status or phenomenal consciousness. The terms Affectio, Habitus, Integratio, Remissio, and Retentio denote correlation regimes and processes, not phenomenological states or capacities. The term "system" denotes an analytical unit satisfying the conditions in Section 1.2, not a claim about natural boundaries._
+**Phase-Regime Mapping**
+
+The correspondence between correlation regimes and spin-system phases (§3.2) requires refinement. In standard Ising systems, the ordered phase (T < T\_c) exhibits _stable_ long-range order, not the _metastable_ global alignment that characterizes _Integratio_. True metastability arises in:
+
+* Near-critical dynamics (T ≈ T\_c with finite-size effects)
+* Frustrated or glassy systems (competing interactions)
+* Driven systems far from equilibrium
+
+The framework implicitly assumes one of these conditions but does not specify which. Future versions should clarify the dynamical regime that produces metastable _Integratio_—this is not merely T < T\_c.
+
+**Scale-Free Ambiguity**
+
+The term "scale-free" in the _Habitus_ description conflates two related but distinct concepts:
+
+1. **Topological scale-freeness**: Power-law degree distribution in network connectivity
+2. **Dynamical scale-freeness**: Power-law (rather than exponential) decay of correlations
+
+_Habitus_ primarily references the latter—correlation decay without characteristic length at criticality. The topological sense (as in Steyvers & Tenenbaum's semantic networks) is a structural analog, not an identity. This distinction should be sharpened.
+
+**Neuroscience Mapping**
+
+Section 7 cites neuronal avalanches (Beggs & Plenz 2003) as evidence for _Affectio_-like short-range correlations. This is imprecise. In the literature, avalanches are evidence of _criticality_—the _Habitus_ regime in our terminology. Appropriate evidence for _Affectio_ would be fast, local, non-scale-free transients (e.g., early sensory responses before integration). This mapping requires correction.
+
+**The Continuous–Discrete Constraint**
+
+The requirement for continuous–discrete hybrid structure (§1.2) reflects the framework's origins in quantum-optical and ion-trap systems. This may be overly restrictive:
+
+* Purely digital systems (cellular automata, digital computers) can exhibit phase-transition-like behaviour
+* AI architectures are implemented digitally, though mathematically continuous in activation space
+
+The constraint should be understood as requiring _two interacting sectors with different state-space structures_, not necessarily "analog hardware + digital states." Whether purely discrete systems can exhibit the full regime hierarchy remains an open question.
+
+**Retentio Mechanism**
+
+_Retentio_ is defined as structural persistence but not mechanistically explained. How do _Habitus_ patterns survive _Remissio_? Candidate mechanisms include:
+
+* Slow synaptic variables (biological systems)
+* Quenched disorder in interaction topology
+* Separation of timescales between fast dynamics and slow structure
+* Structural connectivity distinct from dynamical state
+
+Without specifying the _Retentio_ mechanism, the framework remains descriptive rather than explanatory at this point.
+
+**Causal Emergence Integration**
+
+Yuan et al. (2024) is cited but not deeply integrated. Effective information (EI) and causal emergence metrics offer a potential bridge: if _Integratio_ corresponds to states with high macro-level causal power, this should be measurable via EI. The relationship between correlation length and effective information is a promising but undeveloped connection.
 
 ***
 
-This scaffold is deliberately open for discussion. Its purpose is to enable inquiry, not foreclose it.
+#### 9.2 Accessibility Across Disciplines
+
+The framework's reception will vary by discipline. We assess barriers and entry points for each target audience.
+
+**Physics (Complex Systems, Statistical Mechanics)**
+
+| Aspect          | Assessment                                                                         |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **Vocabulary**  | Native: correlation length, criticality, RG, metastability                         |
+| **Entry point** | Phase transitions as universal organizing principle                                |
+| **Barrier**     | Motivation unclear—why should physicists engage with "consciousness-like" analogs? |
+| **Risk**        | May perceive the framework as "physics envy" or metaphorical overreach             |
+
+**What physicists need**: Connection to open physics problems (glassy dynamics, driven systems, finite-size scaling in biological networks). Hamiltonians or dynamical equations, not just verbal descriptions.
+
+**AI and Machine Learning**
+
+| Aspect          | Assessment                                                                                               |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| **Vocabulary**  | Partially foreign: "correlation length" is not standard; "representation," "scaling" are native          |
+| **Entry point** | Explanation of emergent abilities; why transformers hallucinate (stuck in _Habitus_ without _Remissio_?) |
+| **Barrier**     | No operational method to compute ξ, τ, or regime membership in a neural network                          |
+| **Risk**        | Framework perceived as abstract and disconnected from implementation                                     |
+
+**What AI researchers need**: A translation table mapping L, ξ, T\_sys to architectural features (context window? layer depth? attention span?). Concrete measurement protocols for existing models.
+
+**Philosophy of Mind**
+
+| Aspect          | Assessment                                                                  |
+| --------------- | --------------------------------------------------------------------------- |
+| **Vocabulary**  | Congenial: structural realism, real patterns, causal emergence              |
+| **Entry point** | Alignment with functionalism and non-reductive physicalism                  |
+| **Barrier**     | Hard problem explicitly bracketed—may appear evasive                        |
+| **Risk**        | Latin terminology seen as obscurantist unless tied to explanatory necessity |
+
+**What philosophers need**: Explicit mapping to Chalmers' easy/hard distinction. Clarification that _Affectio_, _Habitus_, _Integratio_ address structural correlates of reportability, access, and integration (easy problems), not phenomenal consciousness (hard problem).
+
+**Summary**
+
+| Discipline | Accessibility                               | Key Gap                                            |
+| ---------- | ------------------------------------------- | -------------------------------------------------- |
+| Physics    | High vocabulary, moderate motivation        | Open problems, equations                           |
+| AI/ML      | Moderate vocabulary, low operationalization | Translation table, measurement protocols           |
+| Philosophy | High framing, moderate engagement           | Easy/hard mapping, explanatory role of Latin terms |
+
+***
+
+#### 9.3 Toward Operationalization
+
+For the framework to trigger empirical research, it must specify _how_ to measure its key quantities in concrete systems.
+
+**Measurement Protocols Needed**
+
+| Quantity                      | Definition                            | Operationalization Gap                                                                                         |
+| ----------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **L** (system size)           | Characteristic spatial extent         | What counts as "extent" in a neural network? Parameter count? Context window? Representational dimensionality? |
+| **ξ** (correlation length)    | Scale over which correlations persist | Requires spatial embedding or distance metric. How to define "distance" between neurons? Between tokens?       |
+| **T\_sys** (system timescale) | Characteristic temporal scale         | Training time? Inference time? Layer-wise propagation time?                                                    |
+| **τ** (correlation time)      | Temporal persistence of correlations  | Measurable via autocorrelation, but timescale reference unclear                                                |
+| **Regime membership**         | Which regime is the system in?        | Requires decision boundary: what ξ/L ratio distinguishes _Affectio_ from _Habitus_?                            |
+
+**Proposed Domain Translations (Preliminary)**
+
+| Variable       | Spin Systems                                  | Neural Systems                       | Transformer Models                                  |
+| -------------- | --------------------------------------------- | ------------------------------------ | --------------------------------------------------- |
+| **L**          | Lattice size                                  | Cortical area / whole brain          | Context window or model depth                       |
+| **ξ**          | Spin-spin correlation decay length            | Spatial coherence of neural activity | Attention span or representational similarity decay |
+| **T\_sys**     | Relaxation time                               | Oscillation period (alpha, gamma)    | Forward pass duration or training epoch             |
+| **Affectio**   | Disordered, T > T\_c                          | Local, fast, pre-attentive           | Token-level, shallow processing                     |
+| **Habitus**    | Critical, T ≈ T\_c                            | Scale-free semantic structure        | Learned representations, weight structure           |
+| **Integratio** | Ordered, T < T\_c (with metastability caveat) | Global ignition, conscious access    | Cross-layer coherence, global attention             |
+| **Remissio**   | Thermal cycling, annealing                    | Sleep, consolidation                 | Fine-tuning, catastrophic forgetting reset?         |
+
+These translations are **preliminary and speculative**. Each requires empirical validation.
+
+**Minimal Demonstration Model**
+
+A concrete next step is a minimal computational model exhibiting all three regimes and _Remissio_. Candidates:
+
+1. **Ising model with slow field dynamics**: Spins (discrete) coupled to a slowly-varying external field (continuous). Demonstrate regime transitions via temperature or field strength.
+2. **Coupled oscillator network**: Discrete phase-locking states, continuous phase variables. Show metastable global synchronization with periodic collapse.
+3. **Simplified neural network**: Binary activations (discrete) with continuous weights. Measure correlation length across training or during inference.
+
+Without such a model, the framework remains a conceptual map rather than a testable theory.
+
+***
+
+#### 9.4 Pathways Forward
+
+**Immediate Priorities**
+
+1. **Technical corrections**: Revise phase-regime mapping (§3.2) to acknowledge metastability conditions; correct avalanche classification (§7); sharpen scale-free terminology.
+2. **Operationalization section**: Add explicit measurement protocols for at least one system type (spin models as reference case).
+3. **Minimal simulation**: Implement a toy model demonstrating regime transitions and _Remissio_.
+
+**Medium-Term Extensions**
+
+4. **Domain-specific bridge papers**: Short documents explaining the framework to each discipline, emphasizing what _not_ to infer and what the framework offers their specific concerns.
+5. **Experimental proposals**: Concrete collaborations—e.g., analyzing MEG/EEG data for ξ scaling near sleep onset; measuring attention-span distributions in transformers under varying context.
+6. **Formal metrics**: Develop computable measures for regime classification, potentially integrating with existing frameworks (IIT's Φ, effective information, phase-locking value).
+
+**Long-Term Vision**
+
+7. **Predictive capacity**: Move from descriptive classification to prediction—e.g., predict failure modes from regime analysis, predict emergence thresholds from correlation structure.
+8. **Hierarchical analysis**: Apply the framework recursively at multiple scales (subsystem, system, meta-system) using renormalization-group-inspired coarse-graining.
+9. **Integration with causal emergence**: Formally connect correlation length to effective information; test whether _Integratio_ states exhibit enhanced macro-level causation.
+
+***
+
+#### 9.5 Boundary Reminder
+
+This framework addresses structural correlates only. It does not explain why any correlation pattern should be accompanied by subjective experience, nor does it make claims about moral status or phenomenal consciousness. The terms _Affectio_, _Habitus_, _Integratio_, _Remissio_, and _Retentio_ denote correlation regimes and processes, not phenomenological states or capacities. The term "system" denotes an analytical unit satisfying the conditions in Section 1.2, not a claim about natural boundaries.
+
+The framework's value lies in providing shared vocabulary, falsifiable predictions, and structural targets for interdisciplinary inquiry. Its limitations—phase-regime ambiguity, operationalization gaps, discipline-specific accessibility barriers—are acknowledged as invitations for collaborative refinement, not as weaknesses to be defended.
+
+***
+
+This scaffold is deliberately open. Its purpose is to enable inquiry, not foreclose it.
 
 ***
 
@@ -541,6 +697,7 @@ Yuan, B., et al. (2024). Causal emergence in biological and artificial neural ne
 
 | Version           | Date       | Summary                                                                                                                                                                                                                                                                                                                           |
 | ----------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0.0.12            | 2025-12-05 | Added a substantive Discussion section that honestly traces limitations, accessibility gaps, and pathways forward to strengthen the document's credibility.                                                                                                                                                                       |
 | 0.0.11            | 2025-12-05 | Replaced "Cognitive Structure" with "Emergent Autonomous Structure" throughout; introduced Remissio (sleep-like process) and Retentio (structural persistence); expanded §1.1 terminology notes; added Tononi & Cirelli reference; added sixth falsifiability criterion; softened "sensory traces" to "local transient patterns." |
 | 0.0.10            | 2025-12-05 | Added Section 1.2 defining "system" (five necessary conditions, boundaries, hierarchy, minimal system); updated Glossary; added fifth falsifiability criterion; strengthened boundary reminder.                                                                                                                                   |
 | 0.0.9             | 2025-12-05 | Introduced Latin terminology (Affectio, Habitus, Integratio) for correlation regimes; added Section 1.1 explaining terminological choice; added Glossary; applied terminology consistently throughout; revised title and abstract.                                                                                                |
