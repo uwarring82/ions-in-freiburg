@@ -280,9 +280,9 @@ Future extensions:
 
 ***
 
-<p align="center"><em>This scaffold is deliberately open for discussion.</em></p>
+<p align="center">This scaffold is deliberately open for discussion. Its purpose is to enable inquiry, not foreclose it.</p>
 
-<p align="center"><em>Its purpose is to enable inquiry, not foreclose it.</em></p>
+<p align="center"><em>Special thanks to all my past, current, and future environments</em></p>
 
 ***
 
