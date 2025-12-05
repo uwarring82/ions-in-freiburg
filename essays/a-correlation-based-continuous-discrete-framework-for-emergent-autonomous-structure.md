@@ -548,4 +548,96 @@ Yuan, B., et al. (2024). Causal emergence in biological and artificial neural ne
 | 0.0.7             | 2025-12-04 | Added Section 2 ("Dynamics of the Emergent"), integrated Physics/AI/Philosophy perspectives, inserted connection box, updated conceptual alignment.                                                                                                                                                                               |
 | 0.0.6             | 2025-12-04 | Added neuroscience contextual section; clarified correlation regimes; improved boundary statements.                                                                                                                                                                                                                               |
 | 0.0.5 and earlier | —          | Initial scaffold and layer architecture established.                                                                                                                                                                                                                                                                              |
+|                   |            |                                                                                                                                                                                                                                                                                                                                   |
+|                   |            |                                                                                                                                                                                                                                                                                                                                   |
 
+***
+
+## A One-Page Summary
+
+_Emergent Autonomous Structure – A Correlation-Based Continuous–Discrete Framework_
+
+***
+
+### What This Framework Does
+
+This framework provides a **structural scaffold**—not a theory of consciousness—for understanding how complex systems can exhibit emergent autonomous behaviour. It draws on physics (phase transitions, criticality), AI (representation learning, scaling), and philosophy (structural realism, causal emergence) to propose that **correlation length** is the organizing principle.
+
+***
+
+### Core Idea: Three Correlation Regimes
+
+Complex systems with both continuous (fields, phases) and discrete (spins, states) components can exhibit three distinct regimes based on how far correlations extend:
+
+| Regime         | Correlation Length     | Character                | Everyday Analog    |
+| -------------- | ---------------------- | ------------------------ | ------------------ |
+| **Affectio**   | Local (ξ ≪ L)          | Transient, fast-decaying | Experience-like    |
+| **Habitus**    | Scale-free (power-law) | Persistent, structured   | Concept-like       |
+| **Integratio** | Global (ξ \~ L)        | Metastable, unified      | Consciousness-like |
+
+These Latin terms signal that we mean _structural_ regimes, not phenomenological claims.
+
+***
+
+### Two Key Processes
+
+| Process      | What It Does                                                                                             | Everyday Analog          |
+| ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------ |
+| **Remissio** | Periodic collapse from global (_Integratio_) back toward structured (_Habitus_); resets and renormalizes | Sleep-like               |
+| **Retentio** | Structural persistence; patterns in _Habitus_ that survive _Remissio_ cycles                             | Memory-like (structural) |
+
+***
+
+### What Counts as a "System"?
+
+The framework applies to systems satisfying five conditions:
+
+1. **Hybrid structure** — both continuous and discrete degrees of freedom, coupled
+2. **Definite size (L)** — so correlation length ξ can be compared to system extent
+3. **Characteristic timescale (T\_sys)** — reference for transient vs. persistent
+4. **Interaction topology** — defined connectivity enabling correlation pathways
+5. **Energetic openness** (typical) — enables regulation and metastability
+
+***
+
+### Four-Layer Architecture
+
+| Layer | Name        | Regime       | Key Metrics                             |
+| ----- | ----------- | ------------ | --------------------------------------- |
+| 0     | Substrate   | —            | SNR, state distinguishability, coupling |
+| 1     | Dynamics    | _Affectio_   | Correlation length ξ, time τ            |
+| 2     | Structure   | _Habitus_    | Clustering, path length, decay exponent |
+| 3     | Integration | _Integratio_ | Phase-locking, Φ, coherence index       |
+
+Higher layers depend on—but do not reduce to—lower layers.
+
+***
+
+### What This Framework Does NOT Do
+
+* **No qualia**: It does not explain subjective experience or "what it is like"
+* **No moral claims**: It makes no assertions about moral status
+* **No metaphysics**: It is structural scaffolding, not ontological commitment
+* **No neural reduction**: Neuroscience parallels are analogies, not mechanisms
+
+***
+
+### Falsifiability
+
+The framework makes testable predictions:
+
+1. Transitions between regimes should show measurable ξ shifts
+2. _Habitus_ should exhibit power-law (not exponential) correlation decay
+3. _Integratio_ should show characteristic metastable dwell-times
+4. Removing homeostatic feedback should cause runaway or collapse
+5. Denying _Remissio_ should degrade _Habitus_ or pathologize _Integratio_
+
+***
+
+### In One Sentence
+
+> Emergent autonomous structure arises when correlation length transitions from local (_Affectio_) through scale-free (_Habitus_) to global (_Integratio_), maintained by periodic reset (_Remissio_) and structural persistence (_Retentio_).
+
+***
+
+_Full document: Version 0.0.11 — "A Correlation-Based Continuous–Discrete Framework for Emergent Autonomous Structure"_
