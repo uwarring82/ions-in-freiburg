@@ -10,7 +10,7 @@ description: >-
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
 \
-_version: 0.0.11_\
+_version: 0.0.12_\
 last\_updated: _2025-12-05_\
 license: _CC BY-SA 4.0_
 
