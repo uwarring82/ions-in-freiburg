@@ -17,7 +17,13 @@ license: _CC BY-SA 4.0_
 
 ### Structural Transparency Note
 
-This essay is not a manifesto or a policy agenda. It is a diagnostic lens: a framework for recognizing systemic patterns in contemporary dysfunction. I write as a physicist and systems thinker, bounded by two limitations. First, my perspective emerges primarily from European higher-education structures, especially the Bologna Process. Second, while my literature search is targeted and substantial, it remains preliminary rather than comprehensive.
+This essay is not a manifesto or a policy agenda. It is a diagnostic lens: a framework for recognizing systemic patterns in contemporary dysfunction. I write as a physicist and systems thinker, bounded by three limitations:&#x20;
+
+_First, my perspective emerges primarily from European higher-education structures, especially the Bologna Process._&#x20;
+
+_Second, while my literature search is targeted and substantial, it remains preliminary rather than comprehensive._&#x20;
+
+_Third, I deliberately frame many mechanisms through thermodynamic analogies. This choice sharpens the explanatory lens but will undoubtedly alienate readers who prefer sociological or pedagogical metaphors._
 
 The essay engineers trust through three mechanisms: predictable structure (you know where we are going), reading paths that match your capacity (you choose your depth), and explicit limitations (I state what I do not know). If you need only diagnosis, read Sections 1–3. If you want intervention strategies, focus on Sections 4–5. For the full argument, continue through to the conclusion and references.
 
