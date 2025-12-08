@@ -36,5 +36,5 @@
 * [Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
 * [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
-* [Higher Education Is Sleeping — Thoughts on Awakening](essays/respect-trust-responsibility.md)
-* [\[DRAFT\] A Correlation-Based Continuous–Discrete Framework for Emergent Autonomous Structure](essays/draft-a-correlation-based-continuous-discrete-framework-for-emergent-autonomous-structure.md)
+* [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
+* [\[DRAFT\] A Correlation-Based Continuous–Discrete Framework for Emergent Autonomous Structure](essays/a-correlation-based-continuous-discrete-framework-for-emergent-autonomous-structure.md)

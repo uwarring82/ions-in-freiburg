@@ -4,7 +4,7 @@ description: >-
   in hybrid physical networks.
 ---
 
-# A Correlation-Based Continuous–Discrete Framework for Emergent Autonomous Structure
+# \[DRAFT] A Correlation-Based Continuous–Discrete Framework for Emergent Autonomous Structure
 
 {% hint style="info" %}
 author: _U. Warring_\
