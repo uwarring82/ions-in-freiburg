@@ -192,6 +192,10 @@ We are, collectively, trying to build alarm clocks while still half-asleep. That
 
 ***
 
+_Special thanks to all my past, current, and future environments_
+
+***
+
 ### Seven Anchor References
 
 1. Dogan, M. & Pahre, R. (1990). _Creative Marginality: Innovation at the Intersections of Social Sciences._ Westview Press.
