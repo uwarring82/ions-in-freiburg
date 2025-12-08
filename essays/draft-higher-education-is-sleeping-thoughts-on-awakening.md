@@ -2,7 +2,7 @@
 description: An essay performing its own Respect–Trust–Responsibility framework
 ---
 
-# Higher Education Is Sleeping — Thoughts on Awakening
+# \[DRAFT] Higher Education Is Sleeping — Thoughts on Awakening
 
 {% hint style="info" %}
 author: _U. Warring_\
@@ -23,7 +23,7 @@ _First, my perspective emerges primarily from European higher-education structur
 
 _Second, while my literature search is targeted and substantial, it remains preliminary rather than comprehensive._&#x20;
 
-_Third, I deliberately frame many mechanisms through thermodynamic analogies. This choice sharpens the explanatory lens but will undoubtedly alienate readers who prefer sociological or pedagogical metaphors._
+_Third, I deliberately frame_ the essay using two metaphor families—biological (sleep/coma vs awake) and thermodynamic (entropy/friction/phase transitions). They operate on different layers.
 
 The essay engineers trust through three mechanisms: predictable structure (you know where we are going), reading paths that match your capacity (you choose your depth), and explicit limitations (I state what I do not know). If you need only diagnosis, read Sections 1–3. If you want intervention strategies, focus on Sections 4–5. For the full argument, continue through to the conclusion and references.
 
