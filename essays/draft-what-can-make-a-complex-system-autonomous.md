@@ -488,6 +488,10 @@ The hard problem remains hard. But not all problems are the hard problem.
 
 ***
 
+_Special thanks to all my past, current, and future environments_
+
+***
+
 ### References
 
 Beggs, J. M., & Plenz, D. (2003). Neuronal avalanches in neocortical circuits. _Journal of Neuroscience_, _23_(35), 11167–11177. [https://doi.org/10.1523/JNEUROSCI.23-35-11167.2003](https://doi.org/10.1523/JNEUROSCI.23-35-11167.2003)
