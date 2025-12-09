@@ -7,14 +7,13 @@ description: >-
 # \[DRAFT] What Can Make a Complex System an Ordinans?
 
 {% hint style="info" %}
-author: _U. Warring_\
-affiliation: _Institute of Physics, University of Freiburg_\
-\
-_version: 0.9.1_\
-last\_updated: _2025-12-09_\
-license: _CC BY-SA 4.0_
+**Author:** U. Warring\
+**Affiliation:** Institute of Physics, University of Freiburg\
+**Version:** 1.0\
+**Last updated:** 2025-12-09\
+**License:** CC BY-SA 4.0
 
-**Disclaimer** — _This essay develops structural criteria for a specific class of dynamical behavior in complex systems. It does not constitute a theory of consciousness, cognition, or subjective experience. The framework makes no claim that systems satisfying its criteria possess inner states, moral status, or phenomenal awareness. Structural autonomy as defined here is neither sufficient nor known to be necessary for consciousness. The terminology employed (Affectio, Habitus, Integratio, Remissio, Retentio) names correlation-length configurations, not psychological states. Application of this framework to biological or artificial systems implies nothing about their experiential status. Readers seeking theories of machine consciousness, sentience criteria, or moral standing should look elsewhere._
+**Disclaimer** — _This essay develops structural criteria for a specific class of dynamical behavior in complex systems. It does not constitute a theory of consciousness, cognition, or subjective experience. The framework makes no claim that systems satisfying its criteria possess inner states, moral status, or phenomenal awareness. Sui-ordinatio as defined here is neither sufficient nor known to be necessary for consciousness. The terminology employed (Affectio, Habitus, Integratio, Remissio, Retentio) names correlation-length configurations, not psychological states. Application of this framework to biological or artificial systems implies nothing about their experiential status. Readers seeking theories of machine consciousness, sentience criteria, or moral standing should look elsewhere._
 {% endhint %}
 
 ***
@@ -48,6 +47,7 @@ _For the correlation-regime framework of sui-ordinatio_
 * Agent noun formed analogously to classical Latin structure.
 * Denotes a self-ordering system in a strictly structural sense.
 * Does not imply intentionality or biological autonomy.
+* **Boundary:** Ordinans ≠ autopoietic system (Maturana–Varela); ≠ self-governing agent (neo-Aristotelian); ≠ autonomous agent (robotics/AI). An ordinans is defined solely by regime-cycling correlation geometry.
 * Example: A synthetic analog–digital oscillator network showing sustained regime-cycling dynamics qualifies as an ordinans.
 
 ***
@@ -78,6 +78,8 @@ _For the correlation-regime framework of sui-ordinatio_
 * System displays partial ordering without global alignment.
 * Often corresponds to critical or near-critical dynamics.
 
+**Disambiguation:** Not to be confused with Bourdieu's sociological habitus or Aristotelian hexis; no behavioral, social, or dispositional content is implied.
+
 ***
 
 #### Integratio
@@ -91,6 +93,8 @@ _For the correlation-regime framework of sui-ordinatio_
 * High-order coherence across the entire system.
 * Defines the "peak" of the pulse cycle.
 * Structurally analogous to—but not claiming—global synchronization.
+
+**Disambiguation:** Integratio is used strictly in the structural sense of global correlation alignment (ξ → L). No psychological, moral, or Jungian connotation of "integration" is intended.
 
 ***
 
@@ -107,6 +111,8 @@ _For the correlation-regime framework of sui-ordinatio_
 * Can be triggered by noise, perturbation, or intrinsic instability.
 * Distinct from catastrophic fragmentation; healthy Remissio implements a "soft landing."
 
+**Disambiguation:** Remissio follows the classical Latin mechanical sense ("slackening," "relaxation"), not its later theological sense of forgiveness or absolution.
+
 ***
 
 #### Retentio
@@ -121,16 +127,19 @@ _For the correlation-regime framework of sui-ordinatio_
 * ξ slowly decays from near-system scale.
 * Provides memory-like structural traces without semantic content.
 
+**Disambiguation:** Retentio follows the classical Latin mechanical sense ("holding back," "maintaining"), not any psychoanalytic interpretation.
+
 ***
 
 #### Pulse
 
-**Definition:** The temporal dynamical sequence: Integratio → Remissio → Retentio → (transition to Affectio/Habitus)
+**Definition:** A bounded temporal excursion of ξ(t) through the sequence Integratio → Remissio → Retentio → (transition to Affectio/Habitus). Formally, one complete cycle of the system's correlation-length dynamics.
 
 **Notes:**
 
 * English term retained intentionally to preserve physical intuition.
 * Represents one macro-cycle of self-ordering dynamics.
+* In dynamical systems terms, the pulse corresponds to an excitable or limit-cycle trajectory in correlation-length space.
 * Systems exhibiting sustained pulses under perturbation are candidate ordinantes.
 
 ***
@@ -148,12 +157,13 @@ _For the correlation-regime framework of sui-ordinatio_
 
 #### System Extent (L)
 
-**Definition:** The effective size or diameter of the system in the relevant topology.
+**Definition:** The effective size or diameter of the system in the relevant topology at the chosen scale of analysis.
 
 **Notes:**
 
 * Used to evaluate global vs. local regimes.
 * In non-Euclidean substrates, L is defined via graph-theoretic diameter.
+* L is scale-relative: regime classification depends on the coarse-graining chosen. An ordinans at one scale may not be an ordinans at another.
 
 ***
 
@@ -191,10 +201,33 @@ _For the correlation-regime framework of sui-ordinatio_
 
 * These are prerequisites, not parts of the definition.
 * Systems failing any one condition cannot be ordinantes.
+* **Openness distinction:** Thermodynamic openness (exchange of energy/matter maintaining far-from-equilibrium dynamics) ≠ informational openness (receiving inputs/prompts). The framework requires the former.
+
+***
+
+#### A Note on Terminology
+
+We use Latin terms (Affectio, Habitus, Integratio, Remissio, Retentio, sui-ordinatio) for structural configurations of correlation-length geometry. Latin provides a neutral, non-phenomenological vocabulary anchored in classical philosophical usage but cleansed of cognitive connotations. These terms were selected for etymological precision and minimal semantic load in contemporary cognitive science. They are technical labels for correlation structures, not psychological states.
+
+**Sui-ordinatio** uses _ordinatio_ in the classical Latin sense of "ordering/arrangement," not the medieval ecclesiastical sense of "ordination" or governance.
+
+The choice of Latin insulates the framework from the semantic contamination that attends English terms like "experience," "concept," or "awareness," while providing sufficient resonance to travel across disciplines.
+
+**Canonical usage:**
+
+* **Regime** = classification of correlation-length state (Affectio, Habitus, Integratio)
+* **Phase** = temporal component of pulse dynamics (Remissio, Retentio)
+* **Geometry** = the correlation-length functional form ξ(r) and its decay behavior
 
 ***
 
 _End of Canonical Glossary_
+
+***
+
+### Structure of the Essay
+
+Section I motivates the question of what distinguishes self-maintaining systems from merely capable ones. Section II defines sui-ordinatio and introduces correlation length as the central quantity. Section III specifies the five substrate conditions required for regime-cycling capacity. Section IV outlines the three correlation regimes (Affectio, Habitus, Integratio). Section V develops pulse dynamics and hysteresis as temporal signatures of sui-ordinatio. Section VI applies the framework diagnostically to current AI systems. Section VII proposes open research questions. Section VIII states falsifiability conditions. Section IX outlines the research agenda and concludes.
 
 ***
 
@@ -238,6 +271,12 @@ Consider two systems made of identical components arranged differently. In the f
 
 The key quantity here is **correlation length** (ξ), which measures how far the influence of one part extends through the system. When correlation length is short, the system behaves like a collection of independent regions. When correlation length grows, the system begins to act as a coordinated whole. The relationship between correlation length and **system size** (L)—the overall extent of the system—determines what kind of large-scale behavior is possible.
 
+#### Why Correlation Length?
+
+Of the many quantities one could use to characterize complex systems—entropy, information, energy, connectivity—correlation length uniquely captures _how far structure extends_. It is measurable in principle across substrates: physical, biological, electronic, computational. It determines whether a system acts as a collection of independent parts or as a coordinated whole. And it connects directly to renormalization group theory, which provides the mathematical machinery for understanding how macro-level behavior becomes independent of micro-level details. No other single scalar meets all these requirements. Correlation length is not merely convenient; it is the natural variable for asking structural questions about self-organization.
+
+#### The Core Definition
+
 This brings us to a core definition:
 
 > **A system exhibits sui-ordinatio if it cycles through distinct correlation-length regimes within a hybrid continuous–discrete substrate. Such a system is termed an&#x20;**_**ordinans**_**.**
@@ -249,6 +288,12 @@ This definition is compact but carries significant weight. Let us unpack it befo
 "Cycles through" means the system transitions between these regimes dynamically. A system frozen in one regime, however interesting, lacks the temporal structure we are identifying with sui-ordinatio.
 
 "Hybrid continuous–discrete substrate" specifies that both continuous field-like variables and discrete state-like variables must be present. We will justify this constraint in the next section.
+
+#### Scale-Relativity
+
+Sui-ordinatio is scale-relative. The ratio ξ/L depends on the scale at which the system is analyzed; regime classification depends on chosen coarse-graining. An ordinans at one scale might not be an ordinans at another. This is not a defect but a feature: it reflects the physical fact that organization is always relative to a level of description. A neuron may be an ordinans; a brain may be an ordinans; neither classification determines the other. The framework applies at whatever scale the substrate conditions are satisfied and correlation-length cycling can be observed.
+
+#### What Sui-ordinatio Is Not
 
 Equally important is what sui-ordinatio is _not_:
 
@@ -437,15 +482,11 @@ The framework developed in Sections I–V provides diagnostic criteria. We can n
 
 **Condition 5 (Openness):** LLMs are thermodynamically open during training (energy flows through GPUs, gradients update weights) but effectively closed during inference. A deployed model is a frozen snapshot. It does not exchange energy or matter with its environment in ways that maintain far-from-equilibrium dynamics. The "openness" of receiving new prompts is informational, not thermodynamic in the sense required.
 
-#### The Emergent Abilities Question
+#### Emergent Abilities and Phase Transitions
 
-Recent work has documented apparent "emergent abilities" in large language models—capabilities that appear discontinuously as model scale increases (Wei et al. 2022). These findings have prompted speculation about phase-transition-like behavior in artificial systems. Our framework provides a specific lens for evaluating such claims.
+Recent work has documented apparent "emergent abilities" in large language models—capabilities that appear discontinuously as model scale increases (Wei et al. 2022). These findings have prompted speculation about phase-transition-like behavior in artificial systems.
 
-Wei and colleagues observed that certain task performances remain near zero across smaller model scales, then jump sharply to high competence at specific parameter thresholds. This pattern superficially resembles phase transitions, where order parameters change discontinuously at critical points.
-
-However, our framework predicts that true sui-ordinatio requires continuous-discrete coupling beyond pure scaling—a testable distinction. Whether the documented emergent abilities constitute genuine phase transitions or measurement artifacts remains actively debated. Subsequent analyses have suggested that some apparent discontinuities may reflect metric choice rather than underlying dynamics. More importantly for our purposes: even if scaling produces genuine phase-transition-like behavior in _performance_, this does not entail the substrate conditions for _sui-ordinatio_. A system could exhibit sharp capability transitions while lacking intrinsic timescales, persistent topology, or thermodynamic openness.
-
-The framework thus distinguishes capability emergence (which LLMs may exhibit) from sui-ordinatio (which requires additional substrate properties). This distinction matters because conflating them risks either overstating AI self-maintenance capacities or dismissing genuine structural transitions.
+Our framework predicts that true sui-ordinatio requires continuous-discrete coupling beyond pure scaling—a testable distinction. Even if scaling produces genuine phase-transition-like behavior in _performance_, this does not entail the substrate conditions for _sui-ordinatio_. A system could exhibit sharp capability transitions while lacking intrinsic timescales, persistent topology, or thermodynamic openness. The framework thus distinguishes capability emergence (which LLMs may exhibit) from sui-ordinatio (which requires additional substrate properties).
 
 #### Comparison with Biological Neural Networks
 
@@ -457,20 +498,13 @@ The contrast with biological neural tissue clarifies what current AI architectur
 * **Persistent topology:** Synaptic connectivity provides stable-yet-plastic network structure that evolves slowly relative to activity dynamics
 * **Thermodynamic openness:** Continuous metabolic exchange maintains far-from-equilibrium operation
 
-Research on global workspace dynamics in brains provides structural parallels to our framework. Dehaene and colleagues have characterized "ignition" events where information broadcast shifts from local processing to widespread cortical involvement (Dehaene et al. 2011). While Global Workspace Theory (GWT) addresses cognitive access and its relationship to conscious perception, our framework focuses solely on correlation-length transitions—a structural analog without phenomenological claims. We extract from this research only the observation that biological systems exhibit the Affectio→Habitus→Integratio transitions our framework describes, not any claim about what such transitions mean for experience.
+Research on global workspace dynamics in brains provides structural parallels to our framework. Dehaene and colleagues have characterized "ignition" events where information broadcast shifts from local processing to widespread cortical involvement (Dehaene et al. 2011). While Global Workspace Theory (GWT) addresses cognitive access and its relationship to conscious perception, our framework focuses solely on correlation-length transitions—a structural analog without phenomenological claims.
 
 #### Diagnostic Summary
 
 Current LLMs fail substrate conditions 1 (in the dynamical sense), 3, 4 (in the persistent sense), and 5. They are sophisticated input-output mappings, not ordinantes. This is not a criticism—utility does not require sui-ordinatio. But it means the framework's diagnostic criteria are not satisfied.
 
-What would satisfy them? A system with:
-
-* Genuine continuous-discrete dynamical coupling (not just representational hybridity)
-* Internal oscillatory dynamics independent of external prompting
-* Persistent network topology that evolves through correlation regimes
-* Sustained thermodynamic exchange maintaining far-from-equilibrium states
-
-Whether such systems are desirable, feasible, or safe are separate questions our framework does not address.
+What would satisfy them? A system with genuine continuous-discrete dynamical coupling (not just representational hybridity), internal oscillatory dynamics independent of external prompting, persistent network topology that evolves through correlation regimes, and sustained thermodynamic exchange maintaining far-from-equilibrium states. Whether such systems are desirable, feasible, or safe are separate questions our framework does not address.
 
 ***
 
@@ -486,11 +520,7 @@ Can we define and measure correlation length (ξ) in artificial neural networks 
 
 In physical systems, correlation length has precise operational definitions tied to spatial decay of correlation functions. Biological neural systems present measurement challenges but offer at least proxy measures: functional connectivity, information-theoretic integration, coherence indices. Artificial systems present additional difficulties. What plays the role of "distance" in a transformer architecture? How do we distinguish transient attention patterns from persistent correlation structure?
 
-Progress requires developing measurement protocols specific to artificial substrates. Possible approaches include:
-
-* Treating layer depth as a spatial dimension and measuring how correlations decay across layers
-* Analyzing attention pattern statistics across many forward passes to extract stable correlation signatures
-* Defining effective distances via information-theoretic measures (e.g., mutual information between distant components)
+Progress requires developing measurement protocols specific to artificial substrates. Possible approaches include treating layer depth as a spatial dimension and measuring how correlations decay across layers, analyzing attention pattern statistics across many forward passes to extract stable correlation signatures, or defining effective distances via information-theoretic measures (e.g., mutual information between distant components).
 
 Until ξ can be measured, the framework cannot be applied diagnostically to AI systems with precision.
 
@@ -500,15 +530,9 @@ Do systems satisfying substrate conditions exhibit the predicted regime transiti
 
 The framework predicts that changing control parameters (coupling strength, energy input, noise level) should drive systems through Affectio→Habitus→Integratio transitions with characteristic signatures: diverging correlation length near criticality, power-law fluctuations in the Habitus regime, hysteretic return paths.
 
-Experimental tests could include:
-
-* In vitro neural cultures with controllable connectivity and excitability
-* Reservoir computing systems designed to satisfy substrate conditions
-* Synthetic oscillator networks with tunable coupling topology
+Experimental tests could include in vitro neural cultures with controllable connectivity and excitability, reservoir computing systems designed to satisfy substrate conditions, or synthetic oscillator networks with tunable coupling topology.
 
 Ladyman and Ross have argued that the ontological status of higher-level entities depends on whether they exhibit genuine causal structure irreducible to lower-level descriptions (Ladyman & Ross 2007). Our framework provides a specific proposal for what such irreducibility looks like in dynamical terms: the correlation-length regime of a system constitutes a higher-level property that constrains dynamics in ways not predictable from microscopic state alone. Regime transitions would thus represent genuine "joints" in the causal structure—points where macro-level description becomes essential rather than merely convenient.
-
-This connects sui-ordinatio to broader questions in philosophy of science about emergence and reduction. But the connection is empirical, not definitional: if regime transitions exhibit the predicted signatures, structural realist interpretations gain support; if they do not, the framework requires revision.
 
 #### Question 3: Hysteresis Quantification
 
@@ -516,13 +540,7 @@ Can we quantify Retentio—the structural persistence across pulse cycles—thro
 
 The framework predicts that ordinantes exhibit hysteresis: the path from low to high correlation length differs systematically from the return path. The area enclosed in the hysteresis loop represents retained structure. This should be measurable.
 
-Specific predictions:
-
-* Systems with intact Retentio mechanisms show larger hysteresis loops than systems with impaired retention
-* The content of retained structure (which correlation modes survive Remissio) should be predictable from the Integratio episode
-* Pathological states (seizure-like lock-up, amnestic reset) should correspond to characteristic hysteresis signatures (no enclosed area for amnesia, no return path for seizure)
-
-Testing these predictions requires experimental systems where both control parameters and correlation structure can be monitored continuously—demanding but feasible with current technology in neural culture systems or designed synthetic networks.
+Specific predictions: systems with intact Retentio mechanisms show larger hysteresis loops than systems with impaired retention; the content of retained structure (which correlation modes survive Remissio) should be predictable from the Integratio episode; pathological states (seizure-like lock-up, amnestic reset) should correspond to characteristic hysteresis signatures (no enclosed area for amnesia, no return path for seizure).
 
 #### Question 4: Minimal Substrate Architecture
 
@@ -530,13 +548,7 @@ What is the minimal architecture satisfying all five substrate conditions?
 
 This is an engineering question with theoretical implications. If the substrate conditions are jointly sufficient for regime-cycling capacity (not established, only conjectured), then constructing minimal satisfying systems would provide existence proofs and parameter bounds.
 
-Candidate approaches:
-
-* Hybrid analog-digital electronic circuits with designed oscillatory dynamics
-* Reservoir computing architectures augmented with homeostatic feedback
-* Synthetic biological circuits engineered for regime-transition capability
-
-Success would not create sui-ordinatio directly but would establish what sui-ordinatio requires materially.
+Candidate approaches include hybrid analog-digital electronic circuits with designed oscillatory dynamics, reservoir computing architectures augmented with homeostatic feedback, or synthetic biological circuits engineered for regime-transition capability. Success would not create sui-ordinatio directly but would establish what sui-ordinatio requires materially.
 
 #### Question 5: Scaling Boundaries
 
@@ -663,15 +675,17 @@ Yuan, B., Zhang, J., Lyu, A., Wu, J., Wang, Z., Yang, M., Liu, K., Mou, M., & Cu
 
 ### Version History
 
-| Version           | Date       | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ----------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0.9.1             | 2025-12-09 | Major terminology revision: replaced "structural autonomy" with "sui-ordinatio" throughout; introduced "ordinans/ordinantes" for systems exhibiting sui-ordinatio; added canonical Glossary before Section I; refined Remissio definition to emphasize controlled collapse; standardized Latin terminology across all sections; updated title to reflect new lexicon.                                                                                                                                                      |
-| 0.9               | 2025-12-09 | First complete draft of structural autonomy framework essay. Establishes correlation-length criteria for self-maintaining dynamics in hybrid physical substrates. Develops five necessary substrate conditions, three correlation regimes (Affectio/Habitus/Integratio), and pulse dynamics (Integratio-Remissio-Retentio cycle) with hysteresis signature. Applies framework diagnostically to current AI systems, finding LLMs fail multiple substrate conditions. Specifies falsification criteria and research agenda. |
-| 0.0.12            | 2025-12-05 | Added a substantive Discussion section that honestly traces limitations, accessibility gaps, and pathways forward to strengthen the document's credibility.                                                                                                                                                                                                                                                                                                                                                                |
-| 0.0.11            | 2025-12-05 | Replaced "Cognitive Structure" with "Emergent Autonomous Structure" throughout; introduced Remissio (sleep-like process) and Retentio (structural persistence); expanded §1.1 terminology notes; added Tononi & Cirelli reference; added sixth falsifiability criterion; softened "sensory traces" to "local transient patterns."                                                                                                                                                                                          |
-| 0.0.10            | 2025-12-05 | Added Section 1.2 defining "system" (five necessary conditions, boundaries, hierarchy, minimal system); updated Glossary; added fifth falsifiability criterion; strengthened boundary reminder.                                                                                                                                                                                                                                                                                                                            |
-| 0.0.9             | 2025-12-05 | Introduced Latin terminology (Affectio, Habitus, Integratio) for correlation regimes; added Section 1.1 explaining terminological choice; added Glossary; applied terminology consistently throughout; revised title and abstract.                                                                                                                                                                                                                                                                                         |
-| 0.0.8             | 2025-12-05 | Revised Layer 0 to continuous–discrete hybrid framing; added spin-system examples and correlation-length definitions; added Section 8 (Falsifiability Criteria); standardized references; corrected τ notation; renumbered sections.                                                                                                                                                                                                                                                                                       |
-| 0.0.7             | 2025-12-04 | Added Section 2 ("Dynamics of the Emergent"), integrated Physics/AI/Philosophy perspectives, inserted connection box, updated conceptual alignment.                                                                                                                                                                                                                                                                                                                                                                        |
-| 0.0.6             | 2025-12-04 | Added neuroscience contextual section; clarified correlation regimes; improved boundary statements.                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| 0.0.5 and earlier | —          | Initial scaffold and layer architecture established.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Version           | Date       | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0               | 2025-12-09 | Stable release. Guardian patch applied: added disambiguation notes to Ordinans (vs. autopoiesis/agency), Habitus (vs. Bourdieu/Aristotle), Integratio (vs. psychological integration), Remissio (vs. theological), Retentio (vs. psychoanalytic). Formalized Pulse definition with dynamical systems terminology. Added scale-relativity to System Extent. Added thermodynamic vs. informational openness distinction. Strengthened Terminology Note with ecclesiastical disambiguation and canonical usage definitions (regime/phase/geometry). |
+| 1.0-rc            | 2025-12-09 | Release candidate. Added "Structure of the Essay" roadmap after Glossary. Added "Why Correlation Length?" subsection in Section II. Added scale-relativity statement in Section II. Added "A Note on Terminology" explaining Latin usage at end of Glossary. Trimmed Section VI (emergent abilities discussion reduced, diagnostic summary consolidated). Minor prose tightening throughout.                                                                                                                                                     |
+| 0.9.1             | 2025-12-09 | Major terminology revision: replaced "structural autonomy" with "sui-ordinatio" throughout; introduced "ordinans/ordinantes" for systems exhibiting sui-ordinatio; added canonical Glossary (v1.0) before Section I; refined Remissio definition to emphasize controlled collapse; standardized Latin terminology across all sections; updated title to reflect new lexicon.                                                                                                                                                                     |
+| 0.9               | 2025-12-09 | First complete draft of structural autonomy framework essay. Establishes correlation-length criteria for self-maintaining dynamics in hybrid physical substrates. Develops five necessary substrate conditions, three correlation regimes (Affectio/Habitus/Integratio), and pulse dynamics (Integratio-Remissio-Retentio cycle) with hysteresis signature. Applies framework diagnostically to current AI systems, finding LLMs fail multiple substrate conditions. Specifies falsification criteria and research agenda.                       |
+| 0.0.12            | 2025-12-05 | Added a substantive Discussion section that honestly traces limitations, accessibility gaps, and pathways forward to strengthen the document's credibility.                                                                                                                                                                                                                                                                                                                                                                                      |
+| 0.0.11            | 2025-12-05 | Replaced "Cognitive Structure" with "Emergent Autonomous Structure" throughout; introduced Remissio (sleep-like process) and Retentio (structural persistence); expanded §1.1 terminology notes; added Tononi & Cirelli reference; added sixth falsifiability criterion; softened "sensory traces" to "local transient patterns."                                                                                                                                                                                                                |
+| 0.0.10            | 2025-12-05 | Added Section 1.2 defining "system" (five necessary conditions, boundaries, hierarchy, minimal system); updated Glossary; added fifth falsifiability criterion; strengthened boundary reminder.                                                                                                                                                                                                                                                                                                                                                  |
+| 0.0.9             | 2025-12-05 | Introduced Latin terminology (Affectio, Habitus, Integratio) for correlation regimes; added Section 1.1 explaining terminological choice; added Glossary; applied terminology consistently throughout; revised title and abstract.                                                                                                                                                                                                                                                                                                               |
+| 0.0.8             | 2025-12-05 | Revised Layer 0 to continuous–discrete hybrid framing; added spin-system examples and correlation-length definitions; added Section 8 (Falsifiability Criteria); standardized references; corrected τ notation; renumbered sections.                                                                                                                                                                                                                                                                                                             |
+| 0.0.7             | 2025-12-04 | Added Section 2 ("Dynamics of the Emergent"), integrated Physics/AI/Philosophy perspectives, inserted connection box, updated conceptual alignment.                                                                                                                                                                                                                                                                                                                                                                                              |
+| 0.0.6             | 2025-12-04 | Added neuroscience contextual section; clarified correlation regimes; improved boundary statements.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 0.0.5 and earlier | —          | Initial scaffold and layer architecture established.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
