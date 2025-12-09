@@ -37,4 +37,4 @@
 * [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
 * [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
-* [\[DRAFT\] What Can Make a Complex System Autonomous?](essays/draft-what-can-make-a-complex-system-autonomous.md)
+* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
