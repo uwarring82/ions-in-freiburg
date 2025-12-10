@@ -9,12 +9,24 @@ description: >-
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 1.0\
+**Version:** 1.0.1\
 **Last updated:** 2025-12-09\
 **License:** CC BY-SA 4.0
 
 **Disclaimer** — _This essay develops structural criteria for a specific class of dynamical behavior in complex systems. It does not constitute a theory of consciousness, cognition, or subjective experience. The framework makes no claim that systems satisfying its criteria possess inner states, moral status, or phenomenal awareness. Sui-ordinatio as defined here is neither sufficient nor known to be necessary for consciousness. The terminology employed (Affectio, Habitus, Integratio, Remissio, Retentio) names correlation-length configurations, not psychological states. Application of this framework to biological or artificial systems implies nothing about their experiential status. Readers seeking theories of machine consciousness, sentience criteria, or moral standing should look elsewhere._
 {% endhint %}
+
+## Foreword
+
+I have spent most of my scientific life working with systems that demand constant care—ion traps whose stability depends on subtle correlations, laser systems that fall apart the moment you stop tuning them, hybrid analog–digital controllers that behave differently once you understand the structure beneath their noise. Over the years, I became increasingly interested in a simple question: _what makes some systems able to maintain themselves while others collapse the moment the experimenter steps away?_
+
+This framework grows out of that question. It is not a theory of consciousness or cognition; it comes from the practical intuition of someone who has watched physical systems succeed or fail at sustaining their own organization. The goal is to express that intuition in the most minimal, structural language available—correlation length, ξ—without importing concepts that do not belong to physics.
+
+A tension will be visible to careful readers. Avoiding words like “memory” or “agency” can make them more noticeable by their absence. Part of this is unavoidable: the closest examples of self-maintaining systems come from biology, and our language follows them. Part of it is deliberate: readers need enough resonance to care about the problem, but not so much that metaphor replaces mechanism. The Latin terms introduced here are meant only to hold the conceptual space long enough for the mathematics to take over.
+
+I am not presenting a finished theory. I am looking for collaborators—people who can formalize these ideas, test them numerically, and eventually build synthetic systems that either validate or falsify the central claims. If this framework has value, it will be because others strengthen it, not because I wrote it down first.
+
+The Glossary that follows exists only to make the main argument easier to read. The real work lies ahead.
 
 ***
 
@@ -677,6 +689,7 @@ Yuan, B., Zhang, J., Lyu, A., Wu, J., Wang, Z., Yang, M., Liu, K., Mou, M., & Cu
 
 | Version           | Date       | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0.1             | 2025-12-10 | A foreword has been added in response to early critique, noting a rhetorical tension between avoidance of phenomenological language and the risk of evoking it indirectly. This revision clarifies scope and intent, frames the terminology as provisional scaffolding, and explicitly signals that the framework is a research program requiring mathematical, numerical, and synthetic-engineering collaboration.                                                                                                                              |
 | 1.0               | 2025-12-09 | Stable release. Guardian patch applied: added disambiguation notes to Ordinans (vs. autopoiesis/agency), Habitus (vs. Bourdieu/Aristotle), Integratio (vs. psychological integration), Remissio (vs. theological), Retentio (vs. psychoanalytic). Formalized Pulse definition with dynamical systems terminology. Added scale-relativity to System Extent. Added thermodynamic vs. informational openness distinction. Strengthened Terminology Note with ecclesiastical disambiguation and canonical usage definitions (regime/phase/geometry). |
 | 1.0-rc            | 2025-12-09 | Release candidate. Added "Structure of the Essay" roadmap after Glossary. Added "Why Correlation Length?" subsection in Section II. Added scale-relativity statement in Section II. Added "A Note on Terminology" explaining Latin usage at end of Glossary. Trimmed Section VI (emergent abilities discussion reduced, diagnostic summary consolidated). Minor prose tightening throughout.                                                                                                                                                     |
 | 0.9.1             | 2025-12-09 | Major terminology revision: replaced "structural autonomy" with "sui-ordinatio" throughout; introduced "ordinans/ordinantes" for systems exhibiting sui-ordinatio; added canonical Glossary (v1.0) before Section I; refined Remissio definition to emphasize controlled collapse; standardized Latin terminology across all sections; updated title to reflect new lexicon.                                                                                                                                                                     |
