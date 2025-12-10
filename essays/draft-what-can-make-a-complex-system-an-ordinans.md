@@ -30,6 +30,24 @@ The Glossary that follows exists only to make the main argument easier to read. 
 
 ***
 
+### Abstract
+
+What structural conditions permit a physical system to maintain itself through internal dynamics rather than external support? This essay proposes a framework for **sui-ordinatio** based on correlation-length analysis in hybrid physical networks. We define sui-ordinatio as the capacity to cycle through distinct correlation-length regimes within a substrate satisfying five necessary conditions: hybrid continuous-discrete structure, defined spatial extent, intrinsic timescale, non-trivial topology, and thermodynamic openness.
+
+Three correlation regimes are characterized: Affectio (local), Habitus (scale-free, power-law decay), and Integratio (global). Sui-ordinatio requires temporal cycling through these regimes via a pulse structure—Integratio, Remissio, Retentio—exhibiting characteristic hysteresis signatures. A system exhibiting sui-ordinatio is termed an _ordinans_.
+
+We apply this framework diagnostically to current artificial intelligence systems, finding that large language models fail multiple substrate conditions despite exhibiting emergent capabilities. The framework generates falsifiable predictions regarding correlation-length signatures, regime transitions under controlled perturbation, and causal emergence measures.
+
+This analysis addresses structural dynamics only. It makes no claims regarding consciousness, subjective experience, or moral status. The framework is designed so that its empirical success or failure remains independent of any stance on phenomenology.
+
+***
+
+### Structure of the Essay
+
+Section I motivates the question of what distinguishes self-maintaining systems from merely capable ones. Section II defines sui-ordinatio and introduces correlation length as the central quantity. Section III specifies the five substrate conditions required for regime-cycling capacity. Section IV outlines the three correlation regimes (Affectio, Habitus, Integratio). Section V develops pulse dynamics and hysteresis as temporal signatures of sui-ordinatio. Section VI applies the framework diagnostically to current AI systems. Section VII proposes open research questions. Section VIII states falsifiability conditions. Section IX outlines the research agenda and concludes.
+
+***
+
 ### Glossary (Canonical Lexicon)
 
 _For the correlation-regime framework of sui-ordinatio_
@@ -234,24 +252,6 @@ The choice of Latin insulates the framework from the semantic contamination that
 ***
 
 _End of Canonical Glossary_
-
-***
-
-### Structure of the Essay
-
-Section I motivates the question of what distinguishes self-maintaining systems from merely capable ones. Section II defines sui-ordinatio and introduces correlation length as the central quantity. Section III specifies the five substrate conditions required for regime-cycling capacity. Section IV outlines the three correlation regimes (Affectio, Habitus, Integratio). Section V develops pulse dynamics and hysteresis as temporal signatures of sui-ordinatio. Section VI applies the framework diagnostically to current AI systems. Section VII proposes open research questions. Section VIII states falsifiability conditions. Section IX outlines the research agenda and concludes.
-
-***
-
-### Abstract
-
-What structural conditions permit a physical system to maintain itself through internal dynamics rather than external support? This essay proposes a framework for **sui-ordinatio** based on correlation-length analysis in hybrid physical networks. We define sui-ordinatio as the capacity to cycle through distinct correlation-length regimes within a substrate satisfying five necessary conditions: hybrid continuous-discrete structure, defined spatial extent, intrinsic timescale, non-trivial topology, and thermodynamic openness.
-
-Three correlation regimes are characterized: Affectio (local), Habitus (scale-free, power-law decay), and Integratio (global). Sui-ordinatio requires temporal cycling through these regimes via a pulse structure—Integratio, Remissio, Retentio—exhibiting characteristic hysteresis signatures. A system exhibiting sui-ordinatio is termed an _ordinans_.
-
-We apply this framework diagnostically to current artificial intelligence systems, finding that large language models fail multiple substrate conditions despite exhibiting emergent capabilities. The framework generates falsifiable predictions regarding correlation-length signatures, regime transitions under controlled perturbation, and causal emergence measures.
-
-This analysis addresses structural dynamics only. It makes no claims regarding consciousness, subjective experience, or moral status. The framework is designed so that its empirical success or failure remains independent of any stance on phenomenology.
 
 ***
 
