@@ -499,5 +499,3 @@ You don’t need to over-engineer this now, but:
   * Current platform status.
 
 ***
-
-If you’d like, next step could be: I draft one complete section following this scaffold (for instance §5 “The Nobel as System”), so you have a concrete style template you can then adjust and propagate.
