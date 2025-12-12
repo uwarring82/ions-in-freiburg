@@ -7,7 +7,7 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.3.4\
+**Version:** 0.9\
 **Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0\
 \
@@ -445,8 +445,9 @@ _Special thanks to all my past, current, and future environments._
 
 * Nobel Prize in Physics 2025 – Press Release and Summary. NobelPrize.org (2025). “for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit”.&#x20;
 * Scientific Background: The Nobel Prize in Physics 2025. Royal Swedish Academy of Sciences (2025).&#x20;
+* Martinis, J. M., Devoret, M. H.,  & Clarke, J., Energy-Level Quantization in the Zero-Voltage State of a Current-Biased Josephson Junction, _Phys. Rev. Lett._ 55, 1543 (1985).&#x20;
+* Devoret, M. H., Martinis, J. M., & Clarke, J., Measurements of Macroscopic Quantum Tunneling out of the Zero-Voltage State of a Current-Biased Josephson Junction, _Phys. Rev. Lett._ 55, 1908 (1985).
 * Nickerson, R. S. (1998). Confirmation Bias: A Ubiquitous Phenomenon in Many Guises. _Review of General Psychology_, 2(2), 175–220. doi:10.1037/1089-2680.2.2.175&#x20;
 * Tajfel, H., & Turner, J. C. (1979). An integrative theory of intergroup conflict. In W. G. Austin & S. Worchel (Eds.), _The Social Psychology of Intergroup Relations_ (pp. 33–47). Monterey, CA: Brooks/Cole.&#x20;
 * Tajfel, H., Billig, M. G., Bundy, R. P., & Flament, C. (1971). Social categorization and intergroup behaviour. _European Journal of Social Psychology_, 1(2), 149–178.
 * Sunstein, C. R. (2002). The Law of Group Polarization. _Journal of Political Philosophy_, 10(2), 175–195. doi:10.1111/1467-9760.00148&#x20;
-* Kahneman, D. (2011). _Thinking, Fast and Slow_. New York: Farrar, Straus and Giroux.
