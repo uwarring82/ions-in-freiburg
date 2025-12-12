@@ -32,7 +32,11 @@ This rapid broadening of the Mpemba effect’s meaning is exciting – it sugges
 
 In summary, the Mpemba effect’s journey from a peculiar ice manufacturing incident to a general label for anomalous relaxation shows how ideas in physics can gain metaphorical power. A term originating from one specific observation now spurs research across disciplines, linking themes in water supercooling, statistical mechanics, and quantum information. Embracing this metaphor has value – it helps communicate the core idea (fastest cooling from a hotter state) to a broad audience. Yet, as with Berry phase and Lamb shift, context is paramount. We must clarify what we mean by “Mpemba effect” each time we invoke it, lest the term become too dilute. In practice, this means specifying the system (water, spin system, etc.), the conditions, and the measure of “faster” being used. By doing so, we let the Mpemba effect enrich our cross-disciplinary dialogue without sowing confusion.
 
-_Special thanks to all my past, current, and future environments_
+***
+
+_Special thanks to all my past, current, and future environments._
+
+***
 
 ### Terminology Evolution Table
 

@@ -38,4 +38,4 @@
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
 * [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
 * [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [\[Draft\] Nobel 2025](essays/draft-nobel-2025.md)
+* [\[Draft\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
