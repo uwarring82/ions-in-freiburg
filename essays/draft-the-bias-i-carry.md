@@ -7,7 +7,7 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.3.1\
+**Version:** 0.3.3\
 **Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0\
 \
@@ -119,13 +119,17 @@ The compression saved cognitive effort. It also destroyed nuance.
 
 The map did not only separate platforms. It also separated trajectories within my own.
 
-Former colleagues trained in the same ion-trap culture went on to found or join startups pursuing a single, tightly defined path toward quantum computation. I felt pride that the platform was taken seriously—and unease at how much imagination narrowed around one architectural bet.
+Former colleagues trained in the same ion-trap culture went on to found or join startups pursuing specific architectural paths toward quantum computation. I felt pride that the platform was taken seriously—and an unease I could not quite name.
 
-That unease sometimes expressed itself as distance. I found myself categorizing people not by shared technical roots, but by perceived commitment to a single outcome. This, too, is a form of tribal separation—one that masquerades as strategic realism. Commercial focus may be necessary for a company; it is far less clear that it is optimal for a field still discovering its fundamental constraints.
+That unease sometimes expressed itself as distance. I found myself categorizing people not by shared technical roots, but by their new institutional contexts: those still exploring versus those now executing on a defined bet.
 
-By the time the Nobel announcement arrived, the map was complete enough that I did not feel I needed to read the citation carefully. I already “knew” what I thought.
+This was another form of tribal thinking. I knew—intellectually—that these colleagues were acting responsibly within their constraints. A company optimizing for a specific architecture is not intellectual narrowing; it is institutional necessity. Their choices reflected different optimization functions: speed and focus over breadth and exploration. I respected the difficulty of those choices. I trusted their technical judgment.
 
-Let's move on to recalibrate my preliminary conclusion.
+But I still felt the distance. And rather than naming it as my discomfort with diverging constraints, I sometimes coded it as their narrowing—as if my mode of working were somehow more intellectually honest than theirs.
+
+The problem was not their choices. It was my need to interpret different constraints as different virtues.
+
+What followed was the work of recalibration.
 
 ***
 
@@ -177,7 +181,7 @@ All of this left me with a conclusion:
 
 My technical respect had been conditional. Once that was clear, one anchor engaged: whatever I thought about later ecosystems, the physics honored by the Nobel was hard and beautiful work.
 
-<p align="center"><strong>This is respectible work.</strong> </p>
+<p align="center"><strong>This is hard and beautiful work.</strong> </p>
 
 That realization led naturally to the next question: if the physics was this good, what about the institution that chose to recognize it?
 
@@ -273,13 +277,13 @@ The more senior I became, the more my questions could shape the room. A skeptica
 
 Explaining my reaction to my children collapses the rhetoric quickly.
 
-> L: “Did you read what they actually did?”\
-> U: “No, not at first.”\
-> L: “Then how did you know it was unfair?”
+> Ea: “Did you read what they actually did?”\
+> Ego: “No, not at first.”\
+> Ea: “Then how did you know it was unfair?”
 
-> L: “But you always tell me to stop and read before deciding.”\
-> U: “Yes.”\
-> L: “So why didn’t you?”
+> Ea: “But you always tell me to stop and read before deciding.”\
+> Ego: “Yes.”\
+> Ea: “So why didn’t you?”
 
 I can add layers of complexity about credit, structural inequalities, and the distribution of resources among platforms. Those are real issues. But at the core, my initial reaction did not rest on this analysis. It rested on _who_ I associated with the prize, not _what_ they had done.
 
