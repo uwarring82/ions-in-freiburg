@@ -324,10 +324,6 @@ My children will inherit a scientific culture that they may or may not choose to
 
 Individual correction is necessary. It is also not sufficient. The bias machine will not stop running because one person writes an essay. The question then becomes: what systems can we put in place to make bias-correction more likely, more systematic, and more robust than a single person’s resolve?
 
-{% hint style="info" %}
-Tribalism is not just a moral issue. It is a capability limiter. Many future problems—error correction, scalable control, precision sensing—will require hybrid approaches. Platform monocultures slow progress on shared bottlenecks like surfaces, materials, and noise.
-{% endhint %}
-
 ***
 
 ### 6. Protocols — Building Better Systems
@@ -419,9 +415,25 @@ I return, finally, to the three anchors that structured this essay:
 * **Trust –** The Nobel system is structurally imperfect, but in this case the Committee’s framing—honoring foundational discovery rather than present-day industrial platforms—is intelligible and defensible, even where one might have chosen differently.
 * **Responsibility –** Students and children learn more from how we handle our mistakes than from how we present our successes. If I want them to judge work by content rather than clan, I have to show them how to correct tribal judgments in myself.
 
-I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress, triggered by a particular event in 2025.
+I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress.
 
-> If you recognized something of yourself in this dissection—if you have felt the tribal pull when another community wins a prize, secures a grant, or dominates a conference—then perhaps this can be an invitation rather than a verdict.
+I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress.
+
+**But the stakes extend beyond individual correction.**
+
+Tribalism is not just a moral failing. It is a capability limiter—and the cost is measurable.
+
+Consider what actually blocks progress in quantum systems: surface anomalies that cause heating, material interfaces that introduce noise, timing jitter that limits synchronization, readout cross-talk that corrupts measurements. These are not platform-specific problems. They are _shared_ problems that happen to express differently in ions versus superconducting circuits versus neutral atoms versus spin qubits.
+
+When tribal boundaries make cross-platform collaborations rare, we duplicate effort. When funding mechanisms punish researchers for working across platform lines, we slow discovery. When graduate students absorb the message that "those people do sloppy work" or "that platform is a dead end," we train the next generation to ignore solutions that already exist.
+
+Platform monocultures are not just intellectually limiting. They make us _slower_ at solving the problems we claim are urgent. The hardest challenges ahead—error correction at scale, integration with classical control, real-world deployment under non-ideal conditions.
+
+**So here is the invitation:**
+
+If you recognized something of yourself in this dissection—if you have felt the tribal pull when another community wins a prize, secures a grant, or dominates a conference—then treat this as a calibration exercise, not a verdict.
+
+You do not need to abandon platform loyalty. You do not need to pretend all approaches are equally promising. You _do_ need to install counter-systems that pull against tribal gravity when it distorts your judgment.
 
 We will not eliminate bias. But we can design better detectors, and we can make it normal for those detectors to be recalibrated in public.
 
