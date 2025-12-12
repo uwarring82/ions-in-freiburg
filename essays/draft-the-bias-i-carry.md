@@ -7,7 +7,7 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.9\
+**Version:** 0.9.2\
 **Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0\
 \
@@ -114,6 +114,8 @@ Once the map existed, a feedback loop closed. Papers from _our_ side were read w
 The compression saved cognitive effort. It also destroyed nuance.
 
 #### 2.4 Internal splits
+
+> I do not name individuals here, both to protect relationships and because the pattern is not about specific people but about my own interpretive lens.
 
 The map did not only separate platforms. It also separated trajectories within my own.
 
@@ -224,7 +226,7 @@ Equally important are the omissions. The citation does _not_ mention:
 * specific architectures like circuit QED,
 * any work from the 2000s and 2010s on coherent control, error correction, or scaling.
 
-Viewed in this way, the Committee anchored the prize firmly in the mid-1980s. They chose to recognize the moment when an electric circuit first earned the status of a legitimate quantum system in its own right, in close dialogue with the Caldeira-Leggett framework that had previously been recognized in part through Anthony Leggett’s 2003 Nobel.
+Viewed in this way, the Committee appears to have anchored the prize firmly in the mid-1980s. I say 'appears' because the Committee's deliberative reasoning is not public beyond the citation itself. This opacity is understandable given historical precedent—but it is also, I will argue, correctable. They chose to recognize the moment when an electric circuit first earned the status of a legitimate quantum system in its own right, in close dialogue with the Caldeira-Leggett framework that had previously been recognized in part through Anthony Leggett’s 2003 Nobel.
 
 One can certainly debate whether 1985 is the right place to draw that line. Yasunobu Nakamura’s 1999 demonstration of coherent oscillations in a superconducting charge qubit, for example, is also an obvious milestone, and many would argue it deserved recognition. Other contributors to flux qubits and circuit QED could also reasonably appear in alternative histories.
 
@@ -378,12 +380,13 @@ If the answer is no, I rephrase or remain silent until I can express the concern
 
 Individual protocols are fragile. They degrade under stress and time pressure. Institutions can help by embedding some of the necessary friction structurally.
 
-A few examples:
+Prize committees—not only the Nobel—can publish more about their reasoning, including the trade-offs and constraints they faced. In the case of the 2025 Physics Prize, the citation's careful wording is interpretable as a deliberate focus on foundational discovery rather than present-day platforms. But 'interpretable' is not the same as 'transparent.' A brief accompanying statement—explaining why this boundary was drawn, what alternative framings were considered, and how the statutory three-name limit shaped the outcome—would not compromise deliberative integrity. It would strengthen public trust by showing that the decision emerged from principled reasoning under constraints, not from opaque consensus or external pressure. Transparency does not require revealing votes or internal disagreements. It requires showing the structure of the problem the Committee believed it was solving.
+
+A few more examples:
 
 * Funding agencies can explicitly incentivize platform-crossing collaborations and comparative benchmarks, and allocate dedicated resources for shared infrastructure: error standards, calibration procedures, open reference implementations.
 * Conferences can design sessions by _problem_ (“decoherence in many-body systems”) rather than by platform, and normalize sessions on limitations and failures alongside headline results. Mixed-platform panels force cross-reading.
 * Journals can require authors to contextualize work across platforms where relevant, not only within their niche, and assign at least one reviewer from a different community when possible. Transparent editorial policies about reviewer selection can reduce suspicion of tribal gatekeeping.
-* Prize committees (not only the Nobel) can publish more about their reasoning, including the trade-offs and constraints they faced, and experiment with additional ways of acknowledging broader communities beyond the statutory winner list.
 * Universities and departments can adjust evaluation criteria to value infrastructure work, shared tools, and teaching of bias-correction practices as real contributions, making it less risky for individuals to invest in them.
 
 None of these interventions removes conflict or competition. They simply adjust the incentives so that truth-seeking and cross-platform respect are less costly.
