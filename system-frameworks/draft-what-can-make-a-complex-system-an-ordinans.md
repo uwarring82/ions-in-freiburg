@@ -9,11 +9,11 @@ description: >-
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 1.0.1\
-**Last updated:** 2025-12-10\
+**Version:** 1.0.2\
+**Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0
 
-**Disclaimer** — _This essay develops structural criteria for a specific class of dynamical behavior in complex systems. It does not constitute a theory of consciousness, cognition, or subjective experience. The framework makes no claim that systems satisfying its criteria possess inner states, moral status, or phenomenal awareness. Sui-ordinatio as defined here is neither sufficient nor known to be necessary for consciousness. The terminology employed (Affectio, Habitus, Integratio, Remissio, Retentio) names correlation-length configurations, not psychological states. Application of this framework to biological or artificial systems implies nothing about their experiential status. Readers seeking theories of machine consciousness, sentience criteria, or moral standing should look elsewhere._
+**Disclaimer** — _This work develops structural criteria for a specific class of dynamical behavior in complex systems. It does not constitute a theory of consciousness, cognition, or subjective experience. The framework makes no claim that systems satisfying its criteria possess inner states, moral status, or phenomenal awareness. Sui-ordinatio as defined here is neither sufficient nor known to be necessary for consciousness. The terminology employed (Affectio, Habitus, Integratio, Remissio, Retentio) names correlation-length configurations, not psychological states. Application of this framework to biological or artificial systems implies nothing about their experiential status. Readers seeking theories of machine consciousness, sentience criteria, or moral standing should look elsewhere._
 {% endhint %}
 
 ## Foreword
