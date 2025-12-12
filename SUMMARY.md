@@ -26,7 +26,7 @@
 
 ## Publishing research
 
-* [Draft a Manuscript](publishing-research/draft-a-manuscript.md)
+* [\[PLACEHOLDER\] Draft a Manuscript](publishing-research/draft-a-manuscript.md)
 * [Peer Review Quickstart](publishing-research/peer-review-quickstart.md)
 
 ## Essays
