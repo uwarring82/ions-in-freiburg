@@ -663,7 +663,7 @@ The hard problem remains hard. But not all problems are the hard problem.
 
 ***
 
-_Special thanks to all my past, current, and future environments_
+_Special thanks to all my past, current, and future environments._
 
 ***
 
