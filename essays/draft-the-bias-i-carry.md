@@ -11,7 +11,7 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 **Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0\
 \
-**Disclaimer** — _This is a personal, reflective essay written in my role as a physicist trained in the trapped-ion community. It is not an official statement of my institution, nor a verdict on any specific research group, company, or platform. References to “communities” describe abstracted patterns of behavior, not individuals. The aim is to examine how tribal bias forms in science—and what it takes to correct it._
+**Disclaimer** — _This is a personal, reflective essay written in my role as a physicist trained in the trapped-ion community. It is not an official statement of my institution, nor a verdict on any specific research group, company, or platform. References to “communities” describe abstracted patterns of behavior, not individuals. The aim is to showcase how tribal bias forms in science—and what it takes to correct it._
 {% endhint %}
 
 ***
