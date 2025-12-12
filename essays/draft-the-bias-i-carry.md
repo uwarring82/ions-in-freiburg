@@ -125,6 +125,8 @@ That unease sometimes expressed itself as distance. I found myself categorizing 
 
 By the time the Nobel announcement arrived, the map was complete enough that I did not feel I needed to read the citation carefully. I already “knew” what I thought.
 
+Let's move on to recalibrate my preliminary conclusion.
+
 ***
 
 ### 3. Anchor One — Technical Respect
