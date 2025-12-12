@@ -55,7 +55,3 @@ _Special thanks to all my past, current, and future environments._
 ### Version History
 
 <table><thead><tr><th width="96.37890625">Version</th><th width="107.32421875">Date</th><th width="93.87890625">Status</th><th>Summary of Changes</th></tr></thead><tbody><tr><td>v0.0.1</td><td>2025-12-12</td><td>Internal</td><td>Initial formulation of causal boundary concept linking clock period and effective size. Exploratory scope; definitions not yet fixed.</td></tr><tr><td>v0.0.2</td><td>2025-12-12</td><td>GitBook</td><td>Formalized framework as a boundary-condition design theory. Introduced strict separation of <span class="math">L_{\text{source}}</span>, <span class="math">L_{\text{apparatus}}</span>, and <span class="math">L_{\text{comparison}}</span>. Defined causal efficiency parameter <span class="math">\eta(\tau)</span>. Demoted Planck scale to dimensional endpoint only. Language tightened for falsifiability and GitBook presentation.</td></tr><tr><td>v0.0.x (planned)</td><td>—</td><td>Planned</td><td>Addition of “Relation to Prior Work” section; explicit Design Claim box; causal envelope figure and caption; first worked example estimating <span class="math">\eta_{\text{opt}}</span> for a concrete clock architecture.</td></tr></tbody></table>
-
-
-
-\---
