@@ -56,9 +56,7 @@ On an ordinary October afternoon—between an email about lab procedures and a s
 
 > _“Nobel Prize in Physics 2025: John Clarke, Michel H. Devoret, John M. Martinis.”_&#x20;
 
-Before I finished reading the citation, a thought surfaced that had nothing to do with physics:
-
-> _“Really? The community that already raised billions for the ‘platform of the future’ now also gets a Nobel Prize?”_
+Before I finished reading the citation, a thought surfaced that had nothing to do with physics: _“Really? The community that already raised billions for the ‘platform of the future’ now also gets a Nobel Prize?”_
 
 My jaw tightened. I did not think about Josephson junctions or escape rates. I thought about startups, glossy keynotes, funding asymmetries. I thought about _our_ corner of our fundamental research field—trapped ions—where progress often felt slower, less spectacular, and somehow less rewarded.
 
