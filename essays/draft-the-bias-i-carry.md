@@ -7,7 +7,7 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.3.3\
+**Version:** 0.3.4\
 **Last updated:** 2025-12-12\
 **License:** CC BY-SA 4.0\
 \
@@ -24,7 +24,7 @@ In October 2025, the Royal Swedish Academy of Sciences awarded the Nobel Prize i
 
 The work being honored dates back to the mid-1980s. The laureates showed that a carefully engineered superconducting circuit could exhibit macroscopic quantum tunnelling and discrete energy levels: a designed electrical circuit behaving as a quantum object in its own right.
 
-This essay is not about the technical details of those experiments. The Nobel scientific background, original _Physical Review Letters_ papers, and modern lecture notes cover them far better than I could.
+This essay is not about the technical details of those experiments. [The Nobel scientific background](https://www.kva.se/app/uploads/2025/10/nobel-physics-2025-scientific-background_ed8rhfgb03.pdf?utm_source=chatgpt.com), original _Physical Review Letters_ papers, and modern lecture notes cover them far better than I could.
 
 This essay is about the bias I noticed in myself when I first read the announcement—and about the work required to correct it.
 
@@ -141,7 +141,7 @@ After my initial reaction to the Nobel, I did what I should have done immediatel
 
 #### 3.1 What actually cracked
 
-A seminar tailored for young students did not _cause_ the crack—it revealed it. What stayed with me was not a rhetorical point, but a photograph: three people standing in a university basement, surrounded by hand-labeled electronics boxes and coaxial cables coiled like garden hoses. Next to the image was a schematic sketch—clearly not prepared for presentation—showing control lines disappearing into copper-grain filters.
+A seminar tailored for young students did not _cause_ the crack—it revealed it. What stayed with me was not a rhetorical point, but a scene of three people working in a university basement, surrounded by hand-labeled electronics boxes and coaxial cables coiled like garden hoses. On a wall hangs a hand drawn sketch showing control lines disappearing into copper-grain filters.
 
 I had walked into the room expecting a familiar origin story: early genius, inevitable platform, straight line to today. Instead, I found university physics—messy, local, and preoccupied with dissipation rather than destiny. I realized I had been projecting a 2025 ecosystem onto a 1985 experiment.
 
@@ -161,7 +161,7 @@ That required several layers of experimental ingenuity:
 * Filtering and shielding. High-frequency noise from room-temperature electronics and thermal radiation had to be absorbed and thermalized in stages. Copper-powder filters, attenuators at different temperature stages, and nested shields all played roles.
 * Measurement without destruction. The readout scheme had to detect whether the phase had escaped the well without itself dumping energy into the system in a way that dominated the escape dynamics.
 
-The measurements then tested the escape rate as a function of temperature. At higher temperatures, the escape was consistent with thermal activation: the rate decreased as the bath cooled. Below a crossover temperature, the rate stopped decreasing and approached a plateau consistent with the quantum tunnelling prediction, with no free fitting parameters.
+The measurements then tested the escape rate as a function of temperature. At higher temperatures, the escape was consistent with thermal activation: the rate decreased as the bath cooled. Below a crossover temperature, the rate stopped decreasing and approached a plateau consistent with the quantum-tunnelling expectation within the modeling framework.
 
 A second set of experiments used microwave spectroscopy to probe energy levels in the effective potential. When the applied microwave frequency matched the spacing between quantized levels, the escape rate changed in a way that revealed discrete structure: the circuit behaved like an artificial atom, with engineered energy spacings determined by capacitances and inductances.
 
@@ -232,7 +232,7 @@ One can certainly debate whether 1985 is the right place to draw that line. Yasu
 
 But “debatable” is not the same as “obviously wrong”. My initial reading—“they validated the hype platform”—had ignored the internal logic of the citation entirely.
 
-#### 4.4 What institutional trust requires
+#### 4.3 What institutional trust requires
 
 Institutional trust does not mean blind acceptance. The Nobel system has structural flaws:
 
@@ -277,13 +277,13 @@ The more senior I became, the more my questions could shape the room. A skeptica
 
 Explaining my reaction to my children collapses the rhetoric quickly.
 
-> Ea: “Did you read what they actually did?”\
-> Ego: “No, not at first.”\
-> Ea: “Then how did you know it was unfair?”
+> “Did you read what they actually did?”\
+> Me: “No, not at first.”\
+> “Then how did you know it was unfair?”
 
-> Ea: “But you always tell me to stop and read before deciding.”\
-> Ego: “Yes.”\
-> Ea: “So why didn’t you?”
+> “But you always tell me to stop and read before deciding.”\
+> Me: “Yes.”\
+> “So why didn’t you?”
 
 I can add layers of complexity about credit, structural inequalities, and the distribution of resources among platforms. Those are real issues. But at the core, my initial reaction did not rest on this analysis. It rested on _who_ I associated with the prize, not _what_ they had done.
 
@@ -414,8 +414,6 @@ I return, finally, to the three anchors that structured this essay:
 * **Respect –** The 1980s experiments honored in the 2025 Nobel Prize represent careful, conceptually important physics. My initial refusal to grant that was a failure of curiosity, not a justified critique.
 * **Trust –** The Nobel system is structurally imperfect, but in this case the Committee’s framing—honoring foundational discovery rather than present-day industrial platforms—is intelligible and defensible, even where one might have chosen differently.
 * **Responsibility –** Students and children learn more from how we handle our mistakes than from how we present our successes. If I want them to judge work by content rather than clan, I have to show them how to correct tribal judgments in myself.
-
-I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress.
 
 I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress.
 
