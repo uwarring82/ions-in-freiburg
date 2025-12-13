@@ -7,11 +7,11 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.9.2\
-**Last updated:** 2025-12-12\
+**Version:** 0.9.3\
+**Last updated:** 2025-12-13\
 **License:** CC BY-SA 4.0\
 \
-**Disclaimer** — _This is a personal, reflective essay written in my role as a physicist trained in the trapped-ion community. It is not an official statement of my institution, nor a verdict on any specific research group, company, or platform. References to “communities” describe abstracted patterns of behavior, not individuals. The aim is to showcase how tribal bias forms in science—and what it takes to correct it._
+**Disclaimer** — _This is a personal, reflective essay written in my role as a physicist trained in the trapped-ion community and as an human. It is not an official statement of my institution, nor a verdict on any specific research group, company, or platform. References to “communities” describe abstracted patterns of behavior, not individuals. The aim is to showcase how tribal bias forms in science—and what it takes to correct it._
 {% endhint %}
 
 ***
@@ -277,13 +277,7 @@ The more senior I became, the more my questions could shape the room. A skeptica
 
 Explaining my reaction to my children collapses the rhetoric quickly.
 
-> “Did you read what they actually did?”\
-> Me: “No, not at first.”\
-> “Then how did you know it was unfair?”
-
-> “But you always tell me to stop and read before deciding.”\
-> Me: “Yes.”\
-> “So why didn’t you?”
+> "How did you know it was unfair?"
 
 I can add layers of complexity about credit, structural inequalities, and the distribution of resources among platforms. Those are real issues. But at the core, my initial reaction did not rest on this analysis. It rested on _who_ I associated with the prize, not _what_ they had done.
 
