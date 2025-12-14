@@ -7,8 +7,8 @@ description: How the 2025 Nobel Prize in Physics forced me to recalibrate my own
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.9.3\
-**Last updated:** 2025-12-13\
+**Version:** 0.9.4\
+**Last updated:** 2025-12-14\
 **License:** CC BY-SA 4.0\
 \
 **Disclaimer** — _This is a personal, reflective essay written in my role as a physicist trained in the trapped-ion community and as an human. It is not an official statement of my institution, nor a verdict on any specific research group, company, or platform. References to “communities” describe abstracted patterns of behavior, not individuals. The aim is to showcase how tribal bias forms in science—and what it takes to correct it._
@@ -412,7 +412,7 @@ I return, finally, to the three anchors that structured this essay:
 
 I do not expect this essay to fix my bias once and for all. It is not a confession followed by absolution. It is, at best, a snapshot of a calibration process in progress.
 
-**But the stakes extend beyond individual correction.**
+<p align="center"><strong>But the stakes extend beyond individual correction.</strong></p>
 
 Tribalism is not just a moral failing. It is a capability limiter—and the cost is measurable.
 
@@ -422,7 +422,7 @@ When tribal boundaries make cross-platform collaborations rare, we duplicate eff
 
 Platform monocultures are not just intellectually limiting. They make us _slower_ at solving the problems we claim are urgent. The hardest challenges ahead—error correction at scale, integration with classical control, real-world deployment under non-ideal conditions.
 
-**So here is the invitation:**
+So here is the invitation:
 
 If you recognized something of yourself in this dissection—if you have felt the tribal pull when another community wins a prize, secures a grant, or dominates a conference—then treat this as a calibration exercise, not a verdict.
 
