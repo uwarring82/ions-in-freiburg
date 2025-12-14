@@ -42,4 +42,4 @@
 ## System Frameworks
 
 * [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [\[Draft\] Causal Clock Unification: A Design Theory for Timekeeping Across Scales](system-frameworks/draft-causal-clock-unification-a-design-theory-for-timekeeping-across-scales.md)
+* [\[Draft\] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/draft-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
