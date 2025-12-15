@@ -406,12 +406,12 @@ _Special thanks to all my past, current, and future environments._
 
 ### Document Metadata
 
-| Field               | Value                                                                                                                                                                                                                 |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Canonical DOI**   | \[TBD — to be assigned upon archival deposit]                                                                                                                                                                         |
-| **Git commit hash** | \[TBD — to be populated at publication]                                                                                                                                                                               |
-| **Citation string** | Warring, U. (2025). _Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales_ (v1.0-RC). GitBook. https://uwarring.gitbook.io/ions-in-freiburg/system-frameworks/causal-clock-unification |
-| **Errata link**     | \[TBD — to be established if corrections needed post-publication]                                                                                                                                                     |
+| Field               | Value                                                                                                                                                                                                       |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Canonical DOI**   | \[TBD — to be assigned upon archival deposit]                                                                                                                                                               |
+| **Git commit hash** | \[TBD — to be populated at publication]                                                                                                                                                                     |
+| **Citation string** | Warring, U. (2025). _Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales_. GitBook. https://uwarring.gitbook.io/ions-in-freiburg/system-frameworks/causal-clock-unification |
+| **Errata link**     | \[TBD — to be established if corrections needed post-publication]                                                                                                                                           |
 
 #### Relationship to Other Documents
 
@@ -419,7 +419,7 @@ _Special thanks to all my past, current, and future environments._
 
 Companion documents may include:
 
-* **CSP (Causal Steering Protocols)** — operational protocols, including candor weighting update laws and architecture-specific η\_opt ranges. CSP versions may evolve without requiring CCUF revision.
+* [**CSP (Causal Steering Protocols)** ](draft-causal-steering-protocols-operational-specifications.md)— operational protocols, including candor weighting update laws and architecture-specific η\_opt ranges. CSP versions may evolve without requiring CCUF revision.
 * **Implementation notes** — hardware, software, or experimental specifications that instantiate the framework for particular architectures.
 
 **Dependency direction:** CSP and implementation documents depend on CCUF; CCUF does not depend on their contents. If CSP revisions reveal conceptual gaps in CCUF, those gaps are addressed through explicit CCUF amendments with version increments, not through silent drift.
