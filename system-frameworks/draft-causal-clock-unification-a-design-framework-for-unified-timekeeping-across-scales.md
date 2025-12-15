@@ -2,17 +2,19 @@
 description: Timekeeping as Causal Geometry
 ---
 
-# \[Draft] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
+# \[DRAFT] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
 
 ***
 
+{% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
 **Version:** 0.1.5\
 **Last updated:** 2025-12-15\
-**License:** CC BY 4.0
-
+**License:** CC BY 4.0\
+\
 **Disclaimer** — _This document reflects an ongoing effort to clarify how causality constrains timekeeping architectures. Its authority derives from transparency, not finality._
+{% endhint %}
 
 ***
 

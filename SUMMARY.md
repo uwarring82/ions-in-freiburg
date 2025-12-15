@@ -37,9 +37,10 @@
 * [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
 * [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
-* [\[Draft\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
+* [\[DRAFT\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
 
 ## System Frameworks
 
 * [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [\[Draft\] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/draft-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+* [\[DRAFT\] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/draft-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)
