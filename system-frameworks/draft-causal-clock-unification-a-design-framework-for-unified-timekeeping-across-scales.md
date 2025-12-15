@@ -418,17 +418,6 @@ Nothing in the framework assumes quantum-entangled links. At the same time, its 
 
 ***
 
-### Version History
-
-| Version | Date           | Summary                                                                                                                                          |
-| ------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0.1     | 2025-12-12     | Initial formulation                                                                                                                              |
-| 0.2     | 2025-12-12     | Formalized boundary-condition framework                                                                                                          |
-| 0.3     | 2025-12-14     | Added Five-Gear Clockwork, testable predictions                                                                                                  |
-| **0.5** | **2025-12-15** | **Action-guiding framework with parameter tables, open design questions, near-term impact framing. Figures replaced with comprehensive tables.** |
-
-***
-
 _The framework is designed to guide near-term infrastructure decisions under existing technical constraints, while remaining compatible with future advances._
 
 ***
