@@ -9,7 +9,7 @@ description: Timekeeping as Causal Geometry
 **Affiliation:** Institute of Physics, University of Freiburg\
 **Version:** 0.1.2\
 **Last updated:** 2025-12-14\
-**License:** CC BY-SA 4.0\
+**License:** CC BY 4.0\
 \
 **Disclaimer** — _This document reflects an ongoing effort to clarify how causality constrains timekeeping architectures. Its authority derives from transparency, not finality._<br>
 {% endhint %}
