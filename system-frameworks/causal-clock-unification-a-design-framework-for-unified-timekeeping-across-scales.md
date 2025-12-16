@@ -7,7 +7,7 @@ description: Timekeeping as Causal Geometry
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 1.0\
+**Version:** 1.0.0\
 **Last updated:** 2025-12-16\
 **License:** CC BY 4.0\
 \
