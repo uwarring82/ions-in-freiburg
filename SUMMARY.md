@@ -29,6 +29,10 @@
 * [\[PLACEHOLDER\] Draft a Manuscript](publishing-research/draft-a-manuscript.md)
 * [Peer Review Quickstart](publishing-research/peer-review-quickstart.md)
 
+***
+
+* [Documentation Structure](documentation-structure.md)
+
 ## Essays
 
 * [Introduction](essays/introduction.md)
@@ -39,8 +43,11 @@
 * [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
 * [\[DRAFT\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
 
-## System Frameworks
+## Invariant Frameworks
 
-* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
-* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)
+* [\[DRAFT\] What Can Make a Complex System an Ordinans?](invariant-frameworks/draft-what-can-make-a-complex-system-an-ordinans.md)
+* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+
+## Implementation Interfaces
+
+* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/draft-causal-steering-protocols-operational-specifications.md)
