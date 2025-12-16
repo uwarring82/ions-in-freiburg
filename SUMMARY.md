@@ -45,9 +45,9 @@
 
 ## Invariant Frameworks
 
-* [\[DRAFT\] What Can Make a Complex System an Ordinans?](invariant-frameworks/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
+* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
 
 ## Implementation Interfaces
 
-* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/draft-causal-steering-protocols-operational-specifications.md)
+* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)
