@@ -1,5 +1,6 @@
 ---
 description: Choose your team and tools – and keep it in sync!
+icon: list-radio
 ---
 
 # Structure your research

@@ -2,22 +2,6 @@
 
 * [Welcome to Ions-in-Freiburg](README.md)
 * [About us](about-us.md)
-
-## Local Practice
-
-* [Structure your research](local-practice/structure-your-research.md)
-* [Gaussian Beams and the Knife-Edge Method](local-practice/gaussian-beams-and-the-knife-edge-method.md)
-* [Benchmarks of a RF-Drive Resonator](local-practice/benchmarks-of-a-rf-drive-resonator.md)
-* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](local-practice/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
-* [Cleaning Components After Manufacturing](local-practice/cleaning-components-after-manufacturing.md)
-* [Checklist for Changing Components in an evacuated UHV Chamber](local-practice/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
-* [Bonding of Optical Components in High-Power Laser Beam Paths](local-practice/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
-* [Thermal Sensor Bonding](local-practice/thermal-sensor-bonding.md)
-* [Materials Selection and Contamination Control for Frequency Doubling Cavities](local-practice/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
-* [\[PLACEHOLDER\] Draft a Manuscript](local-practice/draft-a-manuscript.md)
-
-***
-
 * [Documentation Structure](documentation-structure.md)
 
 ## Essays
@@ -36,6 +20,15 @@
 
 ## Implementation Interfaces
 
+* [Structure your research](implementation-interfaces/structure-your-research.md)
+* [Cleaning Components After Manufacturing](implementation-interfaces/cleaning-components-after-manufacturing.md)
+* [Checklist for Changing Components in an evacuated UHV Chamber](implementation-interfaces/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
+* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](implementation-interfaces/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [Materials Selection and Contamination Control for Frequency Doubling Cavities](implementation-interfaces/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
+* [Bonding of Optical Components in High-Power Laser Beam Paths](implementation-interfaces/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
+* [Thermal Sensor Bonding](implementation-interfaces/thermal-sensor-bonding.md)
+* [Gaussian Beams and the Knife-Edge Method](implementation-interfaces/gaussian-beams-and-the-knife-edge-method.md)
+* [Benchmarks of a RF-Drive Resonator](implementation-interfaces/benchmarks-of-a-rf-drive-resonator.md)
 * [Sensor Characterization Methodology](local-practice/sensor-characterization-methodology.md)
 * [Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
 * [Peer Review Quickstart](local-practice/peer-review-quickstart.md)

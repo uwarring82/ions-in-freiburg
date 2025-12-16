@@ -15,5 +15,3 @@ Invariant frameworks specify minimal, non-normative constraints that must hold r
 Implementation interfaces document operational, revisable practices developed by specific groups for specific contexts. These are _working keys_—they instantiate invariant frameworks in particular settings, but they are neither unique nor authoritative. The Causal Synchronization Protocol (CSP) is one such interface; others may emerge as different communities apply the same underlying frameworks to their own problems. Interfaces evolve with use. They are shared to enable coordination and cross-validation, not to establish standards or compliance requirements.
 
 ***
-
-**Navigational principle**: Start with frameworks to understand constraints, consult essays for context, examine interfaces for operational guidance. No section can substitute for another.
