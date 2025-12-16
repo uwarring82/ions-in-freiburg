@@ -14,7 +14,7 @@ author: U._Warring_\
 &#xNAN;_&#x76;ersion: 0.42_\
 &#xNAN;_&#x6C;ast\_updated: 2025-11-28_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
-&#xNAN;_&#x6C;icense: CC BY-SA 4.0_
+&#xNAN;_&#x6C;icense: CC BY 4.0_
 {% endhint %}
 
 ### Document Scope and Navigation

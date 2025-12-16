@@ -11,7 +11,7 @@ _author: U. Warring_\
 &#xNAN;_&#x76;ersion: 0.1_\
 &#xNAN;_&#x6C;ast\_updated: 2025-12-03_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
-&#xNAN;_&#x6C;icense: CC BY-SA 4.0_
+&#xNAN;_&#x6C;icense: CC BY 4.0_
 {% endhint %}
 
 **Abstract:** This reference document presents systematic methodologies for characterizing temperature sensors, magnetic field sensors, and gravitational accelerometers. Covering physical transduction principles, noise analysis, environmental cross-sensitivities, temporal stability, and calibration procedures, it provides practitioners with authoritative guidance based on international standards and peer-reviewed literature. The document emphasizes quantitative specifications and traceable calibration methods essential for precision measurement applications.

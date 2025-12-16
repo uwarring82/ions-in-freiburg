@@ -14,11 +14,7 @@
 * [Bonding of Optical Components in High-Power Laser Beam Paths](local-practice/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
 * [Thermal Sensor Bonding](local-practice/thermal-sensor-bonding.md)
 * [Materials Selection and Contamination Control for Frequency Doubling Cavities](local-practice/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
-* [Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
-* [Sensor Characterization Methodology](local-practice/sensor-characterization-methodology.md)
-* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](local-practice/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 * [\[PLACEHOLDER\] Draft a Manuscript](local-practice/draft-a-manuscript.md)
-* [Peer Review Quickstart](local-practice/peer-review-quickstart.md)
 
 ***
 
@@ -40,4 +36,8 @@
 
 ## Implementation Interfaces
 
+* [Sensor Characterization Methodology](implementation-interfaces/sensor-characterization-methodology.md)
+* [Noise Attribution in Precision Measurements](implementation-interfaces/noise-attribution-in-precision-measurements.md)
+* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](implementation-interfaces/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
+* [Peer Review Quickstart](implementation-interfaces/peer-review-quickstart.md)
 * [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)

@@ -11,7 +11,7 @@ _author: U. Warring_\
 &#xNAN;_&#x76;ersion: 1.0_\
 &#xNAN;_&#x6C;ast\_updated: 2025-11-26_\
 &#xNAN;_&#x72;eview\_status: Internal laboratory documentation; not externally peer-reviewed_\
-&#xNAN;_&#x6C;icense: CC BY-SA 4.0_
+&#xNAN;_&#x6C;icense: CC BY 4.0_
 {% endhint %}
 
 ### Introduction
