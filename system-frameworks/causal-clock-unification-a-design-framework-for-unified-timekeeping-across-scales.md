@@ -153,6 +153,13 @@ A clock, in this framework, is not an atomic transition or a cavity mode. It is 
 
 **Modularity.** Oscillators, apparatus, and comparison links can be designed and upgraded independently. Improvement in one component improves the architecture only if no other component becomes limiting.
 
+> **Reader orientation.** In this framework, σᵧ(τ) denotes the measured stability of a _complete clock architecture_ at averaging time τ, while η(τ) characterises how close that architecture operates to the causal limit imposed by its comparison geometry.\
+> \
+> σᵧ(τ) answers _“how stable?”_\
+> η(τ) answers _“under what geometric constraints?”_\
+> \
+> Both are required for architectural reasoning; neither replaces the other.
+
 ***
 
 ### 4. Agreement Requires Causal Closure
