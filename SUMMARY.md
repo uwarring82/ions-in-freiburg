@@ -36,8 +36,8 @@
 
 ## Implementation Interfaces
 
-* [Sensor Characterization Methodology](implementation-interfaces/sensor-characterization-methodology.md)
-* [Noise Attribution in Precision Measurements](implementation-interfaces/noise-attribution-in-precision-measurements.md)
-* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](implementation-interfaces/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
-* [Peer Review Quickstart](implementation-interfaces/peer-review-quickstart.md)
+* [Sensor Characterization Methodology](local-practice/sensor-characterization-methodology.md)
+* [Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
+* [Peer Review Quickstart](local-practice/peer-review-quickstart.md)
+* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](local-practice/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 * [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)

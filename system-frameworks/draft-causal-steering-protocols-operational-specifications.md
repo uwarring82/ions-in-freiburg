@@ -1,3 +1,7 @@
+---
+icon: books
+---
+
 # \[DRAFT] Causal Steering Protocols — Operational Specifications
 
 {% hint style="info" %}

@@ -2,6 +2,7 @@
 description: >-
   A concise, accessible guide for learning how to review atomic & quantum
   physics manuscripts.
+icon: scale-unbalanced-flip
 ---
 
 # Peer Review Quickstart
