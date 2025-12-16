@@ -364,7 +364,7 @@ Quantum correlations may modify comparison strategies without violating causal b
 
 ### Version History
 
-<table><thead><tr><th width="110.03338623046875">Version</th><th width="136.52630615234375">Date</th><th>Summary</th></tr></thead><tbody><tr><td>0.1–0.3</td><td>2025-12–14</td><td>Initial formulation through Five-Gear synthesis</td></tr><tr><td>0.5</td><td>2025-12-15</td><td>Parameter tables, open questions, near-term impact</td></tr><tr><td>0.6</td><td>2025-12-15</td><td>Trust repairs, quickstart, provisional example, small-world</td></tr><tr><td><strong>1.0-rc</strong></td><td><strong>2025-12-16</strong></td><td><strong>Merged structure: citation-stable core (§1–4) separated from evolving synthesis (§5–9). Restrained VLBI/PTA framing. Auditable Table 1 with sources. TA-OPT as architectural example only. Retained actionability elements (Quickstart, MVA, actor entry points).</strong></td></tr></tbody></table>
+<table><thead><tr><th width="99.98016357421875">Version</th><th width="136.52630615234375">Date</th><th>Summary</th></tr></thead><tbody><tr><td>0.1–0.3</td><td>2025-12–14</td><td>Initial formulation through Five-Gear synthesis</td></tr><tr><td>0.5</td><td>2025-12-15</td><td>Parameter tables, open questions, near-term impact</td></tr><tr><td>0.6</td><td>2025-12-15</td><td>Trust repairs, quickstart, provisional example, small-world</td></tr><tr><td><strong>1.0</strong></td><td><strong>2025-12-16</strong></td><td><strong>Merged structure: citation-stable core (§1–4) separated from evolving synthesis (§5–9). Restrained VLBI/PTA framing. Auditable Table 1 with sources. TA-OPT as architectural example only. Retained actionability elements (Quickstart, MVA, actor entry points).</strong></td></tr></tbody></table>
 
 ***
 
