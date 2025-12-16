@@ -354,7 +354,7 @@ Quantum correlations may modify comparison strategies without violating causal b
 
 ### Document Metadata
 
-<table><thead><tr><th width="186.883544921875">Field</th><th>Value</th></tr></thead><tbody><tr><td>Version</td><td>1.0</td></tr><tr><td>Status</td><td>Citation-stable conceptual layer</td></tr><tr><td>Core sections</td><td>§1–4 (frozen)</td></tr><tr><td>Evolving sections</td><td>§5–9 (may be revised)</td></tr><tr><td>Canonical DOI</td><td>10.5281/zenodo.17948436</td></tr><tr><td>Citation</td><td>Warring, U. (2025). <em>Causal Clock Unification</em> (v1.0).</td></tr><tr><td>Companion</td><td>CSP (Causal Steering Protocols) — operational details separate</td></tr></tbody></table>
+<table><thead><tr><th width="186.883544921875">Field</th><th>Value</th></tr></thead><tbody><tr><td>Version</td><td>1.0</td></tr><tr><td>Status</td><td>Citation-stable conceptual layer</td></tr><tr><td>Core sections</td><td>§1–4 (frozen)</td></tr><tr><td>Evolving sections</td><td>§5–9 (may be revised)</td></tr><tr><td>Canonical DOI</td><td><a href="https://doi.org/10.5281/zenodo.17948436">https://doi.org/10.5281/zenodo.17948436</a></td></tr><tr><td>Citation</td><td>Warring, U. (2025). <em>Causal Clock Unification</em> (v1.0).</td></tr><tr><td>Companion</td><td>CSP (Causal Steering Protocols) — operational details separate</td></tr></tbody></table>
 
 #### Relationship to Companion Documents
 
