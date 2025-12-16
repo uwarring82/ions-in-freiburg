@@ -2,7 +2,7 @@
 description: Timekeeping as Causal Geometry
 ---
 
-# \[DRAFT] Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
+# Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
 
 {% hint style="info" %}
 **Author:** U. Warring\
@@ -103,11 +103,11 @@ Every comparison of two oscillators requires information exchange. The propagati
 **Definition 1.1 (Realisability Horizon).**\
 For any phase comparison operation requiring causal information exchange over a longest required signal path L\_path, the integration time must satisfy:
 
-\$$\tau \ge \frac{L\_{\text{path\}}}{c}\$$
+<p align="center"><span class="math">\tau \ge \frac{L_{\text{path}}}{c}</span></p>
 
 For mutual verification (bidirectional / round-trip causal closure):
 
-\$$\tau \ge \frac{2 L\_{\text{path\}}}{c}\$$
+<p align="center"><span class="math">\tau \ge \frac{2 L_{\text{path}}}{c}</span></p>
 
 L\_path reduces to L\_comparison in direct two-node comparisons; for star/mesh topologies, L\_path is the maximum required path for the chosen protocol.
 
@@ -133,7 +133,7 @@ Only L\_comparison enters the causal constraint. Advances in L\_source (better o
 
 For any clock architecture operating at integration time τ with comparison baseline L\_comparison, define the **causal efficiency**:
 
-\$$\eta(\tau) = \frac{L\_{\text{comparison\}}}{c , \tau}\$$
+<p align="center"><span class="math">\eta(\tau) = \frac{L_{\text{comparison}}}{c , \tau}</span></p>
 
 | η Value        | Interpretation                                             | Regime        |
 | -------------- | ---------------------------------------------------------- | ------------- |
@@ -178,7 +178,7 @@ A clock, in this framework, is not an atomic transition or a cavity mode. It is 
 
 Two oscillators at separation L achieve causal closure at integration time τ if and only if:
 
-\$$2L \le c , \tau\$$
+<p align="center"><span class="math">2L \le c\, \tau</span></p>
 
 This is the bidirectional special case of Definition 1.1.
 
@@ -186,14 +186,7 @@ Without causal closure, clocks may be individually stable but cannot verify mutu
 
 #### 4.2 Closure Requirements by Scale
 
-| Scale            | L (one-way) | τ for closure | Implication                   |
-| ---------------- | ----------- | ------------- | ----------------------------- |
-| Laboratory       | 10 m        | 67 ns         | Instantaneous on human scales |
-| Metropolitan     | 10 km       | 67 μs         | Sub-ms closure feasible       |
-| Continental      | 1000 km     | 6.7 ms        | Limits short-τ comparison     |
-| Intercontinental | 10,000 km   | 67 ms         | \~100 ms minimum epoch        |
-| Earth–Moon       | 4×10⁸ m     | 2.7 s         | Multi-second epochs           |
-| Earth–pulsar     | 10¹⁹ m      | 10¹¹ s        | Decades for round-trip        |
+<table><thead><tr><th width="145.116455078125">Scale</th><th width="121.36785888671875">L (one-way)</th><th width="129.4176025390625">τ for closure</th><th>Implication</th></tr></thead><tbody><tr><td>Laboratory</td><td>10 m</td><td>67 ns</td><td>Instantaneous on human scales</td></tr><tr><td>Metropolitan</td><td>10 km</td><td>67 μs</td><td>Sub-ms closure feasible</td></tr><tr><td>Continental</td><td>1000 km</td><td>6.7 ms</td><td>Limits short-τ comparison</td></tr><tr><td>Intercontinental</td><td>10,000 km</td><td>67 ms</td><td>~100 ms minimum epoch</td></tr><tr><td>Earth–Moon</td><td>4×10⁸ m</td><td>2.7 s</td><td>Multi-second epochs</td></tr><tr><td>Earth–pulsar</td><td>10¹⁹ m</td><td>10¹¹ s</td><td>Decades for round-trip</td></tr></tbody></table>
 
 ***
 
@@ -209,18 +202,7 @@ Modern precision timekeeping operates as a coupled system, though this coupling 
 
 #### Table 1 — Clock Architectures: Parameters and Sources
 
-| Architecture            | L\_comparison | τ\_min   | Typical τ | η Range     | Dominant Noise     | σ\_y(τ)           | Source |
-| ----------------------- | ------------- | -------- | --------- | ----------- | ------------------ | ----------------- | ------ |
-| Optical lattice (local) | \~1 m         | \~3 ns   | 1–10⁴ s   | 10⁻¹²–10⁻⁸  | Quantum projection | \~1×10⁻¹⁸ @ 10⁴ s | \[1]   |
-| Optical ion (local)     | \~1 mm        | \~3 ps   | 1–10⁴ s   | 10⁻¹⁵–10⁻¹¹ | Quantum projection | \~1×10⁻¹⁸ @ 10⁴ s | \[2]   |
-| Optical network         | 10²–10³ km    | 0.3–3 ms | 10³–10⁵ s | 10⁻²–10⁻¹   | Fiber phase noise  | \~1×10⁻¹⁸ @ 10⁴ s | \[3]   |
-| Microwave fountain      | \~10⁴ km      | \~30 ms  | 10⁴–10⁶ s | 10⁻³–10⁻²   | Dick effect        | \~1×10⁻¹⁶ @ 10⁵ s | \[4]   |
-| Hydrogen maser          | \~10⁴ km      | \~30 ms  | 10²–10⁵ s | 10⁻³–10⁻¹   | Cavity drift       | \~1×10⁻¹⁵ @ 10⁴ s | \[5]   |
-| GNSS                    | \~2×10⁴ km    | \~70 ms  | 1–10⁴ s   | 10⁻²–10⁰    | Ionosphere         | \~1×10⁻¹⁴ @ 10³ s | \[6]   |
-| TWSTFT                  | \~10⁴ km      | \~30 ms  | 10²–10⁵ s | 10⁻³–10⁻¹   | Troposphere        | \~5×10⁻¹⁶ @ 10⁴ s | \[7]   |
-| VLBI                    | 6–10×10³ km   | 20–30 ms | 10³–10⁵ s | 10⁻²–10⁻¹   | Troposphere        | \~1×10⁻¹⁵ @ 10⁴ s | \[8]   |
-| Pulsar timing†          | \~10¹⁹ m      | \~10¹¹ s | 10⁷–10⁹ s | ≪10⁻²       | Timing noise, ISM  | \~1×10⁻¹⁵ @ 10⁸ s | \[9]   |
-| PTA correlation†        | \~10¹⁶ m      | \~10⁸ s  | 10⁸–10⁹ s | 0.03–0.3    | Red noise          | \~1×10⁻¹⁵ @ 10⁸ s | \[10]  |
+<table><thead><tr><th width="128.10296630859375">Architecture</th><th width="138.91973876953125">L_comparison</th><th width="100.546142578125">τ_min</th><th width="106.18896484375">Typical τ</th><th width="102.7442626953125">η Range</th><th width="150.03125">Dominant Noise</th><th width="140.9189453125">σ_y(τ)</th><th>Source</th></tr></thead><tbody><tr><td>Optical lattice (local)</td><td>~1 m</td><td>~3 ns</td><td>1–10⁴ s</td><td>10⁻¹²–10⁻⁸</td><td>Quantum projection</td><td>~1×10⁻¹⁸ @ 10⁴ s</td><td>[1]</td></tr><tr><td>Optical ion (local)</td><td>~1 mm</td><td>~3 ps</td><td>1–10⁴ s</td><td>10⁻¹⁵–10⁻¹¹</td><td>Quantum projection</td><td>~1×10⁻¹⁸ @ 10⁴ s</td><td>[2]</td></tr><tr><td>Optical network</td><td>10²–10³ km</td><td>0.3–3 ms</td><td>10³–10⁵ s</td><td>10⁻²–10⁻¹</td><td>Fiber phase noise</td><td>~1×10⁻¹⁸ @ 10⁴ s</td><td>[3]</td></tr><tr><td>Microwave fountain</td><td>~10⁴ km</td><td>~30 ms</td><td>10⁴–10⁶ s</td><td>10⁻³–10⁻²</td><td>Dick effect</td><td>~1×10⁻¹⁶ @ 10⁵ s</td><td>[4]</td></tr><tr><td>Hydrogen maser</td><td>~10⁴ km</td><td>~30 ms</td><td>10²–10⁵ s</td><td>10⁻³–10⁻¹</td><td>Cavity drift</td><td>~1×10⁻¹⁵ @ 10⁴ s</td><td>[5]</td></tr><tr><td>GNSS</td><td>~2×10⁴ km</td><td>~70 ms</td><td>1–10⁴ s</td><td>10⁻²–10⁰</td><td>Ionosphere</td><td>~1×10⁻¹⁴ @ 10³ s</td><td>[6]</td></tr><tr><td>TWSTFT</td><td>~10⁴ km</td><td>~30 ms</td><td>10²–10⁵ s</td><td>10⁻³–10⁻¹</td><td>Troposphere</td><td>~5×10⁻¹⁶ @ 10⁴ s</td><td>[7]</td></tr><tr><td>VLBI</td><td>6–10×10³ km</td><td>20–30 ms</td><td>10³–10⁵ s</td><td>10⁻²–10⁻¹</td><td>Troposphere</td><td>~1×10⁻¹⁵ @ 10⁴ s</td><td>[8]</td></tr><tr><td>Pulsar timing†</td><td>~10¹⁹ m</td><td>~10¹¹ s</td><td>10⁷–10⁹ s</td><td>≪10⁻²</td><td>Timing noise, ISM</td><td>~1×10⁻¹⁵ @ 10⁸ s</td><td>[9]</td></tr><tr><td>PTA correlation†</td><td>~10¹⁶ m</td><td>~10⁸ s</td><td>10⁸–10⁹ s</td><td>0.03–0.3</td><td>Red noise</td><td>~1×10⁻¹⁵ @ 10⁸ s</td><td>[10]</td></tr></tbody></table>
 
 **Table 1 Sources:**\
 \[1] Bothwell et al. 2022, Metrologia 59:065009\
@@ -245,13 +227,7 @@ Modern precision timekeeping operates as a coupled system, though this coupling 
 
 #### Table 2 — Five-Gear Clockwork: Coupling Structure
 
-| Gear | Systems        | L\_comparison | τ Domain  | Role                | Couples To |
-| ---- | -------------- | ------------- | --------- | ------------------- | ---------- |
-| 1    | Optical clocks | ≲10³ km       | 10³–10⁵ s | Highest stability   | Gear 2     |
-| 2    | Fountains/TAI  | ≲10⁴ km       | 10⁴–10⁶ s | SI realization      | Gear 1, 3  |
-| 3    | GNSS           | \~2×10⁴ km    | 1–10⁴ s   | Global distribution | Gear 2, 4  |
-| 4    | VLBI           | \~10⁴ km      | 10³–10⁵ s | Earth orientation   | Gear 3, 5  |
-| 5    | Pulsar timing  | 10¹⁶–10¹⁹ m   | 10⁷–10⁹ s | Decadal stability   | Gear 4, 1  |
+<table><thead><tr><th width="82.0589599609375">Gear</th><th width="129.65484619140625">Systems</th><th width="138.2720947265625">L_comparison</th><th width="110.3026123046875">τ Domain</th><th width="159.8359375">Role</th><th>Couples To</th></tr></thead><tbody><tr><td>1</td><td>Optical clocks</td><td>≲10³ km</td><td>10³–10⁵ s</td><td>Highest stability</td><td>Gear 2</td></tr><tr><td>2</td><td>Fountains/TAI</td><td>≲10⁴ km</td><td>10⁴–10⁶ s</td><td>SI realization</td><td>Gear 1, 3</td></tr><tr><td>3</td><td>GNSS</td><td>~2×10⁴ km</td><td>1–10⁴ s</td><td>Global distribution</td><td>Gear 2, 4</td></tr><tr><td>4</td><td>VLBI</td><td>~10⁴ km</td><td>10³–10⁵ s</td><td>Earth orientation</td><td>Gear 3, 5</td></tr><tr><td>5</td><td>Pulsar timing</td><td>10¹⁶–10¹⁹ m</td><td>10⁷–10⁹ s</td><td>Decadal stability</td><td>Gear 4, 1</td></tr></tbody></table>
 
 **Structural note:** VLBI and PTA systems are included to demonstrate that the causal constraint spans the full range of baselines and integration times. This structural inclusion does not imply that operational integration across all gears is necessary or beneficial for any particular application.
 
@@ -282,15 +258,7 @@ This framework defines a conceptual design layer. Algorithms, operational protoc
 
 #### What This Framework Is Not
 
-| Exclusion                                     | Clarification                              |
-| --------------------------------------------- | ------------------------------------------ |
-| Not a new physical theory                     | Causality assumed, not derived             |
-| Not a replacement for Allan variance          | Noise characterization remains essential   |
-| Not a redefinition of TAI/UTC/SI              | Existing standards retain authority        |
-| Not a policy proposal                         | Governance decisions lie outside scope     |
-| Not a claim of optimality                     | η\_opt is a hypothesis, not a prescription |
-| Not an implementation specification           | Algorithms belong in CSP                   |
-| Not a substitute for relativistic corrections | IERS conventions assumed                   |
+<table><thead><tr><th width="332.9027099609375">Exclusion</th><th>Clarification</th></tr></thead><tbody><tr><td>Not a new physical theory</td><td>Causality assumed, not derived</td></tr><tr><td>Not a replacement for Allan variance</td><td>Noise characterization remains essential</td></tr><tr><td>Not a redefinition of TAI/UTC/SI</td><td>Existing standards retain authority</td></tr><tr><td>Not a policy proposal</td><td>Governance decisions lie outside scope</td></tr><tr><td>Not a claim of optimality</td><td>η_opt is a hypothesis, not a prescription</td></tr><tr><td>Not an implementation specification</td><td>Algorithms belong in CSP</td></tr><tr><td>Not a substitute for relativistic corrections</td><td>IERS conventions assumed</td></tr></tbody></table>
 
 ***
 
@@ -302,13 +270,7 @@ The framework's value lies in making questions explicit and comparable, not in c
 
 The framework does not prescribe a single network topology. Different scales may legitimately use different architectures.
 
-| Scale                 | Candidate Topologies    | Open Questions              |
-| --------------------- | ----------------------- | --------------------------- |
-| Local (lab)           | Point-to-point          | Protocol optimization       |
-| Regional (100 km)     | Star, ring              | Topology effect on η\_opt?  |
-| Continental (1000 km) | Mesh, small-world       | Resilience vs. complexity   |
-| Intercontinental      | Hybrid satellite+fiber  | Cost-performance tradeoffs  |
-| Planetary             | Hierarchical federation | Governance interoperability |
+<table><thead><tr><th width="190.71875">Scale</th><th width="194.0511474609375">Candidate Topologies</th><th>Open Questions</th></tr></thead><tbody><tr><td>Local (lab)</td><td>Point-to-point</td><td>Protocol optimization</td></tr><tr><td>Regional (100 km)</td><td>Star, ring</td><td>Topology effect on η_opt?</td></tr><tr><td>Continental (1000 km)</td><td>Mesh, small-world</td><td>Resilience vs. complexity</td></tr><tr><td>Intercontinental</td><td>Hybrid satellite+fiber</td><td>Cost-performance tradeoffs</td></tr><tr><td>Planetary</td><td>Hierarchical federation</td><td>Governance interoperability</td></tr></tbody></table>
 
 **Small-world topology** (high local clustering with sparse long-range links) is one candidate meriting systematic evaluation for continental-scale networks: it may offer resilience with bounded complexity. This framework identifies it as a candidate for testing, not as an optimal solution.
 
@@ -334,21 +296,11 @@ Quantum correlations may modify comparison strategies without violating causal b
 
 #### Minimum Viable Adoption (6–12 months)
 
-| Action                             | Effort | Output                            |
-| ---------------------------------- | ------ | --------------------------------- |
-| Publish η for existing links       | Low    | Annotated comparison reports      |
-| Document L\_path in specifications | Low    | Updated technical documentation   |
-| Run one pre-registered η\_opt scan | Medium | Technical note (even null result) |
+<table><thead><tr><th width="282.17474365234375">Action</th><th width="89.21588134765625">Effort</th><th>Output</th></tr></thead><tbody><tr><td>Publish η for existing links</td><td>Low</td><td>Annotated comparison reports</td></tr><tr><td>Document L_path in specifications</td><td>Low</td><td>Updated technical documentation</td></tr><tr><td>Run one pre-registered η_opt scan</td><td>Medium</td><td>Technical note (even null result)</td></tr></tbody></table>
 
 #### Table 3 — Actor Entry Points
 
-| Actor                       | Entry Point          | Immediate Action                      |
-| --------------------------- | -------------------- | ------------------------------------- |
-| NMIs (PTB, NIST, NPL, etc.) | Optical networks     | Document η at operating points        |
-| BIPM                        | Timescale algorithms | Evaluate candor weighting principle   |
-| Space agencies              | Satellite timing     | Add L\_path to mission specs          |
-| VLBI community              | IVS/IERS             | Cross-validate with optical links     |
-| PTA consortia               | IPTA/NANOGrav        | Report baseline-dependent systematics |
+<table><thead><tr><th width="227.97723388671875">Actor</th><th width="184.7833251953125">Entry Point</th><th>Immediate Action</th></tr></thead><tbody><tr><td>NMIs (PTB, NIST, NPL, etc.)</td><td>Optical networks</td><td>Document η at operating points</td></tr><tr><td>BIPM</td><td>Timescale algorithms</td><td>Evaluate candor weighting principle</td></tr><tr><td>Space agencies</td><td>Satellite timing</td><td>Add L_path to mission specs</td></tr><tr><td>VLBI community</td><td>IVS/IERS</td><td>Cross-validate with optical links</td></tr><tr><td>PTA consortia</td><td>IPTA/NANOGrav</td><td>Report baseline-dependent systematics</td></tr></tbody></table>
 
 ***
 
@@ -389,6 +341,10 @@ Quantum correlations may modify comparison strategies without violating causal b
 
 ***
 
+> Special thanks to the intellectual and institutional environments that shaped this work.
+
+***
+
 ### References
 
 1. D. W. Allan, _Statistics of atomic frequency standards_, Proc. IEEE **54**, 221–230 (1966).
@@ -408,15 +364,7 @@ Quantum correlations may modify comparison strategies without violating causal b
 
 ### Document Metadata
 
-| Field             | Value                                                          |
-| ----------------- | -------------------------------------------------------------- |
-| Version           | 1.0-rc                                                         |
-| Status            | Citation-stable conceptual layer                               |
-| Core sections     | §1–4 (frozen)                                                  |
-| Evolving sections | §5–9 (may be revised)                                          |
-| Canonical DOI     | \[TBD]                                                         |
-| Citation          | Warring, U. (2025). _Causal Clock Unification_ (v1.0-rc).      |
-| Companion         | CSP (Causal Steering Protocols) — operational details separate |
+<table><thead><tr><th width="186.883544921875">Field</th><th>Value</th></tr></thead><tbody><tr><td>Version</td><td>1.0-rc</td></tr><tr><td>Status</td><td>Citation-stable conceptual layer</td></tr><tr><td>Core sections</td><td>§1–4 (frozen)</td></tr><tr><td>Evolving sections</td><td>§5–9 (may be revised)</td></tr><tr><td>Canonical DOI</td><td>[TBD]</td></tr><tr><td>Citation</td><td>Warring, U. (2025). <em>Causal Clock Unification</em> (v1.0-rc).</td></tr><tr><td>Companion</td><td>CSP (Causal Steering Protocols) — operational details separate</td></tr></tbody></table>
 
 #### Relationship to Companion Documents
 
