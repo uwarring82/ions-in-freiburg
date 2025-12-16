@@ -1,33 +1,24 @@
 # Table of contents
 
 * [Welcome to Ions-in-Freiburg](README.md)
+* [About us](about-us.md)
 
-## Getting Started
+## Local Practice
 
-* [About us](getting-started/about-us.md)
-* [Structure your research](getting-started/structure-your-research.md)
-
-## Lab Basics
-
-* [Gaussian Beams and the Knife-Edge Method](lab-basics/gaussian-beams-and-the-knife-edge-method.md)
-* [Benchmarks of a RF-Drive Resonator](lab-basics/benchmarks-of-a-rf-drive-resonator.md)
-* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](lab-basics/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
-* [Cleaning Components After Manufacturing](lab-basics/cleaning-components-after-manufacturing.md)
-* [Checklist for Changing Components in an evacuated UHV Chamber](lab-basics/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
-* [Bonding of Optical Components in High-Power Laser Beam Paths](lab-basics/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
-* [Thermal Sensor Bonding](lab-basics/thermal-sensor-bonding.md)
-* [Materials Selection and Contamination Control for Frequency Doubling Cavities](lab-basics/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
-
-## Conceptual References
-
-* [Sensor Characterization Methodology](conceptual-references/sensing-your-environment.md)
-* [Noise Attribution in Precision Measurements](conceptual-references/noise-attribution-in-precision-measurements.md)
-* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](conceptual-references/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
-
-## Publishing research
-
-* [\[PLACEHOLDER\] Draft a Manuscript](publishing-research/draft-a-manuscript.md)
-* [Peer Review Quickstart](publishing-research/peer-review-quickstart.md)
+* [Structure your research](local-practice/structure-your-research.md)
+* [Gaussian Beams and the Knife-Edge Method](local-practice/gaussian-beams-and-the-knife-edge-method.md)
+* [Benchmarks of a RF-Drive Resonator](local-practice/benchmarks-of-a-rf-drive-resonator.md)
+* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](local-practice/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [Cleaning Components After Manufacturing](local-practice/cleaning-components-after-manufacturing.md)
+* [Checklist for Changing Components in an evacuated UHV Chamber](local-practice/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
+* [Bonding of Optical Components in High-Power Laser Beam Paths](local-practice/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
+* [Thermal Sensor Bonding](local-practice/thermal-sensor-bonding.md)
+* [Materials Selection and Contamination Control for Frequency Doubling Cavities](local-practice/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
+* [Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
+* [Sensor Characterization Methodology](local-practice/sensor-characterization-methodology.md)
+* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](local-practice/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
+* [\[PLACEHOLDER\] Draft a Manuscript](local-practice/draft-a-manuscript.md)
+* [Peer Review Quickstart](local-practice/peer-review-quickstart.md)
 
 ***
 
@@ -35,7 +26,6 @@
 
 ## Essays
 
-* [Introduction](essays/introduction.md)
 * [The Physics of Eyesight](essays/the-physics-of-eyesight.md)
 * [Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
 * [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
