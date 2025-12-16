@@ -73,18 +73,9 @@ This framework introduces a single architectural lens: the causal boundary condi
 
 ### Quickstart: Compute η and Classify
 
-| Step         | Action                                                                      |
-| ------------ | --------------------------------------------------------------------------- |
-| 1. Inputs    | Determine L\_comparison (or L\_path for complex topologies) and operating τ |
-| 2. Compute   | η = L\_comparison / (c × τ)                                                 |
-| 3. Classify  | Deep interior (η ≪ 0.01) · Transition (0.01–0.5) · Boundary (η \~ 1)        |
-| 4. Interpret | See recommended focus below                                                 |
+<table><thead><tr><th width="148.50634765625">Step</th><th>Action</th></tr></thead><tbody><tr><td>1. Inputs</td><td>Determine L_comparison (or L_path for complex topologies) and operating τ</td></tr><tr><td>2. Compute</td><td>η = L_comparison / (c × τ)</td></tr><tr><td>3. Classify</td><td>Deep interior (η ≪ 0.01) · Transition (0.01–0.5) · Boundary (η ~ 1)</td></tr><tr><td>4. Interpret</td><td>See recommended focus below</td></tr></tbody></table>
 
-| η Range  | Regime        | Primary Constraint     | Recommended Focus              |
-| -------- | ------------- | ---------------------- | ------------------------------ |
-| η \~ 1   | Boundary      | Comparison geometry    | Topology, L\_path optimization |
-| 0.01–0.5 | Transition    | Mixed                  | η\_opt characterization (§9.1) |
-| η ≪ 0.01 | Deep interior | Oscillator/systematics | Not comparison-limited         |
+<table><thead><tr><th width="113.31390380859375">η Range</th><th width="123.32952880859375">Regime</th><th width="196.5447998046875">Primary Constraint</th><th>Recommended Focus</th></tr></thead><tbody><tr><td>η ~ 1</td><td>Boundary</td><td>Comparison geometry</td><td>Topology, L_path optimization</td></tr><tr><td>0.01–0.5</td><td>Transition</td><td>Mixed</td><td>η_opt characterization (§9.1)</td></tr><tr><td>η ≪ 0.01</td><td>Deep interior</td><td>Oscillator/systematics</td><td>Not comparison-limited</td></tr></tbody></table>
 
 ***
 
@@ -117,11 +108,7 @@ This inequality is a **boundary condition**, not a dynamical law. It does not de
 
 Clocks involve three distinct spatial scales that must not be conflated:
 
-| Scale      | Symbol        | Definition                   | Examples                                                         |
-| ---------- | ------------- | ---------------------------- | ---------------------------------------------------------------- |
-| Source     | L\_source     | Spatial extent of oscillator | Ion trap: \~1 mm; Lattice: \~1 cm; Pulsar magnetosphere: \~10 km |
-| Apparatus  | L\_apparatus  | Interrogation/control region | Vacuum chamber: \~1 m; Radio antenna: \~10 m                     |
-| Comparison | L\_comparison | Baseline for phase agreement | Lab: \~1 m; Continental: \~10³ km; Galactic: \~10¹⁹ m            |
+<table><thead><tr><th width="122.5823974609375">Scale</th><th width="134.360107421875">Symbol</th><th width="208.639892578125">Definition</th><th>Examples</th></tr></thead><tbody><tr><td>Source</td><td>L_source</td><td>Spatial extent of oscillator</td><td>Ion trap: ~1 mm; Lattice: ~1 cm; Pulsar magnetosphere: ~10 km</td></tr><tr><td>Apparatus</td><td>L_apparatus</td><td>Interrogation/control region</td><td>Vacuum chamber: ~1 m; Radio antenna: ~10 m</td></tr><tr><td>Comparison</td><td>L_comparison</td><td>Baseline for phase agreement</td><td>Lab: ~1 m; Continental: ~10³ km; Galactic: ~10¹⁹ m</td></tr></tbody></table>
 
 Only L\_comparison enters the causal constraint. Advances in L\_source (better oscillators) or L\_apparatus (better interrogation) do not relax the realisability horizon.
 
@@ -133,13 +120,9 @@ Only L\_comparison enters the causal constraint. Advances in L\_source (better o
 
 For any clock architecture operating at integration time τ with comparison baseline L\_comparison, define the **causal efficiency**:
 
-<p align="center"><span class="math">\eta(\tau) = \frac{L_{\text{comparison}}}{c , \tau}</span></p>
+<p align="center"><span class="math">\eta(\tau) = \frac{L_{\text{comparison}}}{c \, \tau}</span></p>
 
-| η Value        | Interpretation                                             | Regime        |
-| -------------- | ---------------------------------------------------------- | ------------- |
-| η = 1          | Causal limit: all integration time consumed by propagation | Boundary      |
-| 0.01 < η < 0.5 | Propagation significant relative to integration            | Transition    |
-| η ≪ 0.01       | Propagation negligible                                     | Deep interior |
+<table><thead><tr><th width="133.59521484375">η Value</th><th width="474.43603515625">Interpretation</th><th>Regime</th></tr></thead><tbody><tr><td>η = 1</td><td>Causal limit: all integration time consumed by propagation</td><td>Boundary</td></tr><tr><td>0.01 &#x3C; η &#x3C; 0.5</td><td>Propagation significant relative to integration</td><td>Transition</td></tr><tr><td>η ≪ 0.01</td><td>Propagation negligible</td><td>Deep interior</td></tr></tbody></table>
 
 Causal efficiency is not an optimization target. Different architectures may exhibit optimal noise performance at different values of η, determined by their dominant noise sources and comparison geometries.
 
