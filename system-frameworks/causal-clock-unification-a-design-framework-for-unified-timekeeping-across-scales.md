@@ -92,7 +92,7 @@ Every comparison of two oscillators requires information exchange. The propagati
 #### 1.1 The Realisability Horizon
 
 **Definition 1.1 (Realisability Horizon).**\
-For any phase comparison operation requiring causal information exchange over a longest required signal path L\_path, the integration time must satisfy:
+For any phase comparison operation requiring causal information exchange, with the speed of light $$c$$, over a longest required signal path L\_path, the integration time must satisfy:
 
 <p align="center"><span class="math">\tau \ge \frac{L_{\text{path}}}{c}</span></p>
 
