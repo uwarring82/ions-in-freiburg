@@ -8,8 +8,6 @@ coverHeight: 44
 
 # Welcome to the Open-Science Harbour: Ions in Freiburg
 
-## Welcome to the Open-Science Harbour: Ions in Freiburg
-
 This harbour serves as a resource centre for trapped-ion quantum physics research—a place to gather frameworks, prepare for scientific exploration, and share findings. It documents both global (G) scientific principles and local (L) practices. Global content describes methods or constraints that should transfer across laboratories and research fields. Local content reflects our particular equipment, choices, and experiences at this node at the University of Freiburg. This dual scope serves complementary purposes but can create confusion about what applies universally versus locally—so we label everything explicitly.
 
 #### Harbour Architecture
