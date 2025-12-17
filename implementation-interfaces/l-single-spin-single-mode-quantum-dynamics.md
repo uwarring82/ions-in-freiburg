@@ -332,8 +332,8 @@ This quantifies how many Fock states (equivalently, how many JC manifolds) activ
 >
 > In this handbook, the IPR is _not_ a measure of chaos, ergodicity, or thermalisation. It is an **ordering parameter in excitation space** that quantifies how many JC manifolds actively participate in the dynamics.
 >
-> * **Large IPR** (small $N\_{\text{eff\}}$) → localisation in excitation space; few manifolds dominate; regular dynamics
-> * **Small IPR** (large $N\_{\text{eff\}}$) → delocalisation; many manifolds interfere; complex envelopes
+> * **Large IPR** (small $$N_{\text{eff}}$$) → localisation in excitation space; few manifolds dominate; regular dynamics
+> * **Small IPR** (large $$N_{\text{eff}}$$) → delocalisation; many manifolds interfere; complex envelopes
 
 This maps directly onto dynamical signatures:
 
