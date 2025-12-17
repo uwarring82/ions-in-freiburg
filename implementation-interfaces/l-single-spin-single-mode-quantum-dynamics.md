@@ -14,6 +14,18 @@ license: _CC BY 4.0_\
 **Disclaimer** – This handbook is a conceptual and pedagogical synthesis intended to clarify minimal models, regimes, and design principles for single-spin–single-mode quantum dynamics; it does not claim completeness, universality, or direct applicability to all experimental platforms. Any emulation of bath-like or power-law behaviour discussed here is finite, state-dependent, and explicitly bounded by the assumptions and cutoffs stated in the text.<br>
 {% endhint %}
 
+### How to Cite This Handbook
+
+**Stable citation format**:
+
+> Warring, U. (2025). _Single-Spin–Single-Mode Quantum Dynamics: An Operator's Handbook_ (Version 0.2.1). Ordinans Series.
+
+**Version-specific**: Always cite the version number. Sections may evolve in subsequent versions; backward compatibility is maintained for numbered sections.
+
+**For specific results**: When citing particular equations or claims, reference the section number (e.g., "Section 4.9, Eq. for IPR").
+
+***
+
 ## PART I — INVARIANT CORE
 
 ### 1. Scope, Philosophy, and Minimality
@@ -304,6 +316,82 @@ This mimics decoherence even in a closed system, purely due to uncertainty in th
 | Squeezed $        | ξ\rangle$           | Sub-Poisson             | Modified revival pattern |
 | Thermal           | Bose–Einstein       | Irreversible-like decay | No phase correlation     |
 | Power-law mixture | $(n+n\_0)^{-\beta}$ | Algebraic envelope      | Engineered weight        |
+
+***
+
+### 4.9 An Ordering Parameter in Excitation Space
+
+#### 4.9.1 Definition
+
+For a motional state expanded in the Fock basis with probabilities $p\_n = |\langle n | \psi \rangle|^2$, the **inverse participation ratio** (IPR) is:
+
+\$$\text{IPR} = \sum\_{n=0}^{n\_{\max\}} p\_n^2\$$
+
+The **effective excitation number** provides intuitive interpretation:
+
+\$$N\_{\text{eff\}} = \frac{1}{\text{IPR\}}\$$
+
+This quantifies how many Fock states (equivalently, how many JC manifolds) actively participate in the dynamics.
+
+#### 4.9.2 Interpretation Rule
+
+> **Scope Boundary**
+>
+> In this handbook, the IPR is _not_ a measure of chaos, ergodicity, or thermalisation. It is an **ordering parameter in excitation space** that quantifies how many JC manifolds actively participate in the dynamics.
+>
+> * **Large IPR** (small $N\_{\text{eff\}}$) → localisation in excitation space; few manifolds dominate; regular dynamics
+> * **Small IPR** (large $N\_{\text{eff\}}$) → delocalisation; many manifolds interfere; complex envelopes
+
+This maps directly onto dynamical signatures:
+
+| IPR Regime                       | $N\_{\text{eff\}}$     | Dynamical Character                 |
+| -------------------------------- | ---------------------- | ----------------------------------- |
+| $\text{IPR} \approx 1$           | $\approx 1$            | Single-frequency Rabi oscillation   |
+| $\text{IPR} \sim \bar{n}^{-1/2}$ | $\sim \sqrt{\bar{n\}}$ | Collapse with clean revivals        |
+| $\text{IPR} \ll 1$               | $\gg 1$                | Extended collapse, complex envelope |
+
+#### 4.9.3 IPR Across State Classes
+
+| Initial State              | Typical IPR Scaling                     | $N\_{\text{eff\}}$         | Dynamical Implication           |
+| -------------------------- | --------------------------------------- | -------------------------- | ------------------------------- |
+| Fock $\|n\rangle$          | $\text{IPR} = 1$                        | 1                          | Single frequency, fully ordered |
+| Coherent $\|\alpha\rangle$ | $\sim (2\pi\bar{n})^{-1/2}$             | $\sim \sqrt{2\pi\bar{n\}}$ | Collapse + revival              |
+| Squeezed $\|\xi\rangle$    | Smaller than coherent at same $\bar{n}$ | Larger                     | Enhanced interference           |
+| Thermal                    | $\sim (1 + 2\bar{n})^{-1}$              | $\sim 1 + 2\bar{n}$        | Strong dephasing-like decay     |
+| Power-law mixture          | Depends on $\beta$; may diverge         | Tuneable                   | Algebraic envelopes             |
+
+#### 4.9.4 Connection to Prior Work
+
+Similar participation-based measures have been successfully used to characterise localisation and information spreading in trapped-ion spin–boson and spin–phonon models, where they quantify how strongly dynamics explore the available mode space (Clos, Porras, Warring & Schaetz 2016).
+
+The conceptual move here is consistent but deliberately simpler:
+
+* **There**: Participation across _mode space_ in multi-ion chains
+* **Here**: Participation across _excitation space_ of a single mode
+
+This reinforces the minimality thesis: the essential physics of localisation/delocalisation is already present in the single-mode setting.
+
+#### 4.9.5 Relation to Non-Markovianity Measures
+
+The IPR quantifies _static_ delocalisation in excitation space. Non-Markovianity measures quantify _dynamical_ memory effects in the reduced spin dynamics.
+
+In particular, information-backflow measures based on trace-distance revivals (Wittemer, Clos, Breuer, Warring & Schaetz 2018) provide a complementary, operational characterisation of memory that is sensitive to time-dependent correlations rather than initial-state structure.
+
+> **Interface Boundary**
+>
+> In this handbook, non-Markovianity measures are used only as **diagnostic overlays**: they do not define regimes, but help interpret when excitation-space delocalisation translates into observable memory effects.
+>
+> A low IPR (high $N\_{\text{eff\}}$) implies many frequencies interfere, which _correlates with_ slower decay of distinguishability and longer memory times—but does not _cause_ non-Markovianity in any formal sense.
+
+#### 4.9.6 Operational Use
+
+The IPR can be:
+
+1. **Computed** from any prepared distribution $p\_n$
+2. **Measured** via motional state tomography
+3. **Engineered** by choosing state preparation protocols
+
+This makes it a practical design parameter: before running an experiment, compute the IPR of your target state to predict whether dynamics will be regular (high IPR) or complex (low IPR).
 
 ***
 
@@ -708,6 +796,7 @@ This handbook is a _living document_. As the field develops, new sections will a
 ## References
 
 * Braak, D. (2011). Integrability of the Rabi Model. _Physical Review Letters_ 107, 100401.
+* Clos, G., Porras, D., Warring, U. & Schaetz, T. (2016). Time-Resolved Observation of Thermalization in an Isolated Quantum System. _Physical Review Letters_ 117, 170401.
 * Colla, A. & Breuer, H.-P. (2022). Open-system approach to nonequilibrium quantum thermodynamics at arbitrary coupling. _Physical Review A_ 105, 052216.
 * Colla, A., Hasse, F., Palani, D., Schaetz, T., Breuer, H.-P. & Warring, U. (2025). Observing time-dependent energy level renormalisation in an ultrastrongly coupled open system. _Nature Communications_ 16, 2502.
 * Forn-Díaz, P., Lamata, L., Rico, E., Kono, J. & Solano, E. (2019). Ultrastrong coupling regimes of light-matter interaction. _Reviews of Modern Physics_ 91, 025005.
@@ -719,6 +808,7 @@ This handbook is a _living document_. As the field develops, new sections will a
 * Scully, M. O. & Zubairy, M. S. (1997). _Quantum Optics_. Cambridge University Press.
 * Shore, B. W. & Knight, P. L. (1993). The Jaynes–Cummings model. _Journal of Modern Optics_ 40, 1195–1238.
 * Smirne, A. & Vacchini, B. (2010). Nakajima-Zwanzig versus time-convolutionless master equation for the non-Markovian dynamics of a two-level system. _Physical Review A_ 82, 022110.
+* Wittemer, M., Clos, G., Breuer, H.-P., Warring, U. & Schaetz, T. (2018). Measurement of quantum memory effects and its fundamental limitations. _Physical Review A_ 97, 020102.
 
 ***
 
@@ -738,15 +828,14 @@ This handbook is a _living document_. As the field develops, new sections will a
 | $T = 2\pi/\sqrt{\Delta^2 + 4g^2}$ | JC oscillation period                      |
 | $K\_S(t)$                         | Emergent (renormalised) system Hamiltonian |
 | $\tilde{\omega}(t)$               | Renormalised spin frequency                |
+| $\text{IPR} = \sum\_n p\_n^2$     | Inverse participation ratio                |
+| $N\_{\text{eff\}} = 1/\text{IPR}$ | Effective excitation number                |
 
 ***
 
 ## Appendix B: Version History
 
-| Version | Date       | Changes                                                                                                                         |
-| ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 0.1     | 2025-12-17 | Initial draft (review format)                                                                                                   |
-| 0.2     | 2025-12-17 | Modular restructure; Guardian protections; Navigator; minimal-dissipation Ansatz; power-law emulator; trapped-ion axis elevated |
+<table><thead><tr><th width="97.75628662109375">Version</th><th width="175.0687255859375">Date</th><th>Changes</th></tr></thead><tbody><tr><td>0.1</td><td>2025–12-17</td><td>Initial draft (review format)</td></tr><tr><td>0.2</td><td>2025–12-17</td><td>Modular restructure; Guardian protections; Navigator; minimal-dissipation Ansatz; power-law emulator; trapped-ion axis elevated</td></tr><tr><td>0.2.1</td><td>2025–12-17</td><td>Added Section 4.9 (IPR ordering parameter); citation apparatus; references for Clos et al. 2016, Wittemer et al. 2018</td></tr></tbody></table>
 
 ***
 
