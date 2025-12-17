@@ -15,6 +15,7 @@
 * [L–Evolution of Terminology](essays/evolution-of-terminology.md)
 * [L–\[DRAFT\] The Bias I Carry](essays/l-draft-the-bias-i-carry.md)
 * [G–\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/g-draft-higher-education-is-sleeping-thoughts-on-awakening.md)
+* [L–\[DRFAT\] On Minimal Departures](essays/l-drfat-on-minimal-departures.md)
 
 ## Implementation Interfaces
 
@@ -32,3 +33,4 @@
 * [G–Sensor Characterization Methodology](implementation-interfaces/g-sensor-characterization-methodology.md)
 * [G–Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
 * [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications.md)
+* [L–Quantum Dynamics Reserach – How simple becomes complex](implementation-interfaces/l-quantum-dynamics-reserach-how-simple-becomes-complex.md)
