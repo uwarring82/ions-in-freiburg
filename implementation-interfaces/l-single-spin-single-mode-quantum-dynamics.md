@@ -145,12 +145,7 @@ START: Define System Parameters
 
 #### 2.4 Regimes of Interaction
 
-| Regime      | Condition                                       | Symmetry         | Hamiltonian         | Approximation |
-| ----------- | ----------------------------------------------- | ---------------- | ------------------- | ------------- |
-| Dispersive  |  $$g \ll |\Delta|$$, $$g \ll \omega, \omega_0$$ | Eff. $$U(1)$$    |                     |               |
-| Resonant JC | $$g \ll \omega$$, $$\Delta \approx 0$$          | $$U(1)$$         | $$H_{\text{JC}}$$   | RWA valid     |
-| Ultrastrong | $$0.1 < g/\omega < 1$$                          | $$\mathbb{Z}_2$$ | $$H_{\text{Rabi}}$$ | Braak exact   |
-| Deep Strong | $$g/\omega > 1$$                                | $$\mathbb{Z}_2$$ | $$H_{\text{Rabi}}$$ | Polaron frame |
+<table><thead><tr><th width="122.875">Regime</th><th width="144.03125">Condition</th><th width="118.17822265625">Symmetry</th><th width="127.8687744140625">Hamiltonian</th><th>Approximation</th></tr></thead><tbody><tr><td>Dispersive</td><td> <span class="math">g \ll |\Delta|</span>, <span class="math">g \ll \omega, \omega_0</span></td><td>Eff. <span class="math">U(1)</span></td><td><span class="math">H_{\text{disp}}</span></td><td>exact within RWA (no population transfer)</td></tr><tr><td>Resonant JC</td><td><span class="math">g \ll \omega</span>, <span class="math">\Delta \approx 0</span></td><td><span class="math">U(1)</span></td><td><span class="math">H_{\text{JC}}</span></td><td>RWA valid</td></tr><tr><td>Ultrastrong</td><td><span class="math">0.1 &#x3C; g/\omega &#x3C; 1</span></td><td><span class="math">\mathbb{Z}_2</span></td><td><span class="math">H_{\text{Rabi}}</span></td><td>Braak exact</td></tr><tr><td>Deep Strong</td><td><span class="math">g/\omega > 1</span></td><td><span class="math">\mathbb{Z}_2</span></td><td><span class="math">H_{\text{Rabi}}</span></td><td>Polaron frame</td></tr></tbody></table>
 
 where $$\Delta = \omega - \omega_0$$ is the spin-mode detuning.
 
@@ -302,13 +297,7 @@ This mimics decoherence even in a closed system, purely due to uncertainty in th
 
 #### 4.8 State Class Summary
 
-| Initial State               | Distribution p\_n    | Dynamics                 | Complexity Source    |
-| --------------------------- | -------------------- | ------------------------ | -------------------- |
-| Fock $$|n\rangle$$          | $$\delta_{n,n_0}$$   | Single-frequency Rabi    | –                    |
-| Coherent $$|\alpha\rangle$$ | Poisson              | Collapse & revival       | –                    |
-| Squeezed $$|\xi\rangle$$    | Sub-Poisson          | Modified revival pattern | –                    |
-| Thermal                     | Bose–Einstein        | Irreversible-like decay  | No phase correlation |
-| Power-law mixture           | $$(n+n_0)^{-\beta}$$ | Algebraic envelope       | Engineered weight    |
+<table><thead><tr><th>Initial State</th><th width="151.76873779296875">Distribution p_n</th><th width="203.8499755859375">Dynamics</th><th>Complexity Source</th></tr></thead><tbody><tr><td>Fock <span class="math">|n\rangle</span></td><td><span class="math">\delta_{n,n_0}</span></td><td>Single-frequency Rabi</td><td>–</td></tr><tr><td>Coherent <span class="math">|\alpha\rangle</span></td><td>Poisson</td><td>Collapse &#x26; revival</td><td>–</td></tr><tr><td>Squeezed <span class="math">|\xi\rangle</span></td><td>Sub-Poisson</td><td>Modified revival pattern</td><td>–</td></tr><tr><td>Thermal</td><td>Bose–Einstein</td><td>Irreversible-like decay</td><td>No phase correlation</td></tr><tr><td>Power-law mixture</td><td><span class="math">(n+n_0)^{-\beta}</span></td><td>Algebraic envelope</td><td>Engineered weight</td></tr></tbody></table>
 
 ***
 
@@ -654,7 +643,7 @@ Achieves $$\bar{n} \lesssim 0.1$$ routinely.
 
 #### 10.2 State Preparation Protocols
 
-<table><thead><tr><th width="162.91876220703125">Target State</th><th width="343.706298828125">Preparation Method</th><th>Typical Fidelity</th></tr></thead><tbody><tr><td>Fock <span class="math">|n\rangle</span> </td><td>Sequential BSB <span class="math">\pi</span>-pulses from <span class="math">|0\rangle</span></td><td><span class="math">>95\%</span></td></tr><tr><td>Coherent <span class="math">|\alpha\rangle</span> </td><td>Classical drive (displacement)</td><td><span class="math">>99\%</span></td></tr><tr><td>Squeezed <span class="math">|\xi\rangle</span> </td><td>Parametric modulation / pulse sequence</td><td><span class="math">>90\%</span></td></tr><tr><td>Cat state</td><td>Conditional displacement + measurement</td><td><span class="math">>85\%</span></td></tr><tr><td>Power-law mixture</td><td>Stochastic sideband pulses</td><td>?</td></tr></tbody></table>
+<table><thead><tr><th width="162.91876220703125">Target State</th><th width="343.706298828125">Preparation Method</th><th>Typical Fidelity</th></tr></thead><tbody><tr><td>Fock <span class="math">|n\rangle</span> </td><td>Sequential BSB <span class="math">\pi</span>-pulses from <span class="math">|0\rangle</span></td><td><span class="math">>95\%</span></td></tr><tr><td>Coherent <span class="math">|\alpha\rangle</span> </td><td>Classical drive (displacement)</td><td><span class="math">>99\%</span></td></tr><tr><td>Squeezed <span class="math">|\xi\rangle</span> </td><td>Parametric modulation / pulse sequence</td><td><span class="math">>90\%</span></td></tr><tr><td>Cat state</td><td>Conditional displacement + measurement</td><td><span class="math">>85\%</span></td></tr><tr><td>Power-law mixture</td><td>Stochastic sideband pulses</td><td>&#x3C;Did anyone do this?></td></tr></tbody></table>
 
 #### 10.3 Cat State Generation
 
@@ -766,7 +755,3 @@ This handbook is a _living document_. As the field develops, new sections will a
 ## Appendix B: Version History
 
 <table><thead><tr><th width="97.75628662109375">Version</th><th width="175.0687255859375">Date</th><th>Changes</th></tr></thead><tbody><tr><td>0.1</td><td>2025–12-17</td><td>Initial draft (review format)</td></tr><tr><td>0.2</td><td>2025–12-17</td><td>Modular restructure; Guardian protections; Navigator; minimal-dissipation Ansatz; power-law emulator; trapped-ion axis elevated</td></tr><tr><td>0.2.1</td><td>2025–12-17</td><td>Added Section 4.9 (IPR ordering parameter); citation apparatus; references for Clos et al. 2016, Wittemer et al. 2018</td></tr></tbody></table>
-
-***
-
-_End of Handbook v0.2_
