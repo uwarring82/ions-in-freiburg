@@ -33,4 +33,4 @@
 * [G–Sensor Characterization Methodology](implementation-interfaces/g-sensor-characterization-methodology.md)
 * [G–Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
 * [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications.md)
-* [L–Quantum Dynamics Reserach – How simple becomes complex](implementation-interfaces/l-quantum-dynamics-reserach-how-simple-becomes-complex.md)
+* [L–Quantum Dynamics Research – Single Spin and Single Mode](implementation-interfaces/l-quantum-dynamics-research-single-spin-and-single-mode.md)
