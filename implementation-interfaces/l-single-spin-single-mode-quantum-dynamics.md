@@ -40,14 +40,7 @@ Even this ostensibly simple system generates complex quantum dynamics. By tuning
 
 This handbook develops a unified framework for single-spin–single-mode dynamics, organised into six parts:
 
-| Part | Title                    | Content                                                 |
-| ---- | ------------------------ | ------------------------------------------------------- |
-| I    | Invariant Core           | Hamiltonians, symmetries, regime boundaries             |
-| II   | Dynamics from Simplicity | Manifold-resolved dynamics, initial-state complexity    |
-| III  | From Closed to Open      | Single mode as environment, memory effects, dissipation |
-| IV   | Analytic Tools           | Solution recipes, approximation validity                |
-| V    | The Trapped-Ion Platform | Hamiltonian engineering, experimental knobs             |
-| VI   | Horizons                 | Open questions, what this handbook enables              |
+<table><thead><tr><th width="81.53436279296875">Part</th><th width="222.81561279296875">Title</th><th>Content</th></tr></thead><tbody><tr><td>I</td><td>Invariant Core</td><td>Hamiltonians, symmetries, regime boundaries</td></tr><tr><td>II</td><td>Dynamics from Simplicity</td><td>Manifold-resolved dynamics, initial-state complexity</td></tr><tr><td>III</td><td>From Closed to Open</td><td>Single mode as environment, memory effects, dissipation</td></tr><tr><td>IV</td><td>Analytic Tools</td><td>Solution recipes, approximation validity</td></tr><tr><td>V</td><td>The Trapped-Ion Platform</td><td>Hamiltonian engineering, experimental knobs</td></tr><tr><td>VI</td><td>Horizons</td><td>Open questions, what this handbook enables</td></tr></tbody></table>
 
 #### 1.3 The Minimality Theorem
 
