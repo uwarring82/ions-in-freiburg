@@ -3,7 +3,7 @@ description: Lab Guide & Certification Protocol
 icon: lightbulb-exclamation-on
 ---
 
-# Thermal Sensor Bonding
+# L–Thermal Sensor Bonding
 
 {% hint style="info" %}
 author: U._Warring_\
@@ -23,7 +23,7 @@ For attaching mm-scale thermistors to copper or other substrates under 0–200 �
 3. **High-temperature sensor-grade epoxies** — for occasional >150 °C or structural bonding
 
 > ⚠️ **Laser Safety Reminder:** All adhesive work inside laser cavities must only begin once the laser is powered down, locked out, and beam paths secured. Wavelength-specific eyewear is mandatory whenever the enclosure is open.\
-> See: [Bonding of Optical Components in High-Power Laser Beam Paths ](bonding-of-optical-components-in-high-power-laser-beam-paths.md)for cavity-specific protocols.
+> See: [Bonding of Optical Components in High-Power Laser Beam Paths ](l-bonding-of-optical-components-in-high-power-laser-beam-paths.md)for cavity-specific protocols.
 
 ***
 
@@ -88,7 +88,7 @@ Fume hood required for Stycast/EPO-TEK (amine hardeners)
 
 **Use:** Stycast 2850FT (Cat 9 or 11) **or** EPO-TEK H74\
 **Why:** Low outgassing (ASTM E595 compliant), CTE match protects optics from stress\
-**See also:** [Bonding of Optical Components in High-Power Laser Beam Paths](bonding-of-optical-components-in-high-power-laser-beam-paths.md) for surface preparation protocols specific to cavity environments
+**See also:** [Bonding of Optical Components in High-Power Laser Beam Paths](l-bonding-of-optical-components-in-high-power-laser-beam-paths.md) for surface preparation protocols specific to cavity environments
 
 #### B. External Parts (Structural)
 

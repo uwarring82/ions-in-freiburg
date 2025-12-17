@@ -4,31 +4,31 @@
 
 ## Invariant Frameworks
 
-* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+* [G–\[DRAFT\] What Can Make a Complex System an Ordinans?](invariant-frameworks/g-draft-what-can-make-a-complex-system-an-ordinans.md)
+* [G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
 
 ## Essays
 
-* [The Physics of Eyesight](essays/the-physics-of-eyesight.md)
-* [Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
-* [Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
-* [Evolution of Terminology](essays/evolution-of-terminology.md)
-* [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
-* [\[DRAFT\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
+* [L–The Physics of Eyesight](essays/the-physics-of-eyesight.md)
+* [L–Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
+* [L–Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
+* [L–Evolution of Terminology](essays/evolution-of-terminology.md)
+* [L–\[DRAFT\] The Bias I Carry](essays/l-draft-the-bias-i-carry.md)
+* [G–\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/g-draft-higher-education-is-sleeping-thoughts-on-awakening.md)
 
 ## Implementation Interfaces
 
-* [Structure your research](implementation-interfaces/structure-your-research.md)
-* [Cleaning Components After Manufacturing](implementation-interfaces/cleaning-components-after-manufacturing.md)
-* [Checklist for Changing Components in an evacuated UHV Chamber](implementation-interfaces/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
-* [Introduction to Materials for Ultra-High Vacuum (UHV) Applications](implementation-interfaces/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
-* [Materials Selection and Contamination Control for Frequency Doubling Cavities](implementation-interfaces/materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
-* [Bonding of Optical Components in High-Power Laser Beam Paths](implementation-interfaces/bonding-of-optical-components-in-high-power-laser-beam-paths.md)
-* [Thermal Sensor Bonding](implementation-interfaces/thermal-sensor-bonding.md)
-* [Gaussian Beams and the Knife-Edge Method](implementation-interfaces/gaussian-beams-and-the-knife-edge-method.md)
-* [Benchmarks of a RF-Drive Resonator](implementation-interfaces/benchmarks-of-a-rf-drive-resonator.md)
-* [Sensor Characterization Methodology](local-practice/sensor-characterization-methodology.md)
-* [Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
-* [Peer Review Quickstart](local-practice/peer-review-quickstart.md)
-* [Quantum Dynamics Reference: Frames, RWA, and Dressed States](local-practice/quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
-* [\[DRAFT\] Causal Steering Protocols — Operational Specifications](system-frameworks/draft-causal-steering-protocols-operational-specifications.md)
+* [L–Structure your research](implementation-interfaces/structure-your-research.md)
+* [L–Cleaning Components After Manufacturing](implementation-interfaces/cleaning-components-after-manufacturing.md)
+* [L–Checklist for Changing Components in an evacuated UHV Chamber](implementation-interfaces/checklist-for-changing-components-in-an-evacuated-uhv-chamber.md)
+* [L–Introduction to Materials for Ultra-High Vacuum (UHV) Applications](implementation-interfaces/introduction-to-materials-for-ultra-high-vacuum-uhv-applications.md)
+* [L–Materials Selection and Contamination Control for Frequency Doubling Cavities](implementation-interfaces/l-materials-selection-and-contamination-control-for-frequency-doubling-cavities.md)
+* [L–Bonding of Optical Components in High-Power Laser Beam Paths](implementation-interfaces/l-bonding-of-optical-components-in-high-power-laser-beam-paths.md)
+* [L–Thermal Sensor Bonding](implementation-interfaces/l-thermal-sensor-bonding.md)
+* [L–Gaussian Beams and the Knife-Edge Method](implementation-interfaces/gaussian-beams-and-the-knife-edge-method.md)
+* [L–Benchmarks of a RF-Drive Resonator](implementation-interfaces/benchmarks-of-a-rf-drive-resonator.md)
+* [L/G–Peer Review Quickstart](local-practice/peer-review-quickstart.md)
+* [G–Quantum Dynamics Reference: Frames, RWA, and Dressed States](implementation-interfaces/g-quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
+* [G–Sensor Characterization Methodology](implementation-interfaces/g-sensor-characterization-methodology.md)
+* [G–Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
+* [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications.md)
