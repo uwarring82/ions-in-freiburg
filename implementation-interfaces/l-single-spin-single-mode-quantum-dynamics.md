@@ -1,5 +1,6 @@
 ---
 description: An Operator's Handbook – Part of the Ordinans Series
+icon: books
 ---
 
 # L–Single-Spin–Single-Mode Quantum Dynamics
