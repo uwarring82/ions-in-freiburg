@@ -1,8 +1,6 @@
 # Table of contents
 
-* [Welcome to Open-Science-Freiburg](README.md)
-* [About us](about-us.md)
-* [Documentation Structure](documentation-structure.md)
+* [Welcome to the local open-science anchor: Ions in Freiburg](README.md)
 
 ## Invariant Frameworks
 
