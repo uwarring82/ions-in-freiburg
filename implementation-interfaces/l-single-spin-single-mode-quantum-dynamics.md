@@ -62,7 +62,7 @@ The single-spin–single-mode system serves as a _reference implementation_. Any
 
 The generic Hamiltonian for a spin-½ (two-level atom or qubit) interacting with a single mode is:
 
-$$H = \frac{\hbar \omega_0}{2}\sigma_z + \hbar \omega , a^\dagger a + \hbar g , (\sigma^+ + \sigma^-)( a + a^\dagger)$$
+$$H = \frac{\hbar \omega_0}{2}\sigma_z + \hbar \omega \, a^\dagger a + \hbar g \, (\sigma^+ + \sigma^-)( a + a^\dagger)$$
 
 where:
 
@@ -302,13 +302,13 @@ This mimics decoherence even in a closed system, purely due to uncertainty in th
 
 #### 4.8 State Class Summary
 
-| Initial State     | Distribution p\_n    | Dynamics                | Complexity Source        |
-| ----------------- | -------------------- | ----------------------- | ------------------------ |
-| Fock              | $$n\rangle$$         | $$\delta_{n,n_0}$$      | Single-frequency Rabi    |
-| Coherent          | $$\alpha\rangle$$    | Poisson                 | Collapse & revival       |
-| Squeezed          | $$ξ\rangle$$         | Sub-Poisson             | Modified revival pattern |
-| Thermal           | Bose–Einstein        | Irreversible-like decay | No phase correlation     |
-| Power-law mixture | $$(n+n_0)^{-\beta}$$ | Algebraic envelope      | Engineered weight        |
+| Initial State               | Distribution p\_n    | Dynamics                 | Complexity Source    |
+| --------------------------- | -------------------- | ------------------------ | -------------------- |
+| Fock $$|n\rangle$$          | $$\delta_{n,n_0}$$   | Single-frequency Rabi    | –                    |
+| Coherent $$|\alpha\rangle$$ | Poisson              | Collapse & revival       | –                    |
+| Squeezed $$|\xi\rangle$$    | Sub-Poisson          | Modified revival pattern | –                    |
+| Thermal                     | Bose–Einstein        | Irreversible-like decay  | No phase correlation |
+| Power-law mixture           | $$(n+n_0)^{-\beta}$$ | Algebraic envelope       | Engineered weight    |
 
 ***
 
