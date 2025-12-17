@@ -10,17 +10,17 @@ coverHeight: 44
 
 This harbour serves as a resource centre for trapped-ion quantum physics research—a place to gather frameworks, prepare for scientific exploration, and share findings. It documents both global (G) scientific principles and local (L) practices. Global content describes methods or constraints that should transfer across laboratories and research fields. Local content reflects our particular equipment, choices, and experiences at this node at the University of Freiburg. This dual scope serves complementary purposes but can create confusion about what applies universally versus locally—so we label everything explicitly.
 
-#### Harbour Architecture
+#### What This Harbour Provides
 
-This harbour provides both fixed geographic constraints and dynamic resources for scientific exploration.
+This harbour equips sailors for scientific voyages by providing three types of resources:
 
-**Coastlines** (frameworks) define boundaries between navigable and non-navigable space—they establish what cannot be violated whilst leaving all routes within navigable waters open. Coastlines are verifiable across laboratories: all sailors encounter the same physical constraints. They don't prescribe which voyage to undertake; they define the limits within which exploration occurs.
+**Maps of coastlines** (frameworks) document boundaries between navigable and non-navigable space. These maps chart what cannot be violated—the physical constraints all sailors encounter. Maps are verifiable: different harbours can confirm the same coastlines. They show limits without prescribing routes.
 
-**Winds and currents** (essays) create interpretive pull towards exploration. They reflect how particular communities understand and navigate within the space defined by coastlines. Winds vary by context and are not normative.
+**Sails and repair kits** (essays) provide equipment that enables exploration. These tools reflect how particular communities interpret maps and undertake voyages. Equipment varies by tradition and context; sailors choose tools suited to their vessels and destinations.
 
-**Buoys** (interfaces) mark navigable channels tested by previous voyages. They show operational practices for specific contexts, but are neither unique nor mandatory routes.
+**Handbooks for sailors** (interfaces) document operational practices tested in specific contexts. These guides show how previous voyages were conducted but are neither unique nor mandatory. Different crews develop different handbooks for similar waters.
 
-This separation allows global boundary conditions to remain stable whilst local navigation practices evolve independently. Different sailors encounter the same coastlines whilst charting distinct courses suited to their vessels and destinations.
+This separation allows global boundary conditions (coastlines) to remain stable whilst local practices (equipment and handbooks) evolve independently. Different harbours may provide different equipment and handbooks whilst charting the same coastlines.
 
 #### Local and Global Constituents
 
@@ -39,11 +39,11 @@ All content is openly shared as living documentation, updated as experiments evo
 
 #### Document Types (organised in groups)
 
-**Frameworks** define concepts through minimal, falsifiable conditions. They specify boundaries (what cannot be violated) without prescribing methods. These are coastlines—defining the limits of navigable space whilst allowing diverse routes within it.
+**Frameworks** define concepts through minimal, falsifiable conditions. They specify boundaries (what cannot be violated) without prescribing methods. These are maps of coastlines—charting the limits of navigable space.
 
-**Essays** provide interpretation, motivation, and context. They reflect specific perspectives and are not normative. These are winds—generating pull towards exploration.
+**Essays** provide interpretation, motivation, and context. They reflect specific perspectives and are not normative. These are sails and repair kits—equipment enabling exploration with varied approaches.
 
-**Interfaces** document operational practices for specific contexts. They instantiate frameworks but are neither unique nor authoritative. These are buoys—marking navigable channels for local voyages.
+**Interfaces** document operational practices for specific contexts. They instantiate frameworks but are neither unique nor authoritative. These are handbooks for sailors—showing tested procedures from particular crews.
 
 #### Scope Labels (in page titles)
 
@@ -52,10 +52,13 @@ All content is openly shared as living documentation, updated as experiments evo
 **(L) Local** — Particular to Freiburg laboratory. Documents what we do here.
 
 **Examples:**\
-`G – Causal Clock Unification Framework` (coastline—universal boundary)\
-`L – The Bias I Carry` (wind—local perspective)\
-`L – Structure Your Research` (buoy—our implementation)
+`G – Causal Clock Unification Framework` (map—universal boundary)\
+`L – The Bias I Carry` (equipment—local perspective)\
+`L – Structure Your Research` (handbook—our procedures)
 
 ***
 
-**Check groups for types and page titles for scope (G/L). This harbour charts coastlines that define navigable space, understands winds that motivate exploration, and marks buoys showing tested routes.**
+**Check groups for document types and page titles for scope (G/L). This harbour provides maps showing boundaries, equipment enabling exploration, and handbooks documenting tested practices.**
+
+```
+```
