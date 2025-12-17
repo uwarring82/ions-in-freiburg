@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to the local open-science anchor: Ions in Freiburg](README.md)
+* [Welcome to the Open-Science Harbour: Ions in Freiburg](README.md)
 
 ## Invariant Frameworks
 
