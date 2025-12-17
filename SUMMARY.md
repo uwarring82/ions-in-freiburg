@@ -1,8 +1,13 @@
 # Table of contents
 
-* [Welcome to Ions-in-Freiburg](README.md)
+* [Welcome to Open-Science-Freiburg](README.md)
 * [About us](about-us.md)
 * [Documentation Structure](documentation-structure.md)
+
+## Invariant Frameworks
+
+* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
+* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
 
 ## Essays
 
@@ -12,11 +17,6 @@
 * [Evolution of Terminology](essays/evolution-of-terminology.md)
 * [\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/draft-higher-education-is-sleeping-thoughts-on-awakening.md)
 * [\[DRAFT\] The Bias I Carry](essays/draft-the-bias-i-carry.md)
-
-## Invariant Frameworks
-
-* [\[DRAFT\] What Can Make a Complex System an Ordinans?](essays/draft-what-can-make-a-complex-system-an-ordinans.md)
-* [Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](system-frameworks/causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
 
 ## Implementation Interfaces
 
