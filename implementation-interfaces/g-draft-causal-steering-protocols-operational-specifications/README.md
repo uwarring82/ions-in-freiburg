@@ -90,7 +90,7 @@ The following sections are reserved for future development. Content is not yet s
 
 ### References
 
-* CCUF v1.0.0: [Causal Clock Unification Framework](https://claude.ai/chat/CCUF-v1.0-RC.md)
+* Warring, U. (2025). _Causal Clock Unification_ (v1.0)
 * BIPM Circular T documentation
 * IERS Conventions (2010), Technical Note 36
 
