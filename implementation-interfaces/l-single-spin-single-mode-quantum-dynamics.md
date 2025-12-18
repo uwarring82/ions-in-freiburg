@@ -8,7 +8,7 @@ icon: books
 {% hint style="info" %}
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
-_version: 0.2.1_\
+_version: 0.2.2_\
 last\_updated: _2025-12-17_\
 license: _CC BY 4.0_\
 \
