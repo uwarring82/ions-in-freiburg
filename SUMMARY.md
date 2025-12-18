@@ -32,5 +32,6 @@
 * [G–Quantum Dynamics Reference: Frames, RWA, and Dressed States](implementation-interfaces/g-quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 * [G–Sensor Characterization Methodology](implementation-interfaces/g-sensor-characterization-methodology.md)
 * [G–Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
-* [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications.md)
+* [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications/README.md)
+  * [Level 0 Validation Layer (Operational Specification)](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications/level-0-validation-layer-operational-specification.md)
 * [L–Single-Spin–Single-Mode Quantum Dynamics](implementation-interfaces/l-single-spin-single-mode-quantum-dynamics.md)
