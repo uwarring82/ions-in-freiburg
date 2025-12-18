@@ -1,10 +1,9 @@
 ---
 description: Near-Parameter-Free Network Coherence Validation
+icon: '0'
 ---
 
 # Level 0 Validation Layer (Operational Specification)
-
-## Level 0 — Parameter-Free Network Coherence Validation
 
 {% hint style="info" %}
 author: _U. Warring_\

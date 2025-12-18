@@ -4,7 +4,7 @@
 
 ## Invariant Frameworks
 
-* [G–\[DRAFT\] What Can Make a Complex System an Ordinans?](invariant-frameworks/g-draft-what-can-make-a-complex-system-an-ordinans.md)
+* [G–What Can Make a Complex System an Ordinans?](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans.md)
 * [G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
 
 ## Essays
@@ -13,9 +13,9 @@
 * [L–Quantum and Classical Sensors](essays/quantum-and-classical-sensors.md)
 * [L–Entanglement, Decoherence, and Spacetime](essays/entanglement-decoherence-and-spacetime.md)
 * [L–Evolution of Terminology](essays/evolution-of-terminology.md)
-* [L–\[DRAFT\] The Bias I Carry](essays/l-draft-the-bias-i-carry.md)
-* [G–\[DRAFT\] Higher Education Is Sleeping — Thoughts on Awakening](essays/g-draft-higher-education-is-sleeping-thoughts-on-awakening.md)
-* [L–\[DRFAT\] On Minimal Departures](essays/l-drfat-on-minimal-departures.md)
+* [L–The Bias I Carry](essays/l-the-bias-i-carry.md)
+* [G–Higher Education Is Sleeping — Thoughts on Awakening](essays/g-higher-education-is-sleeping-thoughts-on-awakening.md)
+* [L–On Minimal Departures](essays/l-on-minimal-departures.md)
 
 ## Implementation Interfaces
 
@@ -32,6 +32,6 @@
 * [G–Quantum Dynamics Reference: Frames, RWA, and Dressed States](implementation-interfaces/g-quantum-dynamics-reference-frames-rwa-and-dressed-states.md)
 * [G–Sensor Characterization Methodology](implementation-interfaces/g-sensor-characterization-methodology.md)
 * [G–Noise Attribution in Precision Measurements](local-practice/noise-attribution-in-precision-measurements.md)
-* [G–\[DRAFT\] Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications/README.md)
-  * [Level 0 Validation Layer (Operational Specification)](implementation-interfaces/g-draft-causal-steering-protocols-operational-specifications/level-0-validation-layer-operational-specification.md)
+* [G–Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-causal-steering-protocols-operational-specifications/README.md)
+  * [Level 0 Validation Layer (Operational Specification)](implementation-interfaces/g-causal-steering-protocols-operational-specifications/level-0-validation-layer-operational-specification.md)
 * [L–Single-Spin–Single-Mode Quantum Dynamics](implementation-interfaces/l-single-spin-single-mode-quantum-dynamics.md)
