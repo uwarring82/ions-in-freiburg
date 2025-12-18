@@ -2,13 +2,13 @@
 icon: books
 ---
 
-# \[DRAFT] Causal Steering Protocols — Operational Specifications
+# G–\[DRAFT] Causal Steering Protocols — Operational Specifications
 
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.0.1\
-**Last updated:** 2025-12-15\
+**Version:** 0.1.1\
+**Last updated:** 2025-12-18\
 **License:** CC BY 4.0\
 \
 **Disclaimer** — _This document reflects an ongoing effort to clarify how to engineer causal system steering. Its authority derives from transparency, not finality._
@@ -66,6 +66,7 @@ The following sections are reserved for future development. Content is not yet s
 
 **Planned content:**
 
+* (L0: Near-Parameter-Free Network Coherence Validation)
 * L1: Manual steering with human oversight at each comparison epoch
 * L2: Semi-autonomous steering with human-defined policy constraints
 * L3: Fully autonomous steering with candor-weighted self-correction
@@ -89,7 +90,7 @@ The following sections are reserved for future development. Content is not yet s
 
 ### References
 
-* CCUF v0.1.5: [Causal Clock Unification Framework](https://claude.ai/chat/CCUF-v1.0-RC.md)
+* CCUF v1.0.0: [Causal Clock Unification Framework](https://claude.ai/chat/CCUF-v1.0-RC.md)
 * BIPM Circular T documentation
 * IERS Conventions (2010), Technical Note 36
 
