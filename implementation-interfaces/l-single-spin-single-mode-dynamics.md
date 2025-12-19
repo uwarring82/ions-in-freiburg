@@ -15,6 +15,37 @@ license: _CC BY 4.0_\
 **Disclaimer** – This handbook is a conceptual and pedagogical synthesis intended to clarify minimal models, regimes, and design principles for single-spin–single-mode quantum dynamics; it does not claim completeness, universality, or direct applicability to all experimental platforms. Any emulation of bath-like or power-law behaviour discussed here is finite, state-dependent, and explicitly bounded by the assumptions and cutoffs stated in the text.<br>
 {% endhint %}
 
+{% hint style="warning" %}
+### Foreword
+
+This handbook presents the **Common View** of single-spin–single-mode quantum dynamics: the shared understanding of how a two-level system coupled to a harmonic oscillator is modelled, controlled, and measured across trapped ions, cavity QED, circuit QED, and optomechanics.
+
+The Common View encodes decades of insight—canonical Hamiltonians, well-defined coupling regimes, standard control techniques, and proven protocols. It remains indispensable as a reference frame between theory and experiment.
+
+At the same time, the Common View primarily describes how phenomena _appear_ under idealised conditions. Irreversibility, decoherence, and scaling behaviour often enter as secondary effects, grouped under labels such as "imperfections" or "technical limitations."
+
+It is at this boundary that a complementary perspective becomes useful.
+
+**The Ordinans Perspective**
+
+In parallel, we are developing the **Ordinans** perspective (from Latin _ordinare_, "to arrange"). Rather than replacing existing models, it re-organises them according to a strict separation:
+
+* A **minimal, invariant system**: the spin–mode composite $$\mathcal{H}{\text{spin}} \otimes \mathcal{H}{\text{mode}}$$, treated as fully deterministic and reversible.
+* **Explicitly engineered environments**: clocks, baths, measurement channels, and feedback controllers, each coupled through defined interfaces.
+
+The shift is subtle but consequential: from _describing what happens_ to _designing what is coupled_. Decoherence, non-Markovian dynamics, and measurement-induced diffusion become properties of engineered surroundings, not intrinsic system behaviour.
+
+**How to Read This Handbook**
+
+This text is a **map of the coastline**: reliable, stable, intentionally conservative.
+
+The Ordinans perspective is developed alongside, not within. Cross-references point to parallel documents that reinterpret the same physics under stricter system–environment separation. These are extensions, not corrections.
+
+The long-term goal is to embed the Common View within a design framework where complex behaviour is constructed—and therefore falsifiable.
+
+This foreword marks that transition in perspective.
+{% endhint %}
+
 ### How to Cite This Handbook
 
 **Stable citation format**:
