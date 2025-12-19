@@ -8,8 +8,8 @@ icon: books
 {% hint style="info" %}
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
-_version: 0.2.2_\
-last\_updated: _2025-12-17_\
+_version: 0.2.5_\
+last\_updated: _2025-12-19_\
 license: _CC BY 4.0_\
 \
 **Disclaimer** – This handbook is a conceptual and pedagogical synthesis intended to clarify minimal models, regimes, and design principles for single-spin–single-mode quantum dynamics; it does not claim completeness, universality, or direct applicability to all experimental platforms. Any emulation of bath-like or power-law behaviour discussed here is finite, state-dependent, and explicitly bounded by the assumptions and cutoffs stated in the text.<br>
@@ -1015,4 +1015,4 @@ This handbook is a _living document_. As the field develops, new sections will a
 
 ## Version History
 
-<table><thead><tr><th width="97.75628662109375">Version</th><th width="175.0687255859375">Date</th><th>Changes</th></tr></thead><tbody><tr><td>0.1</td><td>2025–12-17</td><td>Initial draft (review format)</td></tr><tr><td>0.2</td><td>2025–12-17</td><td>Modular restructure; Guardian protections; Navigator; minimal-dissipation Ansatz; power-law emulator; trapped-ion axis elevated</td></tr><tr><td>0.2.1</td><td>2025–12-17</td><td>Added Section 4.9 (IPR ordering parameter); citation apparatus; references for Clos et al. 2016, Wittemer et al. 2018</td></tr><tr><td>0.2.2</td><td>2025–12-18</td><td>Added Section 9.4 (1+1D Dirac worked example); bichromatic drive synthesis; Zitterbewegung as JC interference; Table 9.1 error budget with operator triage; Appendix C cross-reference</td></tr></tbody></table>
+<table><thead><tr><th width="97.75628662109375">Version</th><th width="175.0687255859375">Date</th><th>Changes</th></tr></thead><tbody><tr><td>0.1</td><td>2025–12-17</td><td>Initial draft (review format)</td></tr><tr><td>0.2</td><td>2025–12-17</td><td>Modular restructure; Guardian protections; Navigator; minimal-dissipation Ansatz; power-law emulator; trapped-ion axis elevated</td></tr><tr><td>0.2.1</td><td>2025–12-17</td><td>Added Section 4.9 (IPR ordering parameter); citation apparatus; references for Clos et al. 2016, Wittemer et al. 2018</td></tr><tr><td>0.2.2</td><td>2025–12-18</td><td>Added Section 9.4 (1+1D Dirac worked example); bichromatic drive synthesis; Zitterbewegung as JC interference; Table 9.1 error budget with operator triage; Appendix C cross-reference</td></tr><tr><td>0.2.3</td><td>2025-12-19</td><td>Added clarifying Foreword</td></tr></tbody></table>
