@@ -36,4 +36,4 @@
 * [G–Causal Steering Protocols — Operational Specifications](implementation-interfaces/g-causal-steering-protocols-operational-specifications/README.md)
   * [Level 0 Validation Layer (Operational Specification)](implementation-interfaces/g-causal-steering-protocols-operational-specifications/level-0-validation-layer-operational-specification.md)
 * [L–Single-Spin–Single-Mode Dynamics](implementation-interfaces/l-single-spin-single-mode-dynamics/README.md)
-  * [The Compatible Ordinans Handbook](implementation-interfaces/l-single-spin-single-mode-dynamics/the-compatible-ordinans-handbook.md)
+  * [The Compatible Ordinans Perspective](implementation-interfaces/l-single-spin-single-mode-dynamics/the-compatible-ordinans-perspective.md)
