@@ -1,9 +1,9 @@
 ---
-description: An Operator's Handbook – Part of the Ordinans Series
+description: An Operator's Handbook – Common views
 icon: books
 ---
 
-# L–Single-Spin–Single-Mode Quantum Dynamics
+# L–Single-Spin–Single-Mode Dynamics
 
 {% hint style="info" %}
 author: _U. Warring_\
@@ -19,7 +19,7 @@ license: _CC BY 4.0_\
 
 **Stable citation format**:
 
-> Warring, U. (2025). _Single-Spin–Single-Mode Quantum Dynamics: An Operator's Handbook_ (Version 0.2.1). Ordinans Series.
+> Warring, U. (2025). _Single-Spin–Single-Mode Quantum Dynamics: An Operator's Handbook_ (Version 0.2).&#x20;
 
 **Version-specific**: Always cite the version number. Sections may evolve in subsequent versions; backward compatibility is maintained for numbered sections.
 
@@ -387,7 +387,7 @@ For a thermal initial state of the mode with mean occupation $$\bar{n}$$, the ex
 
 $$\dot{\rho}S = -i\left[\frac{\tilde{\omega}(t)}{2}\sigma_z, \rho_S\right] + \gamma_z(t)\mathcal{D}[\sigma_z]\rho_S + \gamma+(t)\mathcal{D}[\sigma_+]\rho_S + \gamma_-(t)\mathcal{D}[\sigma_-]\rho_S$$
 
-where $$\mathcal{D}[O]\rho = O\rho O^\dagger - \frac{1}{2}{O^\dagger O, \rho}$$ is the Lindblad superoperator, and all coefficients $$\tilde{\omega}, \gamma_{\pm,z}$$ are time-dependent.
+where $$\mathcal{D}[O]\rho = O\rho O^\dagger - \frac{1}{2}{O^\dagger O\, \rho}$$ is the Lindblad superoperator, and all coefficients $$\tilde{\omega}, \gamma_{\pm,z}$$ are time-dependent.
 
 The emergent Hamiltonian is:
 
