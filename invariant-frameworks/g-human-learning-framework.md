@@ -2,12 +2,12 @@
 description: An Invariant Framework for Human Knowledge Formation
 ---
 
-# Human Learning Framework
+# G–Human Learning Framework
 
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.1\
+**Version:** 0.2.2\
 **Last updated:** 2025-12-22\
 **License:** CC BY 4.0\
 \
@@ -30,6 +30,8 @@ Human knowledge about a phenomenon and the phenomenon itself are distinct domain
 
 The framework applies to **paradigmatic propositional knowledge** — knowledge that involves not merely tracking truth but understanding why one's beliefs are warranted and how they might be wrong. It acknowledges that "knowledge" may be a family-resemblance concept encompassing both interpretive propositional knowledge and non-interpretive reliable registration.
 
+This asymmetric dependency is mandated by **Resolution R-O/L-01**.
+
 ***
 
 ### 1. Scope and Non-Scope
@@ -49,10 +51,10 @@ The framework does not govern:
 
 * Teaching strategies or curricula
 * Learning efficiency optimisation
-* Machine learning or AI as epistemic agents (see §5 Boundary Cases)
+* Machine learning or AI as epistemic agents (see §4.4)
 * Discovery procedures or workflows
 * Skill acquisition or training design
-* Tacit knowledge and procedural competence (see §5.2)
+* Tacit knowledge and procedural competence (see §4.2)
 * Reliable registration without justificatory access (see §4.1)
 
 #### 1.3 Invariance Conditions
@@ -71,7 +73,7 @@ It does **not** claim validity across:
 
 ***
 
-### 2. Invariant 0 — Meaning Requires Error-Sensitive Interpretation
+### 2. Invariant 0 — Propositional Warrant Requires Error-Sensitive Interpretation
 
 #### 2.1 Invariant Statement (Qualified)
 
@@ -131,12 +133,7 @@ Invariant 0 fails if any of the following are demonstrated:
 
 DEEP names a **partition of epistemic responsibility**, derived from Invariant 0.
 
-| Partition   | Epistemic Role                     | Delegability    |
-| ----------- | ---------------------------------- | --------------- |
-| **Deposit** | World → traces                     | Delegable       |
-| **Extract** | Framing, relevance, representation | ❌ Non-delegable |
-| **Process** | Correlation ordering               | Delegable       |
-| **Elevate** | Claims, non-claims, interpretation | ❌ Non-delegable |
+<table><thead><tr><th width="112.0234375">Partition</th><th width="287.4140625">Epistemic Role</th><th>Delegability</th></tr></thead><tbody><tr><td><strong>Deposit</strong></td><td>World → traces</td><td>Delegable</td></tr><tr><td><strong>Extract</strong></td><td>Framing, relevance, representation</td><td>❌ Non-delegable</td></tr><tr><td><strong>Process</strong></td><td>Correlation ordering</td><td>Delegable</td></tr><tr><td><strong>Elevate</strong></td><td>Claims, non-claims, interpretation</td><td>❌ Non-delegable</td></tr></tbody></table>
 
 DEEP does **not** describe how learning happens.\
 It constrains **what counts as a legitimate propositional knowledge claim**.
@@ -268,7 +265,7 @@ This framework must remain distinct from:
 * discovery frameworks,
 * physical theories,
 * sociological analyses of science,
-* clock frameworks or metrology,
+* clock frameworks, measurement models, or standards/procedures,
 * any other Council-governed domain.
 
 Any merger constitutes a category error.
@@ -446,16 +443,14 @@ References anchor domains where the invariant is already implicit or explicitly 
 
 > It acknowledges counterpositions and boundary cases where its constraints may not apply.
 
-Any revision requires reopening **Resolution R-O/L-01** under its falsification conditions, with explicit engagement with the counterpositions documented in §4.
-
 ***
 
 ### Revision History
 
-| Version | Date       | Summary                                                                                                                                                                  |
-| ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0.1.0   | 2025-12-22 | Initial framework                                                                                                                                                        |
-| 0.2.0   | 2025-12-22 | Stress-tested revision: qualified Invariant 0, added counterpositions (§4), resolved internal tensions (§5), refined falsifiability conditions (§7), added glossary      |
-| 0.2.1   | 2025-12-22 | Precision hardenings: "paradigmatically" (§2.1), operational gloss for space of reasons (§1.1), Archivist note on ML boundary (§4.4), reader competence condition (§5.4) |
+| Version | Date       | Summary                                                                                                                                                                                                                                              |
+| ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0.1.0   | 2025-12-22 | Initial framework                                                                                                                                                                                                                                    |
+| 0.2.0   | 2025-12-22 | Stress-tested revision: qualified Invariant 0, added counterpositions (§4), resolved internal tensions (§5), refined falsifiability conditions (§7), added glossary                                                                                  |
+| 0.2.2   | 2025-12-22 | Precision hardenings: "paradigmatically" (§2.1), operational gloss for space of reasons (§1.1), Archivist note on ML boundary (§4.4), reader competence condition (§5.4), cross-reference fixes (§1.2), §2 title precision, metrology wording (§6.2) |
 
 ***
