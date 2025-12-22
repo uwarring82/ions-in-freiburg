@@ -7,7 +7,7 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.1.2\
+**Version:** 0.1.3\
 **Last updated:** 2025-12-22\
 **License:** CC BY 4.0\
 \
@@ -70,6 +70,8 @@ Allan (1966); Rutman (1978); Coddington et al. (2008)
   * η ≪ 1: under-utilised causal envelope
   * η ≈ 1: causal limit for single round-trip
   * η > 1: delayed or multi-cycle closure
+
+> **Relation to CCUF geometry:** η(τ) is defined by CCUF's causal boundary condition τ ≥ L\_comparison/c. This document treats η as a design variable by recognizing that practitioners choose both L\_comparison (network geometry) and τ (averaging time) within causal constraints. You cannot violate η ≤ 1 for single round-trip comparison, but you can optimize the (L\_comparison, τ) pair for your measurement goals.
 
 **Anchors:**\
 Ma et al. (1994); Calonico et al. (2014); IEEE 1139-2008
