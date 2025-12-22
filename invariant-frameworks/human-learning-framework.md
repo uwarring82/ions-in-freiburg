@@ -4,9 +4,17 @@ description: An Invariant Framework for Human Knowledge Formation
 
 # Human Learning Framework
 
+{% hint style="info" %}
+**Author:** U. Warring\
+**Affiliation:** Institute of Physics, University of Freiburg\
+**Version:** 0.1\
+**Last updated:** 2025-12-22\
+**License:** CC BY 4.0\
+\
 **Status:** Constitutional invariant framework\
 **Domain:** Epistemic (human-bound)\
 **Non-status:** ❌ Not a handbook · ❌ Not pedagogy · ❌ Not tool-specific
+{% endhint %}
 
 ***
 
