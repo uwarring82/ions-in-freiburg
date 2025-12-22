@@ -59,10 +59,10 @@ Allan (1966); Rutman (1978); Coddington et al. (2008)
 
 #### 2.2 Causal efficiency η(τ) — _Architectural utilisation_
 
-\[ \eta(\tau)=\frac{L\_{\mathrm{comparison\}}(\tau)}{c,\tau} ]
+<p align="center"><span class="math">\eta(\tau)=\frac{L_{\mathrm{comparison}}(\tau)}{c\,\tau} </span></p>
 
 * **Definitions:**
-  * (L\_{\mathrm{comparison\}}(\tau)): maximum spatial extent that must act coherently to produce one comparison sample
+  * $$L_{\mathrm{comparison}}(\tau)$$: maximum spatial extent that must act coherently to produce one comparison sample
 * **Properties:**
   * Dimensionless **operational control parameter**
   * Not a thermodynamic efficiency
@@ -80,7 +80,7 @@ Ma et al. (1994); Calonico et al. (2014); IEEE 1139-2008
 
 #### 3.1 Constraint C1 — _Proposed access condition_
 
-\[ \xi ;\lesssim; L\_{\mathrm{comparison\}}(\tau) ]
+<p align="center"><span class="math"> \xi \;\lesssim\; L_{\mathrm{comparison}}(\tau) </span></p>
 
 * **Epistemic status:** Framework prediction (testable; not yet validated across architectures)
 * **Meaning:** Correlations not jointly accessible within one comparison cycle cannot contribute coherently.
