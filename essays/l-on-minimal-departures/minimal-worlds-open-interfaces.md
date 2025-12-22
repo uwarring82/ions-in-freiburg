@@ -48,7 +48,7 @@ What counts as "a world" philosophically remains an open key. The framework supp
 
 #### III. A Cautious Resonance with the Simulation Argument
 
-The Simulation Argument operates in a different epistemic domain. It concerns probability across possible worlds, driven by assumptions about computational capacity and observer counts. The ordinans perspective neither confirms nor refutes that argument; it does not adjust the probability that we inhabit a simulation.
+[The Simulation Argument](https://simulation-argument.com/simulation/) operates in a different epistemic domain. It concerns probability across possible worlds, driven by assumptions about computational capacity and observer counts. The ordinans perspective neither confirms nor refutes that argument; it does not adjust the probability that we inhabit a simulation.
 
 What it offers instead is a complementary methodological question:
 
