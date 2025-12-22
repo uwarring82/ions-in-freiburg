@@ -30,8 +30,6 @@ Human knowledge about a phenomenon and the phenomenon itself are distinct domain
 
 The framework applies to **paradigmatic propositional knowledge** — knowledge that involves not merely tracking truth but understanding why one's beliefs are warranted and how they might be wrong. It acknowledges that "knowledge" may be a family-resemblance concept encompassing both interpretive propositional knowledge and non-interpretive reliable registration.
 
-This asymmetric dependency is mandated by **Resolution R-O/L-01**.
-
 ***
 
 ### 1. Scope and Non-Scope
