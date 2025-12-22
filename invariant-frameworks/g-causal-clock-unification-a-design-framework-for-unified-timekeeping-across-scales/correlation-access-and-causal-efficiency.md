@@ -180,7 +180,7 @@ The ξ/η separation, C1, and S1 are **novel architectural constructs** introduc
 
 ***
 
-### 9. References (Alphabetical; year-verified)
+### 9. References
 
 * Allan, D. W. (1966). _Proc. IEEE_ **54**, 221–230.
 * Barnes, J. A. et al. (1971). _IEEE TIM_ **IM-20**, 105–120.
