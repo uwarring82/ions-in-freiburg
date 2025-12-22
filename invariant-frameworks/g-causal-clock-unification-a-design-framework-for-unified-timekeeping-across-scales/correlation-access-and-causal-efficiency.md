@@ -222,8 +222,26 @@ _No universal optimisation strategy is implied._
 
 ### 7. Scope and Aspirational Outlook
 
-* **If validated**, this framework could re-centre comparison science on interrogation geometry.
-* **Present status:** Proposal awaiting multi-architecture testing.
+**Current scope:** This framework is developed for optical time and frequency comparison networks, where both ξ and η(τ) can be operationally defined and measured.
+
+**If validated**, this framework could re-centre comparison science on interrogation geometry and provide diagnostic tools for saturation regimes in optical clock networks.
+
+**Potential future extensions (speculative, not validated):**
+
+The ξ vs η separation may be architecturally relevant to other comparison geometries:
+
+* **VLBI (Very Long Baseline Interferometry):** Radio-frequency phase comparison across continental/global baselines; correlation limited by ionospheric and tropospheric coherence.
+* **Pulsar Timing Arrays (PTAs):** Gravitational wave detection via correlated timing residuals; correlation extended by astrophysical stability but limited by terrestrial clock comparison.
+
+However:
+
+* These systems have fundamentally different physical processes determining ξ
+* Operational definitions of L\_comparison(τ) require domain-specific protocols
+* Constraint C1 and prediction S1 must be independently validated in each regime
+
+**Extension criterion:** Before claiming applicability to non-optical systems, we require worked examples showing how to calculate ξ and η(τ), and empirical tests of C1 in those architectures.
+
+**Present status:** Proposal awaiting multi-architecture testing within optical frequency transfer domain.
 
 ***
 
