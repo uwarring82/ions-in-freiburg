@@ -7,7 +7,7 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.1\
+**Version:** 0.1.1\
 **Last updated:** 2025-12-22\
 **License:** CC BY 4.0\
 \
@@ -123,7 +123,7 @@ When optical clock comparisons saturate in performance:
 
 Traditional stability metrics (Allan deviation, modified Allan deviation) measure aggregate instability but cannot distinguish between physical correlation limits and architectural inefficiencies. The ξ vs η separation provides this **diagnostic clarity**.
 
-**Non-claim:** This framework does not predict absolute performance limits. It identifies which layer constrains performance in a specific architecture.
+> **Non-claim:** This framework does not predict absolute performance limits. It identifies which layer constrains performance in a specific architecture.
 
 ***
 
