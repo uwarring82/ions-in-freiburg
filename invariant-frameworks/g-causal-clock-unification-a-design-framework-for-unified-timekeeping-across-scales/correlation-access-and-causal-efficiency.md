@@ -76,6 +76,57 @@ Ma et al. (1994); Calonico et al. (2014); IEEE 1139-2008
 
 ***
 
+#### **2.3 Bridging Physics and Protocol —&#x20;**_**Why two quantities?**_
+
+The separation between ξ and η(τ) may seem artificial at first. Why not combine them into a single figure of merit?
+
+**The answer lies in control:**
+
+**Correlation length ξ** responds to physical intervention:
+
+* Improve fibre isolation → longer acoustic correlation times
+* Reduce atmospheric turbulence → larger spatial coherence
+* Stabilise environment → longer thermal correlation scales
+
+You cannot change ξ by redesigning your measurement protocol.
+
+**Causal efficiency η(τ)** responds to architectural choices:
+
+* Faster synchronisation → shorter τ for same L\_comparison
+* Tighter comparison geometry → smaller L\_comparison for same τ
+* Multi-site coordination → optimised causal closure paths
+
+You cannot change η by improving the physical medium alone.
+
+**Worked intuition (fibre link example):**
+
+Consider a 100 km phase-stabilised optical fibre:
+
+* **Physical layer:** Active noise suppression extends ξ from \~1 km (passive fibre) to \~100 km (stabilised)
+* **Protocol layer:** Round-trip stabilisation with τ = 1 ms gives:
+  * L\_comparison = 2 × 100 km = 200 km (full round-trip path for causal closure)
+  * η(τ) = 200 km / (c × 1 ms) ≈ 0.67
+
+Both layers contribute to performance:
+
+* If ξ were only 10 km → physical bottleneck (C1 violated)
+* If η = 0.01 → architectural inefficiency (most causal envelope wasted)
+
+Success requires **matching both**.
+
+**Why this matters:**
+
+When optical clock comparisons saturate in performance:
+
+* **Diagnosis:** Is it physics (insufficient ξ) or architecture (low η)?
+* **Intervention:** Physical upgrade (stabilisation, isolation) vs protocol redesign (faster sampling, geometry change)
+
+Traditional stability metrics (Allan deviation, modified Allan deviation) measure aggregate instability but cannot distinguish between physical correlation limits and architectural inefficiencies. The ξ vs η separation provides this **diagnostic clarity**.
+
+**Non-claim:** This framework does not predict absolute performance limits. It identifies which layer constrains performance in a specific architecture.
+
+***
+
 ### 3. Proposed Interface Condition (C1)
 
 #### 3.1 Constraint C1 — _Proposed access condition_
