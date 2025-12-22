@@ -5,7 +5,8 @@
 ## Invariant Frameworks
 
 * [G–What Can Make a Complex System an Ordinans?](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans.md)
-* [G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
+* [G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales/README.md)
+  * [Correlation Access and Causal Efficiency](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales/correlation-access-and-causal-efficiency.md)
 * [L–ORDINANS-L3-TMP — Engineered World Submission Template](invariant-frameworks/l-ordinans-l3-tmp-engineered-world-submission-template.md)
 
 ## Essays
