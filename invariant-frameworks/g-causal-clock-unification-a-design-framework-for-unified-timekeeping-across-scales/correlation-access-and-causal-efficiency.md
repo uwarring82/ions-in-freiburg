@@ -17,6 +17,9 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 **Feedback:** Testing and critique welcome
 {% endhint %}
 
+> **Relation to Causal Clock Unification (CCUF):**\
+> Our framework builds on CCUF’s core causal boundary condition (τ ≥ c L), using the same causal efficiency η metric. We augment CCUF with a **physical correlation access layer** (ξ and Constraint C1), which is a design-level hypothesis and subject to empirical validation. CCUF itself remains the authoritative causal geometry constraint.
+
 ***
 
 ### 0. Reader Contract (Protective Framing)
