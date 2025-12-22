@@ -8,7 +8,7 @@ icon: scale-unbalanced-flip
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.1\
+**Version:** 0.1.1\
 **Last updated:** 2025-12-22\
 **License:** CC BY 4.0\
 \
@@ -30,10 +30,10 @@ It must be prefixed to, or cited by, any Council-ratified framework operating in
 
 #### Two Domains, One Architecture
 
-| Domain          | Question                                    | Example Frameworks                                 | Jurisdiction                            |
-| --------------- | ------------------------------------------- | -------------------------------------------------- | --------------------------------------- |
-| **Ontological** | What exists? What are its properties?       | Discovery frameworks, physical theories, metrology | Phenomena, structures, causal relations |
-| **Epistemic**   | What may humans legitimately claim to know? | Human Learning Framework                           | Claims, warrant, justification          |
+| Domain          | Question                                    | Example Frameworks                                          | Jurisdiction                            |
+| --------------- | ------------------------------------------- | ----------------------------------------------------------- | --------------------------------------- |
+| **Ontological** | What exists? What are its properties?       | Discovery frameworks, physical theories, measurement models | Phenomena, structures, causal relations |
+| **Epistemic**   | What may humans legitimately claim to know? | Human Learning Framework, warrant criteria                  | Claims, warrant, justification          |
 
 These domains are **categorically distinct**. Neither derives from, reduces to, nor determines the other.
 
@@ -44,13 +44,17 @@ Ontological frameworks are **not constrained by** how humans learn.
 
 ```
 [ Phenomena ]
-     ↑
-     │  (no upward constraint)
      │
+     │  (described/modelled by)
+     ▼
+[ Ontological Frameworks ]
+     │
+     │  (claims filtered by)
+     ▼
 [ Epistemic Framework ]
      │
-     │  (downward constraint on claims)
-     ↓
+     │  (constrains)
+     ▼
 [ Human Knowledge Claims ]
 ```
 
@@ -85,19 +89,11 @@ Citation: _Violation of Clarity or Ethics_ (Category Error subtype).
 
 #### Permitted References
 
-| From                    | To                            | Permitted Reference Type                                       |
-| ----------------------- | ----------------------------- | -------------------------------------------------------------- |
-| Epistemic → Ontological | Worked examples, case studies | "Discovery X illustrates DEEP partition..."                    |
-| Ontological → Epistemic | Constraint acknowledgment     | "Human claims about X are subject to \[Learning Framework]..." |
+<table><thead><tr><th width="171.06640625">From</th><th width="249.8359375">To</th><th>Permitted Reference Type</th></tr></thead><tbody><tr><td>Epistemic → Ontological</td><td>Worked examples, case studies</td><td>"Discovery X illustrates DEEP partition..."</td></tr><tr><td>Ontological → Epistemic</td><td>Constraint acknowledgment</td><td>"Human claims about X are subject to [Learning Framework]..."</td></tr></tbody></table>
 
 #### Forbidden Couplings
 
-| Coupling Type        | Example Violation                           | Why Forbidden                         |
-| -------------------- | ------------------------------------------- | ------------------------------------- |
-| Derivation           | "The framework implies phenomenon X exists" | Epistemology cannot generate ontology |
-| Contingency          | "X exists only if discoverable"             | Existence is not observer-dependent   |
-| Bidirectional arrows | "Learning ↔ Existence"                      | Violates asymmetric architecture      |
-| Definitional merger  | "Knowledge _is_ truth-tracking"             | Conflates distinct domains            |
+<table><thead><tr><th width="176">Coupling Type</th><th width="259.75">Example Violation</th><th>Why Forbidden</th></tr></thead><tbody><tr><td>Derivation</td><td>"The framework implies phenomenon X exists"</td><td>Epistemology cannot generate ontology</td></tr><tr><td>Contingency</td><td>"X exists only if discoverable"</td><td>Existence is not observer-dependent</td></tr><tr><td>Bidirectional arrows</td><td>"Learning ↔ Existence"</td><td>Violates asymmetric architecture</td></tr><tr><td>Definitional merger</td><td>"Knowledge <em>is</em> truth-tracking"</td><td>Conflates distinct domains</td></tr></tbody></table>
 
 ***
 
@@ -110,25 +106,25 @@ Council-ratified frameworks form a non-circular stack:
 │         PHENOMENA (World)                   │
 │   Ordinans, clocks, physical systems, etc.  │
 └─────────────────────────────────────────────┘
-                    ↑
-                    │ (no upward constraint)
                     │
+                    │ (described/modelled by)
+                    ▼
 ┌─────────────────────────────────────────────┐
 │     ONTOLOGICAL FRAMEWORKS                  │
 │   Discovery frameworks, physical theories   │
 │   Describe what exists and its properties   │
 └─────────────────────────────────────────────┘
-                    ↑
-                    │ (no upward constraint)
                     │
+                    │ (claims filtered by)
+                    ▼
 ┌─────────────────────────────────────────────┐
 │     EPISTEMIC FRAMEWORKS                    │
 │   Human Learning Framework                  │
 │   Constrain legitimate knowledge claims     │
 └─────────────────────────────────────────────┘
                     │
-                    │ (downward constraint)
-                    ↓
+                    │ (constrains)
+                    ▼
 ┌─────────────────────────────────────────────┐
 │     HUMAN KNOWLEDGE CLAIMS                  │
 │   Papers, reports, assertions, beliefs      │
@@ -136,7 +132,7 @@ Council-ratified frameworks form a non-circular stack:
 └─────────────────────────────────────────────┘
                     │
                     │ (operational constraint)
-                    ↓
+                    ▼
 ┌─────────────────────────────────────────────┐
 │     TOOLS, METHODS, CURRICULA               │
 │   Handbooks, protocols, teaching materials  │
@@ -144,7 +140,7 @@ Council-ratified frameworks form a non-circular stack:
 └─────────────────────────────────────────────┘
 ```
 
-**Key property:** Arrows point downward only. No layer constrains the layer above it.
+**Key property:** Normative constraints point downward only. Descriptive relations (world → frameworks) are mappings, not constraints.
 
 ***
 
@@ -164,7 +160,7 @@ Frameworks in different domains must not:
 
 * Share invariants (each domain has its own foundational claims)
 * Share falsification conditions (what falsifies an ontological claim differs from what falsifies an epistemic claim)
-* Share governance (the Guardian governs epistemic clarity; the Architect governs structural coherence; neither governs the other's domain exclusively)
+* Share jurisdiction (no framework may define validity conditions outside its declared stack position)
 
 ***
 
@@ -209,6 +205,11 @@ Revision requires:
 3. Proposed replacement that satisfies all existing compliance tests
 
 No downstream document may override, amend, or reinterpret this preamble.
+
+> **Archivist Note:**\
+> **Frozen:** Non-Merge Rule; Coupling Protocol; Acid Test; Stack architecture\
+> **Evolving:** Worked example appendix; example lists; citation format examples\
+> Appendix changes do not constitute constitutional revision.
 
 ***
 
