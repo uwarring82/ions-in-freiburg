@@ -13,8 +13,7 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 \
 **Status:** Proposed framework (Stage 1) — validation pending\
 **Scope:** Comparison geometry and access constraints only\
-**Exclusions:** Oscillator physics; relativistic modelling (IAU/IERS); quantum gravity\
-**Feedback:** Testing and critique welcome
+**Exclusions:** Oscillator physics; relativistic modelling (IAU/IERS); quantum gravity
 {% endhint %}
 
 > **Relation to Causal Clock Unification (CCUF):**\
