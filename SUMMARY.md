@@ -17,7 +17,8 @@
 * [L–Evolution of Terminology](essays/evolution-of-terminology.md)
 * [L–The Bias I Carry](essays/l-the-bias-i-carry.md)
 * [G–Higher Education Is Sleeping — Thoughts on Awakening](essays/g-higher-education-is-sleeping-thoughts-on-awakening.md)
-* [L–On Minimal Departures](essays/l-on-minimal-departures.md)
+* [L–On Minimal Departures](essays/l-on-minimal-departures/README.md)
+  * [Page](essays/l-on-minimal-departures/page.md)
 
 ## Implementation Interfaces
 

@@ -1,14 +1,16 @@
 ---
-description: From Rabi Oscillations to the Asymmetry of Being
+description: >-
+  From Rabi Oscillations to the Asymmetry of Being – The Control (Common)
+  Perspective
 ---
 
-# L–\[DRFAT] On Minimal Departures
+# L–On Minimal Departures
 
 {% hint style="info" %}
 author: _U. Warring_\
 affiliation: _Institute of Physics, University of Freiburg_\
-_version: 0.2_\
-last\_updated: _2025-12-17_\
+_version: 0.2.1_\
+last\_updated: _2025-12-22_\
 license: _CC BY 4.0_\
 \
 **Disclaimer** – _This essay is scaffolding for thinking, not foundation for theorizing. It earns the right to speculate by making its limits explicit. Read accordingly_
