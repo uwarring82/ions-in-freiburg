@@ -7,7 +7,7 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.1.1\
+**Version:** 0.1.2\
 **Last updated:** 2025-12-22\
 **License:** CC BY 4.0\
 \
