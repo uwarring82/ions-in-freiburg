@@ -2,7 +2,7 @@
 description: Timekeeping as Causal Geometry
 ---
 
-# Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
+# G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales
 
 {% hint style="info" %}
 **Author:** U. Warring\

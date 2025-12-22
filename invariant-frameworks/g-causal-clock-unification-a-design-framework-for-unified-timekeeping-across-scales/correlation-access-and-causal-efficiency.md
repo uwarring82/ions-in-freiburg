@@ -4,10 +4,18 @@ description: A Proposed Framework for Optical Time & Frequency Comparison
 
 # Correlation Access and Causal Efficiency
 
-> **Status:** Proposed framework (Stage 1) — validation pending\
-> **Scope:** Comparison geometry and access constraints only\
-> **Exclusions:** Oscillator physics; relativistic modelling (IAU/IERS); quantum gravity\
-> **Feedback:** Testing and critique welcome
+{% hint style="info" %}
+**Author:** U. Warring\
+**Affiliation:** Institute of Physics, University of Freiburg\
+**Version:** 0.1\
+**Last updated:** 2025-12-22\
+**License:** CC BY 4.0\
+\
+**Status:** Proposed framework (Stage 1) — validation pending\
+**Scope:** Comparison geometry and access constraints only\
+**Exclusions:** Oscillator physics; relativistic modelling (IAU/IERS); quantum gravity\
+**Feedback:** Testing and critique welcome
+{% endhint %}
 
 ***
 
