@@ -23,11 +23,11 @@ Because these scopes serve complementary but distinct purposes, the labelling av
 
 The harbour organises content by the role it plays, not just its scope:
 
-**Coastlines** define boundaries between what is physically or logically possible and what is not. These boundaries cannot be violated. Coastline documents are meant to be verifiable across harbours and independent of any particular laboratory. They chart the territory.
+**Coastlines (Invariant Frameworks)** define boundaries between what is physically or logically possible and what is not. These boundaries cannot be violated. Coastline documents are meant to be verifiable across harbours and independent of any particular laboratory. They chart the territory.
 
-**Equipment** provides tools for exploration: conceptual frameworks, interpretations, and motivations that help navigate within those boundaries. Equipment reflects perspective and context. Different crews may favour different tools while respecting the same coastlines.
+**Equipment (Essays)** provides tools for exploration: conceptual frameworks, interpretations, and motivations that help navigate within those boundaries. Equipment reflects perspective and context. Different crews may favour different tools while respecting the same coastlines.
 
-**Handbooks** record operational practices tested in specific settings. They show how particular voyages were conducted, without claiming to be unique or authoritative. Different harbours may develop different handbooks for similar waters.
+**Handbooks (Implementation Handbooks)** record operational practices tested in specific settings. They show how particular voyages were conducted, without claiming to be unique or authoritative. Different harbours may develop different handbooks for similar waters.
 
 This separation allows global constraints to remain stable while local practices evolve independently—without conflating universal limits with contingent choices.
 
