@@ -8,7 +8,7 @@ coverHeight: 44
 
 # Welcome to the Open-Science Harbour: Ions in Freiburg
 
-This harbour supports trapped-ion quantum physics research at the University of Freiburg. It is a place to collect frameworks, prepare for scientific exploration, and share results—structured so that visitors can distinguish what transfers across laboratories from what remains local to ours.
+This harbour was built to support for trapped-ion quantum physics research at the University of Freiburg. It is a place to collect frameworks, prepare for scientific exploration, and share results—structured so that visitors can distinguish what transfers across laboratories from what remains local to ours.
 
 All content carries an explicit scope label:
 
