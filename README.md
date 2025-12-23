@@ -8,57 +8,92 @@ coverHeight: 44
 
 # Welcome to the Open-Science Harbour: Ions in Freiburg
 
-This harbour serves as a resource centre for trapped-ion quantum physics research—a place to gather frameworks, prepare for scientific exploration, and share findings. It documents both global (G) scientific principles and local (L) practices. Global content describes methods or constraints that should transfer across laboratories and research fields. Local content reflects our particular equipment, choices, and experiences at this node at the University of Freiburg. This dual scope serves complementary purposes but can create confusion about what applies universally versus locally—so we label everything explicitly.
+This harbour supports trapped-ion quantum physics research at the University of Freiburg. It is a place to collect frameworks, prepare for scientific exploration, and share results—structured so that visitors can distinguish what transfers across laboratories from what remains local to ours.
 
-#### What This Harbour Provides
+All content carries an explicit scope label:
 
-This harbour equips sailors for scientific voyages by providing three types of resources:
+* **Global (G)** content describes constraints or structures intended to hold across laboratories and research fields.
+* **Local (L)** content records our specific equipment, choices, and experiences here in Freiburg.
 
-**Maps of coastlines** (frameworks) document boundaries between navigable and non-navigable space. These maps chart what cannot be violated—the physical constraints all sailors encounter. Maps are verifiable: different harbours can confirm the same coastlines. They show limits without prescribing routes.
-
-**Sails and repair kits** (essays) provide equipment that enables exploration. These tools reflect how particular communities interpret maps and undertake voyages. Equipment varies by tradition and context; sailors choose tools suited to their vessels and destinations.
-
-**Handbooks for sailors** (interfaces) document operational practices tested in specific contexts. These guides show how previous voyages were conducted but are neither unique nor mandatory. Different crews develop different handbooks for similar waters.
-
-This separation allows global boundary conditions (coastlines) to remain stable whilst local practices (equipment and handbooks) evolve independently. Different harbours may provide different equipment and handbooks whilst charting the same coastlines.
-
-#### Local and Global Constituents
-
-Locally, around fifteen researchers at the University of Freiburg contribute to work spanning quantum control, precision sensing, and experimental platform development. This documentation reflects our evolving practices and insights.
-
-Globally, this work engages with broader institutional structures: university research systems, precision measurement infrastructures, international atomic physics communities, and open repositories for scientific knowledge. These global constituents provide the coordination layer—shared measurement standards, verification protocols, and knowledge commons—that enables local groups to develop compatible but distinct approaches.
-
-All content is openly shared as living documentation, updated as experiments evolve.
-
-**Group webpage:** [qsim.uni-freiburg.de](https://www.qsim.uni-freiburg.de/)\
-**Editorial responsibility:** Ulrich Warring
+Because these scopes serve complementary but distinct purposes, the labelling avoids ambiguity about what claims universality and what does not.
 
 ***
 
-### How to Navigate This Harbour
+### What This Harbour Provides
 
-#### Document Types (organised in groups)
+The harbour organises content by the role it plays, not just its scope:
 
-**Frameworks** define concepts through minimal, falsifiable conditions. They specify boundaries (what cannot be violated) without prescribing methods. These are maps of coastlines—charting the limits of navigable space.
+**Coastlines** define boundaries between what is physically or logically possible and what is not. These boundaries cannot be violated. Coastline documents are meant to be verifiable across harbours and independent of any particular laboratory. They chart the territory.
 
-**Essays** provide interpretation, motivation, and context. They reflect specific perspectives and are not normative. These are sails and repair kits—equipment enabling exploration with varied approaches.
+**Equipment** provides tools for exploration: conceptual frameworks, interpretations, and motivations that help navigate within those boundaries. Equipment reflects perspective and context. Different crews may favour different tools while respecting the same coastlines.
 
-**Interfaces** document operational practices for specific contexts. They instantiate frameworks but are neither unique nor authoritative. These are handbooks for sailors—showing tested procedures from particular crews.
+**Handbooks** record operational practices tested in specific settings. They show how particular voyages were conducted, without claiming to be unique or authoritative. Different harbours may develop different handbooks for similar waters.
 
-#### Scope Labels (in page titles)
-
-**(G) Global** — Applies across contexts. Should be verifiable independently of our setup.
-
-**(L) Local** — Particular to Freiburg laboratory. Documents what we do here.
-
-**Examples:**\
-`G – Causal Clock Unification Framework` (map—universal boundary)\
-`L – The Bias I Carry` (equipment—local perspective)\
-`L – Structure Your Research` (handbook—our procedures)
+This separation allows global constraints to remain stable while local practices evolve independently—without conflating universal limits with contingent choices.
 
 ***
 
-**Check groups for document types and page titles for scope (G/L). This harbour provides maps showing boundaries, equipment enabling exploration, and handbooks documenting tested practices.**
+### How to Navigate (by Example)
 
-```
-```
+Navigation relies on two cues: the **scope label** in page titles (G or L) and the **role** the document plays (coastline, equipment, or handbook).
+
+**`G – Causal Clock Unification Framework`** A global coastline. It formulates minimal, falsifiable conditions under which different timing systems—atomic clocks, Earth-rotation measurements, pulsar timing—can be compared consistently. The framework defines boundaries that any compatible system must respect. Other harbours should be able to verify the same coastline independently.
+
+**`L – The Bias I Carry`** A local piece of equipment. It reflects a particular perspective shaped by experience, judgement, and context. It does not claim universality. Such documents help interpret maps and motivate exploration, but they are not constraints.
+
+**`L – Structure Your Research`** A local handbook. It documents practices that have proven useful in our setting: how we organise work, structure projects, or navigate recurring challenges. These procedures instantiate global constraints but are neither unique nor mandatory. Other crews may adopt, adapt, or ignore them.
+
+***
+
+**Use page titles to identify scope. Read each document according to its role: some define boundaries, some provide equipment, some record tested practice. Together, they form a navigable harbour for open scientific work.**
+
+***
+
+### Editorial Note
+
+I am editorially responsible for this harbour.
+
+This responsibility has a specific shape: I am accountable for accurate representation, integrity of attribution, transparency about uncertainty, and openness to correction. These are the commitments I can make—and the commitments against which this work should be judged.
+
+But responsibility of this kind cannot be exercised in isolation. Everything documented here relies on the work, care, and integrity of many others—students, colleagues, institutions, historical authors, reviewers, engineers, tool builders, and communities that maintain shared scientific infrastructures. I trust that these sources acted responsibly; in turn, I ask you to trust that I have done my best to act responsibly in selecting, interpreting, and presenting them.
+
+This creates an unavoidable self-reference: responsibility rests on trust, and trust rests on responsibility. There is no external vantage point from which to verify the whole chain. At best, we can acknowledge the loop openly and build structures that keep it visible.
+
+When errors are found—and they will be—I commit to transparent correction rather than silent revision, and to documenting substantive changes in a correction log maintained alongside this harbour. The harbour's integrity depends not on being right the first time, but on remaining correctable. This is not a weakness; it is the condition under which knowledge can improve.
+
+***
+
+This harbour is part of an ongoing attempt to order knowledge without claiming final authority over truth.
+
+We work with models, frameworks, and measurements. We refine structures, test boundaries, and improve coherence. But we never know with certainty how close we come to "true values"—only whether our instruments, methods, and inferences are internally consistent and externally testable. The struggle to navigate this uncertainty is not a flaw in the scientific enterprise; it is the condition under which scientific work becomes meaningful.
+
+Some elements of this harbour are stable commitments: responsibility, transparency, openness to correction, and respect for the limits of what can be known. These are not negotiable.
+
+Other elements—interpretations, applications, extensions, critiques—remain open. Authority here flows from use, not endorsement. If you find something worth building on, build. If you find something worth challenging, challenge. The harbour offers structure, not control—a place to test maps before sailing.
+
+***
+
+I address this note directly to you.
+
+By _you_, I mean the full network of agents, conditions, and constraints that make this work possible—and against which it will be tested:
+
+* Human readers and collaborators,
+* Students and future researchers,
+* Institutions and archives that preserve and transmit knowledge,
+* Instruments and laboratories that generate the data we interpret,
+* Software, algorithms, and computational tools that extend our reach and shape our methods,
+* And the physical universe itself—the source of constraint, the final arbiter of empirical claims, and the horizon none of us can step beyond.
+
+This last inclusion is not rhetorical. Scientific knowledge is not a conversation among humans alone. It is a disciplined attempt to let the universe speak back—through measurement, through failure, through the resistance of things to our descriptions of them. Addressing the universe directly acknowledges that our responsibility extends beyond social accountability to something harder: correspondence with what is actually there.
+
+Complete detachment from this universe—a view from nowhere, an ordering of all things from outside—would be the ultimate epistemic achievement. It is also impossible. Recognising that impossibility is part of the ordering process. We are always inside the system we are trying to describe.
+
+***
+
+I am committed to using contemporary tools and technologies to support this work. They may extend reach, clarity, and scale. They do not relieve me of responsibility for what is written here.
+
+If this harbour invites you to think more carefully, to question assumptions, or to embark on your own scientific voyages, then it has served its purpose well.
+
+The commitments to accuracy, attribution, transparency, and correction are stable; interpretations built upon them are not. These commitments apply to all versions of this harbour, including this note.
+
+— Ulrich Warring
