@@ -27,7 +27,7 @@ The harbour organises content by the role it plays, not just its scope:
 
 **Equipment (Essays)** provides tools for exploration: conceptual frameworks, interpretations, and motivations that help navigate within those boundaries. Equipment reflects perspective and context. Different crews may favour different tools while respecting the same coastlines.
 
-**Handbooks (Implementation Handbooks)** record operational practices tested in specific settings. They show how particular voyages were conducted, without claiming to be unique or authoritative. Different harbours may develop different handbooks for similar waters.
+**Handbooks (Implementation Interfaces)** record operational practices tested in specific settings. They show how particular voyages were conducted, without claiming to be unique or authoritative. Different harbours may develop different handbooks for similar waters.
 
 This separation allows global constraints to remain stable while local practices evolve independently—without conflating universal limits with contingent choices.
 
