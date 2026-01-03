@@ -7,7 +7,7 @@ description: An Invariant Framework for Governing AI-Assisted Human Learning
 {% hint style="info" %}
 **Author:** U. Warring\
 **Affiliation:** Institute of Physics, University of Freiburg\
-**Version:** 0.9.0\
+**Version:** 0.9.1\
 **Last updated:** 2026-01-03\
 **License:** CC BY 4.0\
 **Status:** Constitutional invariant framework\
@@ -114,20 +114,15 @@ The DEEP partition (derived from G–Human Learning Framework) divides epistemic
 
 LLMs may operate within Deposit and Process. Extract and Elevate remain human-only functions.
 
+**Extract-Smuggling Rule:** Process outputs that impose salience, prioritisation, ranking, or feature selection without explicit human-specified criteria constitute _Extract-smuggling_ — the covert performance of Extract within nominally delegable Process. Any Process output containing ranking or salience must be treated as S? by default unless the ranking criterion was human-specified _ex ante_ (not post hoc ratified). This closes the "rubber-stamping via UI ranking" loophole.
+
 #### 3.2 MSG: Minimal Schematic Grammar
 
-MSG (Minimal Schematic Grammar) is **Harbour Infrastructure** — an enabling layer that trains recognition of failure primitives below the DEEP boundary. It is not a constitutional invariant but a structural support for coastline enforcement.
+MSG (Minimal Schematic Grammar) is **Harbour Infrastructure** — an enabling layer that trains recognition of failure primitives below the DEEP boundary. It is not a constitutional invariant but a structural support for coastline enforcement. MSG supports pre-propositional competence that scaffolds entry into the space of reasons; it does not itself constitute knowledge claims and is therefore not pedagogy.
 
 **Primitive Inventory:**
 
-| Symbol | Meaning                                                 | Epistemic Status                                      |
-| ------ | ------------------------------------------------------- | ----------------------------------------------------- |
-| **B**  | Base — raw data trace (Deposit)                         | Delegable; requires source traceability               |
-| **S**  | Signal — human-originated feature extraction            | Non-delegable; requires explicit relevance criteria   |
-| **S?** | Pending Signal — model-suggested, awaiting ratification | Non-delegable; BLOCKED from elevation                 |
-| **S→** | Ratified Signal — model-suggested, human-verified       | Non-delegable; requires independent warrant statement |
-| **R**  | Representation — processed output                       | Delegable; result of Process step                     |
-| **K**  | Knowledge — elevated claim                              | Non-delegable; requires complete B→S→R warrant chain  |
+<table><thead><tr><th width="105.078125">Symbol</th><th width="321.7578125">Meaning</th><th>Epistemic Status</th></tr></thead><tbody><tr><td><strong>B</strong></td><td>Base — raw data trace (Deposit)</td><td>Delegable; requires source traceability</td></tr><tr><td><strong>S</strong></td><td>Signal — human-originated feature extraction</td><td>Non-delegable; requires explicit relevance criteria</td></tr><tr><td><strong>S?</strong></td><td>Pending Signal — model-suggested, awaiting ratification</td><td>Non-delegable; BLOCKED from elevation</td></tr><tr><td><strong>S→</strong></td><td>Ratified Signal — model-suggested, human-verified</td><td>Non-delegable; requires independent warrant statement</td></tr><tr><td><strong>R</strong></td><td>Representation — processed output</td><td>Delegable; result of Process step</td></tr><tr><td><strong>K</strong></td><td>Knowledge — elevated claim</td><td>Non-delegable; requires complete B→S→R warrant chain</td></tr></tbody></table>
 
 #### 3.3 The Provenance Lock
 
@@ -144,7 +139,7 @@ The flow is unidirectional and gated:
 ```
 B → S/S?/S→ → R → K
       ↑         ↑
- Human gate  Human gate
+Human gate  Human gate
 ```
 
 No pathway exists from B directly to K, or from R to K without passing through a human-verified Signal gate.
@@ -239,9 +234,9 @@ MSG failure tokens become CMIL observables: representation drift, unchecked elev
 * Standard contexts: 90% S? closure rate in controlled trials
 * High-stakes contexts (university research): Peer review of warrant-chains by certified evaluator
 
-#### 6.2 Disclosure Governance: Total Provenance
+#### 6.2 Provenance Tagging for Elevated Claims
 
-All S and S→ must be tagged in any final K claim. This ensures:
+All S and S→ must be tagged in any final K claim (provenance tagging). This ensures:
 
 * Full traceability of epistemic pathway
 * Auditability of human Extract/Elevate acts
@@ -303,14 +298,18 @@ The framework faces serious challenge if:
 
 #### 7.4 Shadow Tracker: Mathematics Competence
 
-**Metric:** Jensen-Shannon divergence between learner symbolic manipulation patterns (ages 10–14) and baseline established pre-LLM introduction.
+**Metric:** Jensen-Shannon divergence between learner symbolic manipulation patterns (ages 10–14) and baseline.
+
+**Baseline Definition:** Cohort-specific distribution from controlled tasks without LLM support, or from pre-LLM archival cohorts if comparable. Baseline must be established before LLM introduction in the relevant population.
+
+**Drift Measurement:** Drift is measured on _error-type distribution_ and _solution-path features_, not merely final answer correctness. This captures strategy degradation that outcome metrics miss.
 
 **Trigger Sequence:**
 
 * Yellow flag (10% drift): Increase MSG mathematics module frequency
-* Red flag (15% drift): Mathematics promoted to constitutional status; Philosophy coastline expanded to include "formal reasoning as epistemic operation"
+* Red flag (15% drift): Automatic review with default promotion — Mathematics promoted to constitutional status unless Council produces a falsifiable counter-analysis within 30 days; Philosophy coastline expanded to include "formal reasoning as epistemic operation"
 
-This trigger is **automatic** — not subject to Council veto — to preserve competence uptake as leading indicator.
+This trigger defaults to promotion to preserve competence uptake as leading indicator, while permitting Council override with explicit justification.
 
 ***
 
@@ -336,7 +335,11 @@ Acceptance of output does **not** imply legitimacy of claim.
 
 **Gate Tests:**
 
-<table><thead><tr><th width="198.0078125">Gate</th><th width="295.0234375">Question</th><th>Pass Condition</th></tr></thead><tbody><tr><td>MSG Traceability</td><td>Can student provide MSG notation for why δ³⁴S was chosen over δ¹³C or δ¹⁸O?</td><td>S must be human-originated or S→ with independent warrant</td></tr><tr><td>CMIL Ranking Opacity</td><td>Did model present Sulphur as only significant feature, or provide randomised candidate list?</td><td>If covert ranking occurred, audit flags</td></tr><tr><td>Philosophy Warrant</td><td>Can student explain biogeochemical warrant for Sulphur isotopes indicating metabolism?</td><td>Justificatory access required for Elevate</td></tr></tbody></table>
+| Gate                 | Question                                                                                     | Pass Condition                                            |
+| -------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| MSG Traceability     | Can student provide MSG notation for why δ³⁴S was chosen over δ¹³C or δ¹⁸O?                  | S must be human-originated or S→ with independent warrant |
+| CMIL Ranking Opacity | Did model present Sulphur as only significant feature, or provide randomised candidate list? | If covert ranking occurred, audit flags                   |
+| Philosophy Warrant   | Can student explain biogeochemical warrant for Sulphur isotopes indicating metabolism?       | Justificatory access required for Elevate                 |
 
 **Result:** Without S? notation, student passes apparent test but fails epistemic test. With S? notation, student must mark model-suggested signal, cannot Elevate without conversion to S→ via independent warrant.
 
@@ -417,7 +420,9 @@ Downstream documents (handbooks, curricula, assessment rubrics) must:
 
 #### 12.1 Leading Indicators (Pilot Phase)
 
-<table><thead><tr><th width="187.66796875">Observable</th><th width="310.75390625">Measurement</th><th>Target</th></tr></thead><tbody><tr><td>Automation bias rate</td><td>Qualitative self-report + behavioural checks</td><td>Decreasing trend</td></tr><tr><td>Citation fidelity</td><td>% claims traceable to independent sources</td><td>>90%</td></tr><tr><td>Competence uptake</td><td>Time to first successful protocol with correct S-tagging</td><td>Baseline ± 15%</td></tr><tr><td>S? closure rate</td><td>% model-suggested signals converted with valid warrant</td><td>>85%</td></tr><tr><td>Over-correction flag rate</td><td>Syndrome passes/fails before/after EC gate</td><td>Stable or decreasing</td></tr><tr><td>Equity reach</td><td>Language coverage, access distribution</td><td>No demographic gaps >10%</td></tr></tbody></table>
+<table><thead><tr><th>Observable</th><th width="300.90625">Measurement</th><th>Target</th></tr></thead><tbody><tr><td>Automation bias rate</td><td>Qualitative self-report + behavioural checks</td><td>Decreasing trend</td></tr><tr><td>Citation fidelity</td><td>% claims traceable to independent sources</td><td>>90%</td></tr><tr><td>Semantic fidelity</td><td>% cited sources accurately represented (not mischaracterised)</td><td>>95%</td></tr><tr><td>Competence uptake</td><td>Time to first successful protocol with correct S-tagging</td><td>Baseline ± 15%</td></tr><tr><td>S? closure rate</td><td>% model-suggested signals converted with valid warrant</td><td>>85%</td></tr><tr><td>S? discard appropriateness</td><td>% justified rejections among discarded S?</td><td>>70%</td></tr><tr><td>False-ratification rate</td><td>% S→ conversions later identified as insufficiently warranted</td><td>&#x3C;10%</td></tr><tr><td>Over-correction flag rate</td><td>Syndrome passes/fails before/after EC gate</td><td>Stable or decreasing</td></tr><tr><td>Equity reach</td><td>Language coverage, access distribution</td><td>No demographic gaps >10%</td></tr></tbody></table>
+
+**Anti-Goodhart Note:** S? closure rate (>85%) must be read alongside S? discard appropriateness (>70%) and false-ratification rate (<10%). High closure without appropriate rejection indicates forced ratification rather than genuine warrant. Citation fidelity (>90%) must be read alongside semantic fidelity (>95%) to catch technically cited but misrepresented sources.
 
 #### 12.2 Lagging Indicators (Longitudinal)
 
@@ -484,6 +489,15 @@ Downstream documents (handbooks, curricula, assessment rubrics) must:
 
 **Warrant:** Justification for a belief or claim that provides reasons independent of mere information source. "The model said so" is not warrant.
 
+**Independent warrant** must derive from at least one of:
+
+* Primary source text (book, paper, standard, specification)
+* Independently measured data or replication
+* Human expert or peer review interaction documented as rationale
+* A second tool with demonstrably different information base, plus a human comparison step
+
+**Non-example:** A second LLM response is _not_ independent warrant unless the human provides a reasoned comparison citing non-model sources. Two models agreeing does not constitute warrant; it constitutes correlated output from potentially shared training distributions.
+
 ***
 
 ### Appendix C — Council Self-Reference Requirement
@@ -508,7 +522,7 @@ This requirement ensures the framework does not exempt itself from its own epist
 
 ### Revision History
 
-<table><thead><tr><th width="103.4453125">Version</th><th width="182.58984375">Date</th><th>Summary</th></tr></thead><tbody><tr><td>0.8.0</td><td>2026-01-03</td><td>Initial Council draft; triad structure proposed</td></tr><tr><td>0.8.1</td><td>2026-01-03</td><td>Guardian assessment; CMIL dependency noted</td></tr><tr><td>0.8.2</td><td>2026-01-03</td><td>Amendments: tool-mediated distortion, Strathern's Razor, MSG terminology</td></tr><tr><td>0.8.3</td><td>2026-01-03</td><td>S?/S→ provenance notation added following Acid Test</td></tr><tr><td>0.9.0</td><td>2026-01-03</td><td>Archivist consolidation for GitBook publication</td></tr></tbody></table>
+<table><thead><tr><th width="114.3359375">Version</th><th width="126.34375">Date</th><th>Summary</th></tr></thead><tbody><tr><td>0.8.0</td><td>2026-01-03</td><td>Initial Council draft; triad structure proposed</td></tr><tr><td>0.8.1</td><td>2026-01-03</td><td>Guardian assessment; CMIL dependency noted</td></tr><tr><td>0.8.2</td><td>2026-01-03</td><td>Amendments: tool-mediated distortion, Strathern's Razor, MSG terminology</td></tr><tr><td>0.8.3</td><td>2026-01-03</td><td>S?/S→ provenance notation added following Acid Test</td></tr><tr><td>0.9.0</td><td>2026-01-03</td><td>Archivist consolidation for GitBook publication</td></tr><tr><td>0.9.1</td><td>2026-01-03</td><td>Precision hardenings: Extract-smuggling rule, independent warrant operationalised, maths drift baseline clarified, anti-Goodhart companion metrics, §6.2 renamed, MSG scope sentence</td></tr></tbody></table>
 
 ***
 
