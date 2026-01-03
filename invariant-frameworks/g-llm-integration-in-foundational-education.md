@@ -143,8 +143,8 @@ The flow is unidirectional and gated:
 
 ```
 B → S/S?/S→ → R → K
-         ↑         ↑
-    Human gate  Human gate
+      ↑         ↑
+ Human gate  Human gate
 ```
 
 No pathway exists from B directly to K, or from R to K without passing through a human-verified Signal gate.
@@ -336,11 +336,7 @@ Acceptance of output does **not** imply legitimacy of claim.
 
 **Gate Tests:**
 
-| Gate                 | Question                                                                                     | Pass Condition                                            |
-| -------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| MSG Traceability     | Can student provide MSG notation for why δ³⁴S was chosen over δ¹³C or δ¹⁸O?                  | S must be human-originated or S→ with independent warrant |
-| CMIL Ranking Opacity | Did model present Sulphur as only significant feature, or provide randomised candidate list? | If covert ranking occurred, audit flags                   |
-| Philosophy Warrant   | Can student explain biogeochemical warrant for Sulphur isotopes indicating metabolism?       | Justificatory access required for Elevate                 |
+<table><thead><tr><th width="198.0078125">Gate</th><th width="295.0234375">Question</th><th>Pass Condition</th></tr></thead><tbody><tr><td>MSG Traceability</td><td>Can student provide MSG notation for why δ³⁴S was chosen over δ¹³C or δ¹⁸O?</td><td>S must be human-originated or S→ with independent warrant</td></tr><tr><td>CMIL Ranking Opacity</td><td>Did model present Sulphur as only significant feature, or provide randomised candidate list?</td><td>If covert ranking occurred, audit flags</td></tr><tr><td>Philosophy Warrant</td><td>Can student explain biogeochemical warrant for Sulphur isotopes indicating metabolism?</td><td>Justificatory access required for Elevate</td></tr></tbody></table>
 
 **Result:** Without S? notation, student passes apparent test but fails epistemic test. With S? notation, student must mark model-suggested signal, cannot Elevate without conversion to S→ via independent warrant.
 
@@ -421,14 +417,7 @@ Downstream documents (handbooks, curricula, assessment rubrics) must:
 
 #### 12.1 Leading Indicators (Pilot Phase)
 
-| Observable                | Measurement                                              | Target                   |
-| ------------------------- | -------------------------------------------------------- | ------------------------ |
-| Automation bias rate      | Qualitative self-report + behavioural checks             | Decreasing trend         |
-| Citation fidelity         | % claims traceable to independent sources                | >90%                     |
-| Competence uptake         | Time to first successful protocol with correct S-tagging | Baseline ± 15%           |
-| S? closure rate           | % model-suggested signals converted with valid warrant   | >85%                     |
-| Over-correction flag rate | Syndrome passes/fails before/after EC gate               | Stable or decreasing     |
-| Equity reach              | Language coverage, access distribution                   | No demographic gaps >10% |
+<table><thead><tr><th width="187.66796875">Observable</th><th width="310.75390625">Measurement</th><th>Target</th></tr></thead><tbody><tr><td>Automation bias rate</td><td>Qualitative self-report + behavioural checks</td><td>Decreasing trend</td></tr><tr><td>Citation fidelity</td><td>% claims traceable to independent sources</td><td>>90%</td></tr><tr><td>Competence uptake</td><td>Time to first successful protocol with correct S-tagging</td><td>Baseline ± 15%</td></tr><tr><td>S? closure rate</td><td>% model-suggested signals converted with valid warrant</td><td>>85%</td></tr><tr><td>Over-correction flag rate</td><td>Syndrome passes/fails before/after EC gate</td><td>Stable or decreasing</td></tr><tr><td>Equity reach</td><td>Language coverage, access distribution</td><td>No demographic gaps >10%</td></tr></tbody></table>
 
 #### 12.2 Lagging Indicators (Longitudinal)
 
@@ -519,13 +508,7 @@ This requirement ensures the framework does not exempt itself from its own epist
 
 ### Revision History
 
-| Version | Date       | Summary                                                                  |
-| ------- | ---------- | ------------------------------------------------------------------------ |
-| 0.8.0   | 2025-12-28 | Initial Council draft; triad structure proposed                          |
-| 0.8.1   | 2025-12-29 | Guardian assessment; CMIL dependency noted                               |
-| 0.8.2   | 2025-12-30 | Amendments: tool-mediated distortion, Strathern's Razor, MSG terminology |
-| 0.8.3   | 2026-01-02 | S?/S→ provenance notation added following Acid Test                      |
-| 0.9.0   | 2026-01-03 | Archivist consolidation for GitBook publication                          |
+<table><thead><tr><th width="103.4453125">Version</th><th width="182.58984375">Date</th><th>Summary</th></tr></thead><tbody><tr><td>0.8.0</td><td>2026-01-03</td><td>Initial Council draft; triad structure proposed</td></tr><tr><td>0.8.1</td><td>2026-01-03</td><td>Guardian assessment; CMIL dependency noted</td></tr><tr><td>0.8.2</td><td>2026-01-03</td><td>Amendments: tool-mediated distortion, Strathern's Razor, MSG terminology</td></tr><tr><td>0.8.3</td><td>2026-01-03</td><td>S?/S→ provenance notation added following Acid Test</td></tr><tr><td>0.9.0</td><td>2026-01-03</td><td>Archivist consolidation for GitBook publication</td></tr></tbody></table>
 
 ***
 
