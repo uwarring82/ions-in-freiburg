@@ -115,6 +115,16 @@ Lambda and psi are heuristic ordering parameters; cognitive uptake time and part
 
 ***
 
+### Closing beat
+
+Inspiration is not the artefact but the geometry it winds into attention under scarcity. Some geometries recruit millions in parallel; others recruit individuals in series across decades. Neither regime is superior; both are vulnerable to scaffolding capture; each addresses a different failure mode of cultural transmission.
+
+Lambda and psi do not resolve the tension between breadth and depth—they make the tension navigable. As artefacts become cheap and attention remains costly, the question is not which regime prevails, but which engagement topologies remain legible and resilient when symbols are abundant, lambda is fakeable, and time is finite.
+
+That question remains open. It may be the only question worth recruiting a lifetime to answer.
+
+***
+
 ### References
 
 * Adorno, T. W. & Horkheimer, M. _Dialectic of Enlightenment_ (1944).
@@ -127,15 +137,3 @@ Lambda and psi are heuristic ordering parameters; cognitive uptake time and part
 * Joyce, J. _Finnegans Wake_ (1939).
 * Shannon, C. E. "A Mathematical Theory of Communication" (1948).
 * Weaver, W. "Recent Contributions to the Mathematical Theory of Communication" (1949).
-
-***
-
-### Closing beat
-
-Inspiration is not the artefact but the geometry it winds into attention under scarcity. Some geometries recruit millions in parallel; others recruit individuals in series across decades. Neither regime is superior; both are vulnerable to scaffolding capture; each addresses a different failure mode of cultural transmission.
-
-Lambda and psi do not resolve the tension between breadth and depth—they make the tension navigable. As artefacts become cheap and attention remains costly, the question is not which regime prevails, but which engagement topologies remain legible and resilient when symbols are abundant, lambda is fakeable, and time is finite.
-
-That question remains open. It may be the only question worth recruiting a lifetime to answer.
-
-***
