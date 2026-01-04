@@ -22,6 +22,8 @@
 * [G–Higher Education Is Sleeping — Thoughts on Awakening](essays/g-higher-education-is-sleeping-thoughts-on-awakening.md)
 * [L–On Minimal Departures](essays/l-on-minimal-departures.md)
   * [Minimal Worlds, Open Interfaces](essays/l-on-minimal-departures/minimal-worlds-open-interfaces.md)
+* [G–MSG as Bullshit Detection](essays/g-msg-as-bullshit-detection.md)
+* [G–Inspiration geometries](essays/g-inspiration-geometries.md)
 
 ## Implementation Interfaces
 
@@ -42,4 +44,3 @@
   * [Level 0 Validation Layer (Operational Specification)](implementation-interfaces/g-causal-steering-protocols-operational-specifications/level-0-validation-layer-operational-specification.md)
 * [L–Single-Spin–Single-Mode Dynamics](implementation-interfaces/l-single-spin-single-mode-dynamics/README.md)
   * [The Compatible Ordinans Perspective](implementation-interfaces/l-single-spin-single-mode-dynamics/the-compatible-ordinans-perspective.md)
-* [G–MSG as Bullshit Detection](implementation-interfaces/g-msg-as-bullshit-detection.md)
