@@ -23,7 +23,7 @@
 * [L–On Minimal Departures](essays/l-on-minimal-departures.md)
   * [Minimal Worlds, Open Interfaces](essays/l-on-minimal-departures/minimal-worlds-open-interfaces.md)
 * [G–MSG as Bullshit Detection](essays/g-msg-as-bullshit-detection.md)
-* [G–Inspiration geometries](essays/g-inspiration-geometries.md)
+* [G–Inspiration geometries: recruiting minds, recruiting lifetimes](essays/g-inspiration-geometries-recruiting-minds-recruiting-lifetimes.md)
 
 ## Implementation Interfaces
 
