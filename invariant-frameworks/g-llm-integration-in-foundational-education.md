@@ -105,12 +105,7 @@ Two co-equal coastlines define the non-negotiable boundaries of the framework:
 
 The DEEP partition (derived from G–Human Learning Framework) divides epistemic responsibility:
 
-| Partition   | Epistemic Role                                  | Delegability    |
-| ----------- | ----------------------------------------------- | --------------- |
-| **Deposit** | World → traces                                  | Delegable       |
-| **Extract** | Framing, relevance, representation selection    | ❌ Non-delegable |
-| **Process** | Correlation ordering, pattern detection         | Delegable       |
-| **Elevate** | Claims, non-claims, interpretation, endorsement | ❌ Non-delegable |
+<table><thead><tr><th width="113.78515625">Partition</th><th width="403.75">Epistemic Role</th><th>Delegability</th></tr></thead><tbody><tr><td><strong>Deposit</strong></td><td>World → traces</td><td>Delegable</td></tr><tr><td><strong>Extract</strong></td><td>Framing, relevance, representation selection</td><td>❌ Non-delegable</td></tr><tr><td><strong>Process</strong></td><td>Correlation ordering, pattern detection</td><td>Delegable</td></tr><tr><td><strong>Elevate</strong></td><td>Claims, non-claims, interpretation, endorsement</td><td>❌ Non-delegable</td></tr></tbody></table>
 
 LLMs may operate within Deposit and Process. Extract and Elevate remain human-only functions.
 
@@ -122,7 +117,7 @@ MSG (Minimal Schematic Grammar) is **Harbour Infrastructure** — an enabling la
 
 **Primitive Inventory:**
 
-<table><thead><tr><th width="105.078125">Symbol</th><th width="321.7578125">Meaning</th><th>Epistemic Status</th></tr></thead><tbody><tr><td><strong>B</strong></td><td>Base — raw data trace (Deposit)</td><td>Delegable; requires source traceability</td></tr><tr><td><strong>S</strong></td><td>Signal — human-originated feature extraction</td><td>Non-delegable; requires explicit relevance criteria</td></tr><tr><td><strong>S?</strong></td><td>Pending Signal — model-suggested, awaiting ratification</td><td>Non-delegable; BLOCKED from elevation</td></tr><tr><td><strong>S→</strong></td><td>Ratified Signal — model-suggested, human-verified</td><td>Non-delegable; requires independent warrant statement</td></tr><tr><td><strong>R</strong></td><td>Representation — processed output</td><td>Delegable; result of Process step</td></tr><tr><td><strong>K</strong></td><td>Knowledge — elevated claim</td><td>Non-delegable; requires complete B→S→R warrant chain</td></tr></tbody></table>
+<table><thead><tr><th width="98.2265625">Symbol</th><th width="302.1875">Meaning</th><th>Epistemic Status</th></tr></thead><tbody><tr><td><strong>B</strong></td><td>Base — raw data trace (Deposit)</td><td>Delegable; requires source traceability</td></tr><tr><td><strong>S</strong></td><td>Signal — human-originated feature extraction</td><td>Non-delegable; requires explicit relevance criteria</td></tr><tr><td><strong>S?</strong></td><td>Pending Signal — model-suggested, awaiting ratification</td><td>Non-delegable; BLOCKED from elevation</td></tr><tr><td><strong>S→</strong></td><td>Ratified Signal — model-suggested, human-verified</td><td>Non-delegable; requires independent warrant statement</td></tr><tr><td><strong>R</strong></td><td>Representation — processed output</td><td>Delegable; result of Process step</td></tr><tr><td><strong>K</strong></td><td>Knowledge — elevated claim</td><td>Non-delegable; requires complete B→S→R warrant chain</td></tr></tbody></table>
 
 #### 3.3 The Provenance Lock
 
@@ -420,7 +415,7 @@ Downstream documents (handbooks, curricula, assessment rubrics) must:
 
 #### 12.1 Leading Indicators (Pilot Phase)
 
-<table><thead><tr><th>Observable</th><th width="300.90625">Measurement</th><th>Target</th></tr></thead><tbody><tr><td>Automation bias rate</td><td>Qualitative self-report + behavioural checks</td><td>Decreasing trend</td></tr><tr><td>Citation fidelity</td><td>% claims traceable to independent sources</td><td>>90%</td></tr><tr><td>Semantic fidelity</td><td>% cited sources accurately represented (not mischaracterised)</td><td>>95%</td></tr><tr><td>Competence uptake</td><td>Time to first successful protocol with correct S-tagging</td><td>Baseline ± 15%</td></tr><tr><td>S? closure rate</td><td>% model-suggested signals converted with valid warrant</td><td>>85%</td></tr><tr><td>S? discard appropriateness</td><td>% justified rejections among discarded S?</td><td>>70%</td></tr><tr><td>False-ratification rate</td><td>% S→ conversions later identified as insufficiently warranted</td><td>&#x3C;10%</td></tr><tr><td>Over-correction flag rate</td><td>Syndrome passes/fails before/after EC gate</td><td>Stable or decreasing</td></tr><tr><td>Equity reach</td><td>Language coverage, access distribution</td><td>No demographic gaps >10%</td></tr></tbody></table>
+<table><thead><tr><th width="211.41015625">Observable</th><th width="346.125">Measurement</th><th>Target</th></tr></thead><tbody><tr><td>Automation bias rate</td><td>Qualitative self-report + behavioural checks</td><td>Decreasing trend</td></tr><tr><td>Citation fidelity</td><td>% claims traceable to independent sources</td><td>>90%</td></tr><tr><td>Semantic fidelity</td><td>% cited sources accurately represented (not mischaracterised)</td><td>>95%</td></tr><tr><td>Competence uptake</td><td>Time to first successful protocol with correct S-tagging</td><td>Baseline ± 15%</td></tr><tr><td>S? closure rate</td><td>% model-suggested signals converted with valid warrant</td><td>>85%</td></tr><tr><td>S? discard appropriateness</td><td>% justified rejections among discarded S?</td><td>>70%</td></tr><tr><td>False-ratification rate</td><td>% S→ conversions later identified as insufficiently warranted</td><td>&#x3C;10%</td></tr><tr><td>Over-correction flag rate</td><td>Syndrome passes/fails before/after EC gate</td><td>Stable or decreasing</td></tr><tr><td>Equity reach</td><td>Language coverage, access distribution</td><td>No demographic gaps >10%</td></tr></tbody></table>
 
 **Anti-Goodhart Note:** S? closure rate (>85%) must be read alongside S? discard appropriateness (>70%) and false-ratification rate (<10%). High closure without appropriate rejection indicates forced ratification rather than genuine warrant. Citation fidelity (>90%) must be read alongside semantic fidelity (>95%) to catch technically cited but misrepresented sources.
 
