@@ -19,7 +19,7 @@ description: Recruiting Minds, Recruiting Lifetimes
 
 ### Abstract
 
-This essay proposes two complementary parameters for navigating how cultural artefacts order human attention: lambda (λ), which orders artefacts by engagement geometry, and psi (ψ), which measures the impedance encountered when crossing between regimes. The domain of validity is cultural artefacts competing for finite human attention; the aim is orientation, not prescription.
+This essay proposes two complementary parameters for navigating how cultural artefacts order human attention: lambda, which orders artefacts by engagement geometry, and psi, which measures the impedance encountered when crossing between regimes. The domain of validity is cultural artefacts competing for finite human attention; the aim is orientation, not prescription.
 
 ***
 
@@ -45,13 +45,13 @@ This echoes debates familiar from critical theory—Adorno's culture-industry cr
 
 The lambda compass did not arrive as abstraction. It crystallised across two summers, one autumn, and a winter conversation.
 
-In summer 2024, on an island in the Mediterranean, I read Rutger Bregman's _Humankind_. A colleague had left it on my desk months earlier with no explanation—just the book, spine uncracked. Bregman, a Dutch historian, published _Humankind_ in 2020 as a corrective to cynical assumptions about human nature. The book argues that cooperation is the deeper evolutionary baseline, using accessible narrative and vivid case studies pitched for rapid uptake. Reading it in the shade of palm trees, I noticed how quickly its ideas entered conversation—with my partner over dinner, with friends on the beach, with strangers at the harbour taverna. The lambda was low: minimal cognitive barrier, broad social resonance, coherence achieved in hours.
+In summer 2024, on an island in the Mediterranean, I read Rutger Bregman's _Humankind_. A colleague had left it on my desk months earlier with little explanation—just the book as a birthday present, spine uncracked. Bregman, a Dutch historian, published _Humankind_ in 2020 as a corrective to cynical assumptions about human nature. The book argues that cooperation is the deeper evolutionary baseline, using accessible narrative and vivid case studies pitched for rapid uptake. Reading it in the shade of palm trees, I noticed how quickly its ideas entered conversation—with my partner over dinner, with my children and friends near the pool or on the beach. The lambda was low: minimal cognitive barrier, broad social resonance, coherence achieved in hours.
 
 In summer 2025, on the same island, I read Yuval Noah Harari's _Nexus_—_&#x74;_&#x68;e same colleague had recommended it. Harari, an Israeli historian, published _Nexus_ in 2024 as a meditation on information networks and civilisational order. The book is denser, more speculative. Its central metaphor—that societies are information-processing systems whose outputs depend on network topology—requires slower digestion. I found myself returning to passages between swims, testing claims against other reading, debating implications internally before voicing them. The lambda was higher: fewer participants would complete the book, but those who did would carry its frameworks longer.
 
-In late autumn 2025, the same colleague suggested a third book: James Joyce's _Finnegans Wake_. The recommendation came with a warning: this one would take decades, not days. I ordered a copy but did not open it. The impedance felt prohibitive.
+In late autumn 2025, the same colleague suggested a third book: James Joyce's _Finnegans Wake_. The recommendation came with a warning: this one would take decades, not days. I ordered a copy, opened it, tried reading a few lines but closed it most quickly. The impedance felt prohibitive.
 
-Then, at the beginning of the winter holidays, a conversation with my neighbour shifted the frame entirely. She is about twenty-five, studies English and Education, and has evolved into one of my most valued discussion partners—someone who reacts quickly with keen counter-arguments that keep me honest. We were exchanging our latest intellectual preoccupations when she mentioned Taylor Swift, not as guilty pleasure but as genuine interpretive challenge. She had spent years decoding album arcs, tracking Easter eggs across music videos, constructing narrative theories that rivalled literary exegesis in complexity. The provocation struck me mid-conversation: Taylor Swift has recruited my neighbour's sustained attention more effectively than any of her university professors.
+Then, at the beginning of the winter holidays, a conversation with my neighbour shifted the frame entirely. She is near her mid twenties, studies English and Education, and has evolved into one of my most valued discussion partners—someone who reacts quickly with keen counter-arguments that keep me honest. We were exchanging our latest hot topics when she mentioned Taylor Swift, not as guilty pleasure but as genuine interpretive challenge. She had spent some time decoding album arcs, tracking Easter eggs across music videos, constructing narrative theories that rivalled literary exegesis in complexity. The provocation struck me mid-conversation: Taylor Swift may have recruited my neighbour's sustained attention more effectively than any of her university professors.
 
 We agreed on a mutual homework for the Christmas break: she would write an essay decoding Swift's symbolic architecture; I would write this one. The symmetry felt apt—two engagement geometries, two essays, one shared deadline.
 
@@ -67,7 +67,7 @@ Taylor Swift exemplifies the low-lambda regime at civilisational scale. Her musi
 
 A counter-argument deserves acknowledgment: mass-culture artefacts can carry long-term epistemic stakes. Swift's thematic arcs—narrative continuity across albums, evolving public persona—sustain interpretive labour for devoted fans over years. My neighbour's daughter has spent more cumulative hours on Swift exegesis than I have spent on Harari. Low lambda does not preclude depth; it distributes depth unevenly across participants.
 
-Yet the regime carries Goodhart risk. When proxies such as chart positions, streaming counts, or engagement metrics become optimisation targets, the system drifts: measurable popularity decouples from inspiration quality. This is a scaffolding failure—social scaffolding, in this case—where the support structure becomes the target rather than the enabler.
+Yet the regime carries Goodhart-like risk. When proxies such as chart positions, streaming counts, or engagement metrics become optimisation targets, the system drifts: measurable popularity decouples from inspiration quality. This is a scaffolding failure—social scaffolding, in this case—where the support structure becomes the target rather than the enabler.
 
 ***
 
