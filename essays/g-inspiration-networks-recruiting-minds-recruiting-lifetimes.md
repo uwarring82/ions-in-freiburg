@@ -1,8 +1,8 @@
 ---
-description: 'Inspiration’s Compass: Minds in Parallel, Lifetimes in Series'
+description: A Compass for Navigating Cultural Attention.
 ---
 
-# G–Inspiration geometries: recruiting minds, recruiting lifetimes
+# G–Inspiration Networks: Recruiting Minds, Recruiting Lifetimes
 
 {% hint style="info" %}
 **Author:** U. Warring\
@@ -125,13 +125,15 @@ Lambda and psi are heuristic ordering parameters; cognitive uptake time and part
 
 Inspiration is not the artefact but the pattern it winds into attention under scarcity. Some patterns recruit millions in parallel; others recruit individuals in series across decades. Neither regime is superior; both are vulnerable to scaffolding capture; each addresses a different failure mode of cultural transmission.
 
-Lambda and psi do not resolve the tension between breadth and depth—they make the tension navigable. As artefacts become cheap and attention remains costly, the question is not which regime prevails, but which patterns of attention capture remain legible and resilient when symbols are abundant, lambda is fakeable, and time is finite.
+Lambda and psi do not resolve the tension between breadth and depth—they make the tension navigable. But navigability is not the deepest insight. Humans do not flourish at either extreme. We need the communal synchrony of low-lambda experiences—shared anthems, rapid resonance, the warmth of collective attention—and we need the solitary traction of high-lambda commitments—decade-scale projects, slow mastery, meanings that reveal themselves only to patience. A life spent entirely in breadth dissipates; a life spent entirely in depth isolates. The compass suggests that a well-composed attention portfolio balances both regimes, drawing on each for what it uniquely provides.
 
-That question remains open. It may be the only question worth recruiting a lifetime to answer.
+As artefacts become cheap and attention remains costly, the question is not which regime prevails, but how to compose a rhythm of engagement that keeps both modes alive. The answer will differ for each person, each phase of life, each cultural moment. But the question itself—how to balance rapid communion with slow decoding—may be among the most human questions there is.
+
+That question remains open. It may be the only question worth recruiting a lifetime to answer—and the answer, when it comes, will not be a position on the lambda axis but a path that moves along it.
 
 ***
 
-_Special thanks to all my past, current, and future environments._
+_Special thanks to all our past, current, and future environments._
 
 ***
 
