@@ -242,6 +242,14 @@ _Our view:_ Shannon is cited as intellectual background for the claim that const
 
 ***
 
+**Swift, T.** Discography (2006–present), including _Fearless_ (2008), _1989_ (2014), _Folklore_ (2020), _Evermore_ (2020), _Midnights_ (2022), _The Tortured Poets Department_ (2024).
+
+_Content:_ A singer-songwriter whose career spans country, pop, and indie folk, known for autobiographical storytelling, narrative continuity across albums, and deliberate embedding of symbolic "Easter eggs" that reward close interpretive attention. Her fan community has developed elaborate exegetical practices including lyric analysis, music video decoding, and cross-album theory construction.
+
+_Our view:_ Swift functions as the paradigm case of low-lambda engagement at civilisational scale—rapid emotional synchrony across millions of participants. Yet her work also complicates simple lambda-ordering: Swiftie annotation subcultures represent high-lambda enclaves within a predominantly low-lambda ecosystem. The neighbour's sustained interpretive labour on Swift's symbolic architecture demonstrates that low lambda does not preclude depth; it distributes depth unevenly across participants. Swift anchors the low end of the lambda continuum while simultaneously illustrating the hybrid systems that may define future cultural artefacts.
+
+***
+
 **Weaver, W.** "Recent Contributions to the Mathematical Theory of Communication" (1949).
 
 _Content:_ A companion essay to Shannon's paper, translating the technical framework for broader audiences and situating it within questions of meaning and effectiveness.
