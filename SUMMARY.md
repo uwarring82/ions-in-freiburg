@@ -6,10 +6,10 @@
 
 * [Unified Preamble](invariant-frameworks/unified-preamble.md)
 * [Spacetime Architecture — Unified Scaffold](invariant-frameworks/spacetime-architecture-unified-scaffold.md)
-* [G–What Can Make a Complex System an Ordinans?](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans/README.md)
-  * [L–ORDINANS-L3-TMP — Engineered World Submission Template](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans/l-ordinans-l3-tmp-engineered-world-submission-template.md)
 * [G–Causal Clock Unification — A Design Framework for Unified Timekeeping Across Scales](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales.md)
   * [Correlation Access and Causal Efficiency](invariant-frameworks/g-causal-clock-unification-a-design-framework-for-unified-timekeeping-across-scales/correlation-access-and-causal-efficiency.md)
+* [G–What Can Make a Complex System an Ordinans?](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans/README.md)
+  * [L–ORDINANS-L3-TMP — Engineered World Submission Template](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans/l-ordinans-l3-tmp-engineered-world-submission-template.md)
 * [G–Human Learning Framework](invariant-frameworks/g-human-learning-framework.md)
 * [G–LLM Integration in Foundational Education](invariant-frameworks/g-llm-integration-in-foundational-education.md)
 
