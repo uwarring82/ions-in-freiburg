@@ -7,7 +7,9 @@ description: Set of Principles for Quantum-Traceable Refractive Index Metrology
 {% hint style="info" %}
 **Authors\*:** Ulrich Warring and Wei Wu\
 **Framework ID:** IF-QTR\
-**Version:** 0.2.3\
+**Version:** 0.2.3
+
+**License:** CC BY 4.0\
 **Status:** Constitutional reference document (stewardship phase)\
 **Scope:** Precision refractometry architectures claiming traceability to atomic frequency standards\
 **Endorsement Marker:** Local framework under stewardship — no parity implied with BIPM standards or established atmospheric models\
