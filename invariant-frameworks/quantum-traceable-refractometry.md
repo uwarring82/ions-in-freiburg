@@ -14,7 +14,7 @@ description: Set of Principles for Quantum-Traceable Refractive Index Metrology
 **Endorsement Marker:** Local framework under stewardship — no parity implied with BIPM standards or established atmospheric models\
 **Lineage:** Metrological systems with environmental coupling\
 \
-&#xNAN;_\*Listed alphabetically. Both authors contribute specific perspectives, but share responsibility for the complete text._
+&#xNAN;_\*Listed alphabetically. Authors contribute unique perspectives, but commonly share responsibility for the complete text._
 {% endhint %}
 
 ***
