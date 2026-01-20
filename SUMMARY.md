@@ -26,6 +26,7 @@
   * [Minimal Worlds, Open Interfaces](essays/l-on-minimal-departures/minimal-worlds-open-interfaces.md)
 * [G–MSG as Bullshit Detection](essays/g-msg-as-bullshit-detection.md)
 * [G–Inspiration Networks: Recruiting Minds, Recruiting Lifetimes](essays/g-inspiration-networks-recruiting-minds-recruiting-lifetimes.md)
+* [Setting Sail with IF-QTR: The Networked Backbone](essays/setting-sail-with-if-qtr-the-networked-backbone.md)
 
 ## Implementation Interfaces
 
