@@ -5,9 +5,10 @@ description: DRAFT
 # Setting Sail with IF-QTR: The Networked Backbone
 
 {% hint style="info" %}
-Authors: Wei Wu, Ulrich Warring\
-Version: 0.1.1\
-Status: Community Narrative (Sail)
+**Authors:** Wei Wu, Ulrich Warring\
+**Version:** 0.1.1\
+**Status:** Community Narrative (Sail)\
+**License:** CC BY 4.0
 {% endhint %}
 
 ***
