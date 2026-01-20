@@ -12,6 +12,7 @@
   * [L–ORDINANS-L3-TMP — Engineered World Submission Template](invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans/l-ordinans-l3-tmp-engineered-world-submission-template.md)
 * [G–Human Learning Framework](invariant-frameworks/g-human-learning-framework.md)
 * [G–LLM Integration in Foundational Education](invariant-frameworks/g-llm-integration-in-foundational-education.md)
+* [Quantum-Traceable Refractometry](invariant-frameworks/quantum-traceable-refractometry.md)
 
 ## Essays
 
