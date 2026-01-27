@@ -13,6 +13,7 @@
 * [G–Human Learning Framework](invariant-frameworks/g-human-learning-framework.md)
 * [G–LLM Integration in Foundational Education](invariant-frameworks/g-llm-integration-in-foundational-education.md)
 * [Quantum-Traceable Refractometry](invariant-frameworks/quantum-traceable-refractometry.md)
+* [Page 1](invariant-frameworks/page-1.md)
 
 ## Essays
 
@@ -27,6 +28,7 @@
 * [G–MSG as Bullshit Detection](essays/g-msg-as-bullshit-detection.md)
 * [G–Inspiration Networks: Recruiting Minds, Recruiting Lifetimes](essays/g-inspiration-networks-recruiting-minds-recruiting-lifetimes.md)
 * [Setting Sail with IF-QTR: The Networked Backbone](essays/setting-sail-with-if-qtr-the-networked-backbone.md)
+* [The Geometry of Agreement](essays/the-geometry-of-agreement.md)
 
 ## Implementation Interfaces
 
