@@ -1,3 +1,7 @@
+---
+description: Mapping Mpemba-like effects in aqueous solutions
+---
+
 # Signatures of Equilibration – A Design-Space Map
 
 {% hint style="info" %}
