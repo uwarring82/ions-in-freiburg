@@ -13,6 +13,7 @@
 * [G–Human Learning Framework](invariant-frameworks/g-human-learning-framework.md)
 * [G–LLM Integration in Foundational Education](invariant-frameworks/g-llm-integration-in-foundational-education.md)
 * [Quantum-Traceable Refractometry](invariant-frameworks/quantum-traceable-refractometry.md)
+* [Signatures of Equilibration – A Design-Space Map](invariant-frameworks/signatures-of-equilibration-a-design-space-map.md)
 * [Causal Comparison Networks](invariant-frameworks/causal-comparison-networks.md)
 
 ## Essays
