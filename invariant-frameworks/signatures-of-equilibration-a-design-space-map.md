@@ -225,12 +225,12 @@ For further reading, organised by topic:
 
 ### Document History
 
-| Version | Date       | Changes                                                                                                             |
-| ------- | ---------- | ------------------------------------------------------------------------------------------------------------------- |
-| 0.1     | 2026-01-23 | Initial draft                                                                                                       |
-| 0.2     | 2026-01-23 | Added freeze criterion; split purity parameters                                                                     |
-| 0.3     | 2026-01-23 | Operationalised surface measurements; added material parameter; references                                          |
-| 0.4     | 2026-01-23 | BSc edition: simplified language; added background physics; regime transition arrows; uncertainty propagation notes |
+| Version | Date       | Changes                                                                                                |
+| ------- | ---------- | ------------------------------------------------------------------------------------------------------ |
+| 0.1     | 2026-01-23 | Initial draft                                                                                          |
+| 0.2     | 2026-01-23 | Added freeze criterion; split purity parameters                                                        |
+| 0.3     | 2026-01-23 | Operationalised surface measurements; added material parameter; references                             |
+| 0.4     | 2026-01-23 | Simplified language; added background physics; regime transition arrows; uncertainty propagation notes |
 
 ***
 
