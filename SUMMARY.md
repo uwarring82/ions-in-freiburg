@@ -26,9 +26,10 @@
 * [G–Higher Education Is Sleeping — Thoughts on Awakening](essays/g-higher-education-is-sleeping-thoughts-on-awakening.md)
 * [L–On Minimal Departures](essays/l-on-minimal-departures.md)
   * [Minimal Worlds, Open Interfaces](essays/l-on-minimal-departures/minimal-worlds-open-interfaces.md)
-* [G–MSG as Bullshit Detection](essays/g-msg-as-bullshit-detection.md)
-* [G–Inspiration Networks: Recruiting Minds, Recruiting Lifetimes](essays/g-inspiration-networks-recruiting-minds-recruiting-lifetimes.md)
+* [MSG as Bullshit Detection](essays/msg-as-bullshit-detection.md)
+* [Inspiration Networks: Recruiting Minds, Recruiting Lifetimes](essays/inspiration-networks-recruiting-minds-recruiting-lifetimes.md)
 * [Setting Sail with IF-QTR: The Networked Backbone](essays/setting-sail-with-if-qtr-the-networked-backbone.md)
+* [From Paradox to Platform: A Mpemba-like Effect as a Statistical Physics Testbed](essays/from-paradox-to-platform-a-mpemba-like-effect-as-a-statistical-physics-testbed.md)
 * [The Geometry of Agreement](essays/the-geometry-of-agreement.md)
 
 ## Implementation Interfaces
