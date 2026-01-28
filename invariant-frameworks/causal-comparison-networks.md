@@ -37,17 +37,17 @@ Coastlines are falsifiable boundary conditions. They constrain what coordination
 
 #### C1 — Comparison Causality Bound
 
-A comparison over baseline $L\_{\mathrm{comparison\}}$ is coherent within window $T$ only if:
+A comparison over baseline $$L_{\mathrm{comparison}}$$ is coherent within window $$T$$ only if:
 
-\$$ L\_{\mathrm{comparison\}} \le v\_{\mathrm{info\}} \cdot T \$$
+<p align="center"><span class="math"> L_{\mathrm{comparison}} \le v_{\mathrm{info}} \cdot T </span></p>
 
-**Effective information velocity.** The term $v\_{\mathrm{info\}}$ is not the medium limit (e.g., $c$); it is the effective information velocity including all latencies:
+**Effective information velocity.** The term $$v_{\mathrm{info}}$$ is not the medium limit (e.g., $$c$$); it is the effective information velocity including all latencies:
 
-\$$ v\_{\mathrm{info\}} = \frac{L\_{\mathrm{comparison\}}}{\tau\_{\mathrm{flight\}} + \tau\_{\mathrm{switch\}} + \tau\_{\mathrm{proc\}} + \tau\_{\mathrm{queue\}}} \$$
+<p align="center"><span class="math"> v_{\mathrm{info}} = \frac{L_{\mathrm{comparison}}}{\tau_{\mathrm{flight}} + \tau_{\mathrm{switch}} + \tau_{\mathrm{proc}} + \tau_{\mathrm{queue}}} </span></p>
 
-**Falsifiable test:** Intentionally operate with $L\_{\mathrm{comparison\}} > v\_{\mathrm{info\}} \cdot T$.
+**Falsifiable test:** Intentionally operate with $$L_{\mathrm{comparison}} > v_{\mathrm{info}} \cdot T$$.
 
-**Operational failure criterion:** The null hypothesis $H\_0$: "loop residuals consistent with declared noise model" is rejected at pre-registered significance level $\alpha$ for at least $M$ consecutive comparison cycles. The values of $\alpha$ and $M$ must be declared before operation.
+**Operational failure criterion:** The null hypothesis $$H_0$$: "loop residuals consistent with declared noise model" is rejected at pre-registered significance level $$\alpha$$ for at least $$M$$ consecutive comparison cycles. The values of $$\alpha$$ and $$M$$ must be declared before operation.
 
 #### C2 — No Shared Node Ontology
 
@@ -61,12 +61,7 @@ Only edge comparisons are in scope.
 
 ### 2. Tier Structure
 
-| Tier | Content                                                             | Authority                     |
-| ---- | ------------------------------------------------------------------- | ----------------------------- |
-| 0    | Causality bound (C1), ontology separation (C2)                      | This framework                |
-| 1b   | Raw comparison logs, timestamps, calibration metadata               | Domain standards (referenced) |
-| 2    | VCL topology, $\eta\_{\mathrm{CEP\}}$ metric, I1–I3 interface locks | This framework                |
-| 3    | Bayesian estimators, control heuristics, optimisation               | Handbooks (optional)          |
+<table><thead><tr><th width="80.33203125">Tier</th><th width="444.078125">Content</th><th>Authority</th></tr></thead><tbody><tr><td>0</td><td>Causality bound (C1), ontology separation (C2)</td><td>This framework</td></tr><tr><td>1b</td><td>Raw comparison logs, timestamps, calibration metadata</td><td>Domain standards (referenced)</td></tr><tr><td>2</td><td>VCL topology, <span class="math">\eta_{\mathrm{CEP}}</span> metric, I1–I3 interface locks</td><td>This framework</td></tr><tr><td>3</td><td>Bayesian estimators, control heuristics, optimisation</td><td>Handbooks (optional)</td></tr></tbody></table>
 
 ***
 
@@ -108,7 +103,7 @@ VCL is the primary Tier-2 coordination primitive. It converts the abstract causa
 
 A VCL is a closed cycle of directed comparisons. The aggregate residual must be statistically compatible with zero under a pre-registered test:
 
-\$$ \Delta\_{\mathrm{loop\}} = \sum\_{\text{edges in loop\}} y\_{ij} \$$
+<p align="center"><span class="math"> \Delta_{\mathrm{loop}} = \sum_{\text{edges in loop}} y_{ij} </span></p>
 
 #### Mandatory Constraints
 
@@ -121,7 +116,7 @@ Every VCL used for integrity claims must satisfy:
 5. **Pre-registration:** Before operation, declare for each loop:
    * Test statistic
    * Noise model assumption class
-   * Significance level $\alpha$
+   * Significance level $$\alpha$$
    * Decision threshold
 
 **Scope of heterogeneity requirement:** Heterogeneity is mandatory for every loop that supports an integrity claim (i.e., any loop whose residual is used to generate alarms, certify system state, or publish to external parties). Loops used solely for internal diagnostics or optimisation may be homogeneous but cannot support integrity claims.
@@ -132,7 +127,7 @@ A homogeneous loop can suffer common-mode failures invisible to residual checks.
 
 #### Falsifiable Tests
 
-* **Bias injection:** Inject a known bias on one edge. Prediction: $\Delta\_{\mathrm{loop\}}$ shifts with predicted sign and magnitude.
+* **Bias injection:** Inject a known bias on one edge. Prediction: $$\Delta_{\mathrm{loop}}$$ shifts with predicted sign and magnitude.
 * **Heterogeneity removal:** Remove one node class. Prediction: false-negative rate increases measurably.
 
 ***
@@ -143,21 +138,21 @@ CEP quantifies how close the system operates to its causal boundary. It is an in
 
 #### Notation
 
-Use $\eta\_{\mathrm{CEP\}}$ to distinguish from other efficiency parameters.
+Use $$\eta_{\mathrm{CEP}}$$ to distinguish from other efficiency parameters.
 
 #### Operational Definition
 
-\$$ \eta\_{\mathrm{CEP\}}(\tau) = \frac{\text{achieved comparison precision\}}{\text{architecture-limited precision\}} \$$
+<p align="center"><span class="math"> \eta_{\mathrm{CEP}}(\tau) = \frac{\text{achieved comparison precision}}{\text{architecture-limited precision}} </span></p>
 
 Both numerator and denominator must be stated in the same in-domain units (e.g., fractional time error, phase variance, or decision uncertainty).
 
 **Denominator constraints:** The architecture-limited precision must be derived from declared geometry and latency bounds (C1) and the pre-registered noise class. It must not be derived from retrospective fit to observed data.
 
-**No cross-domain normalisation is implied.** The value of $\eta\_{\mathrm{CEP\}}$ in an ion array cannot be compared directly to $\eta\_{\mathrm{CEP\}}$ in a clock network without separate validation.
+**No cross-domain normalisation is implied.** The value of $$\eta_{\mathrm{CEP}}$$ in an ion array cannot be compared directly to $$\eta_{\mathrm{CEP}}$$ in a clock network without separate validation.
 
 #### Mandatory Alarm S1 (Fragmentation)
 
-If correlation length $\xi < L\_{\mathrm{comparison\}}$, the system has fragmented. CEP must flag: **"collective sensing invalid"**.
+If correlation length $$\xi < L_{\mathrm{comparison}}$$, the system has fragmented. CEP must flag: **"collective sensing invalid"**.
 
 **Falsifiable test:** Deliberately reduce correlation (add controlled decoherence, induce packet-delay chaos, break timetable coupling). Prediction: S1 triggers prior to performance collapse, with published false-alarm rate.
 
@@ -178,7 +173,7 @@ The inference stack is a Tier-3 handbook concern. Only the interface between lay
 * **Purpose:** Invariant verification only
 * **Constraint:** Must not learn; checks are pre-registered
 * **Inputs:** Raw comparisons and estimator residuals
-* **Required outputs:** Binary alarms and recorded $p$-values/thresholds
+* **Required outputs:** Binary alarms and recorded $$p$$-values/thresholds
 
 #### Design Principle
 
@@ -216,7 +211,7 @@ Interface locks define explicit causal actions when layers conflict. They are ma
 
 **Trigger:** Frequentist test power falls below declared minimum.
 
-**Computable criterion:** Test power is computed under the pre-registered effect size $\delta$ and noise class. Trigger when power $< p\_{\min}$. The values of $\delta$ and $p\_{\min}$ must be declared before operation.
+**Computable criterion:** Test power is computed under the pre-registered effect size $\delta$ and noise class. Trigger when power $$< p_{\min}$$. The values of $$\delta$$ and $$p_{\min}$$ must be declared before operation.
 
 **Required actions:**
 
@@ -226,10 +221,10 @@ Interface locks define explicit causal actions when layers conflict. They are ma
 
 **Re-establishment criterion:** Return to full tier requires:
 
-* (a) Frequentist test power $\ge p\_{\min}$, and
-* (b) Posterior variance within declared envelope for $\ge N$ consecutive comparison cycles
+* (a) Frequentist test power $$\ge p_{\min}$$, and
+* (b) Posterior variance within declared envelope for $$\ge N$$ consecutive comparison cycles
 
-The value of $N$ must be declared before operation.
+The value of $$N$$ must be declared before operation.
 
 ***
 
@@ -243,12 +238,7 @@ At least one heterogeneous VCL loop must remain closed for integrity claims to b
 
 #### Degradation Sequence
 
-| Condition                                            | Capability                              | Auditability |
-| ---------------------------------------------------- | --------------------------------------- | ------------ |
-| All loops closed                                     | Full sensing + coordination             | Full         |
-| Some loops broken                                    | Reduced sensing; coordination continues | Full         |
-| All loops broken                                     | Sensing disabled; coordination only     | Full         |
-| Heterogeneity lost (all remaining loops homogeneous) | Safe mode                               | Full         |
+<table><thead><tr><th width="262.796875">Condition</th><th width="335.046875">Capability</th><th>Auditability</th></tr></thead><tbody><tr><td>All loops closed</td><td>Full sensing + coordination</td><td>Full</td></tr><tr><td>Some loops broken</td><td>Reduced sensing; coordination continues</td><td>Full</td></tr><tr><td>All loops broken</td><td>Sensing disabled; coordination only</td><td>Full</td></tr><tr><td>Heterogeneity lost (all remaining loops homogeneous)</td><td>Safe mode</td><td>Full</td></tr></tbody></table>
 
 #### Safe Mode Semantics
 
@@ -291,21 +281,21 @@ A conforming implementation must demonstrate the following before claiming CCN c
 
 #### Pre-Deployment
 
-1. **Pre-register VCL tests:** Declare $\alpha$, $M$, noise class, and test statistic for each loop
-2. **Pre-register I3 parameters:** Declare effect size $\delta$, minimum power $p\_{\min}$, and re-entry cycle count $N$
+1. **Pre-register VCL tests:** Declare $$\alpha$$, $$M$$, noise class, and test statistic for each loop
+2. **Pre-register I3 parameters:** Declare effect size $$\delta$$, minimum power $$p_{\min}$$, and re-entry cycle count $$N$$
 3. **Declare CEP parameters:** In-domain precision units, geometry/latency bounds for denominator, fragmentation threshold, false-alarm rate
 
 #### Injection Tests
 
-4. **Bias injection:** Confirm $\Delta\_{\mathrm{loop\}}$ responds with predicted sign and magnitude
-5. **Delay injection:** Confirm C1 violation triggers alarm after $M$ cycles
+4. **Bias injection:** Confirm $$\Delta_{\mathrm{loop}}$$ responds with predicted sign and magnitude
+5. **Delay injection:** Confirm C1 violation triggers alarm after $$M$$ cycles
 6. **Node dropout:** Confirm minimum viable topology holds
 7. **Topology break:** Confirm safe mode engages
 
 #### Interface Verification
 
 8. **I1 holds:** Demonstrate freeze under alarm; confirm no automatic override path exists
-9. **I3 degradation:** Demonstrate tier downgrade when power $< p\_{\min}$ and clean re-entry via declared criterion
+9. **I3 degradation:** Demonstrate tier downgrade when power $$< p_{\min}$$ and clean re-entry via declared criterion
 
 #### Reporting
 
@@ -317,7 +307,7 @@ A conforming implementation must demonstrate the following before claiming CCN c
 
 * No shared ontology across quantum, classical, or operational states
 * No universal noise model
-* No cross-domain commensurability of $\eta\_{\mathrm{CEP\}}$ or residuals without separate validation
+* No cross-domain commensurability of $$\eta_{\mathrm{CEP}}$$ or residuals without separate validation
 * No replacement of domain safety or regulatory standards
 * No optimisation guarantees beyond causal geometry
 
@@ -338,7 +328,7 @@ The following are curated entry points for domain-specific detail. This framewor
 
 ### Appendix A: One-Paragraph Summary
 
-Causal Comparison Networks (CCN) is a Tier-2 coordination framework for distributed systems whose performance depends on comparisons across distance. It defines two coastlines: a causality bound (C1) limiting coherent comparison to $L\_{\mathrm{comparison\}} \le v\_{\mathrm{info\}} \cdot T$, and an ontology separation (C2) forbidding assumptions about shared node state across domains. The framework introduces Verifiable Closure Loops (VCL) as topology constraints with mandatory heterogeneity and pre-registration, and a Causal Efficiency Protocol ($\eta\_{\mathrm{CEP\}}$) as an in-domain operating dial. Interface locks (I1–I3) enforce audible failure: hard conflicts freeze adaptation, soft conflicts increase vigilance, and nonstationarity triggers explicit degradation. Domain applications (ion arrays, clock networks, train schedules) are linked analogically at the comparison-graph level; domain-specific physics remains in Tier-3 handbooks. The framework does not replace regulatory standards; it provides a common coordination layer that forces systems to fail audibly when causal geometry or assumptions break.
+Causal Comparison Networks (CCN) is a Tier-2 coordination framework for distributed systems whose performance depends on comparisons across distance. It defines two coastlines: a causality bound (C1) limiting coherent comparison to $$L_{\mathrm{comparison}} \le v_{\mathrm{info}} \cdot T$$, and an ontology separation (C2) forbidding assumptions about shared node state across domains. The framework introduces Verifiable Closure Loops (VCL) as topology constraints with mandatory heterogeneity and pre-registration, and a Causal Efficiency Protocol ($$\eta_{\mathrm{CEP}}$$) as an in-domain operating dial. Interface locks (I1–I3) enforce audible failure: hard conflicts freeze adaptation, soft conflicts increase vigilance, and nonstationarity triggers explicit degradation. Domain applications (ion arrays, clock networks, train schedules) are linked analogically at the comparison-graph level; domain-specific physics remains in Tier-3 handbooks. The framework does not replace regulatory standards; it provides a common coordination layer that forces systems to fail audibly when causal geometry or assumptions break.
 
 ***
 
