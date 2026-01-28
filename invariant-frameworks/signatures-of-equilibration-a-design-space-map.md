@@ -6,8 +6,8 @@ description: Mapping Mpemba-like effects in aqueous solutions
 
 {% hint style="info" %}
 **Version:** 0.4\
-**Stewardship:** Ulrich Warring and other, University of Freiburg\
-**Status:** Teaching adn Research framework, not peer-reviewed. Use for experimental design and discussion.
+**Stewardship:** Ulrich Warring, University of Freiburg\
+**Status:** Teaching and Research framework, not peer-reviewed. Use for experimental design and discussion.
 {% endhint %}
 
 ***

@@ -2,7 +2,7 @@
 description: A Compass for Navigating Cultural Attention.
 ---
 
-# G–Inspiration Networks: Recruiting Minds, Recruiting Lifetimes
+# Inspiration Networks: Recruiting Minds, Recruiting Lifetimes
 
 {% hint style="info" %}
 **Author:** U. Warring\

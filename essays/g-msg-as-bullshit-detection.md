@@ -2,7 +2,7 @@
 description: Provenance Notation as Epistemic Hygiene
 ---
 
-# G–MSG as Bullshit Detection
+# MSG as Bullshit Detection
 
 {% hint style="info" %}
 **Author:** U. Warring\
