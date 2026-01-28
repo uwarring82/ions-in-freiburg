@@ -84,17 +84,17 @@ The same structure appears everywhere coordination happens across distance. The 
 
 There is one relationship at the heart of all coordination across distance:
 
-\$$ L\_{\mathrm{comparison\}} \le v\_{\mathrm{info\}} \cdot T \$$
+<p align="center"><span class="math"> L_{\mathrm{comparison}} \le v_{\mathrm{info}} \cdot T </span></p>
 
 In words: _The distance over which you can meaningfully compare things is limited by how fast information travels and how long you're willing to wait._
 
-$L\_{\mathrm{comparison\}}$ is the spatial baseline—the physical distance between the things you're comparing. $T$ is the comparison window—the time interval during which you want the comparison to be valid. $v\_{\mathrm{info\}}$ is the effective information velocity.
+$$L_{\mathrm{comparison}}$$ is the spatial baseline—the physical distance between the things you're comparing. $$T$$ is the comparison window—the time interval during which you want the comparison to be valid. $$v_{\mathrm{info}}$$ is the effective information velocity.
 
 This last term is crucial. It is _not_ the speed of light, even though light is often the fastest carrier. It's the actual speed at which comparison-relevant information propagates through your specific system:
 
-\$$ v\_{\mathrm{info\}} = \frac{L\_{\mathrm{comparison\}}}{\tau\_{\mathrm{flight\}} + \tau\_{\mathrm{switch\}} + \tau\_{\mathrm{proc\}} + \tau\_{\mathrm{queue\}}} \$$
+<p align="center"><span class="math"> v_{\mathrm{info}} = \frac{L_{\mathrm{comparison}}}{\tau_{\mathrm{flight}} + \tau_{\mathrm{switch}} + \tau_{\mathrm{proc}} + \tau_{\mathrm{queue}}} </span></p>
 
-In a 19th-century telegraph network, $v\_{\mathrm{info\}}$ was limited by electrical propagation and human operator reaction time. In a modern optical clock network, it's limited by fibre propagation and phase-locked loop bandwidth. In a quantum sensor array, it's limited by interrogation protocol coherence time.
+In a 19th-century telegraph network, $$v_{\mathrm{info}}$$ was limited by electrical propagation and human operator reaction time. In a modern optical clock network, it's limited by fibre propagation and phase-locked loop bandwidth. In a quantum sensor array, it's limited by interrogation protocol coherence time.
 
 Different systems. Same constraint structure.
 
@@ -126,9 +126,9 @@ The solution is old: _triangulate_.
 
 If A compares to B, and B compares to C, and C compares to A, you have a closed loop. The three comparisons must be consistent. Add up the differences around the loop—A minus B, plus B minus C, plus C minus A—and the result should be zero. If it's not, something is wrong.
 
-\$$ \Delta\_{\mathrm{loop\}} = \sum\_{\text{edges in loop\}} y\_{ij} \$$
+<p align="center"><span class="math"> \Delta_{\mathrm{loop}} = \sum_{\text{edges in loop}} y_{ij} </span></p>
 
-If $\Delta\_{\mathrm{loop\}}$ departs from zero systematically, you have evidence of a problem: drift, corruption, attack, equipment failure. You may not know _which_ comparison is bad, but you know _something_ is bad.
+If $$\Delta_{\mathrm{loop}}$$ departs from zero systematically, you have evidence of a problem: drift, corruption, attack, equipment failure. You may not know _which_ comparison is bad, but you know _something_ is bad.
 
 This is how GPS receivers detect satellite failures—a technique called RAIM (Receiver Autonomous Integrity Monitoring). Multiple satellites, consistency checks, automatic alarms. Aviation safety depends on this architecture.
 
@@ -136,7 +136,7 @@ This is how GPS receivers detect satellite failures—a technique called RAIM (R
 
 There's one critical requirement: _heterogeneity_.
 
-If all nodes in your loop are identical—same technology, same manufacturer, same failure modes—they might all fail the same way simultaneously. When that happens, the loop closes perfectly. $\Delta\_{\mathrm{loop\}} = 0$. Everything looks fine. And you're blind to the error.
+If all nodes in your loop are identical—same technology, same manufacturer, same failure modes—they might all fail the same way simultaneously. When that happens, the loop closes perfectly. $$\Delta_{\mathrm{loop}} = 0$$. Everything looks fine. And you're blind to the error.
 
 This is the common-mode failure problem. Loop closure catches _differential_ inconsistencies beautifully; it is structurally blind to errors that affect all nodes identically.
 
@@ -296,7 +296,7 @@ _The Causal Comparison Networks framework (v1.2.1) is available as a technical s
 
 ### Glossary
 
-**Causality bound.** The constraint $L\_{\mathrm{comparison\}} \le v\_{\mathrm{info\}} \cdot T$ limiting coherent comparison across distance.
+**Causality bound.** The constraint $$L_{\mathrm{comparison}} \le v_{\mathrm{info}} \cdot T$$ limiting coherent comparison across distance.
 
 **Closure loop.** A closed cycle of comparisons whose aggregate residual must be statistically compatible with zero.
 
