@@ -11,6 +11,7 @@ description: >-
 {% hint style="info" %}
 **Authors:** Ulrich Warring\
 **Version:** 0.2\
+**Last updated:** 2026-01-27\
 **Status:** Community Narrative (Sail)\
 **License:** CC BY 4.0
 {% endhint %}

@@ -7,6 +7,7 @@ description: DRAFT
 {% hint style="info" %}
 **Authors:** Wei Wu, Ulrich Warring\
 **Version:** 0.1.1\
+**Last updated:** 2026-01\
 **Status:** Community Narrative (Sail)\
 **License:** CC BY 4.0
 {% endhint %}

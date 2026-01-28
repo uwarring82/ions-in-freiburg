@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Authors:** Ulrich Warring\
 **Draft version:** 0.2\
-**Date:** January 2026
+**Last updated:** 2026-01-28
 {% endhint %}
 
 ***
