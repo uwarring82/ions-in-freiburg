@@ -10,7 +10,7 @@
 
 ### What This Document Is
 
-This is a structured guide for exploring the Mpemba effect—the counterintuitive observation that hot water can sometimes freeze faster than cold water. Rather than claiming to explain the effect, this document maps out:
+This is a structured guide for exploring an Mpemba–like effect—the counterintuitive observation that hot water can sometimes freeze faster than cold water. Rather than claiming to explain the effect, this document maps out:
 
 * What you can control in an experiment (parameters)
 * What mechanisms might dominate under different conditions
@@ -93,13 +93,13 @@ Many contradictory results in the literature come from different definitions of 
 
 Different experimental conditions favour different mechanisms. This table shows likely primary drivers—not certainties.
 
-| Experimental regime                                                 | Likely primary mechanism    | Likely secondary               | What you'd observe                                               |
-| ------------------------------------------------------------------- | --------------------------- | ------------------------------ | ---------------------------------------------------------------- |
-| Very pure water, smooth new container, sealed                       | Random convection patterns  | Stochastic supercooling        | High variability between trials; no consistent Mpemba effect     |
-| Controlled impurities, roughened container, thermal cycling, sealed | **Wall nucleation changes** | Reduced supercooling           | Earlier nucleation in preheated samples; lower variance          |
-| Open container, large ΔT₀                                           | Evaporative mass loss       | Enhanced convection            | Shorter total freeze time, but confounded—you've lost water mass |
-| Large volume, slow cooling                                          | Convection currents         | Internal temperature gradients | Results depend on container shape; variable                      |
-| **Small volume, controlled nucleation, sealed**                     | **Nucleation timing**       | Minimal confounders            | **Cleanest test of nucleation hypothesis**                       |
+| Experimental regime                                                 | Likely primary mechanism    | Likely secondary               | What you'd observe                                                |
+| ------------------------------------------------------------------- | --------------------------- | ------------------------------ | ----------------------------------------------------------------- |
+| Very pure water, smooth new container, sealed                       | Random convection patterns  | Stochastic supercooling        | High variability between trials; no consistent Mpemba-like effect |
+| Controlled impurities, roughened container, thermal cycling, sealed | **Wall nucleation changes** | Reduced supercooling           | Earlier nucleation in preheated samples; lower variance           |
+| Open container, large ΔT₀                                           | Evaporative mass loss       | Enhanced convection            | Shorter total freeze time, but confounded—you've lost water mass  |
+| Large volume, slow cooling                                          | Convection currents         | Internal temperature gradients | Results depend on container shape; variable                       |
+| **Small volume, controlled nucleation, sealed**                     | **Nucleation timing**       | Minimal confounders            | **Cleanest test of nucleation hypothesis**                        |
 
 #### How regimes connect (transition arrows)
 
@@ -116,7 +116,7 @@ A good scientific framework makes claims that could be proven wrong. Here are fo
 
 #### Boundary 1: Nucleation site threshold
 
-**Claim:** If the container is very smooth (Ra < 0.05 μm) and the water is ultrapure, preheating won't produce a Mpemba effect at nucleation onset.
+**Claim:** If the container is very smooth (Ra < 0.05 μm) and the water is ultrapure, preheating won't produce a Mpemba-like effect at nucleation onset.
 
 **Test:** Compare supercooling distributions in polished borosilicate with different thermal histories.
 
@@ -158,7 +158,7 @@ A good scientific framework makes claims that could be proven wrong. Here are fo
 
 **Test:** Run identical protocols with borosilicate, soda-lime glass, and PTFE containers; compare supercooling statistics.
 
-**Current status:** Expected from surface chemistry; systematic Mpemba studies limited.
+**Current status:** Expected from surface chemistry; systematic Mpemba-like studies limited.
 
 ***
 
@@ -190,7 +190,7 @@ To test whether preheating affects nucleation timing:
 2. **How fast does thermal history act?** If you heat a container for 1 minute vs. 10 minutes, does _P\_w_ change differently? At what point do returns diminish?
 3. **Does material choice matter beyond surface roughness?** Does glass chemistry affect nucleation independently of roughness?
 4. **When does nucleation advantage persist to full freezing?** Under what conditions does faster nucleation translate to faster complete solidification?
-5. **Can we model this quantitatively?** Stochastic thermodynamics provides mathematical frameworks for random processes. Can these predict Mpemba statistics from measured parameters?
+5. **Can we model this quantitatively?** Stochastic thermodynamics provides mathematical frameworks for random processes. Can these predict Mpemba-like statistics from measured parameters?
 
 ***
 
@@ -203,7 +203,7 @@ For further reading, organised by topic:
 * Turnbull (1950) "Kinetics of heterogeneous nucleation" — the classic paper
 * Kelton & Greer (2010) _Nucleation in Condensed Matter_ — comprehensive textbook
 
-**Mpemba effect experiments:**
+**Mpemba-like effect experiments:**
 
 * Burridge & Linden (2016) — careful study questioning reproducibility
 * Burridge & Hallstadius (2020) — protocol standardisation; addresses endpoint confusion
