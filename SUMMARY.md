@@ -31,6 +31,7 @@
 * [Setting Sail with IF-QTR: The Networked Backbone](essays/setting-sail-with-if-qtr-the-networked-backbone.md)
 * [From Paradox to Platform: A Mpemba-like Effect as a Statistical Physics Testbed](essays/from-paradox-to-platform-a-mpemba-like-effect-as-a-statistical-physics-testbed.md)
 * [The Geometry of Agreement](essays/the-geometry-of-agreement.md)
+* [Toward Falsifiable Claims in Quantum Relaxation Ordering](essays/toward-falsifiable-claims-in-quantum-relaxation-ordering.md)
 
 ## Implementation Interfaces
 
