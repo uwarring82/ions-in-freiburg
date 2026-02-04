@@ -9,7 +9,7 @@ description: A collaboration invitation
 **Last updated:** 2026-02-04\
 **Status:** Community Narrative (Sail)\
 **License:** CC BY 4.0\
-**The current full call lives here**: [https://github.com/uwarring82/deep-spaces/blob/main/call/Toward%20Falsifiable%20Claims%20in%20Quantum%20Relaxation%20Ordering.md](https://github.com/uwarring82/deep-spaces/blob/main/call/Toward%20Falsifiable%20Claims%20in%20Quantum%20Relaxation%20Ordering.md)
+**The current full call lives here**:&#x20;
 {% endhint %}
 
 ***
@@ -62,7 +62,7 @@ We seek collaborators in:
 
 The goal is to make the question _answerable_, not to advocate for a particular answer. Null results are publishable. Critical responses are more valuable than enthusiastic ones.
 
-Full framework document available on request.
+Full framework document available online: [https://github.com/uwarring82/deep-spaces/blob/main/call/Toward%20Falsifiable%20Claims%20in%20Quantum%20Relaxation%20Ordering.md](https://github.com/uwarring82/deep-spaces/blob/main/call/Toward%20Falsifiable%20Claims%20in%20Quantum%20Relaxation%20Ordering.md)
 
 ***
 
