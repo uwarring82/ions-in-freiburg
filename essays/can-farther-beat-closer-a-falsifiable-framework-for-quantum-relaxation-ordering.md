@@ -45,7 +45,7 @@ Three features distinguish it from existing approaches:
 
 **What we're offering**
 
-I participated in a 2016 trapped-ion experiment that observed thermalisation in an isolated quantum system. I retain full access to the raw time-series data—including runs not in the publication. The platform: a single spin coupled to 1–5 engineered phonon modes in the strong-coupling regime. Every parameter is documented. Theory and numerics can engage without guesswork.
+We participated in a 2016 trapped-ion experiment that observed thermalisation in an isolated quantum system. We retain full access to the raw time-series data—including runs not in the publication. The platform: a single spin coupled to 1–5 engineered phonon modes in the strong-coupling regime. Every parameter is documented. Theory and numerics can engage without guesswork.
 
 The experimental data validate methodology and provide proxy-ordering constraints. But only one spin component was measured. Definitive adjudication—confirming or falsifying ordering in the full state space—requires numerical collaborators who can simulate the Hamiltonian with complete state output and extract the memory time from the discrete phonon spectrum.
 
