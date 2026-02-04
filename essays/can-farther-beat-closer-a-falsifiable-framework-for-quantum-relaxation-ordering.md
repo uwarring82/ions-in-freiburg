@@ -8,8 +8,7 @@ description: A collaboration invitation
 **Authors:** Ulrich Warring\
 **Last updated:** 2026-02-04\
 **Status:** Community Narrative (Sail)\
-**License:** CC BY 4.0\
-**The current full call lives here**:&#x20;
+**License:** CC BY 4.0
 {% endhint %}
 
 ***
