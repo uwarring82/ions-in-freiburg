@@ -13,7 +13,9 @@ description: A collaboration invitation
 
 ***
 
-The quantum Mpemba effect has a problem: nobody agrees what it means.
+The quantum Mpemba effect has a problem:&#x20;
+
+<p align="center"><em>Nobody agrees what it means.</em></p>
 
 At least four distinct definitions circulate in recent literature. Some invoke trace-distance crossings. Others focus on Lindbladian spectral gaps. Others still require quantum coherences. And the newest class—non-Markovian anomalies—identifies effects that vanish entirely in the Markovian limit. A system can satisfy one definition whilst violating another. Papers claim or refute "the quantum Mpemba effect" without specifying which definition applies, or whether their dynamical regime even permits comparison.
 
