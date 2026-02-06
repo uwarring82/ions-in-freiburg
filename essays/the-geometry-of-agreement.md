@@ -40,7 +40,7 @@ Harrison and the railways solved different versions of the same problem. Harriso
 
 ***
 
-Today I work with trapped ions in a physics laboratory in Freiburg. We cool individual barium atoms to near absolute zero, suspend them in electromagnetic fields, and interrogate them with lasers. The goal, depending on the day, might be a better atomic clock, a quantum sensor, or a test of fundamental physics.
+Today I work with trapped ions in a physics laboratory in Freiburg. We cool individual atoms to near absolute zero, suspend them in electromagnetic fields, and interrogate them with lasers. The goal, depending on the day, might be a better atomic clock, a quantum sensor, or a test of fundamental physics.
 
 But increasingly, the interesting questions aren't about single ions. They're about _networks_ of ions—distributed arrays that must compare their quantum states across kilometres or continents. And here's what surprises my students when I tell them: the constraint we face is structurally the same one that killed sailors in the 1700s and confused railway passengers in the 1840s.
 
