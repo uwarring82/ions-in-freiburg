@@ -274,7 +274,7 @@ If you find a counterexample—a system that coordinates coherently beyond the c
 
 I started this essay on a train, reading about an eighteenth-century clockmaker. I'm finishing it in a laboratory, watching ions fluoresce under laser light.
 
-Between those two images—the wooden chronometer in its velvet case, the barium atom suspended in vacuum—is a single thread. The problem Harrison faced is the problem I face. The solution the railways found is the solution we're still building.
+Between those two images—the wooden chronometer in its velvet case, the atom suspended in vacuum—is a single thread. The problem Harrison faced is the problem I face. The solution the railways found is the solution we're still building.
 
 Three contexts, two centuries, one geometry. The people inside don't need to agree on metaphysics. They only need to agree on how to compare—and when to admit they can't.
 
