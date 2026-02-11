@@ -66,7 +66,7 @@ Replace the analysis operation with a train whose inter-pulse spacing Δt is mat
 
 **When Use B does not help:** If the target frequency is already well-resolved by standard Ramsey, or if the additional control complexity introduces errors that exceed the spectral-selectivity gain.
 
-**This Sail addresses Use B.** The FH24 regime — Raman-driven Ba⁺ transitions, Ω/2π in the low-MHz range, pulse durations ∼100 ns, Δt ∼ 770 ns matched to ω_LF ∼ 2π × 1.3 MHz — is not limited by pulse imperfections. It is limited by the need to resolve motional dynamics stroboscopically. The grating framework is the right tool for this regime.
+**This Sail addresses Use B.** The FH24 regime — Raman-driven Mg⁺ transitions, Ω/2π in the low-MHz range, pulse durations ∼100 ns, Δt ∼ 770 ns matched to ω_LF ∼ 2π × 1.3 MHz — is not limited by pulse imperfections. It is limited by the need to resolve motional dynamics stroboscopically. The grating framework is the right tool for this regime.
 
 The two uses are **not mutually exclusive**. One could apodise pulse areas for side-lobe suppression (Use B optimisation) while simultaneously phase-stepping for light-shift cancellation (Use A optimisation). But the design intents are distinct and should not be conflated in analysis.
 
