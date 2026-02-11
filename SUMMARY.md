@@ -32,6 +32,7 @@
 * [From Paradox to Platform: A Mpemba-like Effect as a Statistical Physics Testbed](essays/from-paradox-to-platform-a-mpemba-like-effect-as-a-statistical-physics-testbed.md)
 * [The Geometry of Agreement](essays/the-geometry-of-agreement.md)
 * [Can "Farther" Beat "Closer"? A Falsifiable Framework for Quantum Relaxation Ordering](essays/can-farther-beat-closer-a-falsifiable-framework-for-quantum-relaxation-ordering.md)
+* [Active Phase Grating vs. Standard Ramsey](essays/active-phase-grating-vs.-standard-ramsey.md)
 
 ## Implementation Interfaces
 
