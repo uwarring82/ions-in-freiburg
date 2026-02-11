@@ -5,12 +5,23 @@ description: A Clean Mapping and Its Limits
 # Active Phase Grating vs. Standard Ramsey
 
 **Stewardship:** U. Warring.\
-**Version:** 0.2 (draft) — February 2026\
+**Version:** 0.4 (draft) — February 2026\
 **External constraints:** Dick (1987); Santarelli et al. (1998); Yudin et al. (2010); Huntemann et al. (2012); Hasse et al. (2024, PRA 109, 053105)
 
 ***
 
-### 1. Purpose and Scope
+## Revision History
+
+|Version|Date    |Changes                                                                                                                                                                                                                                                                                                                        |
+|-------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0.1    |Feb 2026|Initial Guardian-reviewed draft                                                                                                                                                                                                                                                                                                |
+|0.2    |Feb 2026|Added development roadmap (T1–T4, N1–N5, E1–E5), publication trajectory                                                                                                                                                                                                                                                        |
+|0.3    |Feb 2026|Integrated Scout flags (CCUF mapping, tier boundaries, quantum limits), Architect review (FIR framing, apodisation), Supervisor phrasing corrections                                                                                                                                                                           |
+|0.4    |Feb 2026|**Major structural revision.** Fixed-cycle-time framing replaces variable-time comparison. Two-use distinction (composite replacement vs. stroboscopic selector) made explicit. Three-family simulation architecture defined. Duty-cycle penalty absorbed into Dick-effect analysis. Costs revised under equal-time constraint.|
+
+-----
+
+## 1. Purpose and Scope
 
 This essay establishes the **active phase grating** as a pedagogical and operational framework for understanding multi-pulse analysis trains in stroboscopic trapped-ion spectroscopy. It maps the analogy to spatial diffraction gratings, locates where the mapping is safe, identifies where it breaks, and defines the quantitative figures of merit required to compare the grating approach against standard Ramsey interferometry on metrological ground.
 
@@ -18,268 +29,362 @@ The intended audience is the experimental crew working on FH24-derived strobosco
 
 > **Harbour Policy.** This document is a Sail (working essay), not a Coastline (stable framework). It may be revised as experimental data accumulates. The Lock is the metrological comparison methodology; the Keys are the specific parameter choices, which remain free.
 
-***
+### 1.1 Tier Classification
 
-### 2. The Safe Part of the Analogy
+This document operates across two Harbour tiers. The boundary is architecturally significant.
 
-#### 2.1 Ramsey as a Double Slit in Time
+- **Tier 1b (Metrological Clocks / Measurement):** The grating response function, sensitivity function g(t), Dick-effect analysis, and all figures of merit that characterise the measurement operator.
+- **Tier 2 (Coordination / Feedback):** Capture-range constraints, side-lobe false-lock analysis, discriminator lock stability, and closed-loop Allan deviation.
 
-Standard Ramsey interferometry maps directly onto a two-path interferometer in time. A first π/2 pulse creates a superposition of internal states (two "paths" in phase space). Free evolution for duration τ accumulates a relative phase Δτ, where Δ is the detuning. A second π/2 pulse recombines the paths. The output signal ⟨σ\_z⟩ = −cos(Δτ) produces fringes with width ∼ 1/τ. This is the double-slit limit: two coherent contributions, resolution set by the total interrogation time.
+Sections are labelled [T1b] or [T2] where the distinction matters.
 
-#### 2.2 The N-Pulse Train as a Diffraction Grating
+-----
 
-Replace the second π/2 pulse with N weak pulses of individual area (π/2)/N, separated by gaps Δt. Each pulse generates a time-separated coherent contribution to the transition amplitude. As detuning is scanned, these contributions acquire relative phases ∼ Δ·Δt and interfere. The resulting amplitude has the structure:
+## 2. Two Distinct Uses of a Pulse Train in Ramsey Spectroscopy
 
-> A(Δ) ∝ Σ\_{j=0}^{N−1} w\_j exp(i Δ t\_j)
+Before developing the grating framework, we must distinguish two fundamentally different reasons for replacing a single π/2 pulse with a train of sub-pulses. Conflating them leads to incorrect assessments of when the technique is powerful and when it is not.
 
-For equal weights and spacing t\_j = jΔt, this reduces to the standard N-slit grating factor:
+### 2.1 Use A: Composite π/2 Replacement (Robustness Engineering)
+
+Replace a single π/2 with a train of sub-pulses summing to π/2, all at the same detuning, to gain robustness against pulse imperfections. The gains are entirely in the error model:
+
+- **Filter-function engineering:** The train modifies the experiment’s sensitivity function g(t) and can place notches at frequencies where LO phase noise or technical lines dominate.
+- **Amplitude/detuning robustness:** Intelligent choice of phases and timings (BB1, SK1, WALTZ, Hyper-Ramsey) can make the effective π/2 less sensitive to Ω miscalibration and static detuning.
+- **Transient suppression:** Distributing area over several weaker pulses can average or cancel AOM rise-time, chirp, Stark-shift transients, and AM-to-PM conversion.
+
+**When Use A helps:** If the dominant limitation is pulse imperfections, light-shift transients, or spectrally structured decoherence during the Ramsey zones.
+
+**When Use A does not help:** If pulses are already clean and the system is projection-noise limited, a π/2 is a π/2. Splitting it buys nothing fundamental; it only reshapes technical error couplings. It can actively hurt if extra pulses add light shifts, spontaneous scattering, or convert amplitude noise into phase noise.
+
+This is well-trodden composite-pulse territory. The relevant literature is Yudin et al. (2010), Huntemann et al. (2012), and the comprehensive review by Zanon-Willette et al. (2018).
+
+### 2.2 Use B: Stroboscopic Spectral Selector (Measurement Engineering)
+
+Replace the analysis operation with a train whose inter-pulse spacing Δt is matched to a **physical frequency of interest** — the motional mode period in FH24. The total area is still π/2, but the train’s purpose is not robustness. It is **spectral selectivity**: the train acts as a narrow-band filter centred on 1/Δt, enhancing sensitivity to that frequency component while suppressing others.
+
+**When Use B helps:** When you need frequency-selective readout of a specific motional component, or when you want to engineer the discriminator slope for a known target frequency.
+
+**When Use B does not help:** If the target frequency is already well-resolved by standard Ramsey, or if the additional control complexity introduces errors that exceed the spectral-selectivity gain.
+
+**This Sail addresses Use B.** The FH24 regime — Raman-driven Ba⁺ transitions, Ω/2π in the low-MHz range, pulse durations ∼100 ns, Δt ∼ 770 ns matched to ω_LF ∼ 2π × 1.3 MHz — is not limited by pulse imperfections. It is limited by the need to resolve motional dynamics stroboscopically. The grating framework is the right tool for this regime.
+
+The two uses are **not mutually exclusive**. One could apodise pulse areas for side-lobe suppression (Use B optimisation) while simultaneously phase-stepping for light-shift cancellation (Use A optimisation). But the design intents are distinct and should not be conflated in analysis.
+
+-----
+
+## 3. The Safe Part of the Analogy [T1b]
+
+### 3.1 Ramsey as a Double Slit in Time
+
+Standard Ramsey interferometry maps onto a two-path interferometer in time. A first π/2 pulse creates a superposition. Free evolution for duration τ accumulates relative phase Δτ. A second π/2 pulse recombines the paths. The output ⟨σ_z⟩ = −cos(Δτ) produces fringes with width ∼ 1/τ. Two coherent contributions; resolution set by total interrogation time.
+
+### 3.2 The N-Pulse Train as a Diffraction Grating
+
+Replace the second π/2 with N weak pulses of individual area (π/2)/N, separated by gaps Δt. The amplitude:
+
+> A(Δ) ∝ Σ_{j=0}^{N−1} w_j exp(i Δ t_j)
+
+For equal weights and spacing, this reduces to the N-slit grating factor:
 
 > A(Δ) ∝ sin(NΔ·Δt/2) / sin(Δ·Δt/2)
 
-The main-lobe width scales as 1/(NΔt), so increasing N sharpens spectral selectivity. Side lobes appear at multiples of 2π/Δt, producing the universal grating tradeoff: resolution against ambiguity.
+Main-lobe width scales as 1/(NΔt). Side lobes appear at multiples of 2π/Δt.
 
-#### 2.3 The Mapping Table
+**Signal-processing framing:** The train implements a Finite Impulse Response (FIR) filter in quantum state space. The pulse areas are filter coefficients; the inter-pulse gaps set the sampling period. Standard filter-design techniques (windowing, optimal tapering) apply directly to pulse-sequence engineering.
 
-| Spatial Grating        | Stroboscopic Train         | Role                                     |
-| ---------------------- | -------------------------- | ---------------------------------------- |
-| Slit spacing d         | Pulse spacing Δt           | Sets fringe period / free spectral range |
-| Number of slits N      | Number of pulses N         | Sets resolving power                     |
-| Field superposition    | Quantum amplitude addition | Interference mechanism                   |
-| Phase plate at slit    | Per-pulse phase φ          | Steers / blazes the pattern              |
-| Slit-width apodisation | Pulse-area shaping         | Side-lobe suppression                    |
-| Total aperture Nd      | Total aperture NΔt         | Resolution limit                         |
+### 3.3 The Mapping Table
 
-***
+|Spatial Grating       |Stroboscopic Train        |Role                                    |
+|----------------------|--------------------------|----------------------------------------|
+|Slit spacing d        |Pulse spacing Δt          |Sets fringe period / free spectral range|
+|Number of slits N     |Number of pulses N        |Sets resolving power                    |
+|Field superposition   |Quantum amplitude addition|Interference mechanism                  |
+|Phase plate at slit   |Per-pulse phase φ         |Steers / blazes the pattern             |
+|Slit-width apodisation|Pulse-area shaping        |Side-lobe suppression                   |
+|Total aperture Nd     |Total aperture NΔt        |Resolution limit                        |
 
-### 3. The Critical Caveat: Active vs. Passive
+-----
 
-> **⚠ Guardian Flag.** The grating analogy is safe only when the distinction between passive apertures and active SU(2) rotations is made explicit. Without this caveat, users will be misled about the behaviour under phase manipulation, finite detuning, and error accumulation.
+## 4. The Critical Caveat: Active vs. Passive
 
-In a passive spatial grating, amplitudes superpose without back-action: the grating does not alter the field it diffracts. In the stroboscopic train, each "slit" is an **active SU(2) rotation** interleaved with detuning-driven z-precession. Pulses and free-precession generally **do not commute**. This has three immediate consequences.
+> **⚠ Guardian Flag.** The grating analogy is safe only when the distinction between passive apertures and active SU(2) rotations is made explicit.
 
-**First**, "flipping the phase of every second slit" does not simply "shift the pattern." In a passive grating, alternating phase shifts produce a predictable blazed profile. In the active case, a phase flip can partially cancel, reshape, or generate qualitatively different responses depending on the detuning Δ and the timing gaps. Cancellation can be exact only in the limit Δ ≈ 0 with negligible gap-induced z-rotation; otherwise the gap rotations break the symmetry and a modified pattern re-emerges. This is exactly what the simulation diagnostics show.
+In a passive grating, amplitudes superpose without back-action. In the stroboscopic train, each “slit” is an **active SU(2) rotation** interleaved with detuning-driven z-precession. Pulses and free-precession generally **do not commute**. Three consequences:
 
-**Second**, the "weights" w\_j in the grating sum are not fixed amplitudes. They depend on the accumulated unitary evolution up to pulse j, which includes all prior pulse areas, phases, and detuning-driven rotations. The grating formula A(Δ) ∝ Σ w\_j exp(iΔ t\_j) is therefore a linearised approximation valid for small pulse areas and small detunings, not an exact decomposition.
+**First**, phase manipulation **reshapes** the response, not merely shifts it. Exact cancellation under phase-flipping is a special symmetry point (Δ ≈ 0, negligible gap rotation); away from it, the pattern reappears in modified form. Interference does not disappear generically — it is restructured by the active dynamics.
 
-**Third**, error accumulation scales differently. In a passive grating, fabrication errors in individual slits contribute independently. In the active train, pulse-area errors, phase errors, and timing errors propagate through the unitary chain. Correlated errors can scale as N (not √N), because the same systematic shifts compound multiplicatively through sequential SU(2) operations.
+**Second**, the weights w_j depend on the accumulated unitary evolution up to pulse j. The grating formula is a linearised approximation valid for small pulse areas and small detunings, not an exact decomposition.
 
-***
+**Third**, error accumulation in the active train can scale as N for correlated errors (multiplicative compounding through sequential SU(2) operations), unlike passive gratings where fabrication errors contribute independently.
 
-### 4. What Is Being Engineered
+-----
 
-In the FH24 regime (Hasse et al. 2024), the pulse spacing Δt is matched to a motional mode period. The train therefore acts as a **spectral selector**: it builds sensitivity to a specific Fourier component of the ion's motion. The design intent is not composite-pulse robustness (that becomes relevant only when shaping φ across pulses to cancel systematic shifts). The design intent is:
+## 5. The Fixed-Cycle-Time Fairness Constraint
 
-> _**Engineer the frequency response of the measurement operator.**_
+### 5.1 The Principle
 
-This is precisely the role of the sensitivity function g(t) in Dick-effect methodology. The pulse train defines a time-domain window; its Fourier transform determines which detuning (or motional-frequency) components couple to the readout. The grating picture is a pedagogical handle on these Fourier properties, nothing more and nothing less.
+Previous versions of this document compared Ramsey and grating sequences that could differ in total cycle time, making the comparison vulnerable to a trivial confound: longer interrogation always wins if time is not controlled for.
 
-***
+The correct comparison **fixes the total cycle time**:
 
-### 5. How to Compare Fairly: Discriminator at the Working Point
+> T_cyc = T_prep + T_free + T_ana = constant
 
-To compare standard Ramsey against the active grating on metrological ground, one must use the same operational strategy for both. The strategy is: operate as a **frequency discriminator at a chosen working point**.
+In standard Ramsey, T_free is a contiguous block where g(t) ≈ 1 (idealised), and the π/2 pulses are short boundary operations.
 
-In standard Ramsey, one picks an analysis phase (typically ±π/2 quadrature) so that the fringe's steepest slope sits at Δ = 0. The error signal is extracted from this slope. In the grating picture, the analogue is: choose a global train phase φ₀ so the composite analysis operation places the discriminator at the working point. The comparison then proceeds identically for both:
+In the active phase grating sequence, the free evolution is **not removed — it is distributed into the gaps** between pulses within the prep and/or analysis trains. The total available detuning phase accumulation Δ × (time with Ω = 0) can be kept the same as Ramsey.
 
-1. **Set the working point** by adjusting the analysis phase φ\_ana so that ⟨σ\_z⟩ = 0 at Δ = 0.
-2. **Compute the local slope** S\_N = ∂⟨σ\_z⟩/∂Δ evaluated at Δ = 0.
-3. **Measure the linear capture range**: the width of the monotonic region around the working point.
-4. **Quantify the side-lobe ratio**: the largest parasitic slope relative to the main-lobe slope.
-5. **Normalise by total sequence time** (or equivalently, duty cycle) to obtain a per-unit-time metric.
+**What changes is the temporal weighting of phase sensitivity:** g(t) becomes a structured (comb-like) waveform instead of a flat plateau.
 
-This gives an apples-to-apples comparison. Without step 5, a train that simply extends the total interrogation time will appear to win trivially.
+### 5.2 The High-Ground Statement
 
-***
+Under fixed T_cyc, the grating’s claim is not “we used longer interrogation.” It is:
 
-### 6. What Do You Gain: The Steeper Slope
+> ***We engineered g(t), and therefore engineered the frequency response and the noise aliasing of the discriminator, under the same time budget.***
 
-In the idealised case (unit contrast, negligible pulse-area error, perfect timing), the discriminator slope scales as:
+This is the only honest metrological claim. Everything that follows must be evaluated under this constraint.
+
+### 5.3 The Fairness Protocol
+
+Use fixed T_cyc and fixed pulse durations δt (FH24-like), and enforce the same net beam-splitter action:
+
+- Prep train total area: Σ θ_j = π/2
+- Analysis train total area: Σ θ_j = π/2
+- All additional “waiting” is realised as gaps where Ω = 0
+
+The only knobs being compared are: how the π/2 actions are distributed in time, where the free evolution is placed, and phase conventions (working-point setting via φ_ana, plus any per-pulse phase pattern).
+
+-----
+
+## 6. What You Gain Under Fixed Cycle Time [T1b]
+
+### 6.1 Higher Discriminator Slope Without Longer Cycles
+
+For equal T_cyc, a multi-pulse structure can produce a steeper local slope around the working point because the response can develop a narrower central feature through temporal multi-path interference (the grating effect). This narrowing comes from the structured g(t), not from extended interrogation.
+
+This is most effective when pulses are weak enough that the “sum of contributions” picture remains approximately valid, and the gap structure creates a strong comb factor in the response.
+
+In the idealised case (unit contrast, negligible pulse-area error):
 
 > S(N) ∼ N · Δt
 
-This is the intuitive "higher resolving power" of the grating: a narrower main lobe produces a steeper zero-crossing. The slope grows roughly linearly with the effective grating length T\_ap = NΔt.
+> **⚠ Guardian Flag.** This scaling assumes unit contrast, negligible pulse-area error, and operation at the exact working point. It does not account for the costs enumerated in Section 7.
 
-> **⚠ Guardian Flag.** This scaling assumes unit contrast, negligible pulse-area error, and operation at the exact working point. Realistic corrections are treated in Section 7. Do not cite this scaling without its conditions.
+### 6.2 Engineered LO-Noise Coupling (Dick Engineering)
 
-***
+Because g(t) changes shape, the Dick weighting changes. Under equal T_cyc, this is the **central metrological reason** to use a grating sequence. Depending on the LO noise spectrum:
 
-### 7. What Is the Price: Five Costs
+- The grating can **suppress** aliasing at harmful Fourier components (place zeros of g_n where S_y is large), or
+- It can **catastrophically enhance** aliasing (if large g_n coincide with noisy harmonics).
 
-The costs mirror classical grating tradeoffs, plus quantum-control penalties unique to the active case.
+The question that determines whether the grating wins is:
 
-#### 7.1 Reduced Capture Range
+> Does the reshaped g(t) improve the ratio (slope) / (noise floor at discriminator output) under the actual LO and control-noise spectra?
 
-A narrower main lobe means a smaller monotonic region for locking. The linear capture range shrinks as ∼ 1/(NΔt). In practice, this demands tighter pre-stabilisation of the local oscillator before the discriminator lock can acquire. The classic resolution–dynamic-range tradeoff is unavoidable.
+### 6.3 CCUF Parameter Mapping
 
-#### 7.2 Side-Lobe Ambiguity
+- **T_ap = NΔt** is the comparison length L_comparison, now embedded within the fixed cycle time rather than extending it.
+- **Causal efficiency** η = L_comparison / cτ_total measures how the fixed cycle budget is distributed between sensing and driving.
+- **Correlation length** ξ of the noise source imposes: N_max ≈ ξ/Δt. Beyond this, additional pulses add noise sensitivity without adding signal. Under fixed T_cyc, this constraint also means: if N > N_max, the time budget would be better spent on longer contiguous free evolution (i.e., revert to Ramsey).
 
-Standard Ramsey produces a single sinusoid in detuning. The N-pulse grating develops (N − 1) side lobes between principal maxima. Each side lobe is a potential false-lock point. Without apodisation (non-uniform pulse weighting), the side-lobe amplitude relative to the main lobe is ∼ 1/N for the first side lobe. Engineering mitigation strategies include pulse-area tapering (the grating analogue of apodisation) and multi-step acquisition protocols that first lock with Ramsey, then hand off to the grating.
+-----
 
-#### 7.3 Control-Error Accumulation
+## 7. What You Pay Under Fixed Cycle Time: Revised Costs
 
-Because pulses are active SU(2) operations, errors propagate through the unitary chain:
+With interleaved wait, the cost structure changes. **You have not paid time; you have paid actuation count and structural complexity.** The previous duty-cycle penalty (v0.3 §7.5) is absorbed into the Dick analysis — it is not an independent cost under fixed T_cyc.
 
-* **Pulse-area errors:** if uncorrelated across pulses, the net effect scales as √N. If correlated (e.g., systematic miscalibration), it scales as N.
-* **Phase errors:** same scaling dichotomy. Correlated phase drift produces a systematic shift of the discriminator zero-crossing.
-* **Timing jitter:** fluctuations in Δt shift the effective grating spacing, broadening the response and reducing peak slope.
+### 7.1 Control-Noise Accumulation: The Dominant New Price [T1b]
 
-The transition between √N and N scaling — where correlations in control errors shift regimes — is precisely where experimental design decisions live. This is **not a heuristic warning**; it is the quantitative question that the simulation must answer for each specific apparatus.
+Under fixed T_cyc, this becomes the primary cost. You have introduced many more opportunities for amplitude, phase, and timing error:
 
-#### 7.4 Noise Spectral Reshaping (Dick Effect)
+- **Uncorrelated errors** → net effect scales as √N
+- **Correlated errors** (common in real labs: systematic miscalibration, thermal drift, AOM response) → effective detuning offset and contrast loss scale as N
 
-The pulse train implements a sensitivity function g(t) in the time domain. Its Fourier transform determines which local-oscillator (or drive) noise frequencies couple to the measurement. This is exactly the Dick effect (Dick 1987; Santarelli et al. 1998): high-frequency phase noise on the LO is aliased to near-DC by the periodic interrogation structure.
+The √N-to-N transition depends on the correlation length of the control noise relative to the train duration. Determining this transition for a specific apparatus is the single most important task for the numerical programme.
 
-For standard Ramsey, the sensitivity function is approximately constant during free evolution and zero during dead time. For the N-pulse train, g(t) has a comb-like structure: it is non-zero during each pulse window and picks up different Fourier weights. The resulting aliased noise can either be suppressed or enhanced relative to Ramsey, depending on the match between the train's spectral sensitivity and the noise spectrum of the LO.
+### 7.2 Reduced Capture Range [T2]
 
-This is not optional engineering. As demonstrated by the zero-dead-time clock work (Schioppo et al. 2017, Nature Photonics 11, 48), the Dick effect is typically the dominant stability limitation for pulsed standards. Any proposal for a multi-pulse interrogation must compute g(t) and its Fourier coefficients g\_n, then evaluate the Dick instability:
+The narrower central feature means a smaller monotonic region for locking. Under fixed T_cyc, this is no longer masked by different total times. If the LO has excursions exceeding ∼ 1/(NΔt), the discriminator cannot track. Mitigation: apodisation (Blackman-Harris or Kaiser window pulse-area weighting), or multi-step acquisition (Ramsey lock → grating handoff).
 
-> σ\_y²(1s) = (2/g₀²) Σ\_n |g\_n|² S\_y(n/t\_c)
+**Tier boundary note:** This is a T1b → T2 degradation pathway. The measurement’s resolution exceeds the control system’s ability to exploit it.
 
-where S\_y is the LO fractional frequency noise spectral density and t\_c is the cycle time.
+### 7.3 Side-Lobe Ambiguity [T2]
 
-#### 7.5 Duty-Cycle and Dead-Time Penalty
+N − 1 side lobes between principal maxima. Each a potential false-lock point. Under fixed T_cyc, the side-lobe structure is a feature of the g(t) comb, not of extended interrogation. Apodisation and multi-step protocols apply as before.
 
-Even in a qubit-only model, the train occupies a finite time window. If T\_ap = NΔt grows, the measurement bandwidth (rate of frequency corrections) decreases. In a clock, this directly worsens stability if LO noise dominates at low Fourier frequencies. In the trapped-ion motional context, longer trains increase exposure to decoherence mechanisms (heating, dephasing, background-gas collisions).
+### 7.4 Model Dependence [T1b]
 
-The fifth figure of merit is the **effective duty cycle** d = T\_interrogation / T\_cycle, and any fair comparison must report sensitivity per unit wall-clock time, not per unit interrogation time.
+Standard Ramsey’s mapping between Δ and output is simple and robust: ⟨σ_z⟩ = −cos(Δτ). The grating sequence’s mapping depends sensitively on pulse timing, phases, and the full unitary chain. This raises calibration demands: the crew must measure the actual transfer function, not merely predict it from ideal parameters. Any deviation between the model and the apparatus produces systematic errors in the extracted detuning.
 
-***
+### 7.5 Dick-Effect Reshaping [T1b + T2, coupled]
 
-### 8. Literature Anchors
+Under fixed T_cyc, this replaces the old “duty-cycle penalty” as the noise-budget cost. The sensitivity function g(t) for the N-pulse train has a comb-like structure with Fourier coefficients g_n that determine aliased noise:
 
-The conceptual territory of the active phase grating sits at the intersection of three well-established lines of work. These are external coastlines in Harbour language: constraints we reference without replicating.
+> σ_y²(1s) = (2/g₀²) Σ_n |g_n|² S_y(n/t_c)
 
-#### 8.1 Sensitivity Function and Dick Effect
+Whether this is better or worse than Ramsey depends entirely on the match between {g_n} and S_y(f). The Dick computation is mandatory and apparatus-specific.
 
-The canonical methodology for computing the "price" of pulsed interrogation. Dick (1987, Proc. 19th PTTI) introduced the framework. Santarelli et al. (1998, IEEE Trans. UFFC 45, 887) provided the quantum-mechanical derivation of the sensitivity function and experimentally verified it in the LPTF Cs fountain. Lemonde et al. (1998, IEEE Int. Freq. Control Symp.) clarified the formalism. Quessada et al. (2003, J. Opt. B 5, S150) extended it to optical standards. Any N-pulse train proposal must evaluate its Dick instability using this methodology.
+-----
 
-#### 8.2 Multi-Pulse Ramsey Schemes in Clocks and Interferometry
+## 8. How to Compare Fairly: The Working-Point Protocol
 
-The explicit engineering of interrogation sequences in the time domain has a long history. In the CPT context, Yun et al. (2012, EPL 97, 63004) demonstrated multipulse Ramsey-CPT interference fringes in vapour cells, showing the expected narrowing with N and the associated capture-range concerns. Boudot et al. (2017, arXiv:1703.04720) achieved high-performance pulsed Ramsey-CPT clocks. The "temporal Fabry-Pérot" framing used in some of this work is essentially the same grating picture presented here.
+### 8.1 The Five-Step Protocol
 
-#### 8.3 Tailored Composite Pulse Schemes (Hyper-Ramsey and Generalisations)
+1. **Set the working point** [T1b] by adjusting φ_ana so that ⟨σ_z⟩ = 0 at Δ = 0.
+1. **Compute the local slope** [T1b] S_N = ∂⟨σ_z⟩/∂Δ at Δ = 0.
+1. **Measure the linear capture range** [T2]: width of monotonic region around working point.
+1. **Quantify the side-lobe ratio** [T2]: largest parasitic slope relative to main-lobe slope.
+1. **Compute the Dick-limited noise floor** [T1b + T2]: σ_y(N) under the actual LO noise model.
 
-When the goal shifts from spectral selectivity to systematic-shift suppression, one shapes pulse phases, durations, and frequencies across the train. Yudin et al. (2010, PRA 82, 011804(R)) proposed Hyper-Ramsey spectroscopy: a three-pulse sequence with phase-inverted central pulse that cancels probe-induced light shifts by two to four orders of magnitude. Huntemann et al. (2012, PRL 109, 213002) demonstrated this experimentally on the ¹⁷¹Yb⁺ E3 transition, achieving 10⁴-fold light-shift suppression. Zanon-Willette et al. (2018, Rep. Prog. Phys. 81, 094401) reviewed the composite-pulse landscape comprehensively.
+The combined figure of merit is:
 
-In grating language, these correspond to "blazing" and "phase-plate engineering." They are conceptually adjacent to our framework but serve a different design intent: shift cancellation rather than spectral selectivity. The two intents can coexist in a single sequence, but they should not be conflated.
+> FoM(N) = S(N) / √(σ_y²(N) + σ_proj²)
 
-***
+evaluated at fixed T_cyc. This is the quantity that determines whether the grating wins.
 
-### 9. The Pedagogical Safeguard
+### 8.2 The Three-Family Comparison
 
-> **Teaching rule.** When presenting the grating analogy to students or collaborators, always state both halves: (1) the mathematical structure is identical to N-slit diffraction; (2) the slits are active SU(2) rotations, not passive apertures, so the weights depend on the control Hamiltonian and the analogy breaks under phase manipulation at finite detuning.
+All families share the same T_cyc, the same total beam-splitter area (π/2 + π/2 = π), and the same working-point protocol.
 
-The cancellation diagnostic in the simulation demonstrates this concretely. When the phase of every second pulse is flipped: at Δ = 0 with negligible gap rotation, the contributions cancel exactly (as in a passive grating with alternating phase). At finite Δ, the gap rotations break the symmetry and the pattern reappears in modified form. Interference survives — but it is modified by active dynamics. This is the sharpest illustration of the difference between passive and active gratings.
+|Family               |Prep                    |Free Evolution              |Analysis                |
+|---------------------|------------------------|----------------------------|------------------------|
+|**Ramsey baseline**  |Single π/2 pulse        |Contiguous wait             |Single π/2 pulse        |
+|**One-sided grating**|Single π/2 pulse        |Distributed in analysis gaps|N-pulse train (Σθ = π/2)|
+|**Two-sided grating**|N-pulse train (Σθ = π/2)|Distributed in both gap sets|N-pulse train (Σθ = π/2)|
 
-***
+The simulation sweeps N from 1 to 20 for each family, extracting all five quantities at each point. The comparison reveals whether one-sided or two-sided gratings outperform Ramsey, and whether the two-sided variant gains over one-sided or merely multiplies control sensitivity.
 
-### 10. The Complete Figure-of-Merit Set
+-----
 
-The meaningful comparison between standard Ramsey and the active phase grating is **not** fringe width. It is the following set of five quantities, evaluated at the working point:
+## 9. The Pedagogical Safeguard
 
-| Figure of Merit                | Symbol            | Ramsey Baseline       | Grating Scaling (Ideal)      |
-| ------------------------------ | ----------------- | --------------------- | ---------------------------- |
-| Discriminator slope            | S = ∂⟨σ\_z⟩/∂Δ    | ∼ τ                   | ∼ NΔt                        |
-| Linear capture range           | Δ\_cap            | ∼ 1/τ                 | ∼ 1/(NΔt)                    |
-| Side-lobe ratio                | r\_SL             | 0 (single sinusoid)   | ∼ 1/N (first side lobe)      |
-| Control-noise-equivalent error | δΔ\_ctrl          | Two-pulse errors only | Depends on √N vs N scaling   |
-| Effective duty cycle           | d = T\_int/T\_cyc | Set by dead time      | Longer train, more dead time |
+> **Teaching rule.** When presenting the grating analogy, always state both halves: (1) the mathematical structure is identical to N-slit diffraction; (2) the slits are active SU(2) rotations, not passive apertures, so the weights depend on the control Hamiltonian and the analogy breaks under phase manipulation at finite detuning.
 
-A sixth quantity — the **projection-noise-normalised sensitivity** — can be derived from these five when the atom number and contrast are specified. For a single trapped ion, the projection noise is fixed at 1/2, so the relevant comparison reduces to S/√(T\_cycle).
+-----
 
-***
+## 10. The Complete Figure-of-Merit Set
 
-### 11. Development Roadmap: Theory, Numerics, Experiment
+|Figure of Merit               |Symbol             |Tier  |Ramsey Baseline    |Grating (Ideal, Fixed T_cyc)           |
+|------------------------------|-------------------|------|-------------------|---------------------------------------|
+|Discriminator slope           |S = ∂⟨σ_z⟩/∂Δ      |T1b   |∼ τ_free           |∼ NΔt (if N contributes)               |
+|Linear capture range          |Δ_cap              |T2    |∼ 1/τ_free         |∼ 1/(NΔt)                              |
+|Side-lobe ratio               |r_SL               |T2    |0 (single sinusoid)|∼ 1/N (first side lobe)                |
+|Control-noise-equivalent error|δΔ_ctrl            |T1b   |Two-pulse errors   |√N or N scaling                        |
+|Dick-limited noise floor      |σ_y(Dick)          |T1b+T2|g(t) ≈ flat plateau|g(t) comb-like; apparatus-specific     |
+|Combined FoM                  |S/√(σ_y² + σ_proj²)|T1b+T2|Baseline           |Must exceed baseline to justify grating|
 
-#### 11.1 Theory Programme
+### 10.1 Quantum Limits
 
-The theoretical work proceeds in three layers, each extending the grating framework toward a falsifiable experimental prediction.
+- **SQL:** δΔ_SQL = 1/(S · √N_rep). The grating increases S but does not increase N_rep under fixed T_cyc. Net gain only if S grows relative to noise.
+- **Heisenberg Limit:** Not approached. The N-path structure improves classical resolving power, not quantum-enhanced sensitivity. The grating is a SQL-level instrument with engineered spectral selectivity.
+- **Measurement back-action:** In motional coupling (E3–E5), N pulses impart cumulative momentum kicks. Theory Layer T3 must quantify this.
 
-**Layer T1: Exact sensitivity function for the N-pulse train.** Derive g(t) analytically for the stroboscopic train with arbitrary pulse areas, spacings, and phases. The starting point is the Santarelli–Lemonde formalism: g(t) is defined as the response of the transition probability to an infinitesimal phase step at time t. For standard Ramsey with two ideal pulses, g(t) is piecewise constant and the derivation is textbook. For N interleaved pulses, g(t) acquires a comb-like structure whose Fourier coefficients g\_n encode the grating's spectral selectivity. The key deliverable is a closed-form (or semi-analytic) expression for g\_n(N, Δt, θ\_pulse), where θ\_pulse is the individual pulse area, valid beyond the linearised (small-area) limit. This extends the grating picture from a pedagogical handle to a quantitative tool.
+-----
 
-**Layer T2: Optimal N under realistic noise.** Given g\_n(N) from T1 and a measured or modelled LO noise spectrum S\_y(f), compute the Dick-limited instability σ\_y(N) as a function of N. Simultaneously compute the discriminator slope S(N) and capture range Δ\_cap(N). The theoretically optimal N\* is defined by:
+## 11. Development Roadmap
 
-> N\* = argmax\_N \[ S(N) / √(σ\_y²(N) + σ\_proj²) ]
+### 11.1 Theory Programme
 
-where σ\_proj is the projection noise contribution. This is a genuine prediction: the optimal grating order depends on the apparatus noise floor, not on the analogy. The theory must also determine whether N\* is robust (broad optimum) or fragile (sharp peak), as this dictates experimental tolerance.
+**T1: Exact sensitivity function g(t) for the N-pulse train** under fixed T_cyc. Derive Fourier coefficients g_n(N, Δt, θ_pulse) via the Santarelli–Lemonde formalism. Deliverable: semi-analytic expression valid beyond the small-area limit.
 
-**Layer T3: Extension to motional coupling.** Promote the qubit-only model to a spin-motion coupled system. In the Lamb-Dicke regime, the motional sidebands introduce a second frequency scale ω\_mode alongside the detuning Δ. When Δt is matched to 2π/ω\_mode (the FH24 stroboscopic condition), the grating's spectral selectivity is directed at the motional frequency rather than the LO detuning. The theory must derive the modified sensitivity function g(t; η, n̄) including the Lamb-Dicke parameter η and mean phonon number n̄, and determine how motional heating during the train degrades the grating contrast. The key question is whether the grating resolving power can separate closely spaced motional modes (e.g., distinguish the LF mode from a nearby parametric resonance) — this would be a qualitatively new capability.
+**T2: Optimal N under realistic noise.** Given g_n(N) and measured S_y(f), compute:
 
-**Layer T4 (speculative): Connection to force sensing.** A frequency discriminator with enhanced slope is, by the equivalence Δω = F/(mω\_mode · x\_zpf), also a force sensor with enhanced transduction gain. Derive the force sensitivity δF(N) of the grating protocol and compare against the standard quantum limit for a harmonically bound ion. If the grating protocol approaches or restructures the SQL in a non-trivial way (e.g., by concentrating sensitivity into a narrow frequency band), this becomes a result with implications beyond trapped-ion spectroscopy.
+> N* = argmax_N [ S(N) / √(σ_y²(N) + σ_proj²) ]
 
-#### 11.2 Numerical Programme
+Include the CCUF ceiling N_max ≈ ξ/Δt. Determine whether N* is robust or fragile.
 
-The simulations validate the theory at each layer and generate the quantitative predictions that experiments will test.
+**T3: Spin-motion coupling.** Derive g(t; η, n̄) in the Lamb-Dicke regime. Quantify contrast degradation from motional heating during the train. Key question: can the grating resolve closely spaced motional modes? Quantify measurement back-action.
 
-**Step N1: Working-point finder (qubit-only).** Extend the existing simulation with an analysis phase parameter φ\_ana. For each N from 1 to 20: automatically find φ\_ana such that ⟨σ\_z⟩ = 0 at Δ = 0, then extract slope S\_N, capture range (width of monotonic region), and side-lobe ratio. Plot all five figures of merit as functions of N. Deliverable: a single summary figure showing the Ramsey-vs-grating comparison.
+**T4 (speculative): Force sensing.** Derive δF(N) and compare against SQL. Characterise sensitivity–bandwidth product.
 
-**Step N2: Control-noise injection.** Add Gaussian noise to pulse areas (δθ/θ at the 10⁻³ to 10⁻¹ level), timing jitter (δ(Δt)/Δt at the 10⁻⁴ to 10⁻² level), and phase drift (random walk in φ). For each noise level, repeat the N-sweep from N1. Determine the crossover point where the noise-equivalent detuning error δΔ\_ctrl exceeds the slope gain, yielding the realistic optimum N\*(noise). Map the √N-to-N transition in error scaling by varying the correlation length of the noise.
+### 11.2 Numerical Programme
 
-**Step N3: Dick-effect evaluation.** Compute g(t) numerically for each N by applying infinitesimal phase steps at each time point in the sequence and recording the transition-probability response. Extract Fourier coefficients g\_n. Given a representative LO noise model (white frequency noise + flicker floor), compute σ\_y(N) and overlay it on the slope-vs-N plot from N1. Verify that the theoretical N\* from T2 matches the numerical optimum.
+**N1: Three-family working-point comparison (qubit-only).** Fixed T_cyc. For each family (Ramsey, one-sided, two-sided) and N = 1–20: find φ_ana, extract all six figures of merit. Include uniform-weight and apodised (Blackman-Harris) variants. Deliverable: single summary figure, six panels, three families overlaid.
 
-**Step N4: Spin-motion simulation.** Implement a truncated Fock-space simulation (n\_max ∼ 20) for a single ion in a harmonic trap coupled to the qubit via Lamb-Dicke interaction. Reproduce the qubit-only results in the η → 0 limit. Then turn on η = 0.1–0.4 (the FH24 range) and simulate the grating response as a function of motional frequency ω\_mode for fixed Δt = 2π/ω\_mode,design. This produces the grating's "spectral transfer function" for motional excitation — the core experimental observable. Include thermal occupation (n̄ = 0 to 10) and heating rate (dn̄/dt) to quantify contrast degradation.
+**N2: Control-noise injection.** Sweep amplitude noise (δθ/θ: 10⁻³–10⁻¹), timing jitter (δ(Δt)/Δt: 10⁻⁴–10⁻²), phase drift. Find N*(noise) for each family. Map the √N-to-N transition.
 
-**Step N5: Two-mode resolution test.** Introduce a second motional mode at ω₂ = ω₁ + δω. Simulate the grating response as a function of N and determine the minimum resolvable splitting δω\_min(N). Compare against the Ramsey limit δω\_min(N=1). If the grating resolves splittings that Ramsey cannot at the same total interrogation time, this is the quantitative basis for a "qualitatively new capability" claim.
+**N3: Dick-effect evaluation.** Compute g(t) numerically for each family and N. Extract g_n. Given representative S_y(f), compute σ_y(N). Verify N* from T2.
 
-#### 11.3 Experimental Programme
+**N4: Spin-motion simulation.** Fock-space truncation (n_max ∼ 20), η = 0.1–0.4, n̄ = 0–10, heating rate. Motional-frequency transfer function for each family.
 
-The experiments are ordered by increasing difficulty and decreasing overlap with existing demonstrations.
+**N5: Two-mode resolution test.** Second mode at ω₂ = ω₁ + δω. Minimum resolvable splitting vs N. Compare families.
 
-**Experiment E1: Qubit-only grating spectroscopy (validation).** Implement the N-pulse analysis train on a single trapped Ba⁺ (or Mg⁺) ion using microwave or Raman pulses. Scan detuning and record ⟨σ\_z⟩(Δ) for N = 1, 2, 5, 10, 20. Verify the predicted narrowing of the central feature. Extract discriminator slope and capture range; compare against simulation (N1). This is a straightforward validation experiment with no new physics — its role is to confirm that the simulation chain is trustworthy before proceeding to motional coupling. Estimated effort: one doctoral researcher, two to four weeks of beam time.
+### 11.3 Experimental Programme
 
-**Experiment E2: Working-point discriminator operation.** Lock the LO to the grating discriminator at the working point. Measure the closed-loop stability (Allan deviation) as a function of N. Compare against standard Ramsey lock at the same total interrogation time. This tests the Dick-effect prediction from N3: does the grating lock achieve better or worse stability than Ramsey, and at which N does the crossover occur? Estimated effort: extends E1 by two to four weeks for closed-loop implementation and stability characterisation.
+**E1: Qubit-only validation.** N-pulse train on single Ba⁺. Verify narrowing, slope, capture range vs. simulation. Fixed T_cyc. 2–4 weeks.
 
-**Experiment E3: Stroboscopic motional spectroscopy.** This is the FH24 core experiment, now informed by the grating framework. Set Δt = 2π/ω\_LF (matched to the low-frequency motional mode). Apply the N-pulse train after state preparation and free evolution. Measure ⟨σ\_z⟩ as a function of motional excitation (prepared by displacement pulses or heating). Extract the motional-frequency transfer function and compare against simulation (N4). The key test is whether the grating resolving power reveals structure in the motional spectrum (mode splittings, anomalous heating spectral features) that standard Ramsey does not resolve.
+**E2: Discriminator lock.** Closed-loop stability (Allan deviation) vs. N, compared against Ramsey at same T_cyc. Tests Dick prediction. 2–4 weeks beyond E1.
 
-**Experiment E4: Anomalous heating-rate spectroscopy (the PRL target).** If E3 demonstrates grating-enhanced motional-frequency resolution, use it to measure the spectral density of electric field noise S\_E(ω) near ω\_mode with resolution δω set by the grating. Standard heating-rate measurements integrate over a broad frequency band; the grating protocol could, in principle, spectrally resolve the noise — distinguishing between 1/f, white, and structured (e.g., resonance-induced) contributions. A spectrally resolved heating-rate measurement at the single-trapped-ion level would be a new experimental capability. If the spectral shape reveals a feature (a resonance, a cutoff, a deviation from 1/f), that is a result with implications for surface-science models of anomalous heating and for the design of quantum processors.
+**E3: Stroboscopic motional spectroscopy.** FH24 core. Δt matched to ω_LF. Motional-frequency transfer function. Mode-splitting resolution test.
 
-**Experiment E5: Force sensitivity benchmark (the long shot).** Operate the grating discriminator as a narrow-band force sensor. Apply a known oscillating electric field at frequency ω\_mode and measure the minimum detectable force as a function of N. Compare against the SQL for a single harmonically bound ion. If the grating protocol restructures the sensitivity bandwidth in a metrologically useful way (concentrating sensitivity into a narrow band at the cost of bandwidth, analogous to a lock-in amplifier), characterise the force-sensitivity–bandwidth product and compare against existing single-ion force-sensing records. This experiment is speculative but has the broadest implications if successful.
+**E4: Heating-rate spectroscopy (PRL target).** Spectrally resolved S_E(ω) near ω_mode. New capability if spectral structure is revealed.
 
-***
+**E5: Force sensitivity (long shot).** Narrow-band force sensor. SQL comparison. Sensitivity–bandwidth product.
 
-### 12. Realistic Publication Trajectory
+-----
 
-| Milestone                        | Content                                                                            | Target Venue                                           | Estimated Timeline |
-| -------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------ |
-| Sail + simulation (T1–T2, N1–N3) | Methods paper: grating framework, figure-of-merit comparison, Dick-effect analysis | PRA or NJP                                             | 2026 Q3–Q4         |
-| E1 + E2 validation               | Experimental verification of grating narrowing and discriminator lock              | Included in methods paper or standalone PRA(R)         | 2026 Q4–2027 Q1    |
-| E3 stroboscopic spectroscopy     | Motional-frequency transfer function with grating-enhanced resolution              | PRA or PRL (if mode splitting resolved)                | 2027 Q1–Q2         |
-| E4 heating-rate spectroscopy     | Spectrally resolved S\_E(ω) near trap frequency                                    | PRL                                                    | 2027 Q2–Q4         |
-| E5 force sensing                 | Grating-enhanced force sensitivity benchmark                                       | PRL or Nature Physics (if SQL connection demonstrated) | 2028+              |
+## 12. Publication Trajectory
 
-The path to a high-impact result runs through E4: spectrally resolved anomalous-heating-rate measurements. This is where the grating framework stops being a pedagogical convenience and becomes an enabling tool for a measurement that was previously inaccessible. If the spectral shape of S\_E(ω) near ω\_mode contains structure — and there are theoretical reasons to expect this from patch-potential models and adsorbate dynamics — then the grating protocol is the right instrument to reveal it.
+|Milestone                       |Content                                                      |Target                  |Timeline       |
+|--------------------------------|-------------------------------------------------------------|------------------------|---------------|
+|Sail + simulation (T1–T2, N1–N3)|Methods: fixed-T_cyc framework, three families, Dick analysis|PRA or NJP              |2026 Q3–Q4     |
+|E1 + E2 validation              |Experimental grating narrowing + discriminator lock          |PRA(R) or included above|2026 Q4–2027 Q1|
+|E3 motional spectroscopy        |Transfer function, mode splitting                            |PRA or PRL              |2027 Q1–Q2     |
+|E4 heating-rate spectroscopy    |Spectrally resolved S_E(ω)                                   |PRL                     |2027 Q2–Q4     |
+|E5 force sensing                |SQL comparison                                               |PRL or Nat. Phys.       |2028+          |
 
-***
+-----
 
-### 13. High-Ground Summary
+## 13. High-Ground Summary
 
-**Standard Ramsey** is a two-path interferometer in time. Resolution is set by τ. It is simple, has a single sinusoidal fringe (no ambiguity), and imposes minimal control demands.
+**Standard Ramsey** is a two-path interferometer in time. Within a fixed cycle budget, it places free evolution in a contiguous block, producing a flat sensitivity function g(t) and a single sinusoidal fringe.
 
-**The active phase grating** is a multi-path interferometer in time. Resolution is set by NΔt. It acts as a spectral filter on detuning (or motional frequency), and can operate as a high-gain discriminator. But:
+**The active phase grating** redistributes the same free evolution into gaps between active SU(2) pulses. Under fixed cycle time, the claim is not longer interrogation. It is:
 
-> _**Steeper slope is purchased with reduced capture range, increased structural complexity, enhanced sensitivity to control imperfections, and compulsory sensitivity-function engineering.**_
+> ***Engineered g(t) — and therefore engineered frequency response and noise aliasing — within the same time budget.***
 
-The optimum N is finite in any realistic setting. Finding it requires computing all five figures of merit, not just the fringe width. The development roadmap (theory layers T1–T4, numerical steps N1–N5, experiments E1–E5) defines a path from the pedagogical framework through validated simulation to experimental demonstration, with spectrally resolved heating-rate spectroscopy as the milestone that transforms the grating from a method into a measurement.
+The gain is a steeper discriminator slope from temporal multi-path interference. The price is:
 
-***
+> ***Increased actuation count (control-noise accumulation), reduced capture range, side-lobe ambiguity, model dependence, and apparatus-specific Dick-effect reshaping.***
 
-### References
+Whether the gain outpaces the price depends on the actual LO noise spectrum, the control-error statistics, and the target measurement. The grating wins when the reshaped g(t) suppresses the dominant noise source while the control chain supports the higher actuation count. It loses when it doesn’t.
 
-* Dick, G. J. (1987). Local oscillator induced instabilities in trapped ion frequency standards. _Proc. 19th PTTI_, pp. 133–147.
-* Hasse, F., Palani, D., Thomm, R., Warring, U., & Schaetz, T. (2024). Phase-stable travelling waves stroboscopically matched for super-resolved observation of trapped-ion dynamics. _Phys. Rev. A_, 109, 053105.
-* Huntemann, N., Lipphardt, B., Okhapkin, M., Tamm, Chr., Peik, E., Taichenachev, A. V., & Yudin, V. I. (2012). Generalized Ramsey excitation scheme with suppressed light shift. _Phys. Rev. Lett._, 109, 213002.
-* Lemonde, P., Santarelli, G., Laurent, P., Pereira Dos Santos, F., Clairon, A., & Salomon, C. (1998). Sensitivity function approach for frequency standards. _Proc. IEEE Int. Freq. Control Symp._, pp. 110–115.
-* Quessada, A., Kovacich, R. P., Courtillot, I., Clairon, A., Santarelli, G., & Lemonde, P. (2003). The Dick effect for an optical frequency standard. _J. Opt. B: Quantum Semiclass. Opt._, 5, S150–S154.
-* Santarelli, G., Audoin, C., Makdissi, A., Laurent, P., Dick, G. J., & Clairon, A. (1998). Frequency stability degradation of an oscillator slaved to a periodically interrogated atomic resonator. _IEEE Trans. UFFC_, 45(4), 887–894.
-* Schioppo, M., et al. (2017). Ultrastable optical clock with two cold-atom ensembles. _Nature Photon._, 11, 48–52.
-* Yun, P., Zhang, Y., Liu, G., et al. (2012). Multipulse Ramsey-CPT interference fringes for the ⁸⁷Rb clock transition. _EPL_, 97, 63004.
-* Yudin, V. I., Taichenachev, A. V., Oates, C. W., Barber, Z. W., Lemke, N. D., Ludlow, A. D., Sterr, U., Lisdat, Ch., & Riehle, F. (2010). Hyper-Ramsey spectroscopy of optical clock transitions. _Phys. Rev. A_, 82, 011804(R).
-* Zanon-Willette, T., et al. (2018). Composite laser-pulses spectroscopy for high-accuracy optical clocks: a review of recent progress and perspectives. _Rep. Prog. Phys._, 81, 094401.
+The optimum N is finite, bounded above by N_max ≈ ξ/Δt (CCUF constraint) and below by the minimum resolving power required. Finding it requires computing the combined figure of merit S(N)/√(σ_y²(N) + σ_proj²) under the fixed-cycle-time protocol, not just the fringe width.
 
-***
+-----
 
-**Council Review Status**
+## 14. A Practical Decision Rule
 
-* **Guardian:** Cleared. No veto. Three flags raised (Sections 6, 7.3, 7.5) and incorporated as corrections.
-* **Architect:** Awaiting review on implementability of simulation protocol (Section 11) and experimental feasibility estimates.
-* **Integrator:** Awaiting synthesis into Harbour documentation.
+For the crew, a short bottom line:
+
+- **If your limitation is pulse imperfections / light-shift transients / detuning error** → Use A (composite replacement) is the right tool. This Sail does not address that regime; consult the Hyper-Ramsey literature.
+- **If your limitation is free-evolution dephasing and you are near ideal Ramsey** → A train inside the Ramsey zones usually gives little, and can cost you via extra light shifts / scattering.
+- **If you need frequency-selective readout of a specific motional component (FH24 regime)** → Use B (stroboscopic selector) applies. This Sail provides the framework, and the three-family comparison determines whether the grating outperforms Ramsey for your specific noise environment.
+- **In all cases:** the three-family simulation at fixed T_cyc is the arbiter. Run it with your actual parameters before committing to a grating protocol.
+
+-----
+
+## References
+
+- Dick, G. J. (1987). Local oscillator induced instabilities in trapped ion frequency standards. *Proc. 19th PTTI*, pp. 133–147.
+- Hasse, F., Palani, D., Thomm, R., Warring, U., & Schaetz, T. (2024). Phase-stable travelling waves stroboscopically matched for super-resolved observation of trapped-ion dynamics. *Phys. Rev. A*, 109, 053105.
+- Huntemann, N., Lipphardt, B., Okhapkin, M., Tamm, Chr., Peik, E., Taichenachev, A. V., & Yudin, V. I. (2012). Generalized Ramsey excitation scheme with suppressed light shift. *Phys. Rev. Lett.*, 109, 213002.
+- Lemonde, P., Santarelli, G., Laurent, P., Pereira Dos Santos, F., Clairon, A., & Salomon, C. (1998). Sensitivity function approach for frequency standards. *Proc. IEEE Int. Freq. Control Symp.*, pp. 110–115.
+- Quessada, A., Kovacich, R. P., Courtillot, I., Clairon, A., Santarelli, G., & Lemonde, P. (2003). The Dick effect for an optical frequency standard. *J. Opt. B: Quantum Semiclass. Opt.*, 5, S150–S154.
+- Santarelli, G., Audoin, C., Makdissi, A., Laurent, P., Dick, G. J., & Clairon, A. (1998). Frequency stability degradation of an oscillator slaved to a periodically interrogated atomic resonator. *IEEE Trans. UFFC*, 45(4), 887–894.
+- Schioppo, M., et al. (2017). Ultrastable optical clock with two cold-atom ensembles. *Nature Photon.*, 11, 48–52.
+- Yun, P., Zhang, Y., Liu, G., et al. (2012). Multipulse Ramsey-CPT interference fringes for the ⁸⁷Rb clock transition. *EPL*, 97, 63004.
+- Yudin, V. I., Taichenachev, A. V., Oates, C. W., Barber, Z. W., Lemke, N. D., Ludlow, A. D., Sterr, U., Lisdat, Ch., & Riehle, F. (2010). Hyper-Ramsey spectroscopy of optical clock transitions. *Phys. Rev. A*, 82, 011804(R).
+- Zanon-Willette, T., et al. (2018). Composite laser-pulses spectroscopy for high-accuracy optical clocks: a review of recent progress and perspectives. *Rep. Prog. Phys.*, 81, 094401.
+
+-----
+
+## Council-5 Review Status
+
+|Stance        |Status                            |Notes                                                                                                                                          |
+|--------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|**Guardian**  |Cleared                           |Flags on scaling conditions (§6.1), error accumulation (§7.1), active/passive caveat (§4). All incorporated. No veto.                          |
+|**Architect** |Cleared                           |FIR framing (§3.2), apodisation protocol (§7.2), three-family architecture (§8.2). Sensitivity function T1 prioritised.                        |
+|**Integrator**|Pending                           |Awaiting synthesis into Harbour documentation.                                                                                                 |
+|**Scout**     |Cleared                           |CCUF mapping (§6.3), tier boundaries (§1.1), quantum limits (§10.1), composite territory (§2.1). All addressed.                                |
+|**Verifier**  |Pending                           |Scaling claims to be verified against N1 simulation output. Literature anchors spot-checked.                                                   |
+|**Supervisor**|Structural correction incorporated|Fixed-T_cyc framing (§5), two-use distinction (§2), three-family comparison (§8.2), revised cost structure (§7), practical decision rule (§14).|
