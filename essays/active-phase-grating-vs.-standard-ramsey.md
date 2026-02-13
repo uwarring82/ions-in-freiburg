@@ -313,6 +313,79 @@ The simulation sweeps N from 1 to 20 for each family, extracting all five quanti
 
 > **📘 Student note.** This table defines the three experiments you will run in simulation (Step N1) and eventually in the lab (E1). The "Ramsey baseline" is your control group. If the grating families don't beat it on the combined FoM, they're not worth the added complexity.
 
+**8.3 Numerical Baseline: Three-Family Phase Scans (Qubit-Only)**
+
+This section presents the first output of the Numerical Programme (N1, §11.2): a qubit-only comparison of the three families under the fixed-cycle-time protocol defined in §8.1–§8.2. No motional coupling, no decoherence, no control noise — the cleanest possible arena in which to see the grating structure emerge from the fairness constraint alone.
+
+**Parameters.** T\_cyc = 14.5 µs, single-pulse duration dt\_single = 4.5 µs (fixing Ω/2π ≈ 55.6 kHz), total free evolution τ\_free = 5.5 µs. Equal-gap convention: free evolution is distributed uniformly across all gaps (§5.3). Initial state |1⟩ (FH24 convention). N = 1, 3, 10 for each family.
+
+> **📘 Student note.** These are not FH24 experimental parameters — they are chosen so that the pulse duration and free-evolution time are comparable, making the finite-pulse-width effects (§4, second consequence) clearly visible in the plots. The FH24 regime (δt = 100 ns, Δt = 770 ns) has Ω ≫ Δ, where the grating formula is a better approximation. Run the simulation with those parameters as an exercise (§7 of the code).
+
+**Timing verification.** The simulation prints a timing table at runtime confirming that total pulse time (9.00 µs) and total gap time (5.50 µs) are identical across all families and all N, as required by the fairness constraint. The table is reproduced here for N = 10:
+
+| Family    | N  | dt\_sub \[µs] | n\_gaps | gap \[µs] | Σ pulse \[µs] | Σ gap \[µs] | Total \[µs] |
+| --------- | -- | ------------- | ------- | --------- | ------------- | ----------- | ----------- |
+| Ramsey    | 10 | 0.450         | 1       | 5.500     | 9.000         | 5.500       | 14.500      |
+| One-sided | 10 | 0.450         | 10      | 0.550     | 9.000         | 5.500       | 14.500      |
+| Two-sided | 10 | 0.450         | 19      | 0.289     | 9.000         | 5.500       | 14.500      |
+
+**Figure 2: Pulse-Timing Diagrams**
+
+```
+|<========================= T_cyc (fixed) =========================>|
+
+1. Standard Ramsey:
+
+   |####|.............................................|####|
+    π/2           contiguous free evolution            π/2
+
+
+2. One-sided grating (N=4 analysis):
+
+   |####|.............|#|....|#|....|#|....|#|
+    π/2                  analysis train
+                        (each #: π/8, same Ω)
+
+
+3. Two-sided grating (N=4 each side):
+
+   |#|..|#|..|#|..|#|..|#|..|#|..|#|..|#|
+     prep train              analysis train
+    (each #: π/8)           (each #: π/8)
+```
+
+> **Figure 2.** Pulse-timing structure of the three comparison families under fixed total cycle time T\_cyc (§8.2). Hashed blocks (#) represent driven pulses (Ω ≠ 0); dots (.) represent free-evolution intervals (Ω = 0). In standard Ramsey (top), free evolution occupies a single contiguous block between two π/2 pulses. In the one-sided grating (middle), the analysis π/2 is distributed over N sub-pulses of area π/(2N) each, with free-evolution gaps interleaved. In the two-sided grating (bottom), both preparation and analysis zones are distributed. The total free-evolution time — the sum of all dotted intervals — is equal across all three families by construction (fairness constraint, §5). Only its temporal distribution changes, reshaping the sensitivity function g(t) \[T1b] and, consequently, the noise aliasing and discriminator properties \[T1b → T2]. Diagram shows equal spacing and uniform pulse areas (default case); apodised variants (§7.2) modify the per-pulse areas but not the timing structure shown here.
+
+**Figure 3: Phase-Scan Comparison**
+
+<figure><img src="../.gitbook/assets/fig1_phase_scan_comparison.png" alt=""><figcaption></figcaption></figure>
+
+> **Figure 3.** Analysis-phase scans ⟨σ\_z⟩(φ\_ana) for the three families at N = 1, 3, 10. **Top row (Δ = 0):** All gap propagators reduce to the identity. The three families produce identical curves at every N — confirming, to machine precision (max deviation < 10⁻¹⁵), that the fairness machinery distributes pulse area correctly and that the grating structure is not an artefact of unequal resources. This is the mandatory sanity check. **Bottom row (Δτ\_free = π):** At finite detuning, the gap propagators introduce z-rotations that break the degeneracy between families. The Ramsey baseline (blue, solid) retains full contrast and a clean sinusoidal dependence on φ\_ana. The one-sided grating (green, dashed) and two-sided grating (amber, dash-dot) show progressively modified fringe shapes: reduced contrast, shifted extrema, and emerging asymmetry. These modifications are the signature of the active SU(2) dynamics discussed in §4 — the gap-induced z-precession does not commute with the analysis rotations, restructuring the interference pattern. The effect strengthens with N because more gaps accumulate more differential z-rotation.
+
+**Figure 4: Detuning-Scan Comparison**
+
+<figure><img src="../.gitbook/assets/fig2_detuning_scan_comparison.png" alt=""><figcaption></figcaption></figure>
+
+> **Figure 4.** Detuning scans ⟨σ\_z⟩(Δ) at the working point φ\_ana = π/2 for the three families at N = 1, 3, 10. At N = 1 (left), all families are identical — standard Ramsey fringes with period ∼ 1/τ\_free. At N = 3 (centre) and N = 10 (right), the grating families develop frequency-selective structure absent in the Ramsey baseline: modified fringe envelopes, shifted spectral weight, and additional features arising from the comb-like sensitivity function g(t). The two-sided grating (amber) shows the strongest reshaping because both prep and analysis trains contribute gap-accumulated phase. This is the spectral-selectivity mechanism of Use B (§2.2) made visible. Note that the grating families do not uniformly steepen the central discriminator slope under the equal-gap convention — they _redistribute_ spectral sensitivity, which may or may not improve the figure of merit depending on the noise environment (§6.2, §7.5).
+
+**Discriminator Slopes at the Working Point**
+
+The discriminator slope S = ∂⟨σ\_z⟩/∂Δ at Δ = 0, φ\_ana = π/2 is the primary T1b figure of merit (§10, Table). Values extracted by central finite difference:
+
+| N  | Ramsey \[µs] | One-sided \[µs] | Two-sided \[µs] |
+| -- | ------------ | --------------- | --------------- |
+| 1  | +8.37        | +8.37           | +8.37           |
+| 3  | +8.37        | +7.20           | +6.97           |
+| 10 | +8.37        | +6.63           | +6.54           |
+
+Under the equal-gap convention with these parameters, the grating families show _decreasing_ slope at the working point as N increases. This does not contradict the slope-enhancement claim in §6.1: that claim applies when the inter-pulse gap is matched to a physical frequency (Use B), placing the target detuning near a grating resonance. In the equal-gap regime, the gaps are too short at large N to accumulate significant differential phase at the working point. The slope redistribution is visible in the detuning scans (Figure 4), where the grating families develop structure at detunings corresponding to the gap-determined free spectral range ∼ 2π/gap\_duration.
+
+> **⚠ Guardian Flag.** These results are for the equal-gap convention at a specific T\_cyc. Slope enhancement requires matching Δt to the target frequency — which is the operational regime of FH24, not the pedagogical baseline presented here. Do not cite these slopes as evidence that gratings generically underperform Ramsey. The correct statement: under equal gaps, the grating redistributes spectral weight away from Δ = 0 towards the comb harmonics.
+
+> **📘 Student note.** The simulation code (§7, exploration guide) explains how to switch to FH24-like parameters where the gap is matched to a motional frequency. That is where the grating is designed to win. This section deliberately uses a "neutral" gap convention to show you the _mechanism_ — spectral redistribution — without presupposing that it helps. Whether it helps is determined by the noise environment and the target measurement, as §13 summarises.
+
+
+
 ***
 
 ### 9. The Pedagogical Safeguard
