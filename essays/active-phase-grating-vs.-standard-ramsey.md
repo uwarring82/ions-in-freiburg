@@ -8,6 +8,8 @@ description: A Clean Mapping and Its Limits
 **Stewardship:** U. Warring.\
 **Version:** 0.6 (draft) — February 2026\
 **External constraints:** Dick (1987); Santarelli et al. (1998); Yudin et al. (2010); Huntemann et al. (2012); Hasse et al. (2024, PRA 109, 053105); Schioppo et al. (2017)
+
+**Numerics code:** [https://colab.research.google.com/drive/1f\_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing](https://colab.research.google.com/drive/1f_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing)
 {% endhint %}
 
 ***
