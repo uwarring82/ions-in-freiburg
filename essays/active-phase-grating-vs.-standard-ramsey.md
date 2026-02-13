@@ -9,8 +9,22 @@ description: A Clean Mapping and Its Limits
 **Version:** 0.6 (draft) — February 2026\
 **External constraints:** Dick (1987); Santarelli et al. (1998); Yudin et al. (2010); Huntemann et al. (2012); Hasse et al. (2024, PRA 109, 053105); Schioppo et al. (2017)
 
-**Numerics code:** [https://colab.research.google.com/drive/1f\_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing](https://colab.research.google.com/drive/1f_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing)
+**Numerics code:** [https://colab.research.google.com/drive/1f\_PGhjySBkMwoAUppYEnA9lx-fcw68nu?](https://colab.research.google.com/drive/1f_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing)[usp=sharing](https://colab.research.google.com/drive/1f_PGhjySBkMwoAUppYEnA9lx-fcw68nu?usp=sharing)
 {% endhint %}
+
+***
+
+#### Abstract
+
+In trapped-ion precision spectroscopy, the analysis step of a Ramsey sequence is conventionally a single π/2 pulse. Stroboscopic protocols replace this with a train of N weak pulses whose inter-pulse spacing can be matched to a physical frequency of interest — for instance, a motional mode period. The resulting multi-pulse structure resembles a diffraction grating in the time domain: N coherent contributions interfere to produce a spectral response that is narrower, and potentially steeper, than the standard Ramsey sinusoid.
+
+This analogy is pedagogically powerful but physically incomplete. Unlike the slits of a passive grating, each pulse is an active SU(2) rotation that does not commute with the free precession between pulses. The interference pattern therefore depends on the full unitary evolution chain, not merely on the Fourier transform of the pulse positions. Phase manipulations that would produce predictable results in optics — blazing, alternating-phase cancellation — behave differently here, and the discrepancy grows with detuning.
+
+We develop the analogy carefully, identifying where it is safe (the linear regime of small pulse areas and small detunings) and where it breaks (finite detuning, phase manipulation, error accumulation). The central methodological commitment is a fixed-cycle-time fairness constraint: the grating sequence is compared against standard Ramsey under identical total time, identical total pulse area, and identical laser power. Under this constraint, the grating's claim is not longer interrogation but engineered spectral redistribution of the sensitivity function g(t) within the same time budget. Whether this redistribution improves or degrades clock stability depends on the match between the reshaped g(t) and the actual local-oscillator noise spectrum — a question that is apparatus-specific and must be computed, not assumed.
+
+We present a qubit-only numerical baseline implementing three comparison families (standard Ramsey, one-sided grating, two-sided grating) under the fairness protocol. At zero detuning, all families produce identical phase-scan curves to machine precision, validating the equal-resource constraint. At finite detuning, the grating families develop frequency-selective structure absent in standard Ramsey, demonstrating the spectral redistribution mechanism. Under the equal-gap convention used for the baseline, the discriminator slope at the working point decreases with N — confirming that slope enhancement is not automatic but requires matching the gap structure to the target frequency.
+
+The framework is intended as a working reference for experimental groups implementing stroboscopic protocols in trapped-ion systems, and as a pedagogical entry point for researchers encountering multi-pulse Ramsey extensions for the first time.
 
 ***
 
@@ -185,7 +199,7 @@ In the idealised case (unit contrast, negligible pulse-area error):
 
 > S(N) ∼ N · Δt \[T1b]
 
-**Interpretation under fixed T\_cyc:** The slope gain comes from reshaping g(t), not from increasing the total free-evolution time. The linear N scaling holds only in regimes where the central feature narrows with N while the net phase-accumulation budget remains fixed. For large N at fixed T\_cyc, the individual gaps shrink (Δt decreases if T\_cyc is held constant with more pulses occupying the same window), and the narrowing eventually saturates or reverses. The scaling is a regime statement, not a general law.
+**Interpretation under fixed T\_cyc:** The slope gain comes from reshaping g(t), not from increasing the total free-evolution time. The linear N scaling holds only in regimes where the central feature narrows with N while the net phase-accumulation budget remains fixed. For large N at fixed T\_cyc, the individual gaps shrink (Δt decreases if T\_cyc is held constant with more pulses occupying the same window), and the narrowing eventually saturates or reverses. In particular, under the equal-gap convention (τ\_free distributed uniformly), the central slope at Δ = 0 can decrease with N because the shortened gaps move the grating's spectral weight away from the working point (§8.3, Table). The slope enhancement requires that the gap duration is matched to the target frequency — the Use B operating condition (§2.2). The scaling is a regime statement, not a general law.
 
 > **⚠ Guardian Flag.** This scaling assumes unit contrast, negligible pulse-area error, and operation at the exact working point. It does not account for the costs enumerated in Section 7. Do not cite S(N) ∼ NΔt without stating these conditions.
 
@@ -398,14 +412,7 @@ Under the equal-gap convention with these parameters, the grating families show 
 
 ### 10. The Complete Figure-of-Merit Set
 
-| Figure of Merit                | Symbol                | Tier   | Ramsey Baseline     | Grating (Ideal, Fixed T\_cyc)                                 |
-| ------------------------------ | --------------------- | ------ | ------------------- | ------------------------------------------------------------- |
-| Discriminator slope            | S = ∂⟨σ\_z⟩/∂Δ        | T1b    | ∼ τ\_free           | Can scale ∝ NΔt in the narrowing regime; saturates at large N |
-| Linear capture range           | Δ\_cap                | T2     | ∼ 1/τ\_free         | ∼ 1/(NΔt)                                                     |
-| Side-lobe ratio                | r\_SL                 | T2     | 0 (single sinusoid) | ∼ 1/N (first side lobe, uniform weights)                      |
-| Control-noise-equivalent error | δΔ\_ctrl              | T1b    | Two-pulse errors    | √N or N scaling depending on correlation                      |
-| Dick-limited noise floor       | σ\_y(Dick)            | T1b+T2 | g(t) ≈ flat plateau | g(t) comb-like; apparatus-specific                            |
-| Combined FoM                   | S/√(σ\_y² + σ\_proj²) | T1b+T2 | Baseline            | Must exceed baseline to justify grating                       |
+<table><thead><tr><th width="143.8203125">Figure of Merit</th><th width="106.54296875">Symbol</th><th width="83.8203125">Tier</th><th width="162.68359375">Ramsey Baseline</th><th>Grating (Ideal, Fixed T_cyc)</th></tr></thead><tbody><tr><td>Discriminator slope</td><td>S = ∂⟨σ_z⟩/∂Δ</td><td>T1b</td><td>∼ τ_free</td><td>Can scale ∝ NΔt when gap duration is matched to the target frequency; decreases under equal-gap distribution (§8.3). Saturates or reverses at large N in both cases.</td></tr><tr><td>Linear capture range</td><td>Δ_cap</td><td>T2</td><td>∼ 1/τ_free</td><td>∼ 1/(NΔt)</td></tr><tr><td>Side-lobe ratio</td><td>r_SL</td><td>T2</td><td>0 (single sinusoid)</td><td>∼ 1/N (first side lobe, uniform weights)</td></tr><tr><td>Control-noise-equivalent error</td><td>δΔ_ctrl</td><td>T1b</td><td>Two-pulse errors</td><td>√N or N scaling depending on correlation</td></tr><tr><td>Dick-limited noise floor</td><td>σ_y(Dick)</td><td>T1b+T2</td><td>g(t) ≈ flat plateau</td><td>g(t) comb-like; apparatus-specific</td></tr><tr><td>Combined FoM</td><td>S/√(σ_y² + σ_proj²)</td><td>T1b+T2</td><td>Baseline</td><td>Must exceed baseline to justify grating</td></tr></tbody></table>
 
 #### 10.1 Quantum Limits
 
@@ -433,7 +440,7 @@ Include the CCUF ceiling N\_max ≈ ξ/Δt. Determine whether N\* is robust or f
 
 #### 11.2 Numerical Programme
 
-**N1: Three-family working-point comparison (qubit-only).** Fixed T\_cyc. For each family (Ramsey, one-sided, two-sided) and N = 1–20: find φ\_ana, extract all six figures of merit. Include uniform-weight and apodised (Blackman-Harris) variants. Deliverable: single summary figure, six panels, three families overlaid.
+**N1: Three-family working-point comparison (qubit-only).** Equal-gap baseline at Δ = 0 and finite Δ. Remaining: repeat with FH24-matched gap timing to demonstrate the slope-enhancement regime. **Delivered (§8.3).**&#x20;
 
 **N2: Control-noise injection.** Sweep amplitude noise (δθ/θ: 10⁻³–10⁻¹), timing jitter (δ(Δt)/Δt: 10⁻⁴–10⁻²), phase drift. Find N\*(noise) for each family. Map the √N-to-N transition.
 
@@ -520,7 +527,7 @@ Space clocks (DSAC-class, gravitational-wave detection missions) operate under t
 
 > _**Engineered g(t) — and therefore engineered frequency response and noise aliasing — within the same time budget.**_
 
-The gain is a steeper discriminator slope from temporal multi-path interference. The price is:
+The potential gain is a steeper discriminator slope from temporal multi-path interference, conditional on matching the gap structure to the target frequency. The price is:
 
 > _**Increased actuation count (control-noise accumulation), reduced capture range, side-lobe ambiguity, model dependence, and apparatus-specific Dick-effect reshaping.**_
 
