@@ -271,6 +271,36 @@ evaluated at fixed T\_cyc. This is the quantity that determines whether the grat
 
 All families share the same T\_cyc, the same total beam-splitter area (π/2 + π/2 = π), and the same working-point protocol.
 
+{% hint style="info" %}
+|<====== T\_cyc (fixed) =====>|
+
+Standard Ramsey:
+
+|##|.......................................|##|&#x20;
+
+π/2 contiguous free evolution π/2
+
+
+
+One-sided grating (N=4 analysis):
+
+|##|.....................|#|...|#|...|#|...|#|&#x20;
+
+π/2 free evolution analysis train (each #: π/8)
+
+
+
+Two-sided grating (N=4 each side):
+
+|#|...|#|...|#|...|#|......|#|...|#|...|#|...|#|&#x20;
+
+&#x20;         prep train free analysis train (each #: π/8) (each #: π/8)
+
+
+
+**Figure 1.** Pulse-timing structure of the three comparison families under fixed total cycle time T\_cyc (§8.2). Hashed blocks (#) represent driven pulses (Ω ≠ 0); dots (.) represent free-evolution intervals (Ω = 0). In standard Ramsey (top), free evolution occupies a single contiguous block between two π/2 pulses. In the one-sided grating (middle), the analysis π/2 is distributed over N sub-pulses of area π/(2N) each, with free-evolution gaps interleaved. In the two-sided grating (bottom), both preparation and analysis zones are distributed. The total free-evolution time — the sum of all dotted intervals — is equal across all three families by construction (fairness constraint, §5). Only its temporal distribution changes, reshaping the sensitivity function g(t) \[T1b] and, consequently, the noise aliasing and discriminator properties \[T1b → T2]. Diagram shows equal spacing and uniform pulse areas (default case); apodised variants (§7.2) modify the per-pulse areas but not the timing structure shown here.
+{% endhint %}
+
 | Family                | Prep                     | Free Evolution               | Analysis                 |
 | --------------------- | ------------------------ | ---------------------------- | ------------------------ |
 | **Ramsey baseline**   | Single π/2 pulse         | Contiguous wait              | Single π/2 pulse         |
