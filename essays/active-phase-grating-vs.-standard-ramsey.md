@@ -1,5 +1,5 @@
 ---
-description: A Clean Mapping and Its Limits
+description: A Clean Mapping and Its Limits (aka Strobo 2.0)
 ---
 
 # Active Phase Grating vs. Standard Ramsey
