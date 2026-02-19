@@ -4,9 +4,12 @@ description: Claim Analysis Ledger
 
 # Breakwater Layer — A Meta-Algorithm
 
-##
-
-**Endorsement:** Local candidate framework (no parity implied with externally validated laws). **Version:** 1.0-rc **Status:** Release candidate. Schema cleared by Council-3 adversarial review and refined through two rounds of external peer commentary. Core architecture frozen; companion materials under development.
+{% hint style="info" %}
+**Stewardship:** Ulrich Warring\
+**Endorsement:** Local candidate framework (no parity implied with externally validated laws). \
+**Version:** 1.0-rc \
+**Status:** Release candidate. Schema cleared by Council-3 adversarial review and refined through two rounds of external peer commentary. Core architecture frozen; companion materials under development.
+{% endhint %}
 
 ***
 
