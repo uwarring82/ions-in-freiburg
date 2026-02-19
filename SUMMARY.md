@@ -4,7 +4,7 @@
 
 ## Brakewater
 
-* [The Breakwater](brakewater/the-breakwater.md)
+* [Introducing The Breakwater](brakewater/introducing-the-breakwater.md)
 
 ## Invariant Frameworks
 
