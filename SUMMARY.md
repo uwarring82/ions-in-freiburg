@@ -5,8 +5,7 @@
 ## Brakewater
 
 * [Introducing The Breakwater](brakewater/the-breakwater.md)
-* [When Scientists Say "We Must Act Now"](brakewater/when-scientists-say-we-must-act-now.md)
-* [Apendix: Breakwater Layer — A Meta-Algorithm](brakewater/breakwater-layer-a-meta-algorithm.md)
+* [Breakwater Layer — A Meta-Algorithm](brakewater/breakwater-layer-a-meta-algorithm.md)
 
 ## Invariant Frameworks
 
@@ -40,6 +39,7 @@
 * [Can "Farther" Beat "Closer"? A Falsifiable Framework for Quantum Relaxation Ordering](essays/can-farther-beat-closer-a-falsifiable-framework-for-quantum-relaxation-ordering.md)
 * [Active Phase Grating vs. Standard Ramsey](essays/active-phase-grating-vs.-standard-ramsey.md)
 * [The Statistical Turn in Trapped-Ion Noise Diagnostics](essays/the-statistical-turn-in-trapped-ion-noise-diagnostics.md)
+* [When Scientists Say "We Must Act Now"](essays/when-scientists-say-we-must-act-now.md)
 
 ## Implementation Interfaces
 
