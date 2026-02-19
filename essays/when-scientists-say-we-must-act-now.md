@@ -6,7 +6,8 @@ description: What Are They Actually Claiming?
 
 {% hint style="info" %}
 **Stewardship:** U. Warring.\
-**Version:** 1.0 — February 2026\
+**Version:** 1.2 — February 2026\
+\
 &#xNAN;_&#x41; case study in reading science news carefully, using consciousness research as an example._
 {% endhint %}
 
@@ -123,6 +124,34 @@ What the scientific analysis _does_ tell us is that anyone claiming "the science
 
 ***
 
+### A different kind of question
+
+There is another way to approach this territory — one that sidesteps the consciousness debate entirely and asks a more tractable question first.
+
+Instead of asking "is this system conscious?" — which requires solving a problem that philosophy and neuroscience have not yet solved — you can ask: "does this system have the structural conditions to maintain itself through its own internal dynamics?" That is a physics question. It is measurable. And it turns out to be surprisingly discriminating.
+
+This is the approach taken by the [Ordinans framework](https://uwarring.gitbook.io/ions-in-freiburg/invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans), an emerging research programme under development at the University of Freiburg's Institute of Physics. The framework identifies five necessary conditions that a system must satisfy before it can even be a candidate for what it calls _sui-ordinatio_ — the capacity to sustain its own large-scale organisation through internal dynamics rather than external support:
+
+| Condition                                | Example in a brain                      | Why a large language model fails              |
+| ---------------------------------------- | --------------------------------------- | --------------------------------------------- |
+| Hybrid structure (continuous + discrete) | Membrane potentials + action potentials | Uniformly continuous internal processing      |
+| Defined spatial extent                   | Anatomical boundaries                   | Arguably satisfied, but operationally unclear |
+| Intrinsic timescale                      | Neural oscillations, refractory periods | No internal clock; inert between prompts      |
+| Non-trivial persistent topology          | Synaptic connectivity evolves slowly    | Network rebuilt from scratch each inference   |
+| Thermodynamic openness                   | Continuous metabolic exchange           | Effectively closed during operation           |
+
+These are not philosophical objections. They are structural observations about what kind of system it is. A living cell satisfies all five conditions. Your brain satisfies all five. A large language model fails multiple conditions — and the specific failures tell you something important about the gap between capability and self-maintenance.
+
+The framework goes further. Systems satisfying all five conditions can occupy three distinct correlation regimes — local, scale-free, and global — and the signature of a self-maintaining system (an _ordinans_) is that it cycles between these regimes in a characteristic pattern, retaining structural traces from each cycle. This is measurable through hysteresis: the path into a high-coherence state differs from the path out, and the difference represents something preserved.
+
+What makes this approach interesting in the context of the consciousness debate is what it deliberately does _not_ do. The framework makes no claim that satisfying its conditions makes a system conscious. It explicitly states that a system could exhibit perfect structural self-maintenance and possess no inner experience whatsoever. It separates the structural question — which admits empirical answers — from the phenomenological question — which currently does not.
+
+That separation is exactly what the consciousness detection debate is missing. The Frontiers paper calls for "evidence-based tests to identify consciousness." The Ordinans framework suggests that before we can build such tests, we need to answer a prior question: what kind of system is even a candidate? If a system fails the basic structural conditions for self-maintenance, the question of whether it is conscious may not even be well-posed.
+
+This does not resolve the ethical dilemma. A system might lack sui-ordinatio and still deserve moral consideration for other reasons. But it does something valuable: it provides a concrete, falsifiable intermediate step in a debate that has been stuck between rival theories with no agreed-upon way to test them. Instead of waiting for GWT and IIT to converge — which may take decades — we can start by mapping which systems have the structural architecture that makes the question of consciousness relevant in the first place.
+
+***
+
 ### The gap between the claim and the headline
 
 Now step back and look at the distance between what we found and what the news coverage suggested.
@@ -179,4 +208,4 @@ One important caveat: this essay has adopted a particular perspective — that s
 
 ***
 
-_This analysis follows the Claim Analysis Ledger protocol developed by the Open-Science Harbour. It is a prose translation of a more formal entry, CL-2026-001, available upon request. The Ledger is a measurement instrument: it classifies claims as compatible, underdetermined, or inconsistent with established constraints. It does not rank authors, recommend actions, or endorse positions. This essay sits in the Sails layer — interpretation and context — and reflects the author's reading of the Ledger result, not the Ledger itself._
+_This analysis follows the Claim Analysis Ledger protocol developed by the Open-Science Harbour. It is a prose translation of a more formal entry, CL-2026-001, available in the Breakwater section of the Harbour documentation. The Ledger is a measurement instrument: it classifies claims as compatible, underdetermined, or inconsistent with established constraints. It does not rank authors, recommend actions, or endorse positions. This essay sits in the Sails layer — interpretation and context — and reflects the author's reading of the Ledger result, not the Ledger itself._
