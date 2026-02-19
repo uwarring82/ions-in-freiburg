@@ -5,7 +5,8 @@
 ## Brakewater
 
 * [Introducing The Breakwater](brakewater/the-breakwater.md)
-* [Apendix: Breakwater Layer — A Meta-Algorithm](brakewater/apendix-breakwater-layer-a-meta-algorithm.md)
+* [When Scientists Say "We Must Act Now"](brakewater/when-scientists-say-we-must-act-now.md)
+* [Apendix: Breakwater Layer — A Meta-Algorithm](brakewater/breakwater-layer-a-meta-algorithm.md)
 
 ## Invariant Frameworks
 
