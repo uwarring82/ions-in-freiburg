@@ -2,6 +2,10 @@
 
 * [Welcome to the Open-Science Harbour: Ions in Freiburg](README.md)
 
+## Brakewater
+
+* [The Breakwater](brakewater/the-breakwater.md)
+
 ## Invariant Frameworks
 
 * [Unified Preamble](invariant-frameworks/unified-preamble.md)
