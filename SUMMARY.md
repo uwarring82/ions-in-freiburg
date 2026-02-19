@@ -4,7 +4,8 @@
 
 ## Brakewater
 
-* [Introducing The Breakwater](brakewater/introducing-the-breakwater.md)
+* [Introducing The Breakwater](brakewater/the-breakwater.md)
+* [Breakwater Layer — A Meta-Algorithm](brakewater/breakwater-layer-a-meta-algorithm.md)
 
 ## Invariant Frameworks
 

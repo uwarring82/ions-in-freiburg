@@ -1,8 +1,8 @@
 ---
-description: To Protect the Harbour from Stormy Weather
+description: How to Protect the Harbour from Stormy Weather
 ---
 
-# The Breakwater
+# Introducing The Breakwater
 
 A harbour needs more than docks and charts. It needs something at the water's edge that absorbs the force of incoming waves before they reach the ships at anchor.
 
