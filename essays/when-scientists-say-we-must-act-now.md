@@ -16,6 +16,22 @@ description: >-
 
 ***
 
+> **Abstract** \
+> \
+> Public debate about consciousness in artificial systems tends to split into opposing camps: those who warn of imminent risk and those who dismiss the concern. Both positions rest on the same unsettled science — but the disagreement is rarely about the science itself. It is about what to do under uncertainty.\
+> \
+> This essay does not take a side. Instead, it unpacks the structure of the underlying claim.\
+> \
+> Using a recent high-profile paper in _Frontiers in Science_ (Cleeremans, Seth & Mudrik 2025) as a case study, we separate three questions that public discussion routinely conflates: the _empirical_ question (can current theories of consciousness produce convergent detection criteria?), the _predictive_ question (how close are we?), and the _normative_ question (what should we do while the science remains open?). We trace each to its evidential basis, classify the empirical core as _underdetermined_ — neither confirmed nor contradicted by current evidence — and show that a decisive empirical test is methodologically imaginable with existing measurement techniques, though significant organisational barriers remain.\
+> \
+> Once these layers are separated, many apparent disagreements shrink. Two parties may share the same empirical uncertainty but differ only in risk tolerance — a policy question, not a scientific one. Recognising that distinction lowers the temperature of the debate without forcing consensus.\
+> \
+> We then introduce a complementary structural approach: the _Ordinans_ framework (Warring 2025), which asks a prior, more tractable question — not "is this system conscious?" but "does this system satisfy the physical conditions under which the question of consciousness becomes well-posed?" Applied diagnostically to current AI architectures, the framework finds that large language models fail multiple necessary structural conditions — not as a philosophical objection, but as a measurable observation. This candidate-screening step does not replace consciousness detection research; it proposes a foundation for it.\
+> \
+> The essay closes with an open invitation to the consciousness research community. Three specific points of contact are identified where the structural approach and existing adversarial collaboration programmes (such as the Templeton-funded Cogitate Consortium) could reinforce each other: sharpening convergence questions by restricting them to structurally qualified systems, using theory-neutral correlation-length observables as shared empirical ground, and combining complementary falsifiability conditions into richer experimental designs.\
+> \
+> This is not advocacy. It is an interpretive instrument — designed to help readers, educators, journalists, and researchers distinguish what is being claimed from what is being felt, and to make the debate more coherent by aligning participants on what is actually being argued.
+
 ### The headline
 
 In early 2025, a team of prominent researchers published a paper in _Frontiers in Science_ calling for faster progress in consciousness research. The argument, widely presented in media coverage as a call for urgent action, went roughly like this:
