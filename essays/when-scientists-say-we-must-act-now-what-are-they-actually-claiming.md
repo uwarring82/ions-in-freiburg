@@ -1,14 +1,17 @@
 ---
-description: What Are They Actually Claiming?
+description: >-
+  A case study in reading science news carefully, using consciousness research
+  as an example.
 ---
 
-# When Scientists Say "We Must Act Now"
+# When Scientists Say "We Must Act Now" — What Are They Actually Claiming?
 
 {% hint style="info" %}
 **Stewardship:** U. Warring\
-**Version:** 1.2 — February 2026\
+**Status:** Provisional reading · v1.4 · February 2026 \
+**Endorsement Marker:** Commentary (Sails layer) — not a Ledger classification\
 \
-&#xNAN;_&#x41; case study in reading science news carefully, using consciousness research as an example._
+**A note on this document.** This commentary reflects my current readings and may contain misunderstandings. Readers are warmly invited to respond, correct, or disagree; updates will incorporate clarifications as they arise. This is a living discussion document, not a fixed evaluation.
 {% endhint %}
 
 ***
@@ -102,7 +105,7 @@ It tells us that the testable claim — "current theories yield convergent detec
 * It does _not_ mean the claim is right. The theories might diverge fundamentally on the hard cases. We do not yet have the decisive evidence to say that either.
 * It _does_ mean that the evidence base is currently compatible with multiple, competing ways of telling the story. Underdetermined says nothing about which story will survive as more evidence arrives.
 
-And here is the important part: the study which would move this forward — multiple labs, both measurement types, same subjects, pre-registered agreement thresholds — is feasible. It could be done now, with existing technology and methods. It is not waiting for some future breakthrough. It is waiting for coordination, funding, and the willingness of rival research groups to commit to shared criteria for what would count as success or failure.
+And here is the important part: the study which would move this forward — multiple labs, both measurement types, same subjects, pre-registered agreement thresholds — is methodologically imaginable with current measurement techniques. It does not require a future breakthrough in instrumentation or theory. What it requires is coordination, funding, and the willingness of rival research groups to commit to shared criteria for what would count as success or failure. Whether the practical and institutional obstacles to such coordination count as part of "feasibility" is itself a fair question — but the barriers are organisational, not scientific.
 
 ***
 
@@ -110,7 +113,7 @@ And here is the important part: the study which would move this forward — mult
 
 Here is where we need to come back to the question we set aside.
 
-The analysis above addresses the _scientific_ claim: do our theories agree on how to detect consciousness? The answer, for now, is: not yet, but a decisive test is feasible.
+The analysis above addresses the _scientific_ claim: do our theories agree on how to detect consciousness? The answer, for now, is: not yet, but a decisive test is methodologically imaginable with current measurement techniques.
 
 But the _ethical_ concern — should we be cautious about creating potentially conscious systems? — does not necessarily depend on that scientific question being resolved first.
 
@@ -118,7 +121,7 @@ Many precautionary arguments in ethics and policy do not require scientific cert
 
 The same logic could apply to consciousness. Even if we cannot yet reliably detect it, the _possibility_ that certain systems might be conscious — combined with the severity of the harm if we are wrong — could be enough to justify precautionary measures. That argument does not require the science to be mature. It requires only that the risk be taken seriously.
 
-So the relationship between the scientific finding (underdetermined) and the ethical conclusion (act with caution) is more nuanced than it first appears. Scientific uncertainty does not automatically justify inaction. It depends on what is at stake, how severe the potential harm is, and what the costs of caution are. Those are questions of values, not of measurement — and reasonable people can disagree about them.
+So the relationship between the scientific finding (underdetermined) and the ethical conclusion (act with caution) is more nuanced than it first appears. Scientific uncertainty does not automatically justify inaction — but neither does it leave precaution unaffected. Uncertainty changes the _form_ of precaution, not whether precaution exists. The kind of care warranted when we know what to look for differs from the kind warranted when we do not yet have reliable detection criteria. Both are legitimate; they lead to different policies.
 
 What the scientific analysis _does_ tell us is that anyone claiming "the science clearly shows we must act" is overstating what the science currently delivers. Precaution can be justified without that overstatement. In fact, the honest version of the argument — "we don't yet know, and that uncertainty itself is a reason for care" — is more robust than the inflated one.
 
@@ -132,13 +135,13 @@ Instead of asking "is this system conscious?" — which requires solving a probl
 
 This is the approach taken by the [Ordinans framework](https://uwarring.gitbook.io/ions-in-freiburg/invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans), an emerging research programme under development at the University of Freiburg's Institute of Physics. The framework identifies five necessary conditions that a system must satisfy before it can even be a candidate for what it calls _sui-ordinatio_ — the capacity to sustain its own large-scale organisation through internal dynamics rather than external support:
 
-| Condition                                | Example in a brain                      | Why a large language model fails              |
-| ---------------------------------------- | --------------------------------------- | --------------------------------------------- |
-| Hybrid structure (continuous + discrete) | Membrane potentials + action potentials | Uniformly continuous internal processing      |
-| Defined spatial extent                   | Anatomical boundaries                   | Arguably satisfied, but operationally unclear |
-| Intrinsic timescale                      | Neural oscillations, refractory periods | No internal clock; inert between prompts      |
-| Non-trivial persistent topology          | Synaptic connectivity evolves slowly    | Network rebuilt from scratch each inference   |
-| Thermodynamic openness                   | Continuous metabolic exchange           | Effectively closed during operation           |
+| Condition                                | Example in a brain                      | Why a large language model fails                                                                                       |
+| ---------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Hybrid structure (continuous + discrete) | Membrane potentials + action potentials | Continuous and discrete elements present but not dynamically coupled in the regime-transition sense                    |
+| Defined spatial extent                   | Anatomical boundaries                   | Arguably satisfied, but operationally unclear                                                                          |
+| Intrinsic timescale                      | Neural oscillations, refractory periods | No endogenous clock; computation is externally triggered                                                               |
+| Non-trivial persistent topology          | Synaptic connectivity evolves slowly    | No self-maintained adaptive topology during deployment; weights fixed, internal state does not persist across sessions |
+| Thermodynamic openness                   | Continuous metabolic exchange           | Effectively closed during operation                                                                                    |
 
 These are not philosophical objections. They are structural observations about what kind of system it is. A living cell satisfies all five conditions. Your brain satisfies all five. A large language model fails multiple conditions — and the specific failures tell you something important about the gap between capability and self-maintenance.
 
@@ -146,7 +149,7 @@ The framework goes further. Systems satisfying all five conditions can occupy th
 
 What makes this approach interesting in the context of the consciousness debate is what it deliberately does _not_ do. The framework makes no claim that satisfying its conditions makes a system conscious. It explicitly states that a system could exhibit perfect structural self-maintenance and possess no inner experience whatsoever. It separates the structural question — which admits empirical answers — from the phenomenological question — which currently does not.
 
-That separation is exactly what the consciousness detection debate is missing. The Frontiers paper calls for "evidence-based tests to identify consciousness." The Ordinans framework suggests that before we can build such tests, we need to answer a prior question: what kind of system is even a candidate? If a system fails the basic structural conditions for self-maintenance, the question of whether it is conscious may not even be well-posed.
+That separation is exactly what the consciousness detection debate is missing. The Frontiers paper calls for "evidence-based tests to identify consciousness." The Ordinans framework suggests that before we can build such tests, we need to answer a prior question: what kind of system is even a candidate? The framework does not narrow what consciousness _is_ — only where the question is physically meaningful. This is a candidate-screening step, not a consciousness test. If a system fails the basic structural conditions for self-maintenance, the question of whether it is conscious may not even be well-posed.
 
 This does not resolve the ethical dilemma. A system might lack sui-ordinatio and still deserve moral consideration for other reasons. But it does something valuable: it provides a concrete, falsifiable intermediate step in a debate that has been stuck between rival theories with no agreed-upon way to test them. Instead of waiting for GWT and IIT to converge — which may take decades — we can start by mapping which systems have the structural architecture that makes the question of consciousness relevant in the first place.
 
@@ -198,13 +201,39 @@ Right now, we are closest to that third space. The question is partially open, p
 
 ***
 
+### An invitation
+
+This essay began as an exercise in careful reading. It ends as an invitation.
+
+The work by Cleeremans, Seth, Mudrik and their colleagues represents something genuinely valuable: a sustained, public commitment to making consciousness science empirically accountable. The adversarial collaboration model they champion — rival theories forced to make precise, pre-registered predictions against shared data — is exactly the kind of methodological discipline that moves fields forward. That programme deserves support, not scepticism.
+
+What this analysis suggests is that the programme might benefit from an additional structural layer — a prior question that could be answered before the harder question of consciousness detection is resolved.
+
+The Ordinans framework offers one version of that prior question: does a given system satisfy the structural conditions for self-maintaining dynamics? If it does not — if it lacks an intrinsic timescale, persistent topology, or thermodynamic openness — then asking whether it is conscious may be premature. The substrate conditions could serve as a filter, narrowing the space of candidate systems that GWT-based and IIT-based detection protocols need to agree on.
+
+Three specific points of contact seem worth exploring:
+
+**First, the convergence question itself could be sharpened.** Rather than asking whether GWT and IIT agree across all non-communicating systems — a very strong requirement — one could ask whether they agree within the class of systems satisfying the five substrate conditions. If partial convergence exists within that class, it would already be practically useful for clinical and ethical decision-making, even if the theories diverge on systems outside it.
+
+**Second, the Ordinans framework's correlation-length signatures could provide theory-neutral observables.** Both GWT and IIT make predictions about neural dynamics, but those predictions are theory-laden — what counts as evidence depends on which theory you adopt. Correlation-length regime transitions (local → scale-free → global) are measurable without committing to either theory's interpretation of what the transitions mean. They could serve as a shared empirical ground on which adversarial collaborations test their competing predictions.
+
+**Third, the falsifiability conditions are complementary.** The Ordinans framework specifies what would falsify its structural claims. The adversarial collaboration programme specifies what would falsify GWT and IIT predictions. Combining these creates a richer space of testable outcomes: a system could satisfy substrate conditions but show no consciousness signatures (informative for Ordinans), or show consciousness signatures without satisfying substrate conditions (informative for both).
+
+This is not a proposal to replace the consciousness detection programme with a structural one. It is a proposal to give it a foundation — a tractable prior question that admits empirical answers today, while the harder question of convergence between GWT and IIT continues to be investigated.
+
+To the authors of the Frontiers paper, and to the broader community working on these questions: if any of this seems useful, the door is open. The structural question and the phenomenological question need each other. Neither community can answer both alone.
+
+_The_ [_Ordinans framework_](https://uwarring.gitbook.io/ions-in-freiburg/invariant-frameworks/g-what-can-make-a-complex-system-an-ordinans)_, the Claim Analysis Ledger that structured this analysis, and the Open-Science Harbour that hosts both are published openly and available for cross-disciplinary use._
+
+***
+
 ### What this exercise demonstrates
 
 We started with a news headline about existential risk and ended with a clear, specific, testable question and an honest assessment of where the evidence stands. Nothing in between required expertise in neuroscience, philosophy, or statistics. It required only the willingness to slow down and ask: _what is actually being claimed, and what would it take to check?_
 
 That method — extracting the testable core from a rhetorical wrapper, identifying what would count as evidence, and checking whether that evidence exists — is not limited to consciousness research. It works on any scientific claim, in any field, at any level of complexity. The details change; the structure does not.
 
-One important caveat: this essay has adopted a particular perspective — that scientific claims should be evaluated against evidence before they are used to justify action. That is a defensible position, but it is not the only one. Others would argue that in the face of serious potential harms, the burden of proof runs the other way: we should act cautiously until the science tells us it is safe not to. Both positions are legitimate. What neither position can honestly do is claim that the current state of consciousness science has settled the matter. It has not. The work continues.
+One important caveat: this essay has adopted a particular perspective — that scientific claims should be evaluated against evidence before they are used to justify action. That is a defensible position, but it is not the only one. Others would argue that in the face of serious potential harms, the burden of proof runs the other way: we should act cautiously until the science tells us it is safe not to. Both positions are legitimate. What neither position can honestly do is claim that the current state of consciousness science has settled the matter. It has not. The work continues — and it continues best when different perspectives, methods, and disciplines work in the open, together.
 
 ***
 

@@ -39,7 +39,7 @@
 * [Can "Farther" Beat "Closer"? A Falsifiable Framework for Quantum Relaxation Ordering](essays/can-farther-beat-closer-a-falsifiable-framework-for-quantum-relaxation-ordering.md)
 * [Active Phase Grating vs. Standard Ramsey](essays/active-phase-grating-vs.-standard-ramsey.md)
 * [The Statistical Turn in Trapped-Ion Noise Diagnostics](essays/the-statistical-turn-in-trapped-ion-noise-diagnostics.md)
-* [When Scientists Say "We Must Act Now"](essays/when-scientists-say-we-must-act-now.md)
+* [When Scientists Say "We Must Act Now" — What Are They Actually Claiming?](essays/when-scientists-say-we-must-act-now-what-are-they-actually-claiming.md)
 * [When Two Parameters Stop Being Enough — Precision Calcium Spectroscopy and Current Limitations](essays/when-two-parameters-stop-being-enough-precision-calcium-spectroscopy-and-current-limitations.md)
 
 ## Implementation Interfaces
