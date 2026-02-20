@@ -6,20 +6,10 @@ description: From Heating Rates to a Decision Engine
 
 ***
 
-artifact\_type: sail version: 1.0-draft status: candidate endorsement\_marker: harbour-v2.0 tier: 2 imports:
-
-* Green-tensor (macroscopic QED, T1)
-* Lévy-Khintchine decomposition (probability theory, T1)
-* Translation-covariant quantum Markov semigroups (Holevo–Vacchini, T1) council\_resolutions:
-* R1: Endorsement Marker v2.0 in front matter
-* R2: Two-scalar regime classifier (λτ + μ) with Markov gate
-* R3: Three-pillar validation with Pillar-3 consistency closure mandatory date: 2026-02-16
-
-***
-
-**Stewardship** — U. Warring et al., Physikalisches Institut, Universität Freiburg
-
-**Date** — 16 February 2026
+{% hint style="info" %}
+**Stewardship:** U. Warring\
+**Status:** Draft · February 2026
+{% endhint %}
 
 ***
 
