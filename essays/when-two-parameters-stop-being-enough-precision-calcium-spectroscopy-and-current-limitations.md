@@ -4,7 +4,7 @@ description: >-
   Bosons and Nuclear Properties," Phys. Rev. Lett. 134, 233002 (2025)
 ---
 
-# When Two Parameters Stop Being Enough — Precision Calcium Spectroscopy and the Limits of Effective I
+# When Two Parameters Stop Being Enough — Precision Calcium Spectroscopy and Current Limitations
 
 {% hint style="info" %}
 **Stewardship:** U. Warring\
@@ -15,6 +15,8 @@ description: >-
 {% endhint %}
 
 ***
+
+> **Abstract.** Precision isotope-shift spectroscopy increasingly reports high-significance deviations from leading-order King-plot linearity, prompting debate over whether residuals reflect beyond-standard-model interactions or overlooked nuclear-structure effects. This commentary argues that the calcium King plot result of Wilzewski et al. (PRL 134, 233002) exposes a more fundamental question that precedes both interpretations: whether the factorised, low-dimensional effective description underlying the King plot — and the decomposition analyses built on it — remains a valid parameterisation at the precision now achieved. When experimental sensitivity exceeds the identifiability of the effective model, constraints on new physics become limited not by measurement noise but by structural uncertainty: the non-unique mapping from observables to underlying physics. This shift — from parameter estimation to model validity — is currently under-articulated in precision-frontier BSM discussions, which often implicitly assume that residuals inhabit a correct low-dimensional effective space. The commentary traces how non-factorizable nuclear response (exemplified by nuclear polarisation) breaks this assumption in the calcium system, introduces model identifiability as a quantity distinct from both statistical and systematic uncertainty, and suggests that the optimisation target for future experiments should shift from maximising accuracy to maximising discriminating geometry in observable space — selecting transitions and isotopes to break operator degeneracies rather than merely reduce error bars. It also discusses data accessibility, blinding protocols, and hierarchical Bayesian inference combined with model expansion as methodological infrastructure suited to a regime where the question is no longer "what are the parameters?" but "is the model itself correct?"
 
 ### The Setup: A Convenient Truncation
 
