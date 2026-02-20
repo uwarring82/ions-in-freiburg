@@ -40,6 +40,7 @@
 * [Active Phase Grating vs. Standard Ramsey](essays/active-phase-grating-vs.-standard-ramsey.md)
 * [The Statistical Turn in Trapped-Ion Noise Diagnostics](essays/the-statistical-turn-in-trapped-ion-noise-diagnostics.md)
 * [When Scientists Say "We Must Act Now"](essays/when-scientists-say-we-must-act-now.md)
+* [When Two Parameters Stop Being Enough — Precision Calcium Spectroscopy and the Limits of Effective I](essays/when-two-parameters-stop-being-enough-precision-calcium-spectroscopy-and-the-limits-of-effective-i.md)
 
 ## Implementation Interfaces
 

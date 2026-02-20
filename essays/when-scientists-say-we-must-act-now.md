@@ -5,7 +5,7 @@ description: What Are They Actually Claiming?
 # When Scientists Say "We Must Act Now"
 
 {% hint style="info" %}
-**Stewardship:** U. Warring.\
+**Stewardship:** U. Warring\
 **Version:** 1.2 — February 2026\
 \
 &#xNAN;_&#x41; case study in reading science news carefully, using consciousness research as an example._
